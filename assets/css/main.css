@@ -145,6 +145,14 @@ body {
   .container {
     width: 100% !important; } }
 @media screen and (max-width: 736px) {
+  .wrappermare .ipad_shot_pill_right li {
+    line-height: 1.4;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .pricetable td {
+    display: block;
+  }
   .container.\31 25\25 {
     width: 100%;
     max-width: 125%;
