@@ -1,1 +1,4 @@
-@import "reset";
+
+@import 'vendor/mixins';
+@import 'domain/general';
+@import 'domain/header';
