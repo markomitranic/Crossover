@@ -1,0 +1,73 @@
+$black0: #FFF;
+$black20: #EAEAEC;
+$black40: #A9AAA4;
+$black60: #7D8186;
+$black80: #3B3E43;
+$black100: #1A1915;
+
+$orange: #DA4A3A;
+$green: #417505;
+
+@mixin font-menu-item {
+  color: $black0;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+@mixin font-hero-heading {
+  color: $black0;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 80px;
+  text-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+}
+
+@mixin font-hero-subheading {
+  color: $black40;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+@mixin font-logo-heading {
+  color: $black0;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 27px;
+}
+
+@mixin font-logo-subheading {
+  color: $black40;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@mixin font-hero-card {
+  color: $black0;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 49px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  strong {
+    font-weight: bold;
+  }
+}
+
+@mixin media($max) {
+  @media screen and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}

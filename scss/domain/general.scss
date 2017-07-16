@@ -5,3 +5,37 @@ ol {
    margin: 0;
   padding: 0;
 }
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: $black20;
+}
+
+.force-hardware-acceleration {
+  transform:translate3d(0, 0, 0);
+  backface-visibility:hidden;
+  perspective:1000;
+}
+
+.unclickable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  user-drag: none;
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  pointer-events: none;
+}
+
+.unselectable {
+  user-drag: none;
+  user-select: none;
+}

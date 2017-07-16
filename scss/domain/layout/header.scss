@@ -2,9 +2,16 @@ header#header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 100%;
   max-width: 1280px;
+  padding: 0 20px;
   margin: 0 auto;
-  background: red;
+  box-sizing: content-box;
 
   #header-logo {
     display: block;
@@ -28,11 +35,22 @@ header#header {
       align-items: flex-start;
       flex-wrap: wrap;
       list-style-type: none;
+      margin-top: 20px;
 
       li {
-        display: inline-block;
+        display: block;
         a {
+          @include font-menu-item;
+          display: block;
+          height:20px;
+          padding: 5px 12px;
+          line-height: 20px;
+          transition: 0.2s color ease-in-out;
+          text-decoration: none;
 
+          &:hover {
+            color: $black40;
+          }
         }
       }
     }

@@ -1,0 +1,105 @@
+main#homepage {
+
+  #hero {
+    background-color: transparent;
+
+    #homepage-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: $black100;
+      z-index: -1;
+    }
+
+    .wrapper {
+      ul#channel-logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        padding:0;
+        margin: 0;
+
+        li {
+          padding:0;
+          flex: 1;
+          max-width: 265px;
+          margin: 0 20px 0 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+
+          &:nth-last-child(1) {
+            margin-right: 0;
+          }
+
+          .logo {
+            display: block;
+            width: 64px;
+            height: 64px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+
+            img {
+              opacity:0;
+              width: 100%;
+            }
+          }
+
+          .description {
+            flex: 1;
+            margin-left: 20px;
+            
+            p.company-name {
+              @include font-logo-heading;
+              margin: 0;
+              line-height: 22px;
+            }
+
+            p.company-description {
+              @include font-logo-subheading;
+            }
+          }
+
+          &.apple {
+            display: block;
+
+            .logo {
+              width: initial;
+              height: initial;
+
+              img {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #hero-cards {
+    .wrapper {
+      #cards {
+        ul {
+          li {
+            p {
+              strong {
+
+              }
+            }
+          }
+        }
+      }
+      #facebook {
+
+      }
+    }
+  }
+
+
+}

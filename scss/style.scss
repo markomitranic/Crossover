@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700&subset=latin-ext');
 
-@import 'vendor/mixins';
+@import 'domain/variables';
 @import 'domain/general';
-@import 'domain/header';
+
+@import 'domain/blades/hero';
+@import 'domain/blades/hero-cards';
+
+@import 'domain/layout/header';
+@import 'domain/layout/homepage';
