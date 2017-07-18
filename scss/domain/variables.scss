@@ -60,6 +60,26 @@ $green: #417505;
   }
 }
 
+@mixin font-section-heading {
+  color: $black100;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@mixin font-section-content-bold {
+  color: $black80;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @mixin media($max) {
   @media screen and (max-width: $max) {
     @content;

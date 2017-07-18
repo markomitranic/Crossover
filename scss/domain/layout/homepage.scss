@@ -83,20 +83,15 @@ main#homepage {
     }
   }
   #hero-cards {
+    margin-top: -140px;
+  }
+  #technology-picker {
     .wrapper {
-      #cards {
-        ul {
-          li {
-            p {
-              strong {
-
-              }
-            }
-          }
-        }
+      h2 {
+        width: 800px;
       }
-      #facebook {
-
+      p.subtitle {
+        width: 600px;
       }
     }
   }

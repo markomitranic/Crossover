@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="41px" viewBox="0 0 45 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Swift Logo Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-149.000000, -1880.000000)" stroke="#3B3E43">
+            <g id="Termini" transform="translate(78.000000, 1691.000000)">
+                <g id="Picker" transform="translate(0.000000, 162.000000)">
+                    <g id="Swift">
+                        <g id="Swift-Logo-Line" transform="translate(71.000000, 26.000000)">
+                            <path d="M9.97996034,5.38010538 C20.5080564,15.8080859 27.3972554,20.1954758 31.5630534,22.9594408 C35.3810364,13.1047511 29.6554644,5.11643908 27.6600586,1.70711734 C44.0569953,12.936885 41.9560798,26.3940072 40.843805,29.5828159 C43.2170175,32.2024334 45.6543125,39.0193507 44.1087792,41.3293437 C40.726644,34.6900019 34.6778543,38.2753889 32.4013051,39.2387849 C16.3666399,46.0667064 2.90584968,31.3958993 0.539110216,27.1567408 C14.8506666,36.4758987 22.397521,31.8442615 25.5764044,30.0805885 C19.3211984,25.3975989 12.3628823,17.9085698 4.701456,7.61350133 C13.8434633,15.1500709 19.7763113,19.628658 22.5,21.0492627 C19.0757904,16.6758975 17.3375878,15.6920037 9.97996034,5.38010538 Z" id="Path-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

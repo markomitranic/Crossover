@@ -1,7 +1,7 @@
 #hero-cards {
   display: block;
   width: 100%;
-  margin-top: -140px;
+  margin-top: 60px;
 
   .wrapper {
     @include wrapper;
@@ -30,9 +30,10 @@
           height: 280px;
           background-size: cover;
           background-position: center center;
+          transition: 0.2s transform ease-in-out;
 
           &:hover {
-
+            transform: scale(1.02);
           }
 
           a {
@@ -48,11 +49,10 @@
     }
     #facebook {
       box-sizing: border-box;
-      height: auto;
       width: 340px;
+      height:840px;
       border: 1px solid $black40;
       background: blue;
-      height:840px;
     }
   }
 }

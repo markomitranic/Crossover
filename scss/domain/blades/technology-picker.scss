@@ -1,0 +1,160 @@
+#technology-picker {
+  margin-top: 60px;
+
+  .wrapper {
+    @include wrapper;
+
+    h2 {
+      @include font-section-heading;
+    }
+    p.subtitle {
+      @include font-section-content-bold;
+    }
+    .picker-flex {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      margin-top: 40px;
+
+      ul.choices {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        width: 43%;
+        background-color: $black0;
+        list-style-type: none;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height: 33.333%;
+          width: 33.333%;
+          border-right: 1px solid #EAEAEC;
+          border-bottom: 1px solid #EAEAEC;
+          padding: 10px;
+          box-sizing: border-box;
+          user-drag: none;
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+            background: $black20;
+          }
+          &:active, &.active {
+            cursor: pointer;
+            background: $black60;
+
+            p.technology-title {
+              color: $black80;
+            }
+          }
+
+          .technology-logo {
+            display: block;
+            height: 64px;
+            width: 100%;
+            flex: 1;
+            margin-bottom: 10px;
+            background-image: url('../assets/swift-logo-dark.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+          p.technology-title {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            box-sizing: border-box;
+            color: $black60;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: center;
+          }
+        }
+      }
+      .timetable {
+        flex: 1;
+        background-color: $black0;
+
+        .table-header {
+          background: $black80;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px 15px;
+          box-sizing: border-box;
+
+          p {
+            display: block;
+            margin: 0;
+            color: $black0;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16px;
+
+            &:nth-child(1) {
+              flex: 1;
+            }
+            &:nth-child(2) {
+              width: 100px;
+            }
+            &:nth-child(3) {
+              width: 100px;
+            }
+          }
+        }
+        ul.table-content {
+          list-style-type: none;
+          height: 388px;
+          overflow-y: scroll;
+
+          li {
+            background: $black0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 15px;
+            box-sizing: border-box;
+
+            &.hidden {
+              display: none;
+            }
+            &:hover {
+              background: $black20;
+              cursor: pointer;
+            }
+
+            p {
+              display: block;
+              margin: 0;
+              color: $black80;
+              font-size: 13px;
+              font-weight: 300;
+              line-height: 16px;
+
+              a {
+                color: inherit;
+                text-decoration: none;
+                font-size: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+              }
+
+              &:nth-child(1) {
+                flex: 1;
+              }
+              &:nth-child(2) {
+                width: 100px;
+              }
+              &:nth-child(3) {
+                width: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
