@@ -44,6 +44,11 @@ main#homepage {
             background-repeat: no-repeat;
             background-position: center center;
 
+            @include media(1024px) {
+              width: 50px;
+              height: 50px;
+            }
+
 
             img {
               opacity:0;
@@ -54,6 +59,10 @@ main#homepage {
           .description {
             flex: 1;
             margin-left: 20px;
+
+            @include media(1024px) {
+              margin-left: 10px;
+            }
             
             p.company-name {
               @include font-logo-heading;

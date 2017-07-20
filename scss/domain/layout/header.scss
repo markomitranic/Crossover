@@ -7,11 +7,9 @@ header#header {
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
-  width: 100%;
-  max-width: 1280px;
   padding: 0 20px;
-  margin: 0 auto;
   box-sizing: content-box;
+  @include wrapper;
 
   #header-logo {
     display: block;

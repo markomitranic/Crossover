@@ -53,6 +53,10 @@
       height:840px;
       border: 1px solid $black40;
       background: blue;
+      
+      @include media(1024px) {
+        display: none;
+      }
     }
   }
 }

@@ -1,0 +1,136 @@
+footer {
+  background-color: #3B3E43;
+
+  #last-block {
+    height: 300px;
+    background-image: url(../assets/crossover-logo-footer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-bottom: 20px;
+
+    .wrapper {
+      @include wrapper;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 0 0 150px;
+      box-sizing: border-box;
+
+      .contact {
+        width: 220px;
+
+        h3 {
+          @include font-menu-item;
+          text-transform: none;
+          text-align: left;
+          font-size: 18px;
+          letter-spacing: 0.69px;
+        }
+        p {
+          color: $black40;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          
+          a {
+            color: $black40;
+            text-decoration: none;
+            transition: 0.1s color ease-out;
+            
+            &:hover {
+              color: $black0;
+            }
+          }
+        }
+      }
+      .social {
+        width: 740px;
+
+        h3 {
+          @include font-menu-item;
+          text-transform: none;
+          text-align: left;
+          font-size: 18px;
+          letter-spacing: 0.69px;
+        }
+        ul {
+          list-style-type: none;
+
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            width: 25px;
+            height: 25px;
+            overflow: hidden;
+            margin-right: 40px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+            transition: 0.2s transform ease-out;
+
+            &:hover {
+              transform: translateY(-3px);
+            }
+
+            &.facebook {
+              background-image: url('../assets/facebook-logo.svg');
+            }
+            &.twitter {
+              background-image: url('../assets/twitter-logo.svg');
+            }
+            &.newsletter {
+              height: auto;
+              width: auto;
+
+              input {
+                height: 25px;
+                width: 253px;
+                border: 1px solid $black0;
+                border-radius: 2px;
+                background-color: $black20;
+                color: $black60;
+                font-family: Montserrat, sans-serif;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 16px;
+                padding: 5px 10px;
+                box-sizing: border-box;
+              }
+              button {
+                height: 25px;
+                width: 25px;
+                border: 0;
+                padding:0;
+                background-color: transparent;
+                color: transparent;
+                margin: 0 0 0 -30px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 17px;
+                background-image: url('../assets/arrow-up-dark.svg');
+
+                &:hover {
+                  cursor: pointer;
+                }
+
+              }
+            }
+            a {
+              color: transparent;
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      margin:0;
+      padding: 40px 0 0 0;
+      color: $black40;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+}
