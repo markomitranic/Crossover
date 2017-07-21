@@ -23,9 +23,15 @@ $green: #417505;
   font-weight: bold;
   line-height: 80px;
   text-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+  letter-spacing: -0.1;
 
   @include media(1024px) {
     font-size: 64px;
+  }
+  @include media(480px) {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.05;
   }
 }
 
@@ -38,6 +44,9 @@ $green: #417505;
   @include media(1024px) {
     font-size: 20px;
     line-height: 24px;
+  }
+  @include media(480px) {
+    font-size: 18px;
   }
 }
 
@@ -63,6 +72,13 @@ $green: #417505;
   text-align: center;
   margin: 0;
   padding: 0;
+  letter-spacing: -0.43px;
+
+  @include media(480px) {
+    font-size: 20px;
+    letter-spacing: -0.22px;
+    line-height: 24px;
+  }
 
   strong {
     font-weight: bold;
@@ -74,6 +90,7 @@ $green: #417505;
   font-size: 36px;
   font-weight: bold;
   line-height: 45px;
+  letter-spacing: 0.18px;
   text-shadow: 0 0 4px rgba(0,0,0,0.5);
   margin-top: 40px;
   margin-bottom: 20px;
@@ -87,6 +104,7 @@ $green: #417505;
   line-height: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
+  letter-spacing: -0.5px;
 }
 
 @mixin media($max) {
@@ -100,7 +118,15 @@ $green: #417505;
   max-width: 1280px;
   margin: 0 auto;
 
+  @include media(1280px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
   @include media(1024px) {
     max-width: 944px;
+  }
+  @include media(768px) {
+    max-width: 100%;
   }
 }

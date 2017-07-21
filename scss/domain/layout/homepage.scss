@@ -22,6 +22,14 @@ main#homepage {
         padding:0;
         margin: 0;
 
+        @include media(768px) {
+          flex-wrap: wrap;
+          padding: 0 30px;
+        }
+        @include media(480px) {
+          display: block;
+        }
+
         li {
           padding:0;
           flex: 1;
@@ -36,6 +44,36 @@ main#homepage {
             margin-right: 0;
           }
 
+          @include media(768px) {
+            flex: initial;
+            width: 50%;
+            max-width: none;
+            box-sizing: border-box;
+            margin: 0 0 15px;
+            padding:0;
+
+            &:nth-last-child(odd) {
+              padding-left: 50px;
+            }
+            &:nth-last-child(even) {
+              padding-right: 50px;
+            }
+          }
+          @include media(480px) {
+            width: 180px;
+            margin: 0 auto;
+            padding: 0;
+            align-items: center;
+
+            &:nth-last-child(odd), &:nth-last-child(even) {
+              margin: 0 auto 20px auto;
+              padding: 0;
+            }
+            &:nth-last-child(1) {
+              margin-bottom:0;
+            }
+          }
+
           .logo {
             display: block;
             width: 64px;
@@ -48,7 +86,6 @@ main#homepage {
               width: 50px;
               height: 50px;
             }
-
 
             img {
               opacity:0;
@@ -68,15 +105,36 @@ main#homepage {
               @include font-logo-heading;
               margin: 0;
               line-height: 22px;
+
+              @include media(768px) {
+                font-size: 18px;
+              }
+              @include media(480px) {
+                font-size: 14px;
+              }
             }
 
             p.company-description {
               @include font-logo-subheading;
+
+              @include media(768px) {
+                font-size: 14px;
+              }
+              @include media(480px) {
+                display: none;
+              }
             }
           }
 
           &.apple {
             display: block;
+
+            @include media(768px) {
+              padding-right: 110px;
+            }
+            @include media(480px) {
+              padding-right: 0;
+            }
 
             .logo {
               width: initial;
@@ -94,16 +152,4 @@ main#homepage {
   #hero-cards {
     margin-top: -140px;
   }
-  #technology-picker {
-    .wrapper {
-      h2 {
-        width: 800px;
-      }
-      p.subtitle {
-        width: 600px;
-      }
-    }
-  }
-
-
 }

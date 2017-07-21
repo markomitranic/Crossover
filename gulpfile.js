@@ -3,6 +3,7 @@ var scssInput = ['scss/style.scss'],
         'scripts/domain/*.js'
     ],
     vendorInput = [
+        'scripts/vendor/jquery-3.2.1.min.js',
         'scripts/vendor/EasePack.min.js',
         'scripts/vendor/rAF.js',
         'scripts/vendor/TweenLite.min.js'

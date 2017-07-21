@@ -1,20 +1,46 @@
 #technology-picker {
   margin-top: 60px;
 
+  @include media(1024px) {
+    margin-top: 50px;
+  }
+  @include media(480px) {
+    margin-top: 30px;
+  }
+
   .wrapper {
     @include wrapper;
 
     h2 {
       @include font-section-heading;
+      margin-top: 0;
+      width: 800px;
+
+      @include media(768px) {
+        width: 100%;
+      }
     }
     p.subtitle {
       @include font-section-content-bold;
+      width: 600px;
+
+      @include media(768px) {
+        width: 100%;
+      }
     }
     .picker-flex {
       display: flex;
       justify-content: center;
       align-items: stretch;
       margin-top: 40px;
+
+      @include media(1024px) {
+        margin-top: 20px;
+      }
+      @include media(768px) {
+        flex-wrap: wrap;
+        display: block;
+      }
 
       ul.choices {
         display: flex;
@@ -24,6 +50,22 @@
         width: 43%;
         background-color: $black0;
         list-style-type: none;
+
+        @include media(1024px) {
+          width: 50%;
+        }
+        @include media(768px) {
+          width: calc(100% + 40px);
+          flex-wrap: nowrap;
+          overflow-x: scroll;
+          -webkit-overflow-scrolling: touch;
+          justify-content: flex-start;
+          align-items: stretch;
+          margin-bottom: 30px;
+          margin-left: -20px;
+          margin-right: -20px;
+        }
+
         li {
           display: flex;
           flex-direction: column;
@@ -37,6 +79,16 @@
           box-sizing: border-box;
           user-drag: none;
           user-select: none;
+
+          @include media(768px) {
+            width: 150px;
+            height: 130px;
+            flex: none;
+          }
+          @include media(480px) {
+            width: 110px;
+            height: 90px;
+          }
 
           &:hover {
             cursor: pointer;
@@ -60,6 +112,15 @@
             background-image: url('../assets/swift-logo-dark.svg');
             background-repeat: no-repeat;
             background-position: center center;
+
+            @include media(768px) {
+              height: 45px;
+              width: 45px;
+              background-size: contain;
+            }
+            @include media(480px) {
+              height: 35px;
+            }
           }
           p.technology-title {
             width: 100%;
@@ -71,12 +132,20 @@
             font-weight: 300;
             line-height: 22px;
             text-align: center;
+
+            @include media(480px) {
+              font-size: 14px;
+            }
           }
         }
       }
       .timetable {
         flex: 1;
         background-color: $black0;
+
+        @include media(768px) {
+          width: 100%;
+        }
 
         .table-header {
           background: $black80;
@@ -99,9 +168,17 @@
             }
             &:nth-child(2) {
               width: 100px;
+
+              @include media(480px) {
+                display: none;
+              }
             }
             &:nth-child(3) {
               width: 100px;
+
+              @include media(480px) {
+                display: none;
+              }
             }
           }
         }
@@ -109,6 +186,11 @@
           list-style-type: none;
           height: 388px;
           overflow-y: scroll;
+          -webkit-overflow-scrolling: touch;
+
+          @include media(1024px) {
+            height: 330px;
+          }
 
           li {
             background: $black0;
@@ -124,6 +206,11 @@
             &:hover {
               background: $black20;
               cursor: pointer;
+            }
+            @include media(480px) {
+              flex-wrap: wrap;
+              justify-content: space-around;
+              border-bottom: 1px solid $black20;
             }
 
             p {
@@ -144,6 +231,14 @@
 
               &:nth-child(1) {
                 flex: 1;
+
+                @include media(480px) {
+                  display: block;
+                  width: 100%;
+                  flex: none;
+                  text-align: center;
+                  margin-bottom: 10px;
+                }
               }
               &:nth-child(2) {
                 width: 100px;

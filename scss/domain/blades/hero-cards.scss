@@ -15,6 +15,10 @@
       flex: 1;
       margin-right: 20px;
 
+      @include media(1024px) {
+        margin-right: 0;
+      }
+
       ul {
         list-style-type: none;
         display: flex;
@@ -34,6 +38,10 @@
 
           &:hover {
             transform: scale(1.02);
+          }
+          @include media(480px) {
+            width: 100%;
+            height: 150px;
           }
 
           a {

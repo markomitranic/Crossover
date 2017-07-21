@@ -12,16 +12,36 @@
       padding-top: 185px;
       padding-bottom: 155px;
     }
+    @include media(768px) {
+      padding-bottom: 195px;
+    }
+    @include media(480px) {
+      padding-top: 170px;
+    }
 
     h1 {
       @include font-hero-heading;
       width: 700px;
       margin: 0 auto 30px 0;
+
+      @include media(720px) {
+        width: 100%;
+      }
     }
     p.subtitle {
       @include font-hero-subheading;
       width: 700px;
       margin-bottom: 100px;
+
+      @include media(768px) {
+        margin-bottom: 135px;
+      }
+      @include media(720px) {
+        width: 100%;
+      }
+      @include media(480px) {
+        margin-bottom: 55px;
+      }
     }
   }
 }

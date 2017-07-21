@@ -1,4 +1,5 @@
 header#header {
+  @include wrapper;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -9,13 +10,20 @@ header#header {
   z-index: 100;
   padding: 0 20px;
   box-sizing: content-box;
-  @include wrapper;
+
+  @include media(480px) {
+    display: block;
+  }
 
   #header-logo {
     display: block;
     margin-left: -37px;
     width: 153px;
     height: 124px;
+
+    @include media(480px) {
+      margin-left: -35px;
+    }
 
     a {
       img {
@@ -24,8 +32,67 @@ header#header {
       }
     }
   }
+  #mobile-menu-button {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+
+    @include media(480px) {
+      display: block;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+    &.active {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          transform: rotate(-45deg) translate(10px, -10px);
+        }
+      }
+    }
+    span {
+      width: 100%;
+      height: 7px;
+      display: block;
+      background: $black0;
+      margin-bottom: 7px;
+      transition: 0.3s transform ease-in-out;
+    }
+  }
   nav {
     flex: 1;
+
+    @include media(480px) {
+      display: block;
+      background: blue;
+      margin-left: -20px;
+      width: 100vw;
+      position: absolute;
+      top: -100vh;
+      height: 70vh;
+      transition: 0.5s top ease-out;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        border-bottom: 20vh solid transparent;
+        border-left: 100vw solid blue;
+        position: absolute;
+        top: calc(70vh - 1px);
+      }
+      &.mobile-show {
+        top: 0;
+      }
+    }
 
     ul {
       display: flex;
@@ -34,6 +101,15 @@ header#header {
       flex-wrap: wrap;
       list-style-type: none;
       margin-top: 20px;
+
+      @include media(768px) {
+        margin-left: 140px;
+      }
+      @include media(480px) {
+        display: block;
+        margin-left: 20px;
+        margin-top: 60px;
+      }
 
       li {
         display: block;
@@ -45,6 +121,12 @@ header#header {
           line-height: 20px;
           transition: 0.2s color ease-in-out;
           text-decoration: none;
+
+          @include media(480px) {
+            font-size: 20px;
+            line-height:20px;
+            height: 30px;
+          }
 
           &:hover {
             color: $black40;

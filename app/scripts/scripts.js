@@ -1,6 +1,17 @@
 'use strict';
 
 (function () {
+    var $menuButton = $('#mobile-menu-button');
+    var $menu = $('#header').find('nav');
+
+    $menuButton.on('click', function () {
+        $menu.toggleClass('mobile-show');
+        $menuButton.toggleClass('active');
+    });
+})(jQuery);
+'use strict';
+
+(function () {
 
     var width,
         height,
@@ -105,8 +116,8 @@
     }
 
     function resize() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = largeHeader.offsetWidth;
+        height = largeHeader.offsetHeight;
         largeHeader.style.height = height + 'px';
         canvas.width = width;
         canvas.height = height;

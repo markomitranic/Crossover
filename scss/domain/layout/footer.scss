@@ -3,10 +3,24 @@ footer {
 
   #last-block {
     height: 300px;
-    background-image: url(../assets/crossover-logo-footer.svg);
+    background-image: url('../assets/crossover-logo-footer.svg');
     background-repeat: no-repeat;
     background-position: bottom left;
     padding-bottom: 20px;
+
+    @include media(1024px) {
+      height: 380px;
+      background-position: bottom -35px left;
+    }
+    @include media(768px) {
+      background-position: bottom -65px left -10px;
+      height: auto;
+    }
+    @include media(480px) {
+      background-image: url('../assets/crossover-logo-footer-mobile.svg');
+      background-position: bottom center;
+      padding-bottom: 150px;
+    }
 
     .wrapper {
       @include wrapper;
@@ -17,8 +31,30 @@ footer {
       padding: 60px 0 0 150px;
       box-sizing: border-box;
 
+      @include media(1280px) {
+        padding-left: 150px;
+      }
+      @include media(1024px) {
+        padding-left: 20px;
+        padding-top: 50px;
+      }
+      @include media(768px) {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 60px;
+      }
+
       .contact {
         width: 220px;
+
+        @include media(768px) {
+          text-align: center;
+          margin: 60px auto 0;
+        }
+        @include media(480px) {
+          width: 100%;
+        }
 
         h3 {
           @include font-menu-item;
@@ -26,6 +62,12 @@ footer {
           text-align: left;
           font-size: 18px;
           letter-spacing: 0.69px;
+
+          @include media(1024px) {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+          }
         }
         p {
           color: $black40;
@@ -47,12 +89,29 @@ footer {
       .social {
         width: 740px;
 
+        @include media(1024px) {
+          width: 470px;
+        }
+        @include media(768px) {
+          margin: 0 auto;
+          text-align: center;
+        }
+        @include media(480px) {
+          width: 100%;
+        }
+
         h3 {
           @include font-menu-item;
           text-transform: none;
           text-align: left;
           font-size: 18px;
           letter-spacing: 0.69px;
+
+          @include media(1024px) {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+          }
         }
         ul {
           list-style-type: none;
@@ -78,10 +137,19 @@ footer {
             }
             &.twitter {
               background-image: url('../assets/twitter-logo.svg');
+
+              @include media(480px) {
+                margin: 0;
+              }
             }
             &.newsletter {
               height: auto;
               width: auto;
+
+              @include media(480px) {
+                margin-top: 40px;
+                margin-right: 0;
+              }
 
               input {
                 height: 25px;
@@ -131,6 +199,13 @@ footer {
       font-weight: 500;
       line-height: 18px;
       text-align: center;
+
+      @include media(1024px) {
+        padding: 120px 0 0 0;
+      }
+      @include media(480px) {
+        padding: 30px 0 0 0;
+      }
     }
   }
 }

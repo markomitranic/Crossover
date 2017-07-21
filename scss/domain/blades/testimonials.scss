@@ -4,17 +4,42 @@
   background-size: cover;
   margin-top: 60px;
 
+  @include media(1024px) {
+    margin-top: 50px;
+  }
+  @include media(768px) {
+    margin-top: 30px;
+  }
+
   .wrapper {
     @include wrapper;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
 
+    @include media(1024px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @include media(768px) {
+      display: block;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
     .description {
       width: 500px;
 
+      @include media(768px) {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
       h2 {
         @include font-section-heading;
         color: $black0;
@@ -30,20 +55,53 @@
         list-style-type: none;
         margin-top: 20px;
 
+        @include media(1024px) {
+          margin-top: 50px;
+        }
+        @include media(768px) {
+          justify-content: space-around;
+        }
+        @include media(480px) {
+          flex-wrap: wrap;
+        }
+
         li {
           flex:1;
           margin-right: 20px;
+
+          @include media(768px) {
+            flex: none;
+            margin-right: 0;
+          }
+          @include media(480px) {
+            margin-bottom:40px;
+            width:100%;
+          }
 
           .large {
             @include font-hero-heading;
             font-weight: 300;
             margin: 0;
             text-align: left;
+
+            @include media(1024px) {
+              font-size: 80px;
+            }
+            @include media(768px) {
+              text-align: center;
+            }
+            @include media(480px) {
+              line-height: 80px;
+            }
           }
           .small {
             @include font-menu-item;
             color: $black40;
             text-align: left;
+
+            @include media(768px) {
+              text-align: center;
+            }
           }
         }
       }
@@ -53,6 +111,15 @@
       width: 500px;
       list-style-type: none;
 
+      @include media(768px) {
+        width: 100%;
+        max-width: 500px;
+        margin: 50px auto 0 auto;
+      }
+      @include media(768px) {
+        margin-top: 40px;
+      }
+
       li {
         display: flex;
         justify-content: space-between;
@@ -61,6 +128,10 @@
 
         &:nth-last-child(1) {
           margin-bottom: 0;
+        }
+        @include media(480px) {
+          flex-direction: column;
+          margin-bottom: 40px;
         }
 
         .image {
@@ -73,6 +144,11 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
+
+          @include media(480px) {
+            margin-bottom: 30px;
+            margin-right: 0;
+          }
         }
         .about {
           flex: 1;
@@ -84,6 +160,10 @@
             text-align: left;
             padding:0;
             margin: 0 0 20px 0;
+
+            @include media(480px) {
+              text-align: center;
+            }
           }
           .author {
             @include font-menu-item;
@@ -92,6 +172,10 @@
             text-align: left;
             padding:0;
             margin: 0;
+
+            @include media(480px) {
+              text-align: center;
+            }
           }
         }
       }
