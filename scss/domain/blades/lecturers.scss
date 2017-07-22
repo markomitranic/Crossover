@@ -1,0 +1,91 @@
+#lecturers {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .wrapper {
+    @include wrapper;
+
+    ul {
+      list-style-type: none;
+      padding: 20px 0;
+
+      @include media(720px) {
+        padding: 1px 0;
+      }
+
+      li {
+        margin: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media(1024px) {
+          margin: 50px 0;
+        }
+        @include media(720px) {
+          position: relative;
+        }
+
+        .bio {
+          width: 400px;
+
+          @include media(720px) {
+            width: 100%;
+          }
+
+          h3 {
+            @include font-section-heading;
+            color: $black0;
+            margin-top: 0;
+
+            @include media(720px) {
+              height: 65px;
+              margin-right: 75px;
+            }
+          }
+          blockquote {
+            @include font-section-content-bold;
+            color: $black0;
+            margin: 20px 0;
+          }
+          p {
+            @include font-section-content;
+          }
+        }
+        .photo {
+          width: 290px;
+          height: 290px;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 1px solid $black40;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+
+          @include media(1024px) {
+            width: 220px;
+            height: 220px;
+          }
+          @include media(768px) {
+            width: 180px;
+            height: 180px;
+          }
+          @include media(720px) {
+            width: 65px;
+            height: 65px;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+main#lecturers {
+
+  #hero {
+    background-image: url('../assets/images/hero-predavaci.png');
+    background-position: bottom center;
+
+    @include media(1024px) {
+      background-position: bottom left;
+    }
+    @include media(480px) {
+      background-position: left -160px top;
+    }
+
+    .wrapper {
+      padding-top: 205px;
+      padding-bottom: 370px;
+
+      @include media(1024px) {
+        padding-top: 215px;
+        padding-bottom: 370px;
+      }
+      @include media(768px) {
+        padding-bottom: 370px;
+      }
+      @include media(480px) {
+        padding-top: 170px;
+        padding-bottom: 170px;
+      }
+    }
+  }
+  #first {
+    padding: 70px 0 110px 0;
+
+    @include media(1024px) {
+      padding-top: 50px;
+      padding-bottom: 100px;
+      margin-top: 0px;
+    }
+    @include media(720px) {
+      padding-bottom: 30px;
+    }
+
+    .wrapper {
+      @include wrapper;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      @include media(720px) {
+        display: block;
+      }
+
+      .text {
+        width: 600px;
+
+        @include media(720px) {
+          width: 100%;
+        }
+
+        h2 {
+          @include font-section-heading;
+          z-index: 100;
+          position: relative;
+
+          @include media(720px) {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+          }
+        }
+        p {
+          @include font-section-content;
+          width: 400px;
+          z-index: 100;
+          position: relative;
+
+          @include media(720px) {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+          }
+          @include media(480px) {
+            padding-left: 0;
+          }
+        }
+      }
+      .buttons {
+        margin-right: 100px;
+
+        @include media(1024px) {
+          margin-right: 0;
+        }
+        @include media(720px) {
+          margin: 0 auto;
+          width: 370px;
+          max-width: 100%;
+        }
+
+        .btn {
+          display: block;
+          margin-bottom: 20px;
+
+          &:nth-last-child(1) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
