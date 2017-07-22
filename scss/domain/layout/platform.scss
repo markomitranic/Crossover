@@ -4,18 +4,43 @@ main#platform {
     background-image: url('../assets/images/hero-platforma.png');
     background-position: bottom center;
 
+    @include media(1024px) {
+      background-position: bottom left;
+    }
+
     .wrapper {
       padding-top: 205px;
       padding-bottom: 550px;
 
-      p.subtitle {
-
+      @include media(1024px) {
+        padding-top: 215px;
+        padding-bottom: 460px;
+      }
+      @include media(768px) {
+        padding-bottom: 440px;
+      }
+      @include media(480px) {
+        padding-top: 170px;
+        padding-bottom: 260px;
       }
     }
   }
   #first {
     margin-top: -280px;
     padding: 150px 0;
+
+    @include media(1024px) {
+      padding-top: 220px;
+      padding-bottom: 120px;
+    }
+    @include media(768px) {
+      margin-top: -230px;
+      padding-top: 150px;
+      padding-bottom: 180px;
+    }
+    @include media(720px) {
+      padding-bottom: 30px;
+    }
 
     .wrapper {
       @include wrapper;
@@ -24,21 +49,61 @@ main#platform {
       align-items: center;
       position: relative;
 
+      @include media(720px) {
+        display: block;
+      }
+
       .text {
         width: 600px;
 
+        @include media(720px) {
+          width: 100%;
+        }
+
         h2 {
           @include font-section-heading;
+          z-index: 100;
+          position: relative;
         }
         p {
           @include font-section-content;
           width: 400px;
+          z-index: 100;
+          position: relative;
+
+          @include media(768px) {
+            width: auto;
+            padding-left: 60px;
+          }
+          @include media(480px) {
+            padding-left: 0;
+          }
         }
       }
       .images {
         position: absolute;
         bottom: -360px;
         right: 0;
+
+        @include media(1024px) {
+          bottom: -270px;
+        }
+        @include media(768px) {
+          bottom: -430px;
+          left: 50%;
+          transform: translateX(-50%);
+          right: initial;
+        }
+        @include media(720px) {
+          position: relative;
+          top: initial;
+          left: initial;
+          bottom: initial;
+          right: initial;
+          width: 100%;
+          transform: none;
+          margin-bottom: 85px;
+        }
 
         .large {
           width: 800px;
@@ -47,6 +112,18 @@ main#platform {
           background-size: cover;
           background-repeat: no-repeat;
           overflow: hidden;
+
+          @include media(1024px) {
+            width: 510px;
+            height: 390px;
+          }
+          @include media(768px) {
+            width: 600px;
+          }
+          @include media(720px) {
+            width: 100%;
+            height: auto;
+          }
 
           img {
             max-width: 100%;
@@ -65,6 +142,21 @@ main#platform {
           bottom: -180px;
           overflow: hidden;
 
+          @include media(1024px) {
+            width: 290px;
+            height: 195px;
+            right: 130px;
+            bottom: -160px;
+          }
+          @include media(768px) {
+            right: -40px;
+            bottom: -40px;
+          }
+          @include media(720px) {
+            right: 10px;
+            bottom: -80px;
+          }
+
           img {
             max-width: 100%;
             height: auto;
@@ -78,6 +170,16 @@ main#platform {
     background: $black80;
     padding: 70px 0;
 
+    @include media(1024px) {
+      padding: 50px 0;
+    }
+    @include media(768px) {
+      padding: 330px 0 30px 0;
+    }
+    @include media(720px) {
+      padding: 30px 0 30px 0;
+    }
+
     .wrapper {
       @include wrapper;
 
@@ -87,34 +189,48 @@ main#platform {
         color: $black0;
         z-index: 100;
         position: relative;
+
+        @include media(1024px) {
+          margin-top: 0;
+        }
+        @include media(720px) {
+          margin-top: 20px;
+          width: auto;
+        }
       }
       p {
         @include font-section-content;
         width: 400px;
         z-index: 100;
         position: relative;
+
+        @include media(768px) {
+          padding-left: 60px;
+          width: 600px;
+        }
+        @include media(720px) {
+          width: auto;
+        }
+        @include media(480px) {
+          padding-left: 0;
+        }
       }
     }
   }
   #third {
     padding: 70px 0;
 
+    @include media(1024px) {
+      padding: 50px 0;
+    }
+    @include media(768px) {
+      padding: 30px 0;
+    }
+
     .wrapper {
       @include wrapper;
       position: relative;
 
-      h2 {
-        @include font-section-heading;
-        width: 600px;
-        z-index: 100;
-        position: relative;
-      }
-      p {
-        @include font-section-content;
-        width: 400px;
-        z-index: 100;
-        position: relative;
-      }
       .image {
         position: absolute;
         top: 50%;
@@ -127,16 +243,85 @@ main#platform {
         background-repeat: no-repeat;
         overflow: hidden;
 
+        @include media(1024px) {
+          width: 530px;
+        }
+        @include media(768px) {
+          width: 600px;
+          height: auto;
+          background-position-y: top;
+          position: static;
+          margin: 0 auto;
+          transform: none;
+          margin-bottom: 30px;
+        }
+        @include media(720px) {
+          width: 100%;
+        }
+
         img {
           max-width: 100%;
           height: auto;
           opacity:0;
         }
       }
+      h2 {
+        @include font-section-heading;
+        width: 600px;
+        z-index: 100;
+        position: relative;
+
+        @include media(1024px) {
+          margin-top: 0;
+        }
+        @include media(768px) {
+          margin-top: -160px;
+          position: absolute;
+          background: rgba($black0, 0.4);
+        }
+        @include media(720px) {
+          width: auto;
+        }
+        @include media(480px) {
+          position: static;
+          display: block;
+          margin-top: 0;
+          background: none;
+        }
+      }
+      p {
+        @include font-section-content;
+        width: 400px;
+        z-index: 100;
+        position: relative;
+
+        @include media(768px) {
+          padding-left: 60px;
+          width: 600px;
+        }
+        @include media(720px) {
+          width: auto;
+        }
+        @include media(480px) {
+          padding-left: 0;
+        }
+
+        strong {
+          @include font-section-content-bold;
+        }
+      }
     }
   }
   #fourth {
     padding: 70px 0;
+
+    @include media(1024px) {
+      padding-top: 0;
+    }
+    @include media(768px) {
+      position: relative;
+      padding: 30px 0;
+    }
 
     .wrapper {
       @include wrapper;
@@ -148,6 +333,25 @@ main#platform {
         position: relative;
         display: block;
         margin-bottom: 50px;
+
+        @include media(1024px) {
+          margin-top: 0;
+        }
+        @include media(768px) {
+          position: absolute;
+          top: 260px;
+          background: rgba($black0, 0.4);
+          width: 600px;
+        }
+        @include media(720px) {
+          width: auto;
+        }
+        @include media(480px) {
+          position: static;
+          display: block;
+          margin-top: 0;
+          background: none;
+        }
       }
       .body {
         position: relative;
@@ -165,6 +369,23 @@ main#platform {
           background-repeat: no-repeat;
           overflow: hidden;
 
+          @include media(1024px) {
+            height: 360px;
+            width: 530px;
+          }
+          @include media(768px) {
+            width: 600px;
+            height: auto;
+            background-position-y: top;
+            position: static;
+            margin: 0 auto;
+            transform: none;
+            margin-bottom: 30px;
+          }
+          @include media(720px) {
+            width: 100%;
+          }
+
           img {
             max-width: 100%;
             height: auto;
@@ -173,14 +394,32 @@ main#platform {
         }
         .text {
           margin: 0 0 0 auto;
+          padding-left: 40px;
+          box-sizing:border-box;
           width: 30%;
+
+          @include media(1024px) {
+            width: 400px;
+          }
+          @include media(768px) {
+            width: 600px;
+            margin: 0 auto;
+          }
+          @include media(720px) {
+            width: auto;
+          }
+
 
           p {
             @include font-section-content;
             width: 400px;
+            max-width: 100%;
             z-index: 100;
             position: relative;
 
+            @include media(768px) {
+              width: 600px;
+            }
             strong {
               color: $black80;
             }
@@ -194,6 +433,17 @@ main#platform {
           .btn {
             display: block;
             margin-top: 20px;
+            max-width: 100%;
+
+            @include media(768px) {
+              width: 300px;
+              margin: 40px auto 0 auto;
+            }
+            @include media(480px) {
+              width: auto;
+              margin-left: -40px;
+              padding-left: 50px;
+            }
           }
         }
       }

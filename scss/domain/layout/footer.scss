@@ -9,9 +9,25 @@ footer {
       justify-content: space-between;
       align-items: center;
 
+      @include media(1310px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      @include media(1024px) {
+        padding-top: 50px;
+      }
+      @include media(768px) {
+        padding-top: 30px;
+        flex-wrap: wrap;
+      }
+
       .open-day {
         width: 550px;
         margin-right: 40px;
+
+        @include media(768px) {
+          margin-bottom: 40px;
+        }
 
         h3 {
           @include font-menu-item;
@@ -28,6 +44,14 @@ footer {
       }
       .newsletter {
         flex: 1;
+
+        @include media(768px) {
+          flex: none;
+          width: 700px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
         form {
           padding-right: 50px;
           position: relative;
@@ -35,12 +59,18 @@ footer {
           flex-wrap: wrap;
           justify-content:flex-start;
           align-items: center;
+
+          @include media(315px) {
+            padding-right: 0;
+            flex-direction: column;
+            flex-wrap: wrap;
+          }
           
           input {
             flex: 1;
+            margin: 0 15px 15px 0;
             height: 50px;
             padding: 0 20px;
-            margin: 15px;
             background: transparent;
             border: 1px solid $black40;
             border-radius: 2px;
@@ -50,17 +80,73 @@ footer {
             font-family: Montserrat, sans-serif;
             font-weight: 500;
             line-height: 50px;
+
+            &:focus {
+              border-color: $black0;
+            }
+            &:nth-child(3) {
+              margin: 0 15px 0 0;
+
+              @include media(1125px) {
+                margin: 0 15px 15px 0;
+              }
+              @include media(768px) {
+                margin: 0 15px 0 0;
+              }
+              @include media(535px) {
+                margin: 0 15px 15px 0;
+              }
+              @include media(315px) {
+                margin: 0 0 15px 0;
+              }
+            }
+            &:nth-child(4) {
+              margin: 0 15px 0 0;
+
+              @include media(315px) {
+                margin: 0 0 15px 0;
+              }
+            }
+            @include media(1125px) {
+              margin: 0 15px 15px 0;
+            }
+            @include media(315px) {
+              margin: 0 0 15px 0;
+              width: 100%;
+              flex: none;
+              display: block;
+              box-sizing: border-box;
+            }
           }
           button {
             position: absolute;
             right: 0;
-            top: 15px;
-            bottom: 15px;
+            top: 0;
+            bottom: 0;
             width: 50px;
             background: transparent;
             border: 1px solid $black40;
             border-radius: 2px;
             color: transparent;
+            transition: 0.2s border-color ease-out;
+            background-image: url('../assets/arrow-up-light.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 25px;
+
+            @include media(315px) {
+              position: static;
+              display: block;
+              width: 100%;
+              flex: none;
+              box-sizing: border-box;
+              height: 50px;
+            }
+
+            &:hover {
+              border-color: $black0;
+              cursor: pointer;
+            }
           }
         }
       }
@@ -97,6 +183,10 @@ footer {
       padding: 60px 0 0 150px;
       box-sizing: border-box;
 
+      @include media(1310px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       @include media(1280px) {
         padding-left: 150px;
       }
@@ -130,9 +220,12 @@ footer {
           letter-spacing: 0.69px;
 
           @include media(1024px) {
-            text-align: center;
+            text-align: left;
             margin-top: 0;
             margin-bottom: 40px;
+          }
+          @include media(768px) {
+            text-align: center;
           }
         }
         p {
