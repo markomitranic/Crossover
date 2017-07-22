@@ -14,3 +14,4 @@ hero slika 1920x1080
 hero kartice na naslovnoj 462x280
 ikonice logoi firmi 64x64
 testimonial 120x120
+slike na stranama ne idu preko 800x600

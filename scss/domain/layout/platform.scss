@@ -1,0 +1,202 @@
+main#platform {
+
+  #hero {
+    background-image: url('../assets/images/hero-platforma.png');
+    background-position: bottom center;
+
+    .wrapper {
+      padding-top: 205px;
+      padding-bottom: 550px;
+
+      p.subtitle {
+
+      }
+    }
+  }
+  #first {
+    margin-top: -280px;
+    padding: 150px 0;
+
+    .wrapper {
+      @include wrapper;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .text {
+        width: 600px;
+
+        h2 {
+          @include font-section-heading;
+        }
+        p {
+          @include font-section-content;
+          width: 400px;
+        }
+      }
+      .images {
+        position: absolute;
+        bottom: -360px;
+        right: 0;
+
+        .large {
+          width: 800px;
+          height: 500px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          overflow: hidden;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            opacity:0;
+          }
+        }
+        .small {
+          width: 400px;
+          height: 260px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          right: 40px;
+          bottom: -180px;
+          overflow: hidden;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            opacity:0;
+          }
+        }
+      }
+    }
+  }
+  #second {
+    background: $black80;
+    padding: 70px 0;
+
+    .wrapper {
+      @include wrapper;
+
+      h2 {
+        @include font-section-heading;
+        width: 600px;
+        color: $black0;
+        z-index: 100;
+        position: relative;
+      }
+      p {
+        @include font-section-content;
+        width: 400px;
+        z-index: 100;
+        position: relative;
+      }
+    }
+  }
+  #third {
+    padding: 70px 0;
+
+    .wrapper {
+      @include wrapper;
+      position: relative;
+
+      h2 {
+        @include font-section-heading;
+        width: 600px;
+        z-index: 100;
+        position: relative;
+      }
+      p {
+        @include font-section-content;
+        width: 400px;
+        z-index: 100;
+        position: relative;
+      }
+      .image {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 800px;
+        height: 500px;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          opacity:0;
+        }
+      }
+    }
+  }
+  #fourth {
+    padding: 70px 0;
+
+    .wrapper {
+      @include wrapper;
+
+      h2 {
+        @include font-section-heading;
+        width: 100%;
+        z-index: 100;
+        position: relative;
+        display: block;
+        margin-bottom: 50px;
+      }
+      .body {
+        position: relative;
+
+        .image {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          max-width: 800px;
+          width: 70%;
+          height: 500px;
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          overflow: hidden;
+
+          img {
+            max-width: 100%;
+            height: auto;
+            opacity: 0;
+          }
+        }
+        .text {
+          margin: 0 0 0 auto;
+          width: 30%;
+
+          p {
+            @include font-section-content;
+            width: 400px;
+            z-index: 100;
+            position: relative;
+
+            strong {
+              color: $black80;
+            }
+          }
+          ul {
+            color: $black60;
+            li {
+
+            }
+          }
+          .btn {
+            display: block;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

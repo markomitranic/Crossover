@@ -39,3 +39,81 @@ body {
   user-drag: none;
   user-select: none;
 }
+
+.btn {
+  color: $black0;
+  text-decoration: none;
+  border: 2px solid $black0;
+  padding: 15px 22px;
+  border-radius: 250px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  transition: 0.2s background-color ease-out, 0.9s color ease-out;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $black0;
+    color: $black100;
+  }
+
+  &.fill {
+    background-color: $black100;
+    color: $black0;
+    border-color: $black100;
+
+    &:hover {
+      background-color: $black0;
+      color: $black100;
+    }
+  }
+  &.arrow-left {
+    position: relative;
+    padding-left: 37px;
+
+    &:hover {
+      &::before {
+        background-image: url('../assets/arrow-up-dark.svg');
+      }
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url('../assets/arrow-up-light.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      top: 50%;
+      left: 17px;
+      transform: translateY(-50%);
+    }
+  }
+  &.arrow-right {
+    position: relative;
+    padding-right: 37px;
+
+    &:hover {
+      &::before {
+        background-image: url('../assets/arrow-up-dark.svg');
+      }
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url('../assets/arrow-up-light.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      top: 50%;
+      left: 17px;
+      transform: translateY(-50%);
+    }
+  }
+}

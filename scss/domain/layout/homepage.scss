@@ -1,7 +1,6 @@
 main#homepage {
 
   #hero {
-    background-color: transparent;
 
     #homepage-canvas {
       position: absolute;
@@ -13,6 +12,20 @@ main#homepage {
     }
 
     .wrapper {
+
+      p.subtitle {
+        margin-bottom: 100px;
+
+        @include media(768px) {
+          margin-bottom: 135px;
+        }
+        @include media(720px) {
+          width: 100%;
+        }
+        @include media(480px) {
+          margin-bottom: 55px;
+        }
+      }
       ul#channel-logos {
         display: flex;
         justify-content: space-between;

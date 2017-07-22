@@ -22,8 +22,8 @@ $green: #417505;
   font-size: 80px;
   font-weight: bold;
   line-height: 80px;
-  text-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
-  letter-spacing: -0.1;
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  letter-spacing: -0.1px;
 
   @include media(1024px) {
     font-size: 64px;
@@ -101,6 +101,16 @@ $green: #417505;
   color: $black80;
   font-size: 18px;
   font-weight: bold;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+@mixin font-section-content {
+  color: $black60;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 25px;
   margin-top: 20px;
   margin-bottom: 20px;

@@ -1,5 +1,4 @@
 #hero {
-  background-color: black;
   background-position: center center;
   background-size: cover;
 
@@ -31,17 +30,10 @@
     p.subtitle {
       @include font-hero-subheading;
       width: 700px;
-      margin-bottom: 100px;
-
-      @include media(768px) {
-        margin-bottom: 135px;
-      }
-      @include media(720px) {
-        width: 100%;
-      }
-      @include media(480px) {
-        margin-bottom: 55px;
-      }
+      margin-bottom: 30px;
+    }
+    .btn {
+      margin: 0 20px 0 0;
     }
   }
 }
