@@ -1,0 +1,82 @@
+main#questions {
+
+  #hero {
+    background-image: url('../assets/images/hero-pitanja.png');
+    background-position: bottom center;
+
+    @include media(1024px) {
+      background-position: bottom left;
+    }
+    @include media(768px) {
+      background-position: bottom center;
+    }
+
+    .wrapper {
+      padding-top: 205px;
+      padding-bottom: 290px;
+
+      @include media(1024px) {
+        padding-top: 215px;
+        padding-bottom: 370px;
+      }
+      @include media(768px) {
+        padding-bottom: 190px;
+      }
+      @include media(480px) {
+        padding-top: 170px;
+        padding-bottom: 170px;
+      }
+    }
+  }
+  #questions {
+    padding: 60px 0;
+
+    @include media(1024px) {
+      margin-top: -50px;
+    }
+
+    .wrapper {
+      @include wrapper;
+
+      ol {
+        list-style-type: none;
+
+        li {
+          display: block;
+          background-color: $black0;
+          max-width: 870px;
+          margin: 20px auto;
+          padding: 40px;
+          box-sizing: border-box;
+
+          @include media(480px) {
+            padding: 20px;
+          }
+
+          h2 {
+            @include font-section-heading;
+            margin-top: 0;
+
+            @include media(340px) {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+          p {
+            @include font-section-content;
+            color: $black60;
+
+            @include media(340px) {
+              font-size: 14px;
+              line-height: 20px;
+            }
+
+            strong {
+              @include font-section-content-bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

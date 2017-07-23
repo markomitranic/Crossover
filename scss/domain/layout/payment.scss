@@ -7,39 +7,45 @@ main#payment {
     @include media(1024px) {
       background-position: bottom left;
     }
+    @include media(480px) {
+      background-position: bottom left -140px;
+    }
 
     .wrapper {
       padding-top: 205px;
-      padding-bottom: 570px;
+      padding-bottom: 540px;
 
       @include media(1024px) {
         padding-top: 215px;
         padding-bottom: 460px;
       }
       @include media(768px) {
-        padding-bottom: 440px;
+        padding-bottom: 410px;
       }
       @include media(480px) {
         padding-top: 170px;
-        padding-bottom: 260px;
+        padding-bottom: 200px;
       }
     }
   }
   #first {
-    margin-top: -280px;
-    padding: 150px 0;
+    margin-top: -30px;
+    padding: 0 0 110px 0;
 
     @include media(1024px) {
-      padding-top: 220px;
-      padding-bottom: 120px;
+      padding-bottom: 60px;
+      margin-top: -70px;
     }
     @include media(768px) {
-      margin-top: -230px;
-      padding-top: 150px;
-      padding-bottom: 180px;
+      margin-top: -40px;
+      padding-top: 0px;
+      padding-bottom: 210px;
     }
     @include media(720px) {
       padding-bottom: 30px;
+    }
+    @include media(480px) {
+      margin-top: -60px;
     }
 
     .wrapper {
@@ -82,11 +88,11 @@ main#payment {
       }
       .images {
         position: absolute;
-        bottom: -360px;
+        bottom: -300px;
         right: 0;
 
         @include media(1024px) {
-          bottom: -270px;
+          bottom: -190px;
         }
         @include media(768px) {
           bottom: -430px;
@@ -107,7 +113,7 @@ main#payment {
 
         .large {
           width: 800px;
-          height: 500px;
+          height: 530px;
           background-position: center center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -132,29 +138,35 @@ main#payment {
           }
         }
         .small {
-          width: 400px;
-          height: 260px;
+          width: 270px;
+          height: 410px;
           background-position: center center;
           background-size: cover;
           background-repeat: no-repeat;
           position: absolute;
-          right: 40px;
-          bottom: -180px;
+          right: 60px;
+          bottom: -230px;
           overflow: hidden;
 
           @include media(1024px) {
-            width: 290px;
-            height: 195px;
-            right: 130px;
-            bottom: -160px;
+            width: 200px;
+            height: 285px;
+            right: 50px;
+            bottom: -210px;
           }
           @include media(768px) {
-            right: -40px;
+            right: 40px;
             bottom: -40px;
           }
           @include media(720px) {
             right: 10px;
             bottom: -80px;
+          }
+          @include media(480px) {
+            right: 10px;
+            bottom: -110px;
+            height: 160px;
+            width: 110px;
           }
 
           img {
@@ -168,10 +180,10 @@ main#payment {
   }
   #second {
     background: $black80;
-    padding: 70px 0;
+    padding: 130px 0;
 
     @include media(1024px) {
-      padding: 50px 0;
+      padding: 150px 0;
     }
     @include media(768px) {
       padding: 330px 0 30px 0;
@@ -218,10 +230,10 @@ main#payment {
     }
   }
   #third {
-    padding: 70px 0;
+    padding: 190px 0;
 
     @include media(1024px) {
-      padding: 50px 0;
+      padding: 150px 0;
     }
     @include media(768px) {
       padding: 30px 0;
@@ -270,6 +282,7 @@ main#payment {
         width: 600px;
         z-index: 100;
         position: relative;
+        background: rgba($black0, 0.4);
 
         @include media(1024px) {
           margin-top: 0;
@@ -310,141 +323,20 @@ main#payment {
           @include font-section-content-bold;
         }
       }
-    }
-  }
-  #fourth {
-    padding: 70px 0;
-
-    @include media(1024px) {
-      padding-top: 0;
-    }
-    @include media(768px) {
-      position: relative;
-      padding: 30px 0;
-    }
-
-    .wrapper {
-      @include wrapper;
-
-      h2 {
-        @include font-section-heading;
-        width: 100%;
-        z-index: 100;
-        position: relative;
+      .btn {
         display: block;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        width: 230px;
+        max-width: 100%;
 
-        @include media(1024px) {
-          margin-top: 0;
-        }
         @include media(768px) {
-          position: absolute;
-          top: 260px;
-          background: rgba($black0, 0.4);
-          width: 600px;
-        }
-        @include media(720px) {
-          width: auto;
+          margin: 0 auto 0 60px;
+          width: 240px;
         }
         @include media(480px) {
-          position: static;
-          display: block;
-          margin-top: 0;
-          background: none;
-        }
-      }
-      .body {
-        position: relative;
-
-        .image {
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translateY(-50%);
-          max-width: 800px;
-          width: 70%;
-          height: 500px;
-          background-position: center center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          overflow: hidden;
-
-          @include media(1024px) {
-            height: 360px;
-            width: 530px;
-          }
-          @include media(768px) {
-            width: 600px;
-            height: auto;
-            background-position-y: top;
-            position: static;
-            margin: 0 auto;
-            transform: none;
-            margin-bottom: 30px;
-          }
-          @include media(720px) {
-            width: 100%;
-          }
-
-          img {
-            max-width: 100%;
-            height: auto;
-            opacity: 0;
-          }
-        }
-        .text {
-          margin: 0 0 0 auto;
-          padding-left: 40px;
-          box-sizing:border-box;
-          width: 30%;
-
-          @include media(1024px) {
-            width: 400px;
-          }
-          @include media(768px) {
-            width: 600px;
-            margin: 0 auto;
-          }
-          @include media(720px) {
-            width: auto;
-          }
-
-
-          p {
-            @include font-section-content;
-            width: 400px;
-            max-width: 100%;
-            z-index: 100;
-            position: relative;
-
-            @include media(768px) {
-              width: 600px;
-            }
-            strong {
-              color: $black80;
-            }
-          }
-          ul {
-            color: $black60;
-            li {
-
-            }
-          }
-          .btn {
-            display: block;
-            margin-top: 20px;
-            max-width: 100%;
-
-            @include media(768px) {
-              width: 300px;
-              margin: 40px auto 0 auto;
-            }
-            @include media(480px) {
-              width: auto;
-              margin-left: -40px;
-              padding-left: 50px;
-            }
-          }
+          width: auto;
+          margin: 0 auto;
+          padding-left: 50px;
         }
       }
     }
