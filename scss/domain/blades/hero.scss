@@ -1,6 +1,7 @@
 #hero {
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 
   .wrapper {
     @include wrapper;

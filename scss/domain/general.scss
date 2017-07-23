@@ -56,6 +56,7 @@ body {
   &:hover {
     background-color: $black0;
     color: $black100;
+    cursor: pointer;
   }
 
   &.fill {
@@ -94,7 +95,7 @@ body {
   }
   &.arrow-right {
     position: relative;
-    padding-right: 37px;
+    padding-right: 50px;
 
     &:hover {
       &::before {
@@ -112,7 +113,7 @@ body {
       background-position: center center;
       position: absolute;
       top: 50%;
-      left: 17px;
+      right: 17px;
       transform: translateY(-50%);
     }
   }
