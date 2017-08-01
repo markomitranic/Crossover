@@ -1,0 +1,582 @@
+{
+    "key": "group_5980bb78311d7",
+    "title": "Homepage",
+    "fields": [
+        {
+            "key": "field_5980bbecdb5b1",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980bc10db5b2",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "A line of text that will be used as the page title shown in the hero section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Platforma za buduće IT stručnjake",
+            "placeholder": "Platforma za buduće IT stručnjake",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980bc6c5f6a2",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "text",
+            "instructions": "A longer line of text, describing the page motto or purpose.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Uložite u karijeru budućnosti! Prvi autorizovani Apple trening centar u regionu nudi vam priliku da postanete vrhunski profesionalac u IT industriji.",
+            "placeholder": "Uložite u karijeru budućnosti! Prvi autorizovani Apple trening centar u regionu nudi vam priliku da postanete vrhunski profesionalac u IT industriji.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980bcd147ce9",
+            "label": "Channel Logos",
+            "name": "channel_logos",
+            "type": "repeater",
+            "instructions": "Select up to 3 logos to be presented as channel affiliates or related technologies and certifications. Apple logo is there by default.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 3,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5980bcf247cea",
+                    "label": "Logo",
+                    "name": "logo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "miniature",
+                    "library": "all",
+                    "min_width": 64,
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5980bd5d47ceb",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Microsoft",
+                    "placeholder": "Microsoft",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5980bd7547cec",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": ".NET, Azure, Power BI, Dynamics, C#...",
+                    "placeholder": ".NET, Azure, Power BI, Dynamics, C#...",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 64
+                }
+            ]
+        },
+        {
+            "key": "field_5980bffb2638f",
+            "label": "Cards",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980c01426390",
+            "label": "Cards Selection",
+            "name": "cards_selection",
+            "type": "repeater",
+            "instructions": "Select and order a number of cards that will be shown beneath the hero on the frontpage. This will basically serve the purpose of the main navigation system. Segment of the text might be wrapped in strong tags which will break line.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Ad Card",
+            "sub_fields": [
+                {
+                    "key": "field_5980c07f26391",
+                    "label": "Background Image",
+                    "name": "background_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "miniature",
+                    "library": "all",
+                    "min_width": 400,
+                    "min_height": 400,
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5980c0c626392",
+                    "label": "Card Link",
+                    "name": "card_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "http:\/\/www.macola.rs",
+                    "placeholder": "http:\/\/www.macola.rs"
+                },
+                {
+                    "key": "field_5980c0e526393",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Kreirajte svoju aplikaciju uz <strong>SWIFT<\/strong>",
+                    "placeholder": "Kreirajte svoju aplikaciju uz <strong>SWIFT<\/strong>",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5980c167ce19c",
+                    "label": "Darken",
+                    "name": "darken",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "placeholder": 0,
+                    "prepend": "",
+                    "append": "",
+                    "min": 0,
+                    "max": 1,
+                    "step": "0.1"
+                }
+            ]
+        },
+        {
+            "key": "field_5980c42baec35",
+            "label": "Facebook Embed Code",
+            "name": "facebook_embed_code",
+            "type": "textarea",
+            "instructions": "The embed code received from Facebook will be embedded as is. For styling purposes, it should have  an ID= facebook",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<iframe id=\"facebook\" src=\"https:\/\/www.facebook.com\/plugins\/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcrossover.training.center%2F&tabs=timeline&width=340&height=840&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=313224855681505\" width=\"340\" height=\"840\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"><\/iframe>",
+            "placeholder": "<iframe...",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5980c76dc6e03",
+            "label": "Technology Picker",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980c780c6e04",
+            "label": "Picker Section Title",
+            "name": "picker_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Proverite termin za željeni kurs:",
+            "placeholder": "Proverite termin za željeni kurs:",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980c7d8c6e05",
+            "label": "Picker Section Subtitle",
+            "name": "picker_section_subtitle",
+            "type": "text",
+            "instructions": "Enter a subtitle for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Odaberite tehnologiju koja vas zanima i pregledajte buduće upisne termine.",
+            "placeholder": "Odaberite tehnologiju koja vas zanima i pregledajte buduće upisne termine.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980c831abdd9",
+            "label": "Testimonials",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980c83babdda",
+            "label": "Testimonials Section Title",
+            "name": "testimonials_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Naši Polaznici",
+            "placeholder": "Naši Polaznici",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980c876abddb",
+            "label": "Testimonials Section Body",
+            "name": "testimonials_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Veliki broj domaćih i svetskih kompanija i razvojnih timova nove talente pronalazi upravo u Crossover trening centru.\r\n\r\nPraktičan rad\r\nProfesionalni Predavači\r\nTržište kome trebaju IT stručnjaci",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5980c8faf1d42",
+            "label": "Statistics",
+            "name": "statistics",
+            "type": "repeater",
+            "instructions": "Add some fun numerical statistics to the body. They are usually composed out of a number and a description, and have automatic styling.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "table",
+            "button_label": "Add Block",
+            "sub_fields": [
+                {
+                    "key": "field_5980c93af1d43",
+                    "label": "Large",
+                    "name": "large",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "87+",
+                    "placeholder": "87+",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5980c96cf1d44",
+                    "label": "Small",
+                    "name": "small",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "60",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "polaznika godišnje",
+                    "placeholder": "polaznika godišnje",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5980c9f5951e8",
+            "label": "Testimonial Quotes",
+            "name": "testimonial_quotes",
+            "type": "repeater",
+            "instructions": "To add the voice of authority, you can display up to three quotes from industry experts or students.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 3,
+            "layout": "table",
+            "button_label": "Add Quote",
+            "sub_fields": [
+                {
+                    "key": "field_5980ca37951e9",
+                    "label": "Photo",
+                    "name": "photo",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "miniature",
+                    "library": "all",
+                    "min_width": 120,
+                    "min_height": 120,
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5980ca75951ea",
+                    "label": "Quote Text",
+                    "name": "quote_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Nauče vas praktične stvari iz vaše oblasi. To se traži za samostalan rad i dalji razvoj i napredovanje.",
+                    "placeholder": "Nauče vas praktične stvari iz vaše oblasi. To se traži za samostalan rad i dalji razvoj i napredovanje.",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5980ca8a951eb",
+                    "label": "Name",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Ognjen Tomić",
+                    "placeholder": "Ognjen Tomić",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5980caa1951ec",
+                    "label": "Institution",
+                    "name": "institution",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "HTEC",
+                    "placeholder": "HTEC",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1501612743
+}

@@ -10,8 +10,10 @@
         wp_enqueue_style( 'core-css' );
     }
     function custom_scripts() {
-        wp_register_script( 'compiled-scripts', get_template_directory_uri() . '/scripts/scripts.min.js', '',1.0, true );
-        wp_enqueue_script( 'compiled-scripts' );
+        wp_register_script('vendor', get_template_directory_uri() . '/scripts/vendor.js', '', 1.0, true);
+        wp_register_script( 'domain', get_template_directory_uri() . '/scripts/scripts.min.js', 'vendor',1.0, true );
+        wp_enqueue_script( 'vendor' );
+        wp_enqueue_script( 'domain' );
     }
     function deregisterJQuery() {
         wp_deregister_script('jquery');
@@ -23,9 +25,8 @@
     add_action( 'init', 'register_my_menus' );
     function register_my_menus() {
         register_nav_menus( array(
-            'main-menu' => 'Main Menu',
-            'copyright-menu' => 'Copyright Menu',
-            'contact-header-menu' => 'Contact Header Menu',
+            'header-menu' => 'Header Menu',
+            'social-footer-menu' => 'Social Footer Menu',
         ) );
     }
 
@@ -33,6 +34,7 @@
      * $name, $min-width, $min-height, $crop
      **/
     add_image_size( 'hero', 1920, 1920, false );
+    add_image_size( 'miniature', 120, 120, false );
 
     /**
      *  Set up ACF Theme Options page.

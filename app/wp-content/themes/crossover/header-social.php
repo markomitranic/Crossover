@@ -1,7 +1,6 @@
 <?php
 
     $pageId = get_the_ID();
-    $locale = get_locale();
     $type = 'article';
     $url = get_permalink();
     $title = format_page_title(get_the_title());
@@ -25,7 +24,7 @@
 <meta property="og:title" content="<?=$title?>" />
 <meta property="og:description" content="<?=$description?>" />
 <meta property="og:image" content="<?=$image?>" />
-<meta property="og:locale" content="<?=$locale?>" />
+<meta property="og:locale" content="sr-RS" />
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
