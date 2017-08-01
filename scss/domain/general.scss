@@ -118,3 +118,45 @@ body {
     }
   }
 }
+
+.big-button-with-icon {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  background-color: rgba($black0,0.7);
+  box-shadow: 0 0 4px 0 rgba($black100,0.5);
+  padding: 20px 20px 20px 210px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #1A1915;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 35px;
+  text-decoration: none;
+  text-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  transition: 0.2s background ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include media(600px) {
+    width: 100%;
+    max-width: 230px;
+    margin: 20px auto;
+    padding: 140px 10px 10px 10px;
+    background-position: top 30px center;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: $black20;
+  }
+
+  &.pdf {
+    background-size: 150px;
+    background-image: url('../assets/pdf-icon.svg');
+  }
+}

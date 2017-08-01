@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="154px" height="85px" viewBox="0 0 154 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>PDF</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="SWIFT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-102.000000, -1241.000000)">
+            <g id="Content" transform="translate(1.000000, 890.863281)">
+                <g id="PDF-Copy" transform="translate(78.000000, 313.500032)">
+                    <g id="PDF" transform="translate(16.017353, 29.000000)">
+                        <g id="document" stroke-width="1" fill-rule="evenodd" transform="translate(8.136980, 8.500000)" stroke="#3B3E43" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M36.6482384,0.0569988523 L70.2219115,0.0569988523" id="Shape"></path>
+                            <path d="M70.2219115,0.0569988523 C72.6570104,0.0569988523 74.6523075,2.06039046 74.6523075,4.47930034" id="Shape"></path>
+                            <path d="M74.6523075,4.47930034 L74.6523075,66.0647052" id="Shape"></path>
+                            <path d="M74.6523075,66.0647052 C74.6523075,68.4876624 72.6489158,70.4866694 70.2219115,70.4866694" id="Shape"></path>
+                            <path d="M70.2219115,70.4866694 L21.9196,70.4866694" id="Shape"></path>
+                            <path d="M21.9196,70.4866694 C19.5047374,70.4866694 17.4972986,68.4913723 17.4972986,66.0647052" id="Shape"></path>
+                            <polyline id="Shape" points="17.4972986 66.0647052 17.4972986 17.7741983 36.6482384 0.0569988523"></polyline>
+                            <path d="M37.5521255,0.0569988523 L37.5521255,15.9991394" id="Shape"></path>
+                            <path d="M37.5521255,15.9991394 C37.5521255,17.2983085 36.4728573,18.3731922 35.1780727,18.3731922" id="Shape"></path>
+                            <path d="M35.1780727,18.3731922 L17.4972986,18.3731922" id="Shape"></path>
+                            <path d="M85.9272875,40.2236516 L145.264779,40.2236516" id="Shape"></path>
+                            <path d="M145.264779,40.2236516 C148.864813,40.2236516 151.772092,43.1393621 151.772092,46.7306271" id="Shape"></path>
+                            <path d="M151.772092,46.7306271 L151.772092,77.0877436" id="Shape"></path>
+                            <path d="M151.772092,77.0877436 C151.772092,80.6790086 148.864813,83.5866246 145.264779,83.5866246" id="Shape"></path>
+                            <path d="M145.264779,83.5862873 L6.50697548,83.5862873" id="Shape"></path>
+                            <path d="M6.50697548,83.5862873 C2.91571052,83.5862873 0,80.6790086 0,77.0874064" id="Shape"></path>
+                            <path d="M0,77.0877436 L0,46.7306271" id="Shape"></path>
+                            <path d="M0,46.7306271 C0,43.1393621 2.91571052,40.2236516 6.50697548,40.2236516" id="Shape"></path>
+                            <path d="M46.6611492,20.531054 L46.6611492,59.9240064" id="Shape"></path>
+                            <path d="M46.6611492,59.9240064 L59.1293952,47.4510386" id="Shape"></path>
+                            <path d="M46.6611492,59.9240064 L33.0198736,46.2746363" id="Shape"></path>
+                        </g>
+                        <text font-family="Montserrat-Bold, Montserrat" font-size="28" font-weight="bold" letter-spacing="0.400000006" fill="#3B3E43">
+                            <tspan x="93.4616528" y="80.7564903">PD</tspan>
+                            <tspan x="134.749653" y="80.7564903" letter-spacing="-0.5">F</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
