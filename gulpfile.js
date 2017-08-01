@@ -1,4 +1,4 @@
-var scssInput = ['scss/style.scss'],
+const scssInput = ['scss/style.scss'],
     jsInput = [
         'scripts/domain/*.js'
     ],
@@ -8,22 +8,18 @@ var scssInput = ['scss/style.scss'],
         'scripts/vendor/rAF.js',
         'scripts/vendor/TweenLite.min.js'
     ],
-    scssOutput = 'app/css',
-    jsOutput = 'app/scripts';
+    scssOutput = 'app/wp-content/themes/crossover/css',
+    jsOutput = 'app/wp-content/themes/crossover/scripts';
 
-// Start everything up.
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var uglify = require('gulp-uglify');
-var browserSync = require('browser-sync').create();
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
 
-
-// Watch SASS.
 gulp.task('sass', function() {
     return gulp
         .src(scssInput)
@@ -32,9 +28,6 @@ gulp.task('sass', function() {
         .pipe(autoprefixer())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(scssOutput))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
 });
 
 gulp.task('domainScripts', function() {
@@ -57,16 +50,8 @@ gulp.task('vendorScripts', function() {
         .pipe(gulp.dest(jsOutput));
 });
 
-gulp.task('browserSync', function() {
-    browserSync.init({
-        server: {
-            baseDir: 'app'
-        },
-    })
-})
-
-gulp.task('watch', ['sass', 'domainScripts', 'vendorScripts', 'browserSync'], function (){
-    gulp.watch('scss/**/*.scss', ['sass', browserSync.reload]);
-    gulp.watch('scripts/domain/**/*.js', ['domainScripts', browserSync.reload]);
-    gulp.watch('scripts/vendor/**/*.js', ['vendorScripts', browserSync.reload]);
+gulp.task('watch', ['sass', 'domainScripts', 'vendorScripts'], function (){
+    gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('scripts/domain/**/*.js', ['domainScripts']);
+    gulp.watch('scripts/vendor/**/*.js', ['vendorScripts']);
 });
