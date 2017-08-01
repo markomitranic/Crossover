@@ -1,0 +1,405 @@
+{
+    "key": "group_5980ce1f3ae0c",
+    "title": "Platform",
+    "fields": [
+        {
+            "key": "field_5980ce1f3d400",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980ce1f3d412",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "A line of text that will be used as the page title shown in the hero section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Naša Platforma",
+            "placeholder": "Naša Platforma",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980ce1f3d424",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "text",
+            "instructions": "A longer line of text, describing the page motto or purpose.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Tradicionalno najpouzdanija IT obuka.",
+            "placeholder": "Tradicionalno najpouzdanija IT obuka.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980ce1f3d4a6",
+            "label": "First Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980ce1f3d4b1",
+            "label": "First Section Title",
+            "name": "first_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Tradicionalno najpouzdanija IT obuka",
+            "placeholder": "Tradicionalno najpouzdanija IT obuka",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980ce1f3d4bc",
+            "label": "First Section Body",
+            "name": "first_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Crosseover platforma je prvi i najstariji IT trening centar u ovom delu Evrope. Još 2007. godine kvalitetom usluga osigurali smo zvaničnu autorizaciju kompanije Apple. Imali smo prilike da radimo sa XX generacija polaznika i setifikujemo preko XXXX novih IT profesionalaca na tržištu.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5980d02075ec8",
+            "label": "Large Image",
+            "name": "large_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5980d08575ec9",
+            "label": "Small Image",
+            "name": "small_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5980d1351c22d",
+            "label": "Second Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980d1411c22e",
+            "label": "Second Section Title",
+            "name": "second_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Vaši Apple sertifikati i diplome priznati su svuda u svetu.",
+            "placeholder": "Vaši Apple sertifikati i diplome priznati su svuda u svetu.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980d1451c22f",
+            "label": "Second Section Body",
+            "name": "second_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Apple Softverski stručnjaci su najtraženiji kadar u Srbiji, koji lako pronalaze izuzetno dobro plaćene poslove u velikim domaćim i stranim firmama, a često se odluče i da otvore svoj razvojni studio.\r\n\r\niOS je već godinama unazad najprivlačnija platforma za razvoj mobilnih aplikacija, a pritom i ubedljivo najisplativija.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5980d2249dc77",
+            "label": "Third Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980d2289dc78",
+            "label": "Third Section Title",
+            "name": "third_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Praktičan rad na prvom mestu",
+            "placeholder": "Praktičan rad na prvom mestu",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980d22b9dc79",
+            "label": "Third Section Body",
+            "name": "third_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<strong>Sami kreirate proizvode već od prvog časa!<\/strong>\r\n\r\nIntenzivnim predavanjima I praktičnim radom  mentorom u okviru malih grupa, opremljeni najnovijom tehnologijom i uz proverednu metodologiju u kratkom periodu stičete veštine neophodne za samostalan i kvalitetan rad u IT industriji.\r\n\r\nBeskompromisno visokim standardima u radu i sertifikovanju, osiguravamo što bolji plasman naših polaznika na tržištu i prilikom zapošljavanja.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5980d22f9dc7a",
+            "label": "Third Image",
+            "name": "third_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5980d33caf657",
+            "label": "Fourth Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5980d342af658",
+            "label": "Fourth Section Title",
+            "name": "fourth_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Crossover je ključni korak do vaše IT karijere.",
+            "placeholder": "Crossover je ključni korak do vaše IT karijere.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5980d345af659",
+            "label": "Fourth Section Body",
+            "name": "fourth_section_body",
+            "type": "wysiwyg",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<p><strong>Šta su Vaši sledeći koraci?<\/strong><\/p>\r\n                    <ul>\r\n                        <li><p>Odaberite željeni kurs i utvrdite nivo znanja koji želite da postignete.<\/p><\/li>\r\n                        <li><p>Proverite dostpunost kurseva u narednom periodu.<\/p><\/li>\r\n                        <li><p>Upoznajte se sa uslovima pohađanja, otplate i sertifikovanja.<\/p><\/li>\r\n                        <li><p>Postanite vrhunski IT stručnjak!<\/p><\/li>\r\n                    <\/ul>\r\n                    <p><br><\/p>\r\n                    <p>Za sva dodatna pitanja, pogledajte segment Najčešća itanja ili nas kontakitrajte putem mejla.<\/p>",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 1
+        },
+        {
+            "key": "field_5980d34aaf65a",
+            "label": "Fourth Image",
+            "name": "fourth_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-platform.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1501615031
+}
