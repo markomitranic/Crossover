@@ -57,6 +57,82 @@
             "maxlength": ""
         },
         {
+            "key": "field_598350a250718",
+            "label": "Button 1 Label",
+            "name": "hero_button_1_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Najčešća pitanja i odgovori",
+            "placeholder": "Najčešća pitanja i odgovori",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598350c296bcb",
+            "label": "Button 1 Link",
+            "name": "hero_button_1_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_598350efdf71e",
+            "label": "Button 2 Label",
+            "name": "hero_button_2_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Najčešća pitanja i odgovori",
+            "placeholder": "Najčešća pitanja i odgovori",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598350eedf71d",
+            "label": "Button 2 Link",
+            "name": "hero_button_2_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
             "key": "field_5980ce1f3d4a6",
             "label": "First Section",
             "name": "",
@@ -307,25 +383,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_5980d342af658",
-            "label": "Fourth Section Title",
-            "name": "fourth_section_title",
-            "type": "text",
-            "instructions": "Enter a headline for this section",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Crossover je ključni korak do vaše IT karijere.",
-            "placeholder": "Crossover je ključni korak do vaše IT karijere.",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5980d345af659",
             "label": "Fourth Section Body",
             "name": "fourth_section_body",
@@ -338,7 +395,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<p><strong>Šta su Vaši sledeći koraci?<\/strong><\/p>\r\n                    <ul>\r\n                        <li><p>Odaberite željeni kurs i utvrdite nivo znanja koji želite da postignete.<\/p><\/li>\r\n                        <li><p>Proverite dostpunost kurseva u narednom periodu.<\/p><\/li>\r\n                        <li><p>Upoznajte se sa uslovima pohađanja, otplate i sertifikovanja.<\/p><\/li>\r\n                        <li><p>Postanite vrhunski IT stručnjak!<\/p><\/li>\r\n                    <\/ul>\r\n                    <p><br><\/p>\r\n                    <p>Za sva dodatna pitanja, pogledajte segment Najčešća itanja ili nas kontakitrajte putem mejla.<\/p>",
+            "default_value": "<p><strong>Šta su Vaši sledeći koraci?<\/strong><\/p>\r\n<ul>\r\n<li>Odaberite željeni kurs i utvrdite nivo znanja koji želite da postignete.<\/li>\r\n<li>Proverite dostpunost kurseva u narednom periodu.<\/li>\r\n<li>Upoznajte se sa uslovima pohađanja, otplate i sertifikovanja.<\/li>\r\n<li>Postanite vrhunski IT stručnjak!<\/li>\r\n<\/ul>\r\n<p>Za sva dodatna pitanja, pogledajte segment Najčešća itanja ili nas kontakitrajte putem mejla.<\/p>",
             "tabs": "all",
             "toolbar": "basic",
             "media_upload": 1,
@@ -401,5 +458,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1501615031
+    "modified": 1501778182
 }

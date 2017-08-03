@@ -13,8 +13,8 @@ the_post();
         <div class="wrapper">
             <h1><?=get_field('hero_title')?></h1>
             <p class="subtitle"><?=get_field('hero_subtitle')?></p>
-            <a href="#" class="btn">Izbor Kurseva</a>
-            <a href="#" class="btn">Najčešća Pitanja</a>
+            <a href="<?=get_field('hero_button_1_link')?>" class="btn" title="<?=get_field('hero_button_1_label')?>"><?=get_field('hero_button_1_label')?></a>
+            <a href="<?=get_field('hero_button_2_link')?>" class="btn" title="<?=get_field('hero_button_2_label')?>"><?=get_field('hero_button_2_label')?></a>
         </div>
     </section>
 
@@ -56,8 +56,8 @@ the_post();
         <div class="wrapper">
             <h2></h2>
             <div class="body">
-                <div class="image" style="background-image: url('assets/photos/imac-office.jpg');">
-                    <img src="assets/photos/imac-office.jpg" alt="">
+                <div class="image" style="background-image: url('<?=get_field('fourth_image')['sizes']['large']?>');">
+                    <img src="<?=get_field('fourth_image')['sizes']['large']?>" alt="<?=get_field('fourth_image')['alt']?>">
                 </div>
                 <div class="text">
 	                <?=get_field('fourth_section_body')?>
