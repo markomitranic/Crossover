@@ -1,9 +1,9 @@
 {
-    "key": "group_5980ce1f3ae0c",
-    "title": "Platform",
+    "key": "group_5983526527f92",
+    "title": "Payment",
     "fields": [
         {
-            "key": "field_5980ce1f3d400",
+            "key": "field_5983526529d43",
             "label": "Hero",
             "name": "",
             "type": "tab",
@@ -19,7 +19,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5980ce1f3d412",
+            "key": "field_5983526529d51",
             "label": "Hero Title",
             "name": "hero_title",
             "type": "text",
@@ -31,14 +31,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Naša Platforma",
-            "placeholder": "Naša Platforma",
+            "default_value": "Plaćanje",
+            "placeholder": "Plaćanje",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5980ce1f3d424",
+            "key": "field_5983526529d5c",
             "label": "Hero Subtitle",
             "name": "hero_subtitle",
             "type": "text",
@@ -50,14 +50,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Tradicionalno najpouzdanija IT obuka.",
-            "placeholder": "Tradicionalno najpouzdanija IT obuka.",
+            "default_value": "Naši kursevi kocipirani su tako da odgovaraju na potrebe polaznika, te smo i način otplate prilagodili Vama.",
+            "placeholder": "Naši kursevi kocipirani su tako da odgovaraju na potrebe polaznika, te smo i način otplate prilagodili Vama.",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_598350a250718",
+            "key": "field_5983526529d69",
             "label": "Button 1 Label",
             "name": "hero_button_1_label",
             "type": "text",
@@ -69,14 +69,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Najčešća pitanja i odgovori",
-            "placeholder": "Najčešća pitanja i odgovori",
+            "default_value": "Izbor Kurseva",
+            "placeholder": "Izbor Kurseva",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_598350c296bcb",
+            "key": "field_5983526529d74",
             "label": "Button 1 Link",
             "name": "hero_button_1_link",
             "type": "page_link",
@@ -95,7 +95,7 @@
             "multiple": 0
         },
         {
-            "key": "field_598350efdf71e",
+            "key": "field_5983526529d80",
             "label": "Button 2 Label",
             "name": "hero_button_2_label",
             "type": "text",
@@ -107,14 +107,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Najčešća pitanja i odgovori",
-            "placeholder": "Najčešća pitanja i odgovori",
+            "default_value": "Najčešća Pitanja",
+            "placeholder": "Najčešća Pitanja",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_598350eedf71d",
+            "key": "field_5983526529d8c",
             "label": "Button 2 Link",
             "name": "hero_button_2_link",
             "type": "page_link",
@@ -133,7 +133,7 @@
             "multiple": 0
         },
         {
-            "key": "field_5980ce1f3d4a6",
+            "key": "field_5983526529d97",
             "label": "First Section",
             "name": "",
             "type": "tab",
@@ -149,7 +149,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5980ce1f3d4b1",
+            "key": "field_5983526529da2",
             "label": "First Section Title",
             "name": "first_section_title",
             "type": "text",
@@ -161,14 +161,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Tradicionalno najpouzdanija IT obuka",
-            "placeholder": "Tradicionalno najpouzdanija IT obuka",
+            "default_value": "Otplaćujte kurseve u ratama",
+            "placeholder": "Otplaćujte kurseve u ratama",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5980ce1f3d4bc",
+            "key": "field_5983526529dac",
             "label": "First Section Body",
             "name": "first_section_body",
             "type": "textarea",
@@ -180,14 +180,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Crosseover platforma je prvi i najstariji IT trening centar u ovom delu Evrope. Još 2007. godine kvalitetom usluga osigurali smo zvaničnu autorizaciju kompanije Apple. Imali smo prilike da radimo sa XX generacija polaznika i setifikujemo preko XXXX novih IT profesionalaca na tržištu.",
+            "default_value": "<strong>48 mesečnih rata<\/strong>\r\n\r\nKurseve je moguće plaćati na do 48 mesečnih rata (do 12 rata karticama Banca Intesa), nezavisno od ukupne cene ili kombinacije kurseva.\r\n\r\nOstvareni popusti avansnim plaćanjem u celosti se ne mogu kombinovati sa plaćanjem na rate.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
         },
         {
-            "key": "field_5980d02075ec8",
+            "key": "field_5983526529db7",
             "label": "Large Image",
             "name": "large_image",
             "type": "image",
@@ -211,7 +211,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5980d08575ec9",
+            "key": "field_5983526529dc2",
             "label": "Small Image",
             "name": "small_image",
             "type": "image",
@@ -235,7 +235,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5980d1351c22d",
+            "key": "field_5983526529dcc",
             "label": "Second Section",
             "name": "",
             "type": "tab",
@@ -251,7 +251,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5980d1411c22e",
+            "key": "field_5983526529dd7",
             "label": "Second Section Title",
             "name": "second_section_title",
             "type": "text",
@@ -263,14 +263,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Vaši Apple sertifikati i diplome priznati su svuda u svetu.",
-            "placeholder": "Vaši Apple sertifikati i diplome priznati su svuda u svetu.",
+            "default_value": "Firmama povlašćene cene",
+            "placeholder": "Firmama povlašćene cene",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5980d1451c22f",
+            "key": "field_5983526529de2",
             "label": "Second Section Body",
             "name": "second_section_body",
             "type": "textarea",
@@ -282,14 +282,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Apple Softverski stručnjaci su najtraženiji kadar u Srbiji, koji lako pronalaze izuzetno dobro plaćene poslove u velikim domaćim i stranim firmama, a često se odluče i da otvore svoj razvojni studio.\r\n\r\niOS je već godinama unazad najprivlačnija platforma za razvoj mobilnih aplikacija, a pritom i ubedljivo najisplativija.",
+            "default_value": "Ukoliko ste deo firme koja svojim zaposlenima želi da omogući dalje savršavanje u okviru  iOS SWIFT App Development kurseva, možete otplatu regulisati jednostavno putem računa firme uz povlašćene cene pri upisu polaznika na više modula odjednom.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
         },
         {
-            "key": "field_5980d2249dc77",
+            "key": "field_5983526529dec",
             "label": "Third Section",
             "name": "",
             "type": "tab",
@@ -305,7 +305,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5980d2289dc78",
+            "key": "field_5983526529df7",
             "label": "Third Section Title",
             "name": "third_section_title",
             "type": "text",
@@ -317,14 +317,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Praktičan rad na prvom mestu",
-            "placeholder": "Praktičan rad na prvom mestu",
+            "default_value": "Ostvarite popust na Apple uređaje",
+            "placeholder": "Ostvarite popust na Apple uređaje",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5980d22b9dc79",
+            "key": "field_5983526529e02",
             "label": "Third Section Body",
             "name": "third_section_body",
             "type": "textarea",
@@ -336,14 +336,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<strong>Sami kreirate proizvode već od prvog časa!<\/strong>\r\n\r\nIntenzivnim predavanjima I praktičnim radom  mentorom u okviru malih grupa, opremljeni najnovijom tehnologijom i uz proverednu metodologiju u kratkom periodu stičete veštine neophodne za samostalan i kvalitetan rad u IT industriji.\r\n\r\nBeskompromisno visokim standardima u radu i sertifikovanju, osiguravamo što bolji plasman naših polaznika na tržištu i prilikom zapošljavanja.",
+            "default_value": "Svim polaznicima omogućene su povlašćene cene na Apple proizvode zahvljujući našem partnerstvu sa Macola Apple Solution Expert.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
         },
         {
-            "key": "field_5980d22f9dc7a",
+            "key": "field_5983526529e0c",
             "label": "Third Image",
             "name": "third_image",
             "type": "image",
@@ -367,68 +367,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_5980d33caf657",
-            "label": "Fourth Section",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5980d345af659",
-            "label": "Fourth Section Body",
-            "name": "fourth_section_body",
-            "type": "wysiwyg",
-            "instructions": "Enter the text body for the testimonials section.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "<p><strong>Šta su Vaši sledeći koraci?<\/strong><\/p>\r\n<ul>\r\n<li>Odaberite željeni kurs i utvrdite nivo znanja koji želite da postignete.<\/li>\r\n<li>Proverite dostpunost kurseva u narednom periodu.<\/li>\r\n<li>Upoznajte se sa uslovima pohađanja, otplate i sertifikovanja.<\/li>\r\n<li>Postanite vrhunski IT stručnjak!<\/li>\r\n<\/ul>\r\n<p>Za sva dodatna pitanja, pogledajte segment Najčešća itanja ili nas kontakitrajte putem mejla.<\/p>",
-            "tabs": "all",
-            "toolbar": "basic",
-            "media_upload": 1,
-            "delay": 1
-        },
-        {
-            "key": "field_5980d34aaf65a",
-            "label": "Fourth Image",
-            "name": "fourth_image",
-            "type": "image",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_59835500922d0",
+            "key": "field_598353d22f343",
             "label": "Button Label",
-            "name": "fourth_button_label",
+            "name": "third_button_label",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -445,9 +386,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_59835505922d1",
+            "key": "field_598353d62f344",
             "label": "Button Link",
-            "name": "fourth_button_link",
+            "name": "third_button_link",
             "type": "page_link",
             "instructions": "",
             "required": 1,
@@ -469,7 +410,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-platform.php"
+                "value": "page-payment.php"
             }
         ]
     ],
@@ -496,5 +437,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1501779242
+    "modified": 1501778941
 }

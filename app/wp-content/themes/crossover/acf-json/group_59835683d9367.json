@@ -1,0 +1,244 @@
+{
+    "key": "group_59835683d9367",
+    "title": "Questions",
+    "fields": [
+        {
+            "key": "field_59835683db236",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59835683db243",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "A line of text that will be used as the page title shown in the hero section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Predavači",
+            "placeholder": "Predavači",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59835683db24e",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "text",
+            "instructions": "A longer line of text, describing the page motto or purpose.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Najbolji zaslužuju upravo najbolje.",
+            "placeholder": "Najbolji zaslužuju upravo najbolje.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59835683db259",
+            "label": "Button 1 Label",
+            "name": "hero_button_1_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Izbor Kurseva",
+            "placeholder": "Izbor Kurseva",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59835683db264",
+            "label": "Button 1 Link",
+            "name": "hero_button_1_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_59835683db26f",
+            "label": "Button 2 Label",
+            "name": "hero_button_2_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Plaćanje",
+            "placeholder": "Plaćanje",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59835683db27a",
+            "label": "Button 2 Link",
+            "name": "hero_button_2_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_59835683db2d1",
+            "label": "First Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59835683db2dc",
+            "label": "Questions",
+            "name": "questions",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Q\/A",
+            "sub_fields": [
+                {
+                    "key": "field_59835683eac4a",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Da li je za pohađanje kurseva za iOS Programiranje potrebno posedovati Mac računar?",
+                    "placeholder": "Da li je za pohađanje kurseva za iOS Programiranje potrebno posedovati Mac računar?",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59835683eac55",
+                    "label": "Answer",
+                    "name": "answer",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "100",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Ne. Crossover je obezbedio računare na kojima ćete raditi u okviru kurseva, a obezbedili smo Vam i pristup za obavaljanje vežbi u dogovorenim terminima. Na kursevima ćete raditi na iMac 21,5-inch radnim stanicama, a ukoliko već posedujete svoj Mac laptop možete ga poneti i raditi na njemu.",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 1,
+                    "delay": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-questions.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1501780124
+}

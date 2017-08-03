@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Platform Page Template
+Template Name: Payment Page Template
 */
 
 get_header();
@@ -8,7 +8,7 @@ the_post();
 
 ?>
 
-<main id="platform">
+<main id="payment">
     <section id="hero">
         <div class="wrapper">
             <h1><?=get_field('hero_title')?></h1>
@@ -22,7 +22,7 @@ the_post();
         <div class="wrapper">
             <div class="text">
                 <h2><?=get_field('first_section_title')?></h2>
-                <?=get_field('first_section_body')?>
+	            <?=get_field('first_section_body')?>
             </div>
             <div class="images">
                 <div class="large" style="background-image: url('<?=get_field('large_image')['sizes']['large']?>');">
@@ -38,7 +38,7 @@ the_post();
     <section id="second">
         <div class="wrapper">
             <h2><?=get_field('second_section_title')?></h2>
-            <?=get_field('second_section_body')?>
+	        <?=get_field('second_section_body')?>
         </div>
     </section>
 
@@ -48,22 +48,8 @@ the_post();
                 <img src="<?=get_field('third_image')['sizes']['large']?>" alt="<?=get_field('third_image')['alt']?>">
             </div>
             <h2><?=get_field('third_section_title')?></h2>
-            <?=get_field('third_section_body')?>
-        </div>
-    </section>
-
-    <section id="fourth">
-        <div class="wrapper">
-            <h2></h2>
-            <div class="body">
-                <div class="image" style="background-image: url('<?=get_field('fourth_image')['sizes']['large']?>');">
-                    <img src="<?=get_field('fourth_image')['sizes']['large']?>" alt="<?=get_field('fourth_image')['alt']?>">
-                </div>
-                <div class="text">
-	                <?=get_field('fourth_section_body')?>
-                    <a href="<?=get_field('fourth_button_link')?>" class="btn fill arrow-left" title="<?=get_field('fourth_button_label')?>"><?=get_field('fourth_button_label')?></a>
-                </div>
-            </div>
+	        <?=get_field('third_section_body')?>
+            <a href="<?=get_field('third_button_link')?>" class="btn fill arrow-left" title="<?=get_field('third_button_label')?>"><?=get_field('third_button_label')?></a>
         </div>
     </section>
 
