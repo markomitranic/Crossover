@@ -1,0 +1,379 @@
+{
+    "key": "group_5983597d6b7eb",
+    "title": "Contact",
+    "fields": [
+        {
+            "key": "field_5983597d6d535",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5983597d6d545",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "A line of text that will be used as the page title shown in the hero section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Kontakt",
+            "placeholder": "Kontakt",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5983597d6d553",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "text",
+            "instructions": "A longer line of text, describing the page motto or purpose.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Uložite u karijeru budućnosti! Prvi autorizovani Apple trening centar u regionu nudi vam priliku da postanete vrhunski profesionalac u IT industriji.",
+            "placeholder": "Uložite u karijeru budućnosti! Prvi autorizovani Apple trening centar u regionu nudi vam priliku da postanete vrhunski profesionalac u IT industriji.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5983597d6d55f",
+            "label": "Button 1 Label",
+            "name": "hero_button_1_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Izbor Kurseva",
+            "placeholder": "Izbor Kurseva",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5983597d6d56b",
+            "label": "Button 1 Link",
+            "name": "hero_button_1_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5983597d6d578",
+            "label": "Button 2 Label",
+            "name": "hero_button_2_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Plaćanje",
+            "placeholder": "Plaćanje",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5983597d6d584",
+            "label": "Button 2 Link",
+            "name": "hero_button_2_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5983597d6d590",
+            "label": "First Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598359eb3e3e3",
+            "label": "Background Image",
+            "name": "first_background_image",
+            "type": "image",
+            "instructions": "Usually, a background image would be a photo of the location exterior or Google Street View photo.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59835a0b3e3e4",
+            "label": "Section Title",
+            "name": "first_section_title",
+            "type": "text",
+            "instructions": "Short an concise section title.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Kontaktirajte nas",
+            "placeholder": "Kontaktirajte nas",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59835a243e3e5",
+            "label": "Form Description",
+            "name": "first_form_description",
+            "type": "textarea",
+            "instructions": "If you wish, you may add a short text describing why customers should use the contact form to write to you. It will be presented above the form itself.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ukoliko imate neko pitanje, želite da se prijavite na kurs ili otvorena vrata, ili želite poseban upit, upišite svoje podatke i mi ćemo Vas direktno kontaktirati.",
+            "placeholder": "Ukoliko imate neko pitanje, želite da se prijavite na kurs ili otvorena vrata...",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5983597d6d5ce",
+            "label": "Second Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59835b7d7a94b",
+            "label": "Background Image",
+            "name": "second_background_image",
+            "type": "image",
+            "instructions": "Usually, a background image would be a photo of the location exterior or Google Street View photo.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59835b8c7a94c",
+            "label": "Section Title",
+            "name": "second_section_title",
+            "type": "text",
+            "instructions": "Short an concise section title.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Kako do nas?",
+            "placeholder": "Kako do nas?",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59835be77a94e",
+            "label": "Description",
+            "name": "second_description",
+            "type": "textarea",
+            "instructions": "If you wish, you may add a short text describing why customers should use the contact form to write to you. It will be presented above the form itself.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Crossover Trening centar se nalazi u zgradi Zadužbine Univerziteta u Beogradu na Andrićevom vencu broj 12.",
+            "placeholder": "Crossover Trening centar se nalazi u zgradi Zadužbine Univerziteta u...",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_59835ba67a94d",
+            "label": "Address",
+            "name": "second_address",
+            "type": "textarea",
+            "instructions": "If you wish, you may add a short text describing why customers should use the contact form to write to you. It will be presented above the form itself.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Zadužbina Univerziteta u Beogradu\r\nAndrićev Venac 12\r\nPionirski Park\r\n11000 Beograd, Srbija\r\nRadno vreme:\r\nRadnim danima 9- 20h\r\nSubotom 10-15h",
+            "placeholder": "Zadužbina Univerziteta u Beogradu...",
+            "maxlength": "",
+            "rows": 8,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_59835c51a298a",
+            "label": "Contact Points",
+            "name": "second_contact_points",
+            "type": "textarea",
+            "instructions": "If you wish, you may add a short text describing why customers should use the contact form to write to you. It will be presented above the form itself.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "mail: <a href=\"mailto:info@crossover.rs\">info@crossover.rs<\/a>\r\ntel: <a href=\"tel:00381113038710\">+381 11 30 38 710<\/a>",
+            "placeholder": "mail: <a href=\"mailto:info@crossover.rs\">info@crossover.rs<\/a>",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_59835d07f5a72",
+            "label": "Google maps Link",
+            "name": "google_maps_link",
+            "type": "url",
+            "instructions": "Insert a propper Google Maps link",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/www.google.rs\/maps\/place\/Macola+Apple+Solution+Expert\/@44.809169,20.4638135,19z\/data=!3m1!4b1!4m5!3m4!1s0x475a7aaf57cab421:0x57ef2650f5a7333b!8m2!3d44.809169!4d20.464362?hl=en",
+            "placeholder": "https:\/\/www.google.rs\/maps\/place\/Macola+Apple+Solution+Expert\/@44.809169,20.4638135,19z\/data=!3m1!4b1!4m5!3m4!1s0x475a7aaf57cab421:0x57ef2650f5a7333b!8m2!3d44.809169!4d20.464362?hl=en"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1501781404
+}
