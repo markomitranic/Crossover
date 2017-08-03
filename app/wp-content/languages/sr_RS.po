@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.8.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-08 11:06:53+0000\n"
+"PO-Revision-Date: 2017-07-28 12:06:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,6 +36,50 @@ msgstr "."
 msgid "number_format_decimal_point"
 msgstr ","
 
+#: wp-includes/widgets/class-wp-widget-text.php:366
+msgid "This widget may have contained code that may work better in the new &#8220;Custom HTML&#8221; widget. If you haven&#8217;t yet, how about trying that widget instead?"
+msgstr "Овај виџет можда је садржао код који би боље радио у новом виџету &#132;Прилагођени HTML&#147;. Уколико још нисте, шта мислите о испробавању тог виџета?"
+
+#: wp-includes/widgets/class-wp-widget-text.php:419
+msgid "Hey there, looks like you just pasted HTML into the &#8220;Visual&#8221; tab of the Text widget. You may want to paste your code into the &#8220;Text&#8221; tab instead. Alternately, try out the new &#8220;Custom HTML&#8221; widget!"
+msgstr "Изгледа да сте управо налепили HTML у језичак &#132;Видљиво&#147; текстуалног виџета. Можда желите да налепите свој код у језичак &#132;Текст&#147; уместо тога. На крају, можете и да пробате нови виџет &#132;Прилагођени HTML&#147;."
+
+#: wp-includes/widgets/class-wp-widget-text.php:418
+msgid "Did you just paste HTML?"
+msgstr "Да ли сте налепили HTML?"
+
+#: wp-includes/widgets/class-wp-widget-text.php:403
+msgid "Hey, did you hear we have a &#8220;Custom HTML&#8221; widget now? You can find it by scanning the list of available widgets on this screen. Check it out to add some custom code to your site!"
+msgstr "Да ли сте чули да сада имамо виџет &#132;Прилагођени HTML&#147;? Можете га пронаћи претрагом списка доступних виџета на екрану. Пробајте га да бисте додали прилагођени код свом веб месту."
+
+#: wp-includes/widgets/class-wp-widget-text.php:401
+msgid "Hey, did you hear we have a &#8220;Custom HTML&#8221; widget now? You can find it by pressing the &#8220;<a class=\"add-widget\" href=\"#\">Add a Widget</a>&#8221; button and searching for &#8220;HTML&#8221;. Check it out to add some custom code to your site!"
+msgstr "Да ли сте чули да сада имамо виџет &#132;Прилагођени HTML&#147;? Можете га пронаћи притиском на дугме &#132;<a class=\"add-widget\" href=\"#\">Додај виџет</a>&#147; и тражећи &#132;HTML&#147;. Пробајте га да бисте додали прилагођени код свом веб месту."
+
+#: wp-includes/widgets/class-wp-widget-text.php:36
+msgid "Arbitrary text."
+msgstr "Произвољни текст."
+
+#: wp-includes/widgets/class-wp-widget-text.php:399
+msgid "New Custom HTML Widget"
+msgstr "Нови Прилагођени HTML виџет"
+
+#: wp-includes/widgets/class-wp-widget-text.php:364
+msgid "This widget may contain code that may work better in the new &#8220;Custom HTML&#8221; widget. How about trying that widget instead?"
+msgstr "Овај виџет може да садржи код који би боље радио у новом виџету &#132;Прилагођени HTML&#147;. Шта мислите да пробате тај виџет?"
+
+#: wp-includes/default-widgets.php:96
+msgid "Arbitrary HTML code."
+msgstr "Произвољни HTML код."
+
+#: wp-includes/default-widgets.php:103
+msgid "Custom HTML"
+msgstr "Прилагођени HTML"
+
+#: wp-includes/default-widgets.php:207
+msgid "Some HTML tags are not permitted, including:"
+msgstr "Неке HTML ознаке нису дозвољене, укључујући:"
+
 #: wp-includes/category-template.php:806 wp-includes/category-template.php:815
 msgid "%s item"
 msgid_plural "%s items"
@@ -47,7 +91,7 @@ msgstr[2] "%s ставки"
 msgid "Show tag counts"
 msgstr "Покажи број ознака"
 
-#: wp-includes/widgets/class-wp-widget-media.php:60
+#: wp-includes/widgets/class-wp-widget-media.php:68
 msgctxt "label for button in the media widget"
 msgid "Add Media"
 msgstr "Додај садржај"
@@ -67,7 +111,7 @@ msgctxt "label for button in the audio widget"
 msgid "Add Audio"
 msgstr "Додај звучни запис"
 
-#: wp-includes/media.php:3118
+#: wp-includes/media.php:3122
 msgid "(no author)"
 msgstr "(нема аутора)"
 
@@ -104,11 +148,11 @@ msgstr "Нема"
 msgid "We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland."
 msgstr "Не можемо да пронађемо %s. Молимо вас да пробате са другим градом у близини. На пример: Vršac, Novi Sad, Banja Luka."
 
-#: wp-includes/widgets/class-wp-widget-media.php:63
+#: wp-includes/widgets/class-wp-widget-media.php:71
 msgid "Add to Widget"
 msgstr "Додај у виџет"
 
-#: wp-includes/widgets/class-wp-widget-media.php:124
+#: wp-includes/widgets/class-wp-widget-media.php:138
 msgid "Attachment post ID"
 msgstr "ID чланка прилога"
 
@@ -116,11 +160,11 @@ msgstr "ID чланка прилога"
 msgid "Greetings Network Administrator!"
 msgstr "Поздрав, управниче мреже!"
 
-#: wp-includes/widgets/class-wp-widget-media.php:72
+#: wp-includes/widgets/class-wp-widget-media.php:80
 msgid "Looks like this isn&#8217;t the correct kind of file. Please link to an appropriate file instead."
 msgstr "Изгледа да ово није исправна врста датотеке. Молимо вас да уместо тога повежете ка исправној датотеци."
 
-#: wp-includes/widgets/class-wp-widget-media.php:59
+#: wp-includes/widgets/class-wp-widget-media.php:67
 msgid "No media selected"
 msgstr "Нема одабраног садржаја"
 
@@ -140,7 +184,7 @@ msgstr "Мрежа тренутно дозвољава регистрацију 
 msgid "The network currently disallows registrations."
 msgstr "Мрежа тренутно не дозвољава регистрације."
 
-#: wp-includes/widgets/class-wp-widget-media.php:137
+#: wp-includes/widgets/class-wp-widget-media.php:151
 msgid "Title for the widget"
 msgstr "Наслов виџета"
 
@@ -154,7 +198,7 @@ msgstr "Да бисте променили или искључили регис�
 msgid "URL to the %s video source file"
 msgstr "URL ка %s датотеци видео извора"
 
-#: wp-includes/widgets/class-wp-widget-media.php:131
+#: wp-includes/widgets/class-wp-widget-media.php:145
 msgid "URL to the media file"
 msgstr "URL ка датотеци садржаја"
 
@@ -163,7 +207,7 @@ msgid "Video Widget"
 msgstr "Виџет видео записа"
 
 #. translators: placeholder is URL to media library
-#: wp-includes/widgets/class-wp-widget-media.php:66
+#: wp-includes/widgets/class-wp-widget-media.php:74
 msgid "We can&#8217;t find that file. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Не можемо да пронађемо ту датотеку. Проверите своју <a href=\"%s\">библиотеку садржаја</a> и будите сигурни да није обрисана."
 
@@ -172,16 +216,16 @@ msgstr "Не можемо да пронађемо ту датотеку. Про�
 msgid "We can&#8217;t find that video. Check your <a href=\"%s\">media library</a> and make sure it wasn&#8217;t deleted."
 msgstr "Не можемо да пронађемо тај видео запис. Проверите своју <a href=\"%s\">библиотеку садржаја</a> и будите сигурни да није обрисан."
 
-#: wp-includes/widgets/class-wp-widget-media.php:51
+#: wp-includes/widgets/class-wp-widget-media.php:59
 msgid "A media item."
 msgstr "Ставка садржаја."
 
-#: wp-includes/widgets/class-wp-widget-media.php:71
+#: wp-includes/widgets/class-wp-widget-media.php:79
 msgid "Media Widget"
 msgstr "Виџет садржаја"
 
 #. translators: %d is widget count
-#: wp-includes/widgets/class-wp-widget-media.php:70
+#: wp-includes/widgets/class-wp-widget-media.php:78
 msgid "Media Widget (%d)"
 msgid_plural "Media Widget (%d)"
 msgstr[0] "Виџет садржаја (%d)"
@@ -201,12 +245,12 @@ msgstr[0] "Виџет видео записа (%d)"
 msgstr[1] "Виџет видео записа (%d)"
 msgstr[2] "Виџет видео записа (%d)"
 
-#: wp-includes/widgets/class-wp-widget-media.php:62
+#: wp-includes/widgets/class-wp-widget-media.php:70
 msgctxt "label for button in the media widget; should preferably not be longer than ~13 characters long"
 msgid "Edit Media"
 msgstr "Уреди садржај"
 
-#: wp-includes/widgets/class-wp-widget-media.php:61
+#: wp-includes/widgets/class-wp-widget-media.php:69
 msgctxt "label for button in the media widget; should preferably not be longer than ~13 characters long"
 msgid "Replace Media"
 msgstr "Замени садржај"
@@ -239,7 +283,7 @@ msgstr "URL ка %s датотеци звучног извора"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:198
 #: wp-includes/widgets/class-wp-widget-media-image.php:325
-#: wp-includes/widgets/class-wp-widget-media-video.php:241
+#: wp-includes/widgets/class-wp-widget-media-video.php:237
 msgid "Unable to preview media due to an unknown error."
 msgstr "Није могуће предпрегледати садржај због непознате грешке."
 
@@ -367,22 +411,22 @@ msgid "Replace Video"
 msgstr "Замени видео запис"
 
 #. translators: 1: parameter, 2: minimum number
-#: wp-includes/rest-api.php:1111
+#: wp-includes/rest-api.php:1116
 msgid "%1$s must be greater than %2$d"
 msgstr "%1$s мора да буде веће од %2$d"
 
 #. translators: 1: parameter, 2: minimum number
-#: wp-includes/rest-api.php:1114
+#: wp-includes/rest-api.php:1119
 msgid "%1$s must be greater than or equal to %2$d"
 msgstr "%1$s мора да буде веће или једнако са %2$d"
 
 #. translators: 1: parameter, 2: maximum number
-#: wp-includes/rest-api.php:1119
+#: wp-includes/rest-api.php:1124
 msgid "%1$s must be less than %2$d"
 msgstr "%1$s мора да буде мање од %2$d"
 
 #. translators: 1: parameter, 2: maximum number
-#: wp-includes/rest-api.php:1122
+#: wp-includes/rest-api.php:1127
 msgid "%1$s must be less than or equal to %2$d"
 msgstr "%1$s мора да буде мање или једнако са %2$d"
 
@@ -466,11 +510,11 @@ msgid "Sorry, this file type is not permitted for security reasons."
 msgstr "Жао нам је, ова врста датотека није дозвољена из безбедоносних разлога."
 
 #. translators: 1: suggested width number, 2: suggested height number.
-#: wp-includes/media-template.php:240 wp-includes/media.php:3568
+#: wp-includes/media-template.php:240 wp-includes/media.php:3572
 msgid "Suggested image dimensions: %1$s by %2$s pixels."
 msgstr "Предложена величина слике: %1$s са %2$s пискела."
 
-#: wp-includes/media.php:3519 wp-includes/script-loader.php:80
+#: wp-includes/media.php:3523 wp-includes/script-loader.php:80
 msgid ""
 "You are about to permanently delete these items from your site.\n"
 "This action cannot be undone.\n"
@@ -480,7 +524,7 @@ msgstr ""
 "Ова радња не може бити опозвана.\n"
 " 'Одустани' за прекид, 'У реду' за брисање."
 
-#: wp-includes/media.php:3518
+#: wp-includes/media.php:3522
 msgid ""
 "You are about to permanently delete this item from your site.\n"
 "This action cannot be undone.\n"
@@ -551,61 +595,61 @@ msgstr "Највећа ширина угнежђеног оквира у пис�
 msgid "The oEmbed format to use."
 msgstr "oEmbed облик који се користи."
 
-#: wp-includes/class-wp-editor.php:1126
+#: wp-includes/class-wp-editor.php:1143
 msgctxt "Short for blue in RGB"
 msgid "B"
 msgstr "B"
 
-#: wp-includes/class-wp-editor.php:1125
+#: wp-includes/class-wp-editor.php:1142
 msgctxt "Short for green in RGB"
 msgid "G"
 msgstr "G"
 
-#: wp-includes/class-wp-editor.php:1124
+#: wp-includes/class-wp-editor.php:1141
 msgctxt "Short for red in RGB"
 msgid "R"
 msgstr "R"
 
-#: wp-includes/class-wp-editor.php:1052
+#: wp-includes/class-wp-editor.php:1069
 msgctxt "Id for link anchor (TinyMCE)"
 msgid "Id"
 msgstr "Id"
 
-#: wp-includes/class-wp-editor.php:1051
+#: wp-includes/class-wp-editor.php:1068
 msgid "Id should start with a letter, followed only by letters, numbers, dashes, dots, colons or underscores."
 msgstr "Id треба да започне словом кога прати слова, бројеви, цртице, тачке, двотачке или доње цртице."
 
-#: wp-includes/class-wp-editor.php:1079
+#: wp-includes/class-wp-editor.php:1096
 msgid "Insert/edit code sample"
 msgstr "Уметни/уреди пример кода"
 
-#: wp-includes/class-wp-editor.php:1082
+#: wp-includes/class-wp-editor.php:1099
 msgid "Insert/edit media"
 msgstr "Уметни/уреди садржај"
 
-#: wp-includes/class-wp-editor.php:1078
+#: wp-includes/class-wp-editor.php:1095
 msgid "Table of Contents"
 msgstr "Табела садржаја"
 
-#: wp-includes/class-wp-customize-widgets.php:777
+#: wp-includes/class-wp-customize-widgets.php:791
 msgid "You can navigate to other pages on your site while using the Customizer to view and edit the widgets displayed on those pages."
 msgstr "Можете се кретати ка другим страницама свог веб места користећи прилагођавач да бисте видели и уредили виџете приказане на тим страницама."
 
 #. translators: placeholder is the total number of widget areas registered
-#: wp-includes/class-wp-customize-widgets.php:756
+#: wp-includes/class-wp-customize-widgets.php:770
 msgid "Your theme has %s widget area, but this particular page doesn&#8217;t display it."
 msgid_plural "Your theme has %s widget areas, but this particular page doesn&#8217;t display them."
 msgstr[0] "Ова тема има %s простора за виџете али их ова посебна страница не приказује."
 msgstr[1] "Ова тема има %s простора за виџете али их ова посебна страница не приказује."
 msgstr[2] "Ова тема има %s простора за виџете али их ова посебна страница не приказује."
 
-#: wp-includes/class-wp-editor.php:1076
+#: wp-includes/class-wp-editor.php:1093
 msgid "Date/time"
 msgstr "Датум/време"
 
 #. translators: placeholder is the number of other widget areas registered but
 #. not rendered
-#: wp-includes/class-wp-customize-widgets.php:739
+#: wp-includes/class-wp-customize-widgets.php:753
 msgid "Your theme has %s other widget area, but this particular page doesn&#8217;t display it."
 msgid_plural "Your theme has %s other widget areas, but this particular page doesn&#8217;t display them."
 msgstr[0] "Ова тема има још %s простора за виџете али их ова посебна страница не приказује."
@@ -614,12 +658,12 @@ msgstr[2] "Ова тема има још %s простора за виџете �
 
 #. translators: placeholder is the number of other widget areas registered but
 #. not rendered
-#: wp-includes/class-wp-customize-widgets.php:731
+#: wp-includes/class-wp-customize-widgets.php:745
 msgid "Your theme has 1 other widget area, but this particular page doesn&#8217;t display it."
 msgstr "Ова тема има још један простор за виџете али га ова посебна страница не приказује."
 
 #. translators: placeholder is the total number of widget areas registered
-#: wp-includes/class-wp-customize-widgets.php:751
+#: wp-includes/class-wp-customize-widgets.php:765
 msgid "Your theme has 1 widget area, but this particular page doesn&#8217;t display it."
 msgstr "Ова тема има још један за виџете али га ова посебна страница не приказује."
 
@@ -855,12 +899,12 @@ msgstr "Неисправна функција за JSONP повратни поз
 msgid "Invalid comment content."
 msgstr "Неисправан садржај коментара."
 
-#: wp-includes/post.php:3136 wp-includes/rest-api.php:1089
+#: wp-includes/post.php:3136 wp-includes/rest-api.php:1094
 msgid "Invalid date."
 msgstr "Неисправан датум."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:606
-#: wp-includes/rest-api.php:1095
+#: wp-includes/rest-api.php:1100
 msgid "Invalid email address."
 msgstr "Неисправна адреса е-поште."
 
@@ -880,52 +924,52 @@ msgstr "Видео запис се прегледа."
 msgid "Video is paused."
 msgstr "Видео запис је паузиран."
 
-#: wp-includes/theme.php:1962
+#: wp-includes/theme.php:1966
 msgctxt "Theme starter content"
 msgid "Archives"
 msgstr "Архиве"
 
-#: wp-includes/theme.php:2084
+#: wp-includes/theme.php:2088
 msgctxt "Theme starter content"
 msgid "This is an example of a homepage section. Homepage sections can be any page other than the homepage itself, including the page that shows your latest blog posts."
 msgstr "Ово је пример одељка почетне странице. Одељак почетне странице може да буде било која страна сем стране почетне странице, укључујући страну која приказује ваше скорашње чланке блога."
 
-#: wp-includes/theme.php:2078
+#: wp-includes/theme.php:2082
 msgctxt "Theme starter content"
 msgid "News"
 msgstr "Вести"
 
-#: wp-includes/theme.php:2070
+#: wp-includes/theme.php:2074
 msgctxt "Theme starter content"
 msgid "This is a page with some basic contact information, such as an address and phone number. You might also try a plugin to add a contact form."
 msgstr "Ово је страна са основним подацима за контактирање, као што је адреса и број телефона. Такође можете да пробате додатак који додаје образац за контактирање."
 
-#: wp-includes/theme.php:2065
+#: wp-includes/theme.php:2069
 msgctxt "Theme starter content"
 msgid "You might be an artist who would like to introduce yourself and your work here or maybe you&rsquo;re a business with a mission to describe."
 msgstr "Можда сте уметник који овде жели да представи себе и свој рад или сте можда предузеће са описом сврхе."
 
-#: wp-includes/theme.php:1974
+#: wp-includes/theme.php:1978
 msgctxt "Theme starter content"
 msgid "Recent Comments"
 msgstr "Скорашњи коментари"
 
-#: wp-includes/theme.php:1977
+#: wp-includes/theme.php:1981
 msgctxt "Theme starter content"
 msgid "Recent Posts"
 msgstr "Скорашњи чланци"
 
-#: wp-includes/theme.php:2060
+#: wp-includes/theme.php:2064
 msgctxt "Theme starter content"
 msgid "Welcome to your site! This is your homepage, which is what most visitors will see when they come to your site for the first time."
 msgstr "Добро дошли на своје веб место! Ово је ваша почетна страница, што је оно што ће највише посетилаца видети када први пут дође на ваше веб место."
 
-#: wp-includes/theme.php:1965
+#: wp-includes/theme.php:1969
 msgctxt "Theme starter content"
 msgid "Calendar"
 msgstr "Календар"
 
-#: wp-includes/theme.php:1971
+#: wp-includes/theme.php:1975
 msgctxt "Theme starter content"
 msgid "Meta"
 msgstr "Мета"
@@ -990,27 +1034,27 @@ msgstr "Жао нам је, није вам дозвољено да видите
 msgid "Sorry, you are not allowed to read comments without a post."
 msgstr "Жао нам је, није вам дозвољено да читате коментаре без чланка."
 
-#: wp-includes/theme.php:2024
+#: wp-includes/theme.php:2028
 msgctxt "Theme starter content"
 msgid "Foursquare"
 msgstr "Форсквер"
 
-#: wp-includes/theme.php:2028
+#: wp-includes/theme.php:2032
 msgctxt "Theme starter content"
 msgid "GitHub"
 msgstr "Гитхаб"
 
-#: wp-includes/theme.php:2036
+#: wp-includes/theme.php:2040
 msgctxt "Theme starter content"
 msgid "LinkedIn"
 msgstr "Линкедин"
 
-#: wp-includes/theme.php:2040
+#: wp-includes/theme.php:2044
 msgctxt "Theme starter content"
 msgid "Pinterest"
 msgstr "Пинтерест"
 
-#: wp-includes/theme.php:2052
+#: wp-includes/theme.php:2056
 msgctxt "Theme starter content"
 msgid "YouTube"
 msgstr "Јутјуб"
@@ -1033,12 +1077,12 @@ msgstr "Жао нам је, није вам дозвољено да уређуј
 msgid "Sorry, you are not allowed to make posts sticky."
 msgstr "Жао нам је, није вам дозвољено да правите чланке лепљивим."
 
-#: wp-includes/theme.php:1958
+#: wp-includes/theme.php:1960
 msgctxt "Theme starter content"
 msgid "About This Site"
 msgstr "О овом веб месту"
 
-#: wp-includes/theme.php:1959
+#: wp-includes/theme.php:1961
 msgctxt "Theme starter content"
 msgid "This may be a good place to introduce yourself and your site or include some credits."
 msgstr "Ово може да буде добро место за ваше или представљање вашег веб места или за укључивање неких заслуга."
@@ -1070,37 +1114,37 @@ msgstr "Изабери видео запис"
 msgid "Select Video"
 msgstr "Изабери видео запис"
 
-#: wp-includes/theme.php:2083
+#: wp-includes/theme.php:2087
 msgctxt "Theme starter content"
 msgid "A homepage section"
 msgstr "Одељак почетне странице"
 
-#: wp-includes/theme.php:2074
+#: wp-includes/theme.php:2078
 msgctxt "Theme starter content"
 msgid "Blog"
 msgstr "Блог"
 
-#: wp-includes/theme.php:2016
+#: wp-includes/theme.php:2020
 msgctxt "Theme starter content"
 msgid "Email"
 msgstr "Е-пошта"
 
-#: wp-includes/theme.php:2032
+#: wp-includes/theme.php:2036
 msgctxt "Theme starter content"
 msgid "Instagram"
 msgstr "Инстаграм"
 
-#: wp-includes/theme.php:2064
+#: wp-includes/theme.php:2068
 msgctxt "Theme starter content"
 msgid "About"
 msgstr "О"
 
-#: wp-includes/theme.php:2069
+#: wp-includes/theme.php:2073
 msgctxt "Theme starter content"
 msgid "Contact"
 msgstr "Контакт"
 
-#: wp-includes/theme.php:1986 wp-includes/theme.php:2059
+#: wp-includes/theme.php:1990 wp-includes/theme.php:2063
 msgctxt "Theme starter content"
 msgid "Home"
 msgstr "Почетак"
@@ -1110,7 +1154,7 @@ msgctxt "Theme starter content"
 msgid "123 Main Street"
 msgstr "123 Главна улица"
 
-#: wp-includes/theme.php:2020
+#: wp-includes/theme.php:2024
 msgctxt "Theme starter content"
 msgid "Facebook"
 msgstr "Фејсбук"
@@ -1130,22 +1174,22 @@ msgctxt "Theme starter content"
 msgid "Saturday &amp; Sunday: 11:00AM&ndash;3:00PM"
 msgstr "субота: 9&ndash;14"
 
-#: wp-includes/theme.php:2044
+#: wp-includes/theme.php:2048
 msgctxt "Theme starter content"
 msgid "Twitter"
 msgstr "Твитер"
 
-#: wp-includes/theme.php:2048
+#: wp-includes/theme.php:2052
 msgctxt "Theme starter content"
 msgid "Yelp"
 msgstr "Јелп"
 
-#: wp-includes/theme.php:1968
+#: wp-includes/theme.php:1972
 msgctxt "Theme starter content"
 msgid "Categories"
 msgstr "Категорије"
 
-#: wp-includes/theme.php:1980
+#: wp-includes/theme.php:1984
 msgctxt "Theme starter content"
 msgid "Search"
 msgstr "Претрага"
@@ -1345,27 +1389,27 @@ msgid "Item selected."
 msgstr "Ставке је изабрана."
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1128
+#: wp-includes/rest-api.php:1133
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s мора да буде између %2$d (искључиво) и %3$d (укључиво)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1138
+#: wp-includes/rest-api.php:1143
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s мора да буде између %2$d (искључиво) и %3$d (укључиво)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1133
+#: wp-includes/rest-api.php:1138
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s мора да буде између %2$d (укључиво) и %3$d (искључиво)"
 
 #. translators: 1: parameter, 2: minimum number, 3: maximum number
-#: wp-includes/rest-api.php:1143
+#: wp-includes/rest-api.php:1148
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s мора да буде између %2$d (укључиво) и %3$d (искључиво)"
 
 #. translators: %s: IP address
-#: wp-includes/rest-api.php:1101
+#: wp-includes/rest-api.php:1106
 msgid "%s is not a valid IP address."
 msgstr "%s није ваљана IP адреса."
 
@@ -1374,14 +1418,14 @@ msgid "Meta fields."
 msgstr "Мета поља."
 
 #. translators: 1: parameter, 2: type name
-#: wp-includes/rest-api.php:1049 wp-includes/rest-api.php:1067
-#: wp-includes/rest-api.php:1072 wp-includes/rest-api.php:1077
-#: wp-includes/rest-api.php:1082
+#: wp-includes/rest-api.php:1054 wp-includes/rest-api.php:1072
+#: wp-includes/rest-api.php:1077 wp-includes/rest-api.php:1082
+#: wp-includes/rest-api.php:1087
 msgid "%1$s is not of type %2$s."
 msgstr "%1$s није врсте %2$s."
 
 #. translators: 1: parameter, 2: list of valid values
-#: wp-includes/rest-api.php:1061
+#: wp-includes/rest-api.php:1066
 msgid "%1$s is not one of %2$s."
 msgstr "%1$s није од %2$s."
 
@@ -2191,7 +2235,7 @@ msgstr "Претворите емотиконе као :-) и :-P у сличи�
 msgid "A city in the same timezone as you."
 msgstr "Град који је у истој временској зони као и ви."
 
-#: wp-includes/media.php:3531
+#: wp-includes/media.php:3535
 msgid "Search media items..."
 msgstr "Претражи ставке садржаја..."
 
@@ -2284,13 +2328,13 @@ msgstr "Жао нам је, ваш члан не може бити направ�
 msgid "%1$s could not be created: %2$s"
 msgstr "Није могуће да се направи %1$s: %2$s"
 
-#: wp-includes/class-wp-customize-widgets.php:785
-#: wp-includes/class-wp-customize-widgets.php:840
+#: wp-includes/class-wp-customize-widgets.php:799
+#: wp-includes/class-wp-customize-widgets.php:854
 msgid "No widgets found."
 msgstr "Нема пронађених виџета."
 
 #. translators: placeholder is the count for the number of widgets found
-#: wp-includes/class-wp-customize-widgets.php:784
+#: wp-includes/class-wp-customize-widgets.php:798
 msgid "Number of widgets found: %d"
 msgstr "Број пронађених виџета: %d"
 
@@ -2474,7 +2518,7 @@ msgstr "Неовлашћено. Можете уклонити параметар
 msgid "Edit selected menu"
 msgstr "Уреди изабрани изборник"
 
-#: wp-includes/class-wp-editor.php:1259
+#: wp-includes/class-wp-editor.php:1276
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "Упозорење: веза је уметнута али можда има грешке. Молимо вас да је испробате."
 
@@ -2482,7 +2526,7 @@ msgstr "Упозорење: веза је уметнута али можда и�
 msgid "Search Results"
 msgstr "Резултати претраге"
 
-#: wp-includes/class-wp-editor.php:1214
+#: wp-includes/class-wp-editor.php:1231
 msgid "Rich Text Area. Press Control-Option-H for help."
 msgstr "Богати простор за текст. Притисните Control-Option-H за помоћ."
 
@@ -2523,7 +2567,7 @@ msgstr "Прегледач видео записа"
 msgid "Volume Slider"
 msgstr "Клизач гласности"
 
-#: wp-includes/taxonomy.php:1967 wp-includes/taxonomy.php:2593
+#: wp-includes/taxonomy.php:1970 wp-includes/taxonomy.php:2596
 msgid "A name is required for this term."
 msgstr "За овог члана је неопходно име."
 
@@ -2768,7 +2812,7 @@ msgstr "Молимо вас да изаберете једну или више �
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "Резултати претраге за &#132;%s&#147;"
 
-#: wp-includes/rest-api/class-wp-rest-server.php:908
+#: wp-includes/rest-api/class-wp-rest-server.php:922
 #: wp-includes/script-loader.php:132 wp-includes/script-loader.php:517
 msgid "Sorry, you are not allowed to do that."
 msgstr "Жао нам је, није вам дозвољено да урадите то."
@@ -2853,7 +2897,7 @@ msgstr "Жао нам је, није вам дозвољено да прилаг
 msgid "Do not pass %1$s tags to %2$s."
 msgstr "Не додељујте ознаке %1$s за %2$s."
 
-#: wp-includes/class-wp-editor.php:1240
+#: wp-includes/class-wp-editor.php:1257
 msgid "Link options"
 msgstr "Могућности везе"
 
@@ -2875,7 +2919,7 @@ msgstr "%s је неопходан за уклањање мета слика."
 msgid "Plugin details"
 msgstr "Детаљи додатка"
 
-#: wp-includes/media.php:3532
+#: wp-includes/media.php:3536
 msgid "No media files found."
 msgstr "Нема пронађених датотека садржаја."
 
@@ -2917,7 +2961,7 @@ msgstr "Непроменљива %1$s <strong>је застарела</strong>. 
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "Ручно уклањање %1$s ће изазвати PHP упозорења. Користите филтер %2$s уместо тога."
 
-#: wp-includes/class-wp-editor.php:1267
+#: wp-includes/class-wp-editor.php:1284
 msgid "The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo."
 msgstr "Следећа група пречица обликовања су примењене како куцате или када их уметнете око чистог текста у истом пасусу. Притисните Escape или дугме Врати за враћање."
 
@@ -3089,7 +3133,7 @@ msgstr "Неисправна врста објекта"
 msgid "Logo"
 msgstr "Логотип"
 
-#: wp-includes/class-wp-editor.php:1238
+#: wp-includes/class-wp-editor.php:1255
 msgid "Paste URL or type to search"
 msgstr "Налепите URL или куцајте за претрагу"
 
@@ -3472,12 +3516,12 @@ msgid "Tags list navigation"
 msgstr "Кретање списка ознака"
 
 #. translators: 1: function name, 2: WordPress version number, 3: error message
-#: wp-includes/rest-api.php:521
+#: wp-includes/rest-api.php:526
 msgid "%1$s (since %2$s; %3$s)"
 msgstr "%1$s (од %2$s; %3$s)"
 
 #. translators: 1: function name, 2: WordPress version number
-#: wp-includes/rest-api.php:500 wp-includes/rest-api.php:524
+#: wp-includes/rest-api.php:505 wp-includes/rest-api.php:529
 msgid "%1$s (since %2$s; no alternative available)"
 msgstr "%1$s (од %2$s; замена није доступна)"
 
@@ -3489,7 +3533,7 @@ msgstr "Стална веза је сачувана"
 msgid "Invalid shortcode name: Empty name given."
 msgstr "Неисравно име кратког кода: дато је празно име."
 
-#: wp-includes/rest-api.php:744
+#: wp-includes/rest-api.php:749
 msgid "Cookie nonce is invalid"
 msgstr "Жетон колачића је неисправан"
 
@@ -3501,15 +3545,15 @@ msgstr "Неисравно име кратког кода: %1$s. Не корис
 
 #. translators: 1: function name, 2: WordPress version number, 3: new function
 #. name
-#: wp-includes/rest-api.php:497
+#: wp-includes/rest-api.php:502
 msgid "%1$s (since %2$s; use %3$s instead)"
 msgstr "%1$s (од %2$s; користите %3$s уместо тога)"
 
-#: wp-includes/rest-api/class-wp-rest-server.php:1062
+#: wp-includes/rest-api/class-wp-rest-server.php:1076
 msgid "The specified namespace could not be found."
 msgstr "Наведено име простора не може бити пронађено."
 
-#: wp-includes/rest-api/class-wp-rest-server.php:972
+#: wp-includes/rest-api/class-wp-rest-server.php:986
 msgid "No route was found matching the URL and request method"
 msgstr "Ниједна путања није пронађена а да одговара URL-у и захтеваном начину"
 
@@ -3532,7 +3576,7 @@ msgstr "JSONP је онемогућен на овом веб месту."
 msgid "Missing parameter(s): %s"
 msgstr "Параметри који недостају: %s"
 
-#: wp-includes/rest-api/class-wp-rest-server.php:851
+#: wp-includes/rest-api/class-wp-rest-server.php:865
 msgid "The handler for the route is invalid"
 msgstr "Држач путање је неисправан"
 
@@ -3776,7 +3820,7 @@ msgstr "Жао нам је, испунили сте свој удео у про�
 msgid "Sorry, you are not allowed to moderate or edit this comment."
 msgstr "Жао нам је, није вам дозвољено да управљате или да уређујете овај коментар."
 
-#: wp-includes/class-wp-customize-widgets.php:782
+#: wp-includes/class-wp-customize-widgets.php:796
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:63
 msgid "Reorder widgets"
 msgstr "Промени редослед виџета"
@@ -3812,11 +3856,11 @@ msgid "Sorry, you are not allowed to edit theme options on this site."
 msgstr "Жао нам је, није вам дозвољено да уређујете могућности теме на овом веб месту."
 
 #: wp-includes/class-wp-customize-nav-menus.php:972
-#: wp-includes/class-wp-customize-widgets.php:831
+#: wp-includes/class-wp-customize-widgets.php:845
 msgid "Clear Results"
 msgstr "Испразни резултате"
 
-#: wp-includes/class-wp-editor.php:1265
+#: wp-includes/class-wp-editor.php:1282
 msgid "The following formatting shortcuts are replaced when pressing Enter. Press Escape or the Undo button to undo."
 msgstr "Следеће пречице обликовања су замењене када је притиснуто Enter. Притисните Escape или дугме Врати за враћање."
 
@@ -3952,7 +3996,7 @@ msgstr "Идентитет веб места"
 msgid "Add to menu: %1$s (%2$s)"
 msgstr "Додај у изборник: %1$s (%2$s)"
 
-#: wp-includes/class-wp-editor.php:1263
+#: wp-includes/class-wp-editor.php:1280
 msgid "When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo."
 msgstr "Када започињете нови пасус са једним од ових шаблона обликовања праћених размаком, обликовање ће аутоматски бити примењено. Притисните Backspace или Escape за враћање."
 
@@ -3986,7 +4030,7 @@ msgstr "Укључена тема"
 msgid "Previewing theme"
 msgstr "Предпреглед теме"
 
-#: wp-includes/class-wp-editor.php:999
+#: wp-includes/class-wp-editor.php:1016
 msgctxt "HTML tag"
 msgid "Preformatted"
 msgstr "Обликовано унапред"
@@ -3997,12 +4041,12 @@ msgid "The %s directory of the develop repository must be used for RTL."
 msgstr "Директоријум %s развојног складишта мора се користи за са десна на лево."
 
 #: wp-includes/class-wp-customize-nav-menus.php:436
-#: wp-includes/class-wp-customize-widgets.php:780
+#: wp-includes/class-wp-customize-widgets.php:794
 msgid "Reorder mode enabled"
 msgstr "Режим промене редоследа је омогућен"
 
 #: wp-includes/class-wp-customize-nav-menus.php:437
-#: wp-includes/class-wp-customize-widgets.php:781
+#: wp-includes/class-wp-customize-widgets.php:795
 msgid "Reorder mode closed"
 msgstr "Режим промене редоследа је затворен"
 
@@ -4223,35 +4267,37 @@ msgstr "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles"
 msgstr "Дозволи обавештавање путем веза са других блогова (повратни пингови и повратне везе) на новим чланцима"
 
-#: wp-includes/class-wp-editor.php:1247
+#: wp-includes/class-wp-editor.php:1264
 msgid "Additional shortcuts,"
 msgstr "Додатне пречице,"
 
-#: wp-includes/class-wp-editor.php:1255
+#: wp-includes/class-wp-editor.php:1272
 msgid "Cmd + letter:"
 msgstr "Cmd + слово:"
 
-#: wp-includes/widgets/class-wp-widget-text.php:198
+#: wp-includes/default-widgets.php:195
+#: wp-includes/widgets/class-wp-widget-text.php:370
+#: wp-includes/widgets/class-wp-widget-text.php:431
 msgid "Content:"
 msgstr "Садржај:"
 
-#: wp-includes/class-wp-editor.php:1253
+#: wp-includes/class-wp-editor.php:1270
 msgid "Ctrl + Alt + letter:"
 msgstr "Ctrl + Alt + слово:"
 
-#: wp-includes/class-wp-editor.php:1256
+#: wp-includes/class-wp-editor.php:1273
 msgid "Ctrl + letter:"
 msgstr "Ctrl + слово:"
 
-#: wp-includes/class-wp-editor.php:1246
+#: wp-includes/class-wp-editor.php:1263
 msgid "Default shortcuts,"
 msgstr "Подразумеване пречице,"
 
-#: wp-includes/class-wp-editor.php:1249
+#: wp-includes/class-wp-editor.php:1266
 msgid "Inline toolbar (when an image, link or preview is selected)"
 msgstr "Трака са алаткама у реду (када је слика, веза или преглед одабран)"
 
-#: wp-includes/class-wp-editor.php:1254
+#: wp-includes/class-wp-editor.php:1271
 msgid "Shift + Alt + letter:"
 msgstr "Shift + Alt + слово:"
 
@@ -4274,7 +4320,7 @@ msgid "Custom Links"
 msgstr "Прилагођене везе"
 
 #: wp-includes/class-wp-customize-nav-menus.php:968
-#: wp-includes/class-wp-customize-widgets.php:832
+#: wp-includes/class-wp-customize-widgets.php:846
 msgid "The search results will be updated as you type."
 msgstr "Резултати претраге ће бити ажурирани како куцате."
 
@@ -4295,7 +4341,7 @@ msgstr "Помери ниво испод"
 #: wp-includes/class-wp-customize-nav-menus.php:428
 #: wp-includes/class-wp-customize-nav-menus.php:958
 #: wp-includes/class-wp-customize-section.php:246
-#: wp-includes/class-wp-customize-widgets.php:822
+#: wp-includes/class-wp-customize-widgets.php:836
 msgid "Customizing &#9656; %s"
 msgstr "Прилагођавање &#9656; %s"
 
@@ -4449,7 +4495,7 @@ msgstr "CSS класе"
 msgid "Title Attribute"
 msgstr "Атрибут наслов"
 
-#: wp-includes/class-wp-editor.php:1684
+#: wp-includes/class-wp-editor.php:1701
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:105
 #: wp-includes/media-template.php:1008
 #: wp-includes/widgets/class-wp-widget-media-image.php:138
@@ -4550,11 +4596,11 @@ msgstr[2] "Ваша тема подржава %s изборника. Изабе�
 msgid "Your theme supports one menu. Select which menu you would like to use."
 msgstr "Ваша тема подржава један изборник. Изаберите који изборник желите да користите."
 
-#: wp-includes/theme.php:2971
+#: wp-includes/theme.php:2975
 msgid "Customizer"
 msgstr "Прилагођивач"
 
-#: wp-includes/taxonomy.php:3486
+#: wp-includes/taxonomy.php:3489
 msgid "Could not split shared term."
 msgstr "Није могуће поделити дељени члан."
 
@@ -4677,7 +4723,7 @@ msgstr ""
 "\n"
 "--Екипа на SITE_NAME"
 
-#: wp-includes/media.php:3498
+#: wp-includes/media.php:3502
 msgid "Drag and drop to reorder media files."
 msgstr "Повуците и пустите да промените поредак датотека садржаја."
 
@@ -4767,7 +4813,7 @@ msgid "No Comments<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Нема коментара<span class=\"screen-reader-text\"> на %s</span>"
 
 #: wp-includes/class-wp-customize-nav-menus.php:1067
-#: wp-includes/class-wp-editor.php:1679 wp-includes/media-template.php:820
+#: wp-includes/class-wp-editor.php:1696 wp-includes/media-template.php:820
 msgid "Link Text"
 msgstr "Текст везе"
 
@@ -4785,44 +4831,44 @@ msgstr "Детаљи теме"
 msgid "No categories found."
 msgstr "Нема нађених категорија."
 
-#: wp-includes/class-wp-editor.php:1234 wp-includes/script-loader.php:99
+#: wp-includes/class-wp-editor.php:1251 wp-includes/script-loader.php:99
 msgid "Distraction-free writing mode"
 msgstr "Режим Писање без ометања"
 
 #. translators: 1: Theme support 2: hook name
-#: wp-includes/theme.php:2419
+#: wp-includes/theme.php:2423
 msgid "Theme support for %1$s should be registered before the %2$s hook."
 msgstr "Подршка теме за %1$s требало би да буде регистрована пре %2$s копче."
 
-#: wp-includes/class-wp-customize-widgets.php:775
+#: wp-includes/class-wp-customize-widgets.php:789
 msgid "Widget moved up"
 msgstr "Виџет је померен нагоре"
 
-#: wp-includes/class-wp-customize-widgets.php:776
+#: wp-includes/class-wp-customize-widgets.php:790
 msgid "Widget moved down"
 msgstr "Виџет је померен надоле"
 
-#: wp-includes/class-wp-editor.php:1213
+#: wp-includes/class-wp-editor.php:1230
 msgid "Rich Text Area. Press Alt-Shift-H for help."
 msgstr "Богати простор за текст. Притисните Alt-Shift-H за помоћ."
 
-#: wp-includes/class-wp-editor.php:1248
+#: wp-includes/class-wp-editor.php:1265
 msgid "Focus shortcuts:"
 msgstr "Пречице за фокус:"
 
-#: wp-includes/class-wp-editor.php:1251
+#: wp-includes/class-wp-editor.php:1268
 msgid "Editor toolbar"
 msgstr "Трака са алаткама уређивача"
 
-#: wp-includes/class-wp-editor.php:1252
+#: wp-includes/class-wp-editor.php:1269
 msgid "Elements path"
 msgstr "Путања елемената"
 
-#: wp-includes/class-wp-editor.php:1261
+#: wp-includes/class-wp-editor.php:1278
 msgid "To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons."
 msgstr "Да бисте померили фокус на другу дугмад користите дугме Tab или дугмад стрелица. Да бисте вратили фокус на уређивач, притисните Escape или користите једно од дугмади."
 
-#: wp-includes/class-wp-editor.php:1250
+#: wp-includes/class-wp-editor.php:1267
 msgid "Editor menu (when enabled)"
 msgstr "Изборник уређивача (када је омогућен)"
 
@@ -4831,7 +4877,7 @@ msgstr "Изборник уређивача (када је омогућен)"
 msgid "The following values do not describe a valid date: month %1$s, day %2$s."
 msgstr "Следеће вредности не описују ваљан датум: месец %1$s, дан %2$s."
 
-#: wp-includes/theme.php:2263
+#: wp-includes/theme.php:2267
 msgid "You need to pass an array of types."
 msgstr "Морате доделити низ врста."
 
@@ -4841,7 +4887,7 @@ msgstr "Морате доделити низ врста."
 msgid "%s must set a database connection for use with escaping."
 msgstr "%s мора да подеси везу ка бази података без промене."
 
-#: wp-includes/taxonomy.php:2056
+#: wp-includes/taxonomy.php:2059
 msgid "A term with the name provided already exists in this taxonomy."
 msgstr "Члан са наведеним називом већ постоји у овој таксономији."
 
@@ -4877,7 +4923,7 @@ msgctxt "verb"
 msgid "Trash"
 msgstr "Помери на отпад"
 
-#: wp-includes/media.php:3516
+#: wp-includes/media.php:3520
 msgctxt "noun"
 msgid "Trash"
 msgstr "Отпад"
@@ -4911,7 +4957,7 @@ msgstr "Овде можете видети све коментаре на ова
 msgid "Edit Selection"
 msgstr "Уреди одабир"
 
-#: wp-includes/class-wp-editor.php:1235
+#: wp-includes/class-wp-editor.php:1252
 msgid "No alignment"
 msgstr "Нема поравнања"
 
@@ -5022,20 +5068,20 @@ msgstr "Архиве: %s"
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: wp-includes/class-wp-editor.php:1144
+#: wp-includes/class-wp-editor.php:1161
 msgid "Add to Dictionary"
 msgstr "Додај у речник"
 
-#: wp-includes/class-wp-editor.php:1152
+#: wp-includes/class-wp-editor.php:1169
 msgid "Border color"
 msgstr "Боја ивице"
 
-#: wp-includes/class-wp-editor.php:1181
+#: wp-includes/class-wp-editor.php:1198
 msgctxt "horizontal table cell alignment"
 msgid "H Align"
 msgstr "Водоравно поравнање"
 
-#: wp-includes/class-wp-editor.php:1186
+#: wp-includes/class-wp-editor.php:1203
 msgctxt "vertical table cell alignment"
 msgid "V Align"
 msgstr "Усправно поравнање"
@@ -5062,20 +5108,20 @@ msgstr "Одабери слику"
 msgid "No image selected"
 msgstr "Нема одабране слике"
 
-#: wp-includes/class-wp-editor.php:1120
+#: wp-includes/class-wp-editor.php:1137
 msgid "Color"
 msgstr "Боја"
 
-#: wp-includes/class-wp-editor.php:1121
+#: wp-includes/class-wp-editor.php:1138
 msgid "Custom color"
 msgstr "Прилагођена боја"
 
-#: wp-includes/class-wp-editor.php:1122
+#: wp-includes/class-wp-editor.php:1139
 msgctxt "label for custom color"
 msgid "Custom..."
 msgstr "Прилагођена..."
 
-#: wp-includes/class-wp-editor.php:1123
+#: wp-includes/class-wp-editor.php:1140
 msgid "No color"
 msgstr "Нема боје"
 
@@ -5089,7 +5135,7 @@ msgctxt "post type general name"
 msgid "Media"
 msgstr "Садржај"
 
-#: wp-includes/class-wp-editor.php:1227
+#: wp-includes/class-wp-editor.php:1244
 msgctxt "TinyMCE menu"
 msgid "Format"
 msgstr "Облик"
@@ -5099,7 +5145,7 @@ msgctxt "add new from admin bar"
 msgid "Link"
 msgstr "Веза"
 
-#: wp-includes/class-wp-editor.php:1037
+#: wp-includes/class-wp-editor.php:1054
 msgctxt "list style"
 msgid "Default"
 msgstr "Подразумевано"
@@ -5118,11 +5164,11 @@ msgstr "Чланак"
 msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new."
 msgstr "<strong>Успешно сте ажурирали Вордпрес!</strong> Молимо вас да се пријавите назад да бисте видели шта је ново."
 
-#: wp-includes/media.php:3523
+#: wp-includes/media.php:3527
 msgid "Trash Selected"
 msgstr "Помери на отпад одабрано"
 
-#: wp-includes/media.php:3524
+#: wp-includes/media.php:3528
 msgid "Untrash Selected"
 msgstr "Врати са отпада одабрано"
 
@@ -5130,7 +5176,7 @@ msgstr "Врати са отпада одабрано"
 msgid "Untrash"
 msgstr "Враћање са отпада"
 
-#: wp-includes/media.php:3520
+#: wp-includes/media.php:3524
 msgid ""
 "You are about to trash these items.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -5142,15 +5188,15 @@ msgstr ""
 msgid "Press return or enter to open this panel"
 msgstr "Притисните enter да бисте отворили ову таблу"
 
-#: wp-includes/media.php:3521
+#: wp-includes/media.php:3525
 msgid "Bulk Select"
 msgstr "Масовно бирање"
 
-#: wp-includes/media.php:3522
+#: wp-includes/media.php:3526
 msgid "Cancel Selection"
 msgstr "Одустани од одабира"
 
-#: wp-includes/media.php:3525
+#: wp-includes/media.php:3529
 msgid "Delete Selected"
 msgstr "Обриши одабрано"
 
@@ -5162,15 +5208,15 @@ msgstr "(без натписа)"
 
 #. translators: %s: taxonomy label, %l: list of terms formatted as per
 #. $term_template
-#: wp-includes/taxonomy.php:3971
+#: wp-includes/taxonomy.php:3974
 msgid "%s: %l."
 msgstr "%s: %l."
 
-#: wp-includes/class-wp-editor.php:1218
+#: wp-includes/class-wp-editor.php:1235
 msgid "Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser&#8217;s edit menu instead."
 msgstr "Ваш веб прегледач не подржава директни приступ остави. Молимо вас да уместо тога користите пречице са тастатуре или изборник уређивања свог веб прегледача."
 
-#: wp-includes/class-wp-editor.php:1233
+#: wp-includes/class-wp-editor.php:1250
 msgid "Read more..."
 msgstr "Прочитај више..."
 
@@ -5250,23 +5296,23 @@ msgstr "Битрејт"
 msgid "Bitrate Mode"
 msgstr "Режим битрејта"
 
-#: wp-includes/media.php:3512
+#: wp-includes/media.php:3516
 msgid "All dates"
 msgstr "Сви датуми"
 
-#: wp-includes/media.php:3515
+#: wp-includes/media.php:3519
 msgid "Unattached"
 msgstr "Непридружено"
 
-#: wp-includes/media.php:3528
+#: wp-includes/media.php:3532
 msgid "Filter by date"
 msgstr "Филтрирај по датуму"
 
-#: wp-includes/media.php:3529
+#: wp-includes/media.php:3533
 msgid "Filter by type"
 msgstr "Филтрирај по врсти"
 
-#: wp-includes/media.php:3530
+#: wp-includes/media.php:3534
 msgid "Search Media"
 msgstr "Претражи садржај"
 
@@ -5274,7 +5320,7 @@ msgstr "Претражи садржај"
 msgid "This site is no longer available."
 msgstr "Ово веб место више није доступно."
 
-#: wp-includes/class-wp-editor.php:1705
+#: wp-includes/class-wp-editor.php:1722
 msgid "Search or use up and down arrow keys to select an item."
 msgstr "Претражите или користите дугмад за горе и доле да бисте одабрали ставку."
 
@@ -5292,7 +5338,7 @@ msgstr "<strong>ГРЕШКА</strong>: Коментар није могао би
 msgid "You are customizing %s"
 msgstr "Прилагођавате %s"
 
-#: wp-includes/class-wp-customize-widgets.php:422
+#: wp-includes/class-wp-customize-widgets.php:436
 msgid "Widgets are independent sections of content that can be placed into widgetized areas provided by your theme (commonly called sidebars)."
 msgstr "Виџети су независни одељци садржаја коју могу бити стављени у просторима за виџете које омогућује ваша тема (често названи и бочне траке)."
 
@@ -5311,16 +5357,16 @@ msgstr "Иако можете опсећи слике како вам се св�
 msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
 msgstr "(Вордпрес није могао да успостави безбедну везу са WordPress.org. Молимо вас да контактирате свог управника сервера.)"
 
-#: wp-includes/class-wp-customize-widgets.php:1172
+#: wp-includes/class-wp-customize-widgets.php:1186
 msgid "Shift-click to edit this widget."
 msgstr "Притисните Shift и лево дугме на мишу за уређивање овог виџета."
 
-#: wp-includes/class-wp-editor.php:1000
+#: wp-includes/class-wp-editor.php:1017
 msgctxt "HTML tag"
 msgid "Address"
 msgstr "Адреса"
 
-#: wp-includes/class-wp-editor.php:1211
+#: wp-includes/class-wp-editor.php:1228
 msgid "If you&#8217;re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically."
 msgstr "Уколико желите да налепите богати садржај из Microsoft Word-а покушајте са искључивањем ове могућности. Уређивач ће аутоматски очистити текст налепљен из Word-а."
 
@@ -5329,7 +5375,7 @@ msgstr "Уколико желите да налепите богати садр�
 msgid "While you can crop images to your liking after clicking <strong>Add new image</strong>, your theme recommends a header size of %s pixels."
 msgstr "Иако можете опсећи слике како вам се свиђа након притиска на <strong>Додај нову слику</strong>, ваша тема препоручује заглавље величине %s пиксела."
 
-#: wp-includes/class-wp-editor.php:1245
+#: wp-includes/class-wp-editor.php:1262
 msgid "Keyboard Shortcuts"
 msgstr "Пречице са тастатуре"
 
@@ -5343,11 +5389,11 @@ msgstr "<strong>ГРЕШКА</strong>: Колачићи су искључени 
 msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
 msgstr "<strong>ГРЕШКА</strong>: Колачићи су заустављени због неочекиваног излаза. За помоћ, молимо вас да погледате <a href=\"%1$s\">ову документацију</a> или да покушате са <a href=\"%2$s\">форумима подршке</a>."
 
-#: wp-includes/class-wp-editor.php:1175
+#: wp-includes/class-wp-editor.php:1192
 msgid "Split table cell"
 msgstr "Подели ћелију табеле"
 
-#: wp-includes/class-wp-editor.php:1185
+#: wp-includes/class-wp-editor.php:1202
 msgctxt "table cell alignment attribute"
 msgid "None"
 msgstr "Нема"
@@ -5387,35 +5433,35 @@ msgstr "CSS класа слике"
 msgid "Link CSS Class"
 msgstr "CSS класа везе"
 
-#: wp-includes/media.php:3588
+#: wp-includes/media.php:3592
 msgid "Edit Audio Playlist"
 msgstr "Уреди списак звучних записа"
 
-#: wp-includes/media.php:3589
+#: wp-includes/media.php:3593
 msgid "&#8592; Cancel Audio Playlist"
 msgstr "&#8592; Одустани од списка звучних записа"
 
-#: wp-includes/media.php:3590
+#: wp-includes/media.php:3594
 msgid "Insert audio playlist"
 msgstr "Уметни списак звучних записа"
 
-#: wp-includes/media.php:3591
+#: wp-includes/media.php:3595
 msgid "Update audio playlist"
 msgstr "Ажурирај списак звучних записа"
 
-#: wp-includes/media.php:3592
+#: wp-includes/media.php:3596
 msgid "Add to audio playlist"
 msgstr "Додај у списак звучних записа"
 
-#: wp-includes/media.php:3593
+#: wp-includes/media.php:3597
 msgid "Add to Audio Playlist"
 msgstr "Додај у списак звучних записа"
 
-#: wp-includes/class-wp-editor.php:1012
+#: wp-includes/class-wp-editor.php:1029
 msgid "Font Family"
 msgstr "Фамилија словног лика"
 
-#: wp-includes/class-wp-editor.php:1013
+#: wp-includes/class-wp-editor.php:1030
 msgid "Font Sizes"
 msgstr "Величина словног лика"
 
@@ -5442,7 +5488,7 @@ msgctxt "video or audio"
 msgid "Length"
 msgstr "Дужина"
 
-#: wp-includes/media.php:3569
+#: wp-includes/media.php:3573
 msgid "There has been an error cropping your image."
 msgstr "Десила се грешка приликом опсецања ваше слике."
 
@@ -5450,28 +5496,28 @@ msgstr "Десила се грешка приликом опсецања ваш�
 msgid "Set image"
 msgstr "Постави слику"
 
-#: wp-includes/class-wp-customize-widgets.php:709
+#: wp-includes/class-wp-customize-widgets.php:723
 msgctxt "Move widget"
 msgid "Move"
 msgstr "Помери"
 
-#: wp-includes/class-wp-customize-widgets.php:771
+#: wp-includes/class-wp-customize-widgets.php:785
 msgid "Save and preview changes before publishing them."
 msgstr "Сачувај и прегледај измене пре објављивања."
 
-#: wp-includes/class-wp-customize-widgets.php:773
+#: wp-includes/class-wp-customize-widgets.php:787
 msgid "Trash widget by moving it to the inactive widgets sidebar."
 msgstr "Помери виџет на отпад померањем на бочну траку неактивних виџета."
 
-#: wp-includes/class-wp-customize-widgets.php:828
+#: wp-includes/class-wp-customize-widgets.php:842
 msgid "Search Widgets"
 msgstr "Претражи виџете"
 
-#: wp-includes/class-wp-customize-widgets.php:829
+#: wp-includes/class-wp-customize-widgets.php:843
 msgid "Search widgets&hellip;"
 msgstr "Претражи виџете&hellip;"
 
-#: wp-includes/class-wp-editor.php:985
+#: wp-includes/class-wp-editor.php:1002
 msgctxt "TinyMCE"
 msgid "Headings"
 msgstr "Заглавља"
@@ -5481,7 +5527,7 @@ msgctxt "auto preload"
 msgid "Auto"
 msgstr "Аутоматски"
 
-#: wp-includes/class-wp-customize-widgets.php:700
+#: wp-includes/class-wp-customize-widgets.php:714
 msgid "Move to another area&hellip;"
 msgstr "Помери у други простор&hellip;"
 
@@ -5490,237 +5536,237 @@ msgstr "Помери у други простор&hellip;"
 msgid "Tracks (subtitles, captions, descriptions, chapters, or metadata)"
 msgstr "Записи (поднаписи, натписи, описи, поглавља или метаподаци)"
 
-#: wp-includes/media.php:3566
+#: wp-includes/media.php:3570
 msgid "Cropping&hellip;"
 msgstr "Опсецање&hellip;"
 
-#: wp-includes/class-wp-editor.php:1034 wp-includes/script-loader.php:112
+#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:112
 msgid "Bulleted list"
 msgstr "Неуређена листа"
 
-#: wp-includes/class-wp-editor.php:1036
+#: wp-includes/class-wp-editor.php:1053
 msgctxt "list style"
 msgid "Square"
 msgstr "Квадрат"
 
-#: wp-includes/class-wp-editor.php:1038
+#: wp-includes/class-wp-editor.php:1055
 msgctxt "list style"
 msgid "Circle"
 msgstr "Круг"
 
-#: wp-includes/class-wp-editor.php:1039
+#: wp-includes/class-wp-editor.php:1056
 msgctxt "list style"
 msgid "Disc"
 msgstr "Диск"
 
-#: wp-includes/class-wp-editor.php:1040
+#: wp-includes/class-wp-editor.php:1057
 msgctxt "list style"
 msgid "Lower Greek"
 msgstr "Мала грчка слова"
 
-#: wp-includes/class-wp-editor.php:1041
+#: wp-includes/class-wp-editor.php:1058
 msgctxt "list style"
 msgid "Lower Alpha"
 msgstr "Мала слова"
 
-#: wp-includes/class-wp-editor.php:1042
+#: wp-includes/class-wp-editor.php:1059
 msgctxt "list style"
 msgid "Upper Alpha"
 msgstr "Велика слова"
 
-#: wp-includes/class-wp-editor.php:1043
+#: wp-includes/class-wp-editor.php:1060
 msgctxt "list style"
 msgid "Upper Roman"
 msgstr "Велики римски бројеви"
 
-#: wp-includes/class-wp-editor.php:1044
+#: wp-includes/class-wp-editor.php:1061
 msgctxt "list style"
 msgid "Lower Roman"
 msgstr "Мали римски бројеви"
 
-#: wp-includes/class-wp-editor.php:1047
+#: wp-includes/class-wp-editor.php:1064
 msgctxt "Name of link anchor (TinyMCE)"
 msgid "Name"
 msgstr "Име"
 
-#: wp-includes/class-wp-editor.php:1048
+#: wp-includes/class-wp-editor.php:1065
 msgctxt "Link anchor (TinyMCE)"
 msgid "Anchor"
 msgstr "Име сидра"
 
-#: wp-includes/class-wp-editor.php:1049
+#: wp-includes/class-wp-editor.php:1066
 msgctxt "Link anchors (TinyMCE)"
 msgid "Anchors"
 msgstr "Име сидра"
 
-#: wp-includes/class-wp-editor.php:1091
+#: wp-includes/class-wp-editor.php:1108
 msgctxt "editor button"
 msgid "Right to left"
 msgstr "Десно ка лево"
 
-#: wp-includes/class-wp-editor.php:1092
+#: wp-includes/class-wp-editor.php:1109
 msgctxt "editor button"
 msgid "Left to right"
 msgstr "Лево ка десно"
 
-#: wp-includes/class-wp-editor.php:1130
+#: wp-includes/class-wp-editor.php:1147
 msgctxt "find/replace"
 msgid "Replace"
 msgstr "Замени"
 
-#: wp-includes/class-wp-editor.php:1131
+#: wp-includes/class-wp-editor.php:1148
 msgctxt "find/replace"
 msgid "Next"
 msgstr "Следеће"
 
-#: wp-includes/class-wp-editor.php:1134
+#: wp-includes/class-wp-editor.php:1151
 msgctxt "find/replace"
 msgid "Whole words"
 msgstr "Целе речи"
 
-#: wp-includes/class-wp-editor.php:1136
+#: wp-includes/class-wp-editor.php:1153
 msgctxt "find/replace"
 msgid "Replace with"
 msgstr "Замени са"
 
-#: wp-includes/class-wp-editor.php:1137
+#: wp-includes/class-wp-editor.php:1154
 msgctxt "find/replace"
 msgid "Find"
 msgstr "Пронађи"
 
-#: wp-includes/class-wp-editor.php:1138
+#: wp-includes/class-wp-editor.php:1155
 msgctxt "find/replace"
 msgid "Replace all"
 msgstr "Замени све"
 
-#: wp-includes/class-wp-editor.php:1141
+#: wp-includes/class-wp-editor.php:1158
 msgctxt "spellcheck"
 msgid "Finish"
 msgstr "Заврши"
 
-#: wp-includes/class-wp-editor.php:1142
+#: wp-includes/class-wp-editor.php:1159
 msgctxt "spellcheck"
 msgid "Ignore all"
 msgstr "Занемари све"
 
-#: wp-includes/class-wp-editor.php:1143
+#: wp-includes/class-wp-editor.php:1160
 msgctxt "spellcheck"
 msgid "Ignore"
 msgstr "Занемари"
 
-#: wp-includes/class-wp-editor.php:1156
+#: wp-includes/class-wp-editor.php:1173
 msgctxt "table column"
 msgid "Column"
 msgstr "Ступац"
 
-#: wp-includes/class-wp-editor.php:1157
+#: wp-includes/class-wp-editor.php:1174
 msgctxt "table columns"
 msgid "Cols"
 msgstr "Ступци"
 
-#: wp-includes/class-wp-editor.php:1158
+#: wp-includes/class-wp-editor.php:1175
 msgctxt "table cell"
 msgid "Cell"
 msgstr "Ћелија"
 
-#: wp-includes/class-wp-editor.php:1160
+#: wp-includes/class-wp-editor.php:1177
 msgctxt "table header"
 msgid "Header"
 msgstr "Заглавље"
 
-#: wp-includes/class-wp-editor.php:1161
+#: wp-includes/class-wp-editor.php:1178
 msgctxt "table body"
 msgid "Body"
 msgstr "Тело"
 
-#: wp-includes/class-wp-editor.php:1162
+#: wp-includes/class-wp-editor.php:1179
 msgctxt "table footer"
 msgid "Footer"
 msgstr "Подножје"
 
-#: wp-includes/class-wp-editor.php:1197
+#: wp-includes/class-wp-editor.php:1214
 msgctxt "table cell scope attribute"
 msgid "Scope"
 msgstr "Поље"
 
-#: wp-includes/class-wp-editor.php:1199
+#: wp-includes/class-wp-editor.php:1216
 msgctxt "TinyMCE"
 msgid "Insert template"
 msgstr "Уметни шаблон"
 
-#: wp-includes/class-wp-editor.php:1200
+#: wp-includes/class-wp-editor.php:1217
 msgctxt "TinyMCE"
 msgid "Templates"
 msgstr "Шаблони"
 
 #. translators: word count
-#: wp-includes/class-wp-editor.php:1208
+#: wp-includes/class-wp-editor.php:1225
 msgid "Words: %s"
 msgstr "Речи: %s"
 
-#: wp-includes/class-wp-editor.php:1221
+#: wp-includes/class-wp-editor.php:1238
 msgctxt "TinyMCE menu"
 msgid "Insert"
 msgstr "Уметни"
 
-#: wp-includes/class-wp-editor.php:1222
+#: wp-includes/class-wp-editor.php:1239
 msgctxt "TinyMCE menu"
 msgid "File"
 msgstr "Датотека"
 
-#: wp-includes/class-wp-editor.php:1223
+#: wp-includes/class-wp-editor.php:1240
 msgctxt "TinyMCE menu"
 msgid "Edit"
 msgstr "Уреди"
 
-#: wp-includes/class-wp-editor.php:1224
+#: wp-includes/class-wp-editor.php:1241
 msgctxt "TinyMCE menu"
 msgid "Tools"
 msgstr "Алатке"
 
-#: wp-includes/class-wp-editor.php:1225
+#: wp-includes/class-wp-editor.php:1242
 msgctxt "TinyMCE menu"
 msgid "View"
 msgstr "Погледај"
 
-#: wp-includes/class-wp-editor.php:1226
+#: wp-includes/class-wp-editor.php:1243
 msgctxt "TinyMCE menu"
 msgid "Table"
 msgstr "Табела"
 
-#: wp-includes/class-wp-editor.php:983
+#: wp-includes/class-wp-editor.php:1000
 msgctxt "TinyMCE"
 msgid "Formats"
 msgstr "Облици"
 
 #. translators: block tags
-#: wp-includes/class-wp-editor.php:994
+#: wp-includes/class-wp-editor.php:1011
 msgctxt "TinyMCE"
 msgid "Blocks"
 msgstr "Блокови"
 
-#: wp-includes/class-wp-editor.php:997
+#: wp-includes/class-wp-editor.php:1014
 msgctxt "HTML tag"
 msgid "Div"
 msgstr "Div"
 
-#: wp-includes/class-wp-editor.php:998
+#: wp-includes/class-wp-editor.php:1015
 msgctxt "HTML tag"
 msgid "Pre"
 msgstr "Pre"
 
-#: wp-includes/class-wp-editor.php:1002
+#: wp-includes/class-wp-editor.php:1019
 msgctxt "HTML elements"
 msgid "Inline"
 msgstr "У равни"
 
 #. translators: previous
-#: wp-includes/class-wp-editor.php:1133
+#: wp-includes/class-wp-editor.php:1150
 msgctxt "find/replace"
 msgid "Prev"
 msgstr "Претходно"
 
-#: wp-includes/class-wp-editor.php:1204
+#: wp-includes/class-wp-editor.php:1221
 msgctxt "editor button"
 msgid "Show blocks"
 msgstr "Прикажи блокове"
@@ -5781,126 +5827,126 @@ msgstr "Слика плаката"
 msgid "There are no associated subtitles."
 msgstr "Нема повезаних поднаписа."
 
-#: wp-includes/media.php:3508
+#: wp-includes/media.php:3512
 msgid "Create a new playlist"
 msgstr "Направи нови списак записа"
 
-#: wp-includes/media.php:3509
+#: wp-includes/media.php:3513
 msgid "Create a new video playlist"
 msgstr "Направи нови списак видео записа"
 
-#: wp-includes/media.php:3555
+#: wp-includes/media.php:3559
 msgid "Image Details"
 msgstr "Детаљи слике"
 
-#: wp-includes/media.php:3556
+#: wp-includes/media.php:3560
 msgid "Replace Image"
 msgstr "Замени слику"
 
-#: wp-includes/media.php:3557 wp-includes/media.php:3575
-#: wp-includes/media.php:3581
+#: wp-includes/media.php:3561 wp-includes/media.php:3579
+#: wp-includes/media.php:3585
 msgid "Cancel Edit"
 msgstr "Одустани од уређивања"
 
-#: wp-includes/media.php:3562
+#: wp-includes/media.php:3566
 msgid "Select and Crop"
 msgstr "Изабери и опсеци"
 
-#: wp-includes/media.php:3564
+#: wp-includes/media.php:3568
 msgid "Crop Image"
 msgstr "Исеци слику"
 
-#: wp-includes/media.php:3572
+#: wp-includes/media.php:3576
 msgid "Audio Details"
 msgstr "Детаљи звучног записа"
 
-#: wp-includes/media.php:3573
+#: wp-includes/media.php:3577
 msgid "Replace Audio"
 msgstr "Замени звучни запис"
 
-#: wp-includes/media.php:3574
+#: wp-includes/media.php:3578
 msgid "Add Audio Source"
 msgstr "Додај звучни извор"
 
-#: wp-includes/media.php:3578
+#: wp-includes/media.php:3582
 msgid "Video Details"
 msgstr "Детаљи видео записа"
 
-#: wp-includes/media.php:3579
+#: wp-includes/media.php:3583
 msgid "Replace Video"
 msgstr "Замени видео запис"
 
-#: wp-includes/media.php:3580
+#: wp-includes/media.php:3584
 msgid "Add Video Source"
 msgstr "Додај видео извор"
 
-#: wp-includes/media.php:3582
+#: wp-includes/media.php:3586
 msgid "Select Poster Image"
 msgstr "Изабери слику плаката"
 
-#: wp-includes/media.php:3583
+#: wp-includes/media.php:3587
 msgid "Add Subtitles"
 msgstr "Додај поднаписе"
 
-#: wp-includes/media.php:3586
+#: wp-includes/media.php:3590
 msgid "Drag and drop to reorder tracks."
 msgstr "Повуците и пустите да промените поредак записа."
 
-#: wp-includes/media.php:3587
+#: wp-includes/media.php:3591
 msgid "Create Audio Playlist"
 msgstr "Направи списак звучних записа"
 
-#: wp-includes/media.php:3596
+#: wp-includes/media.php:3600
 msgid "Drag and drop to reorder videos."
 msgstr "Повуците и пустите да промените поредак видео записа."
 
-#: wp-includes/media.php:3597
+#: wp-includes/media.php:3601
 msgid "Create Video Playlist"
 msgstr "Направи списак видео записа"
 
-#: wp-includes/media.php:3598
+#: wp-includes/media.php:3602
 msgid "Edit Video Playlist"
 msgstr "Уреди списак видео записа"
 
-#: wp-includes/media.php:3599
+#: wp-includes/media.php:3603
 msgid "&#8592; Cancel Video Playlist"
 msgstr "&#8592; Одустани од списка видео записа"
 
-#: wp-includes/media.php:3600
+#: wp-includes/media.php:3604
 msgid "Insert video playlist"
 msgstr "Уметни списак видео записа"
 
-#: wp-includes/media.php:3601
+#: wp-includes/media.php:3605
 msgid "Update video playlist"
 msgstr "Ажурирај списак видео записа"
 
-#: wp-includes/media.php:3602
+#: wp-includes/media.php:3606
 msgid "Add to video playlist"
 msgstr "Додај у списак видео записа"
 
-#: wp-includes/media.php:3603
+#: wp-includes/media.php:3607
 msgid "Add to Video Playlist"
 msgstr "Додај у списак видео записа"
 
 #: wp-includes/class-wp-customize-nav-menus.php:952
 #: wp-includes/class-wp-customize-panel.php:378
 #: wp-includes/class-wp-customize-section.php:368
-#: wp-includes/class-wp-customize-widgets.php:817
+#: wp-includes/class-wp-customize-widgets.php:831
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:75
-#: wp-includes/media.php:3492
+#: wp-includes/media.php:3496
 msgid "Back"
 msgstr "Назад"
 
 #: wp-includes/customize/class-wp-customize-image-control.php:41
-#: wp-includes/media.php:3561
+#: wp-includes/media.php:3565
 msgid "Choose Image"
 msgstr "Одабери слику"
 
-#: wp-includes/media.php:3563
+#: wp-includes/media.php:3567
 msgid "Skip Cropping"
 msgstr "Прескочи опсецање"
 
-#: wp-includes/media.php:3565
+#: wp-includes/media.php:3569
 msgid "Crop your image"
 msgstr "Исеци своју слику"
 
@@ -5959,215 +6005,215 @@ msgctxt "custom headers"
 msgid "Suggested"
 msgstr "Предложено"
 
-#: wp-includes/class-wp-customize-widgets.php:824
+#: wp-includes/class-wp-customize-widgets.php:838
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:61
 msgid "Add a Widget"
 msgstr "Додај виџет"
 
 #: wp-includes/class-wp-customize-nav-menus.php:931
-#: wp-includes/class-wp-customize-widgets.php:701
+#: wp-includes/class-wp-customize-widgets.php:715
 msgid "Move down"
 msgstr "Помери надоле"
 
 #: wp-includes/class-wp-customize-nav-menus.php:930
-#: wp-includes/class-wp-customize-widgets.php:702
+#: wp-includes/class-wp-customize-widgets.php:716
 msgid "Move up"
 msgstr "Помери нагоре"
 
-#: wp-includes/class-wp-customize-widgets.php:708
+#: wp-includes/class-wp-customize-widgets.php:722
 msgid "Select an area to move this widget into:"
 msgstr "Одаберите простор где да померите овај виџет:"
 
-#: wp-includes/class-wp-customize-widgets.php:774
+#: wp-includes/class-wp-customize-widgets.php:788
 #: wp-includes/script-loader.php:718 wp-includes/script-loader.php:742
 msgid "An error has occurred. Please reload the page and try again."
 msgstr "Десила се грешка. Молимо вас да поново учитате ову страницу и покушате поново."
 
-#: wp-includes/class-wp-editor.php:1007
+#: wp-includes/class-wp-editor.php:1024
 msgid "Clear formatting"
 msgstr "Уклони обликовање"
 
-#: wp-includes/class-wp-editor.php:1019
+#: wp-includes/class-wp-editor.php:1036
 msgid "Increase indent"
 msgstr "Повећај увлачење"
 
-#: wp-includes/class-wp-editor.php:1020
+#: wp-includes/class-wp-editor.php:1037
 msgid "Decrease indent"
 msgstr "Смањи увлачење"
 
-#: wp-includes/class-wp-editor.php:1035 wp-includes/script-loader.php:114
+#: wp-includes/class-wp-editor.php:1052 wp-includes/script-loader.php:114
 msgid "Numbered list"
 msgstr "Нумерисана листа"
 
-#: wp-includes/class-wp-editor.php:1056
+#: wp-includes/class-wp-editor.php:1073
 msgid "Robots"
 msgstr "Роботи"
 
-#: wp-includes/class-wp-editor.php:1058
+#: wp-includes/class-wp-editor.php:1075
 msgid "Keywords"
 msgstr "Кључне речи"
 
-#: wp-includes/class-wp-editor.php:1059
+#: wp-includes/class-wp-editor.php:1076
 msgid "Encoding"
 msgstr "Кодирање"
 
-#: wp-includes/class-wp-editor.php:1073
+#: wp-includes/class-wp-editor.php:1090
 msgid "Style"
 msgstr "Стил"
 
-#: wp-includes/class-wp-editor.php:1075 wp-includes/script-loader.php:111
+#: wp-includes/class-wp-editor.php:1092 wp-includes/script-loader.php:111
 msgid "Insert image"
 msgstr "Уметни слику"
 
-#: wp-includes/class-wp-editor.php:1077
+#: wp-includes/class-wp-editor.php:1094
 msgid "Insert date/time"
 msgstr "Уметни датум/време"
 
-#: wp-includes/class-wp-editor.php:1084
+#: wp-includes/class-wp-editor.php:1101
 msgid "Alternative source"
 msgstr "Резервни извор"
 
-#: wp-includes/class-wp-editor.php:1086
+#: wp-includes/class-wp-editor.php:1103
 msgid "Insert video"
 msgstr "Уметни видео запис"
 
-#: wp-includes/class-wp-editor.php:1090
+#: wp-includes/class-wp-editor.php:1107
 msgid "Special character"
 msgstr "Посебни карактер"
 
-#: wp-includes/class-wp-editor.php:1093
+#: wp-includes/class-wp-editor.php:1110
 msgid "Emoticons"
 msgstr "Емотикони"
 
-#: wp-includes/class-wp-editor.php:1094
+#: wp-includes/class-wp-editor.php:1111
 msgid "Nonbreaking space"
 msgstr "Простор који не ломи"
 
-#: wp-includes/class-wp-editor.php:1095
+#: wp-includes/class-wp-editor.php:1112
 msgid "Page break"
 msgstr "Прелом странице"
 
-#: wp-includes/class-wp-editor.php:1096
+#: wp-includes/class-wp-editor.php:1113
 msgid "Paste as text"
 msgstr "Налепи као чисти текст"
 
-#: wp-includes/class-wp-editor.php:1101
+#: wp-includes/class-wp-editor.php:1118
 msgid "Horizontal line"
 msgstr "Водоравна линија"
 
-#: wp-includes/class-wp-editor.php:1129
+#: wp-includes/class-wp-editor.php:1146
 msgid "Could not find the specified string."
 msgstr "Није могуће пронаћи наведену ниску."
 
-#: wp-includes/class-wp-editor.php:1147
+#: wp-includes/class-wp-editor.php:1164
 msgid "Insert table"
 msgstr "Уметни табелу"
 
-#: wp-includes/class-wp-editor.php:1155
+#: wp-includes/class-wp-editor.php:1172
 msgid "Rows"
 msgstr "Редови"
 
-#: wp-includes/class-wp-editor.php:1159
+#: wp-includes/class-wp-editor.php:1176
 msgid "Header cell"
 msgstr "Ћелија заглавља"
 
-#: wp-includes/class-wp-editor.php:1171
+#: wp-includes/class-wp-editor.php:1188
 msgid "Delete column"
 msgstr "Обриши ступац"
 
-#: wp-includes/class-wp-editor.php:1191
+#: wp-includes/class-wp-editor.php:1208
 msgid "Row group"
 msgstr "Група реда"
 
-#: wp-includes/class-wp-editor.php:1192
+#: wp-includes/class-wp-editor.php:1209
 msgid "Column group"
 msgstr "Група ступца"
 
-#: wp-includes/class-wp-editor.php:1193
+#: wp-includes/class-wp-editor.php:1210
 msgid "Row type"
 msgstr "Врста реда"
 
-#: wp-includes/class-wp-editor.php:1194
+#: wp-includes/class-wp-editor.php:1211
 msgid "Cell type"
 msgstr "Врста ћелије"
 
-#: wp-includes/class-wp-editor.php:1195
+#: wp-includes/class-wp-editor.php:1212
 msgid "Cell padding"
 msgstr "Попуна ћелије"
 
-#: wp-includes/class-wp-editor.php:1196
+#: wp-includes/class-wp-editor.php:1213
 msgid "Cell spacing"
 msgstr "Простор ћелије"
 
-#: wp-includes/class-wp-editor.php:1202
+#: wp-includes/class-wp-editor.php:1219
 msgid "Background color"
 msgstr "Боја позадине"
 
-#: wp-includes/class-wp-editor.php:1203
+#: wp-includes/class-wp-editor.php:1220
 msgid "Text color"
 msgstr "Боја текста"
 
-#: wp-includes/class-wp-editor.php:1205
+#: wp-includes/class-wp-editor.php:1222
 msgid "Show invisible characters"
 msgstr "Прикажи невидљиве карактере"
 
-#: wp-includes/class-wp-editor.php:1210
+#: wp-includes/class-wp-editor.php:1227
 msgid "Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off."
 msgstr "Лепљење је тренутно у режиму чистог текста. Садржај ће сада бити налепљен као чисти текст све док не искључите ову могућност."
 
-#: wp-includes/class-wp-editor.php:1230
+#: wp-includes/class-wp-editor.php:1247
 msgid "Toolbar Toggle"
 msgstr "Прикажи/сакриј траку са алаткама"
 
-#: wp-includes/class-wp-editor.php:1231 wp-includes/script-loader.php:120
+#: wp-includes/class-wp-editor.php:1248 wp-includes/script-loader.php:120
 msgid "Insert Read More tag"
 msgstr "Уметни ознаку Више"
 
-#: wp-includes/media-template.php:892 wp-includes/media.php:3490
+#: wp-includes/media-template.php:892 wp-includes/media.php:3494
 msgid "Replace"
 msgstr "Замени"
 
-#: wp-includes/class-wp-editor.php:1011
+#: wp-includes/class-wp-editor.php:1028
 msgid "Source code"
 msgstr "Изворни код"
 
-#: wp-includes/class-wp-editor.php:1015
+#: wp-includes/class-wp-editor.php:1032
 msgid "Align center"
 msgstr "Поравнато по средини"
 
-#: wp-includes/class-wp-editor.php:1016
+#: wp-includes/class-wp-editor.php:1033
 msgid "Align right"
 msgstr "Поравнато десно"
 
-#: wp-includes/class-wp-editor.php:1017
+#: wp-includes/class-wp-editor.php:1034
 msgid "Align left"
 msgstr "Поравнато лево"
 
-#: wp-includes/class-wp-editor.php:1018
+#: wp-includes/class-wp-editor.php:1035
 msgid "Justify"
 msgstr "Поравнато обострано"
 
-#: wp-includes/class-wp-editor.php:1032
+#: wp-includes/class-wp-editor.php:1049
 msgid "Visual aids"
 msgstr "Видљива помоћ"
 
-#: wp-includes/class-wp-editor.php:1087
+#: wp-includes/class-wp-editor.php:1104
 msgid "Embed"
 msgstr "Угнежђивање"
 
-#: wp-includes/class-wp-editor.php:1103
+#: wp-includes/class-wp-editor.php:1120
 msgid "Restore last draft"
 msgstr "Поврати последњи нацрт"
 
-#: wp-includes/class-wp-editor.php:1135
+#: wp-includes/class-wp-editor.php:1152
 msgid "Find and replace"
 msgstr "Пронађи и замени"
 
-#: wp-includes/class-wp-editor.php:1139
+#: wp-includes/class-wp-editor.php:1156
 msgid "Match case"
 msgstr "Разликуј мала и велика слова"
 
-#: wp-includes/class-wp-editor.php:1085
+#: wp-includes/class-wp-editor.php:1102
 msgid "Paste your embed code below:"
 msgstr "Испод унесите свој код угнежђивања:"
 
@@ -6176,11 +6222,11 @@ msgstr "Испод унесите свој код угнежђивања:"
 msgid "Reorder"
 msgstr "Промени редослед"
 
-#: wp-includes/class-wp-editor.php:1113
+#: wp-includes/class-wp-editor.php:1130
 msgid "Text to display"
 msgstr "Текст за приказ"
 
-#: wp-includes/class-wp-editor.php:1112
+#: wp-includes/class-wp-editor.php:1129
 msgid "New window"
 msgstr "Нови прозор"
 
@@ -6230,10 +6276,6 @@ msgstr "Пријављивање, RSS и Вордпресове везе."
 #: wp-includes/widgets/class-wp-widget-calendar.php:38
 msgid "A calendar of your site&#8217;s Posts."
 msgstr "Календар чланака вашег веб места."
-
-#: wp-includes/widgets/class-wp-widget-text.php:28
-msgid "Arbitrary text or HTML."
-msgstr "Произвољан текст или HTML."
 
 #: wp-includes/widgets/class-wp-widget-categories.php:28
 msgid "A list or dropdown of categories."
@@ -6432,7 +6474,7 @@ msgid "JavaScript must be enabled to use this feature."
 msgstr "Јаваскрипт мора бити омогућен за коришћење ове особине."
 
 #. translators: localized date format, see https://secure.php.net/date
-#: wp-includes/class-wp-locale.php:398 wp-includes/media.php:3104
+#: wp-includes/class-wp-locale.php:398 wp-includes/media.php:3108
 msgid "F j, Y"
 msgstr "j. F Y."
 
@@ -6560,11 +6602,11 @@ msgstr "Случајни редослед"
 #. If there is not a word you can use in your language to avoid issues with
 #. the 		   lack of plural support here, turn it into "selected: %d" then
 #. translate it.
-#: wp-includes/media.php:3497
+#: wp-includes/media.php:3501
 msgid "%d selected"
 msgstr "одабрано: %d"
 
-#: wp-includes/media.php:3538
+#: wp-includes/media.php:3542
 msgid "Insert from URL"
 msgstr "Уметни са URL-а"
 
@@ -6573,15 +6615,15 @@ msgctxt "Links widget"
 msgid "Random"
 msgstr "Случајно"
 
-#: wp-includes/media.php:3551
+#: wp-includes/media.php:3555
 msgid "Add to Gallery"
 msgstr "Додај у галерију"
 
-#: wp-includes/media-template.php:1236 wp-includes/media.php:3513
+#: wp-includes/media-template.php:1236 wp-includes/media.php:3517
 msgid "No items found."
 msgstr "Нема пронађених ставки."
 
-#: wp-includes/media.php:3552
+#: wp-includes/media.php:3556
 msgid "Reverse order"
 msgstr "Изокрени редослед"
 
@@ -6595,7 +6637,7 @@ msgid "Sorry, that file cannot be edited."
 msgstr "Жао нам је, та датотека не може бити уређивана."
 
 #: wp-includes/media-template.php:441 wp-includes/media-template.php:544
-#: wp-includes/media.php:3526
+#: wp-includes/media.php:3530
 msgid "Delete Permanently"
 msgstr "Обриши трајно"
 
@@ -6607,7 +6649,7 @@ msgstr "Ограничење за отпремања је прекорачено
 msgid "Dismiss Errors"
 msgstr "Одбаци грешке"
 
-#: wp-includes/media.php:2917
+#: wp-includes/media.php:2921
 msgid "No editor could be selected."
 msgstr "Ниједан уређивач није могао бити изабран."
 
@@ -6661,7 +6703,7 @@ msgstr "Уметни у страну"
 msgid "Uploaded to this page"
 msgstr "Отпремљно за ову страну"
 
-#: wp-includes/media.php:3511
+#: wp-includes/media.php:3515
 msgid "All media items"
 msgstr "Све ставке садржаја"
 
@@ -6674,7 +6716,7 @@ msgstr "Отпремљно за овај чланак"
 msgid "Audio"
 msgstr "Звучни запис"
 
-#: wp-includes/media.php:3510
+#: wp-includes/media.php:3514
 msgid "&#8592; Return to library"
 msgstr "&#8592; Врати се на библиотеку"
 
@@ -6688,7 +6730,7 @@ msgstr "Прилагођеном URL-у"
 msgid "Alt Text"
 msgstr "Резервни текст"
 
-#: wp-includes/media-template.php:501 wp-includes/media.php:3535
+#: wp-includes/media-template.php:501 wp-includes/media.php:3539
 msgid "Attachment Details"
 msgstr "Детаљи прилога"
 
@@ -6697,11 +6739,11 @@ msgid "Columns"
 msgstr "Ступци"
 
 #: wp-includes/media-template.php:696 wp-includes/media-template.php:771
-#: wp-includes/media-template.php:945 wp-includes/media.php:3170
+#: wp-includes/media-template.php:945 wp-includes/media.php:3174
 msgid "Large"
 msgstr "Велика"
 
-#: wp-includes/media.php:3547
+#: wp-includes/media.php:3551
 msgid "&#8592; Cancel Gallery"
 msgstr "&#8592; Одустани од галерије"
 
@@ -6713,7 +6755,7 @@ msgstr "Подешавања приказа прилога"
 msgid "Gallery Settings"
 msgstr "Подешавања галерије"
 
-#: wp-includes/media.php:3502
+#: wp-includes/media.php:3506
 msgid "Upload Images"
 msgstr "Отпреми слике"
 
@@ -6725,11 +6767,11 @@ msgstr "Вордпрес &rsaquo; Успех"
 msgid "Drop files anywhere to upload"
 msgstr "Превуци датотеке било где за отпремање"
 
-#: wp-includes/media.php:3501
+#: wp-includes/media.php:3505
 msgid "Upload Files"
 msgstr "Отпреми датотеке"
 
-#: wp-includes/media.php:3548
+#: wp-includes/media.php:3552
 msgid "Insert gallery"
 msgstr "Уметни галерију"
 
@@ -6737,11 +6779,11 @@ msgstr "Уметни галерију"
 msgid "Drop files to upload"
 msgstr "Превуци датотеке за отпремање"
 
-#: wp-includes/media.php:3545
+#: wp-includes/media.php:3549
 msgid "Create Gallery"
 msgstr "Направи галерију"
 
-#: wp-includes/media.php:3505
+#: wp-includes/media.php:3509
 msgid "Media Library"
 msgstr "Библиотека садржаја"
 
@@ -6825,7 +6867,7 @@ msgstr "Опиши ову датотеку садржаја&hellip;"
 msgid "Describe this video&hellip;"
 msgstr "Опиши овај видео запис&hellip;"
 
-#: wp-includes/media.php:3549
+#: wp-includes/media.php:3553
 msgid "Update gallery"
 msgstr "Ажурирај галерију"
 
@@ -6880,7 +6922,7 @@ msgstr "Промена величине слике није успела."
 msgid "Image rotate failed."
 msgstr "Окретање слике није успело."
 
-#: wp-includes/media.php:3550
+#: wp-includes/media.php:3554
 msgid "Add to gallery"
 msgstr "Додај у галерију"
 
@@ -6888,7 +6930,7 @@ msgstr "Додај у галерију"
 msgid "Clear"
 msgstr "Очисти"
 
-#: wp-includes/media.php:3507
+#: wp-includes/media.php:3511
 msgid "Create a new gallery"
 msgstr "Направи нову галерију"
 
@@ -6902,7 +6944,7 @@ msgctxt "Display name based on first name and last name"
 msgid "%1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: wp-includes/media.php:3506
+#: wp-includes/media.php:3510
 msgid "Insert Media"
 msgstr "Уметни садржај"
 
@@ -6918,7 +6960,7 @@ msgstr "Изабери боју"
 msgid "View Attachment Page"
 msgstr "Види страницу прилога"
 
-#: wp-includes/taxonomy.php:2301
+#: wp-includes/taxonomy.php:2304
 msgid "Could not insert term relationship into the database"
 msgstr "Није могуће уметнути однос чланова у базу података"
 
@@ -7112,12 +7154,12 @@ msgid "Allowed Files"
 msgstr "Дозвољене датотеке"
 
 #: wp-includes/class-wp-customize-manager.php:3871
-#: wp-includes/class-wp-customize-widgets.php:772
-#: wp-includes/class-wp-editor.php:1236
+#: wp-includes/class-wp-customize-widgets.php:786
+#: wp-includes/class-wp-editor.php:1253
 #: wp-includes/customize/class-wp-customize-image-control.php:37
 #: wp-includes/customize/class-wp-customize-media-control.php:63
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:144
-#: wp-includes/media-template.php:474 wp-includes/media.php:3491
+#: wp-includes/media-template.php:474 wp-includes/media.php:3495
 msgid "Remove"
 msgstr "Уклони"
 
@@ -7141,15 +7183,15 @@ msgstr "Ова таксономија није хијерархијска."
 #: wp-includes/taxonomy.php:419 wp-includes/taxonomy.php:639
 #: wp-includes/taxonomy.php:730 wp-includes/taxonomy.php:910
 #: wp-includes/taxonomy.php:1074 wp-includes/taxonomy.php:1835
-#: wp-includes/taxonomy.php:1949 wp-includes/taxonomy.php:2212
-#: wp-includes/taxonomy.php:2355 wp-includes/taxonomy.php:2556
+#: wp-includes/taxonomy.php:1952 wp-includes/taxonomy.php:2215
+#: wp-includes/taxonomy.php:2358 wp-includes/taxonomy.php:2559
 msgid "Invalid taxonomy."
 msgstr "Неисправна таксономија."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1455
 #: wp-includes/class-wp-xmlrpc-server.php:2002
 #: wp-includes/class-wp-xmlrpc-server.php:2093
-#: wp-includes/class-wp-xmlrpc-server.php:2165 wp-includes/taxonomy.php:1964
+#: wp-includes/class-wp-xmlrpc-server.php:2165 wp-includes/taxonomy.php:1967
 msgid "Invalid term ID."
 msgstr "Неисправан ID члана."
 
@@ -7157,7 +7199,7 @@ msgstr "Неисправан ID члана."
 #: wp-includes/class-wp-xmlrpc-server.php:2026
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:405
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:511
-#: wp-includes/taxonomy.php:1973 wp-includes/taxonomy.php:2597
+#: wp-includes/taxonomy.php:1976 wp-includes/taxonomy.php:2600
 msgid "Parent term does not exist."
 msgstr "Надређени члан не постоји."
 
@@ -7665,7 +7707,7 @@ msgstr "Сви чланци"
 msgid "All Pages"
 msgstr "Све стране"
 
-#: wp-includes/class-wp-editor.php:1108
+#: wp-includes/class-wp-editor.php:1125
 msgid "Link"
 msgstr "Веза"
 
@@ -7691,7 +7733,7 @@ msgstr "Трака са алаткама"
 msgid "Preload"
 msgstr "Учитај унапред"
 
-#: wp-includes/class-wp-editor.php:1083
+#: wp-includes/class-wp-editor.php:1100
 msgid "Poster"
 msgstr "Објављивач"
 
@@ -7708,11 +7750,11 @@ msgctxt "post format"
 msgid "Format"
 msgstr "Облик"
 
-#: wp-includes/class-wp-editor.php:1673
+#: wp-includes/class-wp-editor.php:1690
 msgid "Enter the destination URL"
 msgstr "Унесите циљ URL-а"
 
-#: wp-includes/class-wp-editor.php:1687
+#: wp-includes/class-wp-editor.php:1704
 msgid "Or link to existing content"
 msgstr "или повежите ка постојећем садржају"
 
@@ -7775,7 +7817,7 @@ msgstr "Звучни записи"
 msgid "Invalid post format."
 msgstr "Неисправан облик чланка."
 
-#: wp-includes/class-wp-editor.php:1704
+#: wp-includes/class-wp-editor.php:1721
 msgid "No search term specified. Showing recent items."
 msgstr "Нема наведених појмова за претрагу. Приказивање скорашњих ставки."
 
@@ -8292,7 +8334,7 @@ msgstr "Вордпресова адреса коју сте унели изгл�
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "Адреса веб места коју сте унели изгледа да није исправан URL. Молимо вас да унесете исправан URL."
 
-#: wp-includes/taxonomy.php:2053
+#: wp-includes/taxonomy.php:2056
 msgid "A term with the name provided already exists with this parent."
 msgstr "Члан са наведеним називом већ постоји са овим родитељем."
 
@@ -8778,7 +8820,7 @@ msgstr[0] "Отпад <span class=\"count\">(%s)</span>"
 msgstr[1] "Отпад <span class=\"count\">(%s)</span>"
 msgstr[2] "Отпад <span class=\"count\">(%s)</span>"
 
-#: wp-includes/class-wp-editor.php:1066
+#: wp-includes/class-wp-editor.php:1083
 msgid "General"
 msgstr "Опште"
 
@@ -8860,8 +8902,8 @@ msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> чланака"
 msgid "Calendar"
 msgstr "Календар"
 
-#: wp-includes/class-wp-editor.php:1242
-#: wp-includes/widgets/class-wp-widget-text.php:35
+#: wp-includes/class-wp-editor.php:1259
+#: wp-includes/widgets/class-wp-widget-text.php:43
 msgid "Text"
 msgstr "Текст"
 
@@ -9079,7 +9121,7 @@ msgid "Page not found"
 msgstr "Страница није пронађена"
 
 #. translators: 1: month name, 2: 4-digit year
-#: wp-includes/general-template.php:1758 wp-includes/media.php:3424
+#: wp-includes/general-template.php:1758 wp-includes/media.php:3428
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
 
@@ -9284,192 +9326,192 @@ msgstr "Пет"
 msgid "Sat"
 msgstr "Суб"
 
-#: wp-includes/class-wp-editor.php:1098
+#: wp-includes/class-wp-editor.php:1115
 msgid "Print"
 msgstr "Штампање"
 
-#: wp-includes/class-wp-editor.php:1065
+#: wp-includes/class-wp-editor.php:1082
 msgid "Insert/edit image"
 msgstr "Уметни/уреди слику"
 
-#: wp-includes/class-wp-editor.php:1104 wp-includes/class-wp-editor.php:1110
-#: wp-includes/class-wp-editor.php:1669 wp-includes/script-loader.php:428
+#: wp-includes/class-wp-editor.php:1121 wp-includes/class-wp-editor.php:1127
+#: wp-includes/class-wp-editor.php:1686 wp-includes/script-loader.php:428
 msgid "Insert/edit link"
 msgstr "Уметни/уреди везу"
 
-#: wp-includes/class-wp-editor.php:1164
+#: wp-includes/class-wp-editor.php:1181
 msgid "Insert row before"
 msgstr "Уметни ред пре"
 
-#: wp-includes/class-wp-editor.php:1165
+#: wp-includes/class-wp-editor.php:1182
 msgid "Insert row after"
 msgstr "Уметни ред после"
 
-#: wp-includes/class-wp-editor.php:1170
+#: wp-includes/class-wp-editor.php:1187
 msgid "Delete row"
 msgstr "Обриши ред"
 
-#: wp-includes/class-wp-editor.php:1166
+#: wp-includes/class-wp-editor.php:1183
 msgid "Insert column before"
 msgstr "Уметни ступац пре"
 
-#: wp-includes/class-wp-editor.php:1167
+#: wp-includes/class-wp-editor.php:1184
 msgid "Insert column after"
 msgstr "Уметни ступац после"
 
-#: wp-includes/class-wp-editor.php:1174
+#: wp-includes/class-wp-editor.php:1191
 msgid "Merge table cells"
 msgstr "Споји ћелије табеле"
 
-#: wp-includes/class-wp-editor.php:1150
+#: wp-includes/class-wp-editor.php:1167
 msgid "Table row properties"
 msgstr "Својства реда табеле"
 
-#: wp-includes/class-wp-editor.php:1151
+#: wp-includes/class-wp-editor.php:1168
 msgid "Table cell properties"
 msgstr "Својства ћелије табеле"
 
-#: wp-includes/class-wp-editor.php:1149
+#: wp-includes/class-wp-editor.php:1166
 msgid "Table properties"
 msgstr "Својства табеле"
 
-#: wp-includes/class-wp-editor.php:1168
+#: wp-includes/class-wp-editor.php:1185
 msgid "Paste table row before"
 msgstr "Налепи ред табеле пре"
 
-#: wp-includes/class-wp-editor.php:1169
+#: wp-includes/class-wp-editor.php:1186
 msgid "Paste table row after"
 msgstr "Налепи ред табеле после"
 
-#: wp-includes/class-wp-editor.php:1172
+#: wp-includes/class-wp-editor.php:1189
 msgid "Cut table row"
 msgstr "Исеци ред табеле"
 
-#: wp-includes/class-wp-editor.php:1173
+#: wp-includes/class-wp-editor.php:1190
 msgid "Copy table row"
 msgstr "Умножи ред табеле"
 
-#: wp-includes/class-wp-editor.php:1148
+#: wp-includes/class-wp-editor.php:1165
 msgid "Delete table"
 msgstr "Обриши табелу"
 
-#: wp-includes/class-wp-editor.php:1154
+#: wp-includes/class-wp-editor.php:1171
 msgid "Row"
 msgstr "Ред"
 
-#: wp-includes/class-wp-editor.php:1216 wp-includes/script-loader.php:463
+#: wp-includes/class-wp-editor.php:1233 wp-includes/script-loader.php:463
 #: wp-includes/script-loader.php:574 wp-includes/script-loader.php:583
-#: wp-includes/script-loader.php:763 wp-includes/theme.php:2970
+#: wp-includes/script-loader.php:763 wp-includes/theme.php:2974
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Измене које сте направили биће изгубљене ако напустите ову страницу."
 
-#: wp-includes/class-wp-editor.php:1055
+#: wp-includes/class-wp-editor.php:1072
 msgid "Document properties"
 msgstr "Својства документа"
 
-#: wp-includes/class-wp-editor.php:995
+#: wp-includes/class-wp-editor.php:1012
 msgid "Paragraph"
 msgstr "Пасус"
 
-#: wp-includes/class-wp-editor.php:986
+#: wp-includes/class-wp-editor.php:1003
 msgid "Heading 1"
 msgstr "Заглавље 1"
 
-#: wp-includes/class-wp-editor.php:987
+#: wp-includes/class-wp-editor.php:1004
 msgid "Heading 2"
 msgstr "Заглавље 2"
 
-#: wp-includes/class-wp-editor.php:988
+#: wp-includes/class-wp-editor.php:1005
 msgid "Heading 3"
 msgstr "Заглавље 3"
 
-#: wp-includes/class-wp-editor.php:989
+#: wp-includes/class-wp-editor.php:1006
 msgid "Heading 4"
 msgstr "Заглавље 4"
 
-#: wp-includes/class-wp-editor.php:990
+#: wp-includes/class-wp-editor.php:1007
 msgid "Heading 5"
 msgstr "Заглавље 5"
 
-#: wp-includes/class-wp-editor.php:991
+#: wp-includes/class-wp-editor.php:1008
 msgid "Heading 6"
 msgstr "Заглавље 6"
 
-#: wp-includes/class-wp-editor.php:996 wp-includes/script-loader.php:105
+#: wp-includes/class-wp-editor.php:1013 wp-includes/script-loader.php:105
 msgid "Blockquote"
 msgstr "Цитат"
 
-#: wp-includes/class-wp-editor.php:1010 wp-includes/script-loader.php:118
+#: wp-includes/class-wp-editor.php:1027 wp-includes/script-loader.php:118
 msgid "Code"
 msgstr "Кôд"
 
-#: wp-includes/class-wp-editor.php:1008 wp-includes/script-loader.php:100
+#: wp-includes/class-wp-editor.php:1025 wp-includes/script-loader.php:100
 msgid "Bold"
 msgstr "Подебљано"
 
-#: wp-includes/class-wp-editor.php:1009 wp-includes/script-loader.php:102
+#: wp-includes/class-wp-editor.php:1026 wp-includes/script-loader.php:102
 msgid "Italic"
 msgstr "Искошено"
 
-#: wp-includes/class-wp-editor.php:1003
+#: wp-includes/class-wp-editor.php:1020
 msgid "Underline"
 msgstr "Подвучено"
 
-#: wp-includes/class-wp-editor.php:1004
+#: wp-includes/class-wp-editor.php:1021
 msgid "Strikethrough"
 msgstr "Прецртано"
 
-#: wp-includes/class-wp-editor.php:1022
+#: wp-includes/class-wp-editor.php:1039
 msgid "Cut"
 msgstr "Исеци"
 
-#: wp-includes/class-wp-editor.php:1023
+#: wp-includes/class-wp-editor.php:1040
 msgid "Copy"
 msgstr "Умножи"
 
-#: wp-includes/class-wp-editor.php:1024
+#: wp-includes/class-wp-editor.php:1041
 msgid "Paste"
 msgstr "Налепи"
 
-#: wp-includes/class-wp-editor.php:982
+#: wp-includes/class-wp-editor.php:999
 msgid "New document"
 msgstr "Нови документ"
 
-#: wp-includes/class-wp-editor.php:1072
+#: wp-includes/class-wp-editor.php:1089
 msgid "Image description"
 msgstr "Опис слике"
 
-#: wp-includes/class-wp-editor.php:1069
+#: wp-includes/class-wp-editor.php:1086
 msgid "Border"
 msgstr "Ивица"
 
-#: wp-includes/class-wp-editor.php:1074
+#: wp-includes/class-wp-editor.php:1091
 msgid "Dimensions"
 msgstr "Величине"
 
-#: wp-includes/class-wp-editor.php:1071
+#: wp-includes/class-wp-editor.php:1088
 msgid "Vertical space"
 msgstr "Усправни простор"
 
-#: wp-includes/class-wp-editor.php:1102
+#: wp-includes/class-wp-editor.php:1119
 msgid "Horizontal space"
 msgstr "Водоравни простор"
 
-#: wp-includes/class-wp-editor.php:1187
+#: wp-includes/class-wp-editor.php:1204
 #: wp-includes/customize/class-wp-customize-background-position-control.php:46
 msgid "Top"
 msgstr "Врх"
 
-#: wp-includes/class-wp-editor.php:1188
+#: wp-includes/class-wp-editor.php:1205
 msgid "Middle"
 msgstr "Средина"
 
-#: wp-includes/class-wp-editor.php:1189
+#: wp-includes/class-wp-editor.php:1206
 #: wp-includes/customize/class-wp-customize-background-position-control.php:56
 msgid "Bottom"
 msgstr "Дно"
 
-#: wp-includes/class-wp-editor.php:1070
+#: wp-includes/class-wp-editor.php:1087
 msgid "Constrain proportions"
 msgstr "Стегни размере"
 
@@ -9487,7 +9529,7 @@ msgstr "Поравнај"
 msgid "Background"
 msgstr "Позадина"
 
-#: wp-includes/class-wp-editor.php:1100 wp-includes/script-loader.php:352
+#: wp-includes/class-wp-editor.php:1117 wp-includes/script-loader.php:352
 msgid "Fullscreen"
 msgstr "Целоекрански"
 
@@ -9495,11 +9537,11 @@ msgstr "Целоекрански"
 msgid "Mute"
 msgstr "Нечујно"
 
-#: wp-includes/media.php:3546
+#: wp-includes/media.php:3550
 msgid "Edit Gallery"
 msgstr "Уреди галерију"
 
-#: wp-includes/class-wp-editor.php:1068
+#: wp-includes/class-wp-editor.php:1085
 msgid "Source"
 msgstr "Извор"
 
@@ -9508,31 +9550,31 @@ msgstr "Извор"
 msgid "Link Rel"
 msgstr "Rel везе"
 
-#: wp-includes/class-wp-editor.php:1257
+#: wp-includes/class-wp-editor.php:1274
 msgid "Letter"
 msgstr "Слово"
 
-#: wp-includes/class-wp-editor.php:1258
+#: wp-includes/class-wp-editor.php:1275
 msgid "Action"
 msgstr "Радња"
 
-#: wp-includes/class-wp-editor.php:1025
+#: wp-includes/class-wp-editor.php:1042
 msgid "Select all"
 msgstr "Изабери све"
 
-#: wp-includes/class-wp-editor.php:1140
+#: wp-includes/class-wp-editor.php:1157
 msgid "Check Spelling"
 msgstr "Провери правопис"
 
-#: wp-includes/class-wp-editor.php:1109 wp-includes/script-loader.php:104
+#: wp-includes/class-wp-editor.php:1126 wp-includes/script-loader.php:104
 msgid "Insert link"
 msgstr "Уметнути везу"
 
-#: wp-includes/class-wp-editor.php:1105
+#: wp-includes/class-wp-editor.php:1122
 msgid "Remove link"
 msgstr "Уклонити везу"
 
-#: wp-includes/class-wp-editor.php:1232
+#: wp-includes/class-wp-editor.php:1249
 msgid "Insert Page Break tag"
 msgstr "Уметни ознаку за прелом странице"
 
@@ -9703,7 +9745,7 @@ msgstr "Следеће &gt;"
 msgid "&lt; Prev"
 msgstr "&lt; Претходно"
 
-#: wp-includes/class-wp-editor.php:1064 wp-includes/script-loader.php:267
+#: wp-includes/class-wp-editor.php:1081 wp-includes/script-loader.php:267
 #: wp-includes/widgets/class-wp-widget-media-image.php:26
 msgid "Image"
 msgstr "Слика"
@@ -9805,7 +9847,7 @@ msgstr "Није могуће то поставити као умањену сл
 msgid "Saving Draft&#8230;"
 msgstr "Снимам нацрт&#8230;"
 
-#: wp-includes/taxonomy.php:4042
+#: wp-includes/taxonomy.php:4045
 msgid "Invalid object ID"
 msgstr "Неисправан ID објекта"
 
@@ -9919,6 +9961,10 @@ msgstr "Одустани од одговора"
 #: wp-includes/comment-template.php:2250
 msgid "Post Comment"
 msgstr "Предај коментар"
+
+#: wp-includes/widgets/class-wp-widget-text.php:374
+msgid "Automatically add paragraphs"
+msgstr "Аутоматски додај пасусе"
 
 #. translators: used between list items, there is a space after the comma
 #: wp-includes/class-wp-theme.php:758
@@ -10122,11 +10168,11 @@ msgstr "Адреса&nbsp;е-поште:"
 msgid "Sort by:"
 msgstr "Поређај по:"
 
-#: wp-includes/class-wp-editor.php:1005
+#: wp-includes/class-wp-editor.php:1022
 msgid "Subscript"
 msgstr "Написано испод"
 
-#: wp-includes/class-wp-editor.php:1006
+#: wp-includes/class-wp-editor.php:1023
 msgid "Superscript"
 msgstr "Степеновано"
 
@@ -10170,13 +10216,13 @@ msgstr "Регистрација је завршена. Молимо вас да
 msgid "The email could not be sent."
 msgstr "Е-пошта није могла бити послата."
 
-#: wp-includes/taxonomy.php:726 wp-includes/taxonomy.php:2569
-#: wp-includes/taxonomy.php:3840
+#: wp-includes/taxonomy.php:726 wp-includes/taxonomy.php:2572
+#: wp-includes/taxonomy.php:3843
 msgid "Empty Term"
 msgstr "Празан члан"
 
 #. translators: 1: Taxonomy term slug
-#: wp-includes/taxonomy.php:2655
+#: wp-includes/taxonomy.php:2658
 msgid "The slug &#8220;%s&#8221; is already in use by another term"
 msgstr "Подложак &#0132;%s&#0147; се већ користи код другог члана"
 
@@ -10217,11 +10263,11 @@ msgstr "%s [тренутна ревизија]"
 msgid "Cannot create a revision of a revision"
 msgstr "Није могуће направити ревизију ревизије"
 
-#: wp-includes/taxonomy.php:2077
+#: wp-includes/taxonomy.php:2080
 msgid "Could not insert term into the database"
 msgstr "Није могуће уметнути члан у базу података"
 
-#: wp-includes/class-wp-editor.php:1080
+#: wp-includes/class-wp-editor.php:1097
 msgid "Language"
 msgstr "Језик"
 
@@ -10233,11 +10279,11 @@ msgstr "Исечак пинга: "
 msgid "Submitted on:"
 msgstr "Предат у:"
 
-#: wp-includes/class-wp-editor.php:1116
+#: wp-includes/class-wp-editor.php:1133
 msgid "The URL you entered seems to be an email address. Do you want to add the required mailto: prefix?"
 msgstr "URL који сте унели је изгледа адреса е-поште. Да ли желите да додате неопходни префикс mailto:?"
 
-#: wp-includes/class-wp-editor.php:1118
+#: wp-includes/class-wp-editor.php:1135
 msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
 msgstr "URL који сте унели је изгледа спољашња веза. Да ли желите да додате неопходни префикс http://?"
 
@@ -10301,7 +10347,7 @@ msgstr "бела"
 msgid "Yellow"
 msgstr "жута"
 
-#: wp-includes/class-wp-editor.php:1178 wp-includes/media-template.php:965
+#: wp-includes/class-wp-editor.php:1195 wp-includes/media-template.php:965
 #: wp-includes/widgets/class-wp-widget-media-image.php:72
 msgid "Width"
 msgstr "Ширина"
@@ -10349,7 +10395,7 @@ msgstr "Облик датума"
 msgid "Time Format"
 msgstr "Облик времена"
 
-#: wp-includes/class-wp-editor.php:1177 wp-includes/media-template.php:965
+#: wp-includes/class-wp-editor.php:1194 wp-includes/media-template.php:965
 #: wp-includes/widgets/class-wp-widget-media-image.php:78
 msgid "Height"
 msgstr "Висина"
@@ -10362,22 +10408,24 @@ msgstr "Висина"
 msgid "Default"
 msgstr "Подразумевано"
 
-#: wp-includes/class-wp-editor.php:182 wp-includes/class-wp-editor.php:1241
+#: wp-includes/class-wp-editor.php:182 wp-includes/class-wp-editor.php:1258
 msgid "Visual"
 msgstr "Видљиво"
 
+#: wp-includes/default-widgets.php:190
 #: wp-includes/widgets/class-wp-nav-menu-widget.php:137
 #: wp-includes/widgets/class-wp-widget-archives.php:157
 #: wp-includes/widgets/class-wp-widget-calendar.php:104
 #: wp-includes/widgets/class-wp-widget-categories.php:160
-#: wp-includes/widgets/class-wp-widget-media.php:387
+#: wp-includes/widgets/class-wp-widget-media.php:401
 #: wp-includes/widgets/class-wp-widget-meta.php:111
 #: wp-includes/widgets/class-wp-widget-pages.php:131
 #: wp-includes/widgets/class-wp-widget-recent-comments.php:159
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:132
 #: wp-includes/widgets/class-wp-widget-search.php:71
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:127
-#: wp-includes/widgets/class-wp-widget-text.php:194
+#: wp-includes/widgets/class-wp-widget-text.php:359
+#: wp-includes/widgets/class-wp-widget-text.php:392
 msgid "Title:"
 msgstr "Наслов:"
 
@@ -10393,7 +10441,7 @@ msgstr "Веб место"
 msgid "Strength indicator"
 msgstr "Показивач јачине"
 
-#: wp-includes/admin-bar.php:801 wp-includes/class-wp-customize-widgets.php:421
+#: wp-includes/admin-bar.php:801 wp-includes/class-wp-customize-widgets.php:435
 #: wp-includes/functions.php:3707
 msgid "Widgets"
 msgstr "Виџети"
@@ -10595,8 +10643,8 @@ msgstr "Категорије"
 msgid "Search Categories"
 msgstr "Претражи категорије"
 
-#: wp-includes/class-wp-customize-widgets.php:770
-#: wp-includes/class-wp-editor.php:1239 wp-includes/media.php:3527
+#: wp-includes/class-wp-customize-widgets.php:784
+#: wp-includes/class-wp-editor.php:1256 wp-includes/media.php:3531
 msgid "Apply"
 msgstr "Примени"
 
@@ -10608,21 +10656,21 @@ msgstr "Примени"
 msgid "None"
 msgstr "Нема"
 
-#: wp-includes/class-wp-editor.php:1060
+#: wp-includes/class-wp-editor.php:1077
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:128
 #: wp-includes/media-template.php:408 wp-includes/media-template.php:589
 msgid "Description"
 msgstr "Опис"
 
-#: wp-includes/class-wp-editor.php:1061 wp-includes/theme-compat/sidebar.php:27
+#: wp-includes/class-wp-editor.php:1078 wp-includes/theme-compat/sidebar.php:27
 msgid "Author"
 msgstr "Аутор"
 
 #: wp-includes/class-wp-customize-nav-menus.php:1063
-#: wp-includes/class-wp-editor.php:1114 wp-includes/class-wp-editor.php:1675
+#: wp-includes/class-wp-editor.php:1131 wp-includes/class-wp-editor.php:1692
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:91
 #: wp-includes/media-template.php:376 wp-includes/media-template.php:557
-#: wp-includes/media.php:3484
+#: wp-includes/media.php:3488
 #: wp-includes/widgets/class-wp-widget-media-image.php:107
 msgid "URL"
 msgstr "URL"
@@ -10638,7 +10686,7 @@ msgstr "Не"
 
 #: wp-includes/class-walker-comment.php:244
 #: wp-includes/class-walker-comment.php:350
-#: wp-includes/class-wp-editor.php:1237
+#: wp-includes/class-wp-editor.php:1254
 msgid "Edit"
 msgstr "Уреди"
 
@@ -10646,7 +10694,7 @@ msgstr "Уреди"
 msgid "Update Category"
 msgstr "Ажурирај категорију"
 
-#: wp-includes/class-wp-editor.php:1026
+#: wp-includes/class-wp-editor.php:1043
 msgid "Undo"
 msgstr "Врати"
 
@@ -10670,19 +10718,19 @@ msgstr "Категорије веза"
 msgid "Edit Link Category"
 msgstr "Уреди категорију веза"
 
-#: wp-includes/class-wp-editor.php:1719 wp-includes/script-loader.php:430
+#: wp-includes/class-wp-editor.php:1736 wp-includes/script-loader.php:430
 msgid "Add Link"
 msgstr "Додај везу"
 
-#: wp-includes/class-wp-editor.php:1099
+#: wp-includes/class-wp-editor.php:1116
 msgid "Save"
 msgstr "Сачувај"
 
-#: wp-includes/class-wp-editor.php:1111
+#: wp-includes/class-wp-editor.php:1128
 msgid "Target"
 msgstr "Одредиште"
 
-#: wp-includes/class-wp-editor.php:1067
+#: wp-includes/class-wp-editor.php:1084
 msgid "Advanced"
 msgstr "Напредно"
 
@@ -10727,7 +10775,7 @@ msgstr "Анонимни"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/class-wp-editor.php:1097 wp-includes/media-template.php:1247
+#: wp-includes/class-wp-editor.php:1114 wp-includes/media-template.php:1247
 msgid "Preview"
 msgstr "Преглед"
 
@@ -10740,8 +10788,8 @@ msgstr "Скорашњи коментари"
 msgid "Plugins"
 msgstr "Додаци"
 
-#: wp-includes/class-wp-editor.php:1030 wp-includes/class-wp-editor.php:1716
-#: wp-includes/media.php:3488 wp-includes/script-loader.php:415
+#: wp-includes/class-wp-editor.php:1047 wp-includes/class-wp-editor.php:1733
+#: wp-includes/media.php:3492 wp-includes/script-loader.php:415
 #: wp-includes/script-loader.php:465 wp-includes/script-loader.php:555
 msgid "Cancel"
 msgstr "Одустани"
@@ -10793,12 +10841,12 @@ msgstr "Корисничко име"
 msgid "Password"
 msgstr "Лозинка"
 
-#: wp-includes/class-wp-editor.php:1027
+#: wp-includes/class-wp-editor.php:1044
 msgid "Redo"
 msgstr "Понови"
 
 #: wp-includes/media-template.php:694 wp-includes/media-template.php:769
-#: wp-includes/media-template.php:943 wp-includes/media.php:3168
+#: wp-includes/media-template.php:943 wp-includes/media.php:3172
 msgid "Thumbnail"
 msgstr "Умањена слика"
 
@@ -10816,7 +10864,7 @@ msgstr "GD image library није постављена."
 msgid "File &#8220;%s&#8221; is not an image."
 msgstr "Датотека &#0132;%s&#0147; није слика."
 
-#: wp-includes/media.php:3485
+#: wp-includes/media.php:3489
 msgid "Add Media"
 msgstr "Додај садржај"
 
@@ -10824,21 +10872,21 @@ msgstr "Додај садржај"
 msgid "Saved."
 msgstr "Сачувано."
 
-#: wp-includes/class-wp-editor.php:1182
+#: wp-includes/class-wp-editor.php:1199
 #: wp-includes/customize/class-wp-customize-background-position-control.php:50
 #: wp-includes/media-template.php:620 wp-includes/media-template.php:851
 #: wp-includes/media-template.php:917
 msgid "Left"
 msgstr "Лево"
 
-#: wp-includes/class-wp-editor.php:1183
+#: wp-includes/class-wp-editor.php:1200
 #: wp-includes/customize/class-wp-customize-background-position-control.php:51
 #: wp-includes/media-template.php:623 wp-includes/media-template.php:854
 #: wp-includes/media-template.php:920
 msgid "Center"
 msgstr "Центрирано"
 
-#: wp-includes/class-wp-editor.php:1184
+#: wp-includes/class-wp-editor.php:1201
 #: wp-includes/customize/class-wp-customize-background-position-control.php:52
 #: wp-includes/media-template.php:626 wp-includes/media-template.php:857
 #: wp-includes/media-template.php:923
@@ -10846,7 +10894,7 @@ msgid "Right"
 msgstr "Десно"
 
 #: wp-includes/media-template.php:695 wp-includes/media-template.php:770
-#: wp-includes/media-template.php:944 wp-includes/media.php:3169
+#: wp-includes/media-template.php:944 wp-includes/media.php:3173
 msgid "Medium"
 msgstr "Средња величина"
 
@@ -10856,18 +10904,18 @@ msgstr "Средња величина"
 msgid "Size"
 msgstr "Величина"
 
-#: wp-includes/class-wp-editor.php:1180 wp-includes/media-template.php:612
+#: wp-includes/class-wp-editor.php:1197 wp-includes/media-template.php:612
 msgid "Alignment"
 msgstr "Поравнање"
 
-#: wp-includes/class-wp-editor.php:1179 wp-includes/media-template.php:398
+#: wp-includes/class-wp-editor.php:1196 wp-includes/media-template.php:398
 #: wp-includes/media-template.php:579 wp-includes/media-template.php:837
 #: wp-includes/media-template.php:902
 #: wp-includes/widgets/class-wp-widget-media-image.php:85
 msgid "Caption"
 msgstr "Натпис"
 
-#: wp-includes/class-wp-editor.php:1081
+#: wp-includes/class-wp-editor.php:1098
 msgid "Media"
 msgstr "Садржај"
 
@@ -10883,7 +10931,7 @@ msgstr "Сачувај као „На чекању“"
 msgid "Privately Published"
 msgstr "Приватно објављен"
 
-#: wp-includes/class-wp-editor.php:1029 wp-includes/script-loader.php:554
+#: wp-includes/class-wp-editor.php:1046 wp-includes/script-loader.php:554
 msgid "OK"
 msgstr "У реду"
 
@@ -10904,7 +10952,7 @@ msgstr "Јавно"
 msgid "Schedule"
 msgstr "Заказивање"
 
-#: wp-includes/media.php:3489 wp-includes/script-loader.php:429
+#: wp-includes/media.php:3493 wp-includes/script-loader.php:429
 #: wp-includes/script-loader.php:565 wp-includes/script-loader.php:650
 msgid "Update"
 msgstr "Ажурирај"
@@ -10923,7 +10971,7 @@ msgid "All Categories"
 msgstr "Све категорије"
 
 #: wp-includes/admin-bar.php:875 wp-includes/admin-bar.php:876
-#: wp-includes/class-wp-editor.php:1691 wp-includes/media.php:3486
+#: wp-includes/class-wp-editor.php:1708 wp-includes/media.php:3490
 msgid "Search"
 msgstr "Претрага"
 
@@ -10947,13 +10995,13 @@ msgstr "Везе"
 msgid "Uncategorized"
 msgstr "Некатегоризовано"
 
-#: wp-includes/class-wp-editor.php:1031 wp-includes/class-wp-editor.php:1670
+#: wp-includes/class-wp-editor.php:1048 wp-includes/class-wp-editor.php:1687
 #: wp-includes/script-loader.php:269 wp-includes/script-loader.php:351
 #: wp-includes/script-loader.php:466 wp-includes/script-loader.php:986
 msgid "Close"
 msgstr "Затвори"
 
-#: wp-includes/media.php:3487
+#: wp-includes/media.php:3491
 msgid "Select"
 msgstr "Изабери"
 
@@ -10969,7 +11017,7 @@ msgstr "Уреди садржај"
 msgid "New Post"
 msgstr "Нови чланак"
 
-#: wp-includes/media.php:3135 wp-includes/script-loader.php:431
+#: wp-includes/media.php:3139 wp-includes/script-loader.php:431
 #: wp-includes/script-loader.php:620
 msgid "(no title)"
 msgstr "(нема наслова)"
@@ -10987,12 +11035,12 @@ msgid "Are you sure you want to do this?"
 msgstr "Да ли сигурно желите да урадите ово?"
 
 #: wp-includes/media-template.php:330 wp-includes/media-template.php:528
-#: wp-includes/media.php:3558
+#: wp-includes/media.php:3562
 msgid "Edit Image"
 msgstr "Уреди слику"
 
 #: wp-includes/media-template.php:697 wp-includes/media-template.php:772
-#: wp-includes/media-template.php:946 wp-includes/media.php:3171
+#: wp-includes/media-template.php:946 wp-includes/media.php:3175
 msgid "Full Size"
 msgstr "Пуна величина"
 
@@ -11001,6 +11049,8 @@ msgid "Revisions"
 msgstr "Ревизије"
 
 #: wp-includes/script-loader.php:138 wp-includes/script-loader.php:299
+#: wp-includes/widgets/class-wp-widget-text.php:406
+#: wp-includes/widgets/class-wp-widget-text.php:421
 msgid "Dismiss"
 msgstr "Одбаци"
 
@@ -11021,7 +11071,7 @@ msgstr "Резултати претраге за &#132;%s&#147;"
 msgid "Cheatin&#8217; uh?"
 msgstr "Вараш, а?"
 
-#: wp-includes/class-wp-editor.php:1057 wp-includes/media-template.php:382
+#: wp-includes/class-wp-editor.php:1074 wp-includes/media-template.php:382
 #: wp-includes/media-template.php:563 wp-includes/revision.php:34
 #: wp-includes/script-loader.php:581
 msgid "Title"
@@ -11040,7 +11090,7 @@ msgstr "Чека преглед"
 msgid "Draft"
 msgstr "Нацрт"
 
-#: wp-includes/class-wp-editor.php:1611
+#: wp-includes/class-wp-editor.php:1628
 msgid "Y/m/d"
 msgstr "Y/m/d"
 

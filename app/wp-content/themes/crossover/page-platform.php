@@ -60,15 +60,7 @@ the_post();
                     <img src="assets/photos/imac-office.jpg" alt="">
                 </div>
                 <div class="text">
-                    <p><strong>Šta su Vaši sledeći koraci?</strong></p>
-                    <ul>
-                        <li><p>Odaberite željeni kurs i utvrdite nivo znanja koji želite da postignete.</p></li>
-                        <li><p>Proverite dostpunost kurseva u narednom periodu.</p></li>
-                        <li><p>Upoznajte se sa uslovima pohađanja, otplate i sertifikovanja.</p></li>
-                        <li><p>Postanite vrhunski IT stručnjak!</p></li>
-                    </ul>
-                    <p><br></p>
-                    <p>Za sva dodatna pitanja, pogledajte segment Najčešća itanja ili nas kontakitrajte putem mejla.</p>
+	                <?=get_field('fourth_section_body')?>
                     <a href="#" class="btn fill arrow-left">Najčešća pitanja i odgovori</a>
                 </div>
             </div>
