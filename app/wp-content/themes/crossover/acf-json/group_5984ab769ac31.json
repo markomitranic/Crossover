@@ -1,9 +1,9 @@
 {
-    "key": "group_5983610102f0a",
-    "title": "SWIFT",
+    "key": "group_5984ab769ac31",
+    "title": "Apple IT",
     "fields": [
         {
-            "key": "field_5983610104d0e",
+            "key": "field_5984ab769cd76",
             "label": "Hero",
             "name": "",
             "type": "tab",
@@ -19,7 +19,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5983610104d1e",
+            "key": "field_5984ab769cd83",
             "label": "Hero Title",
             "name": "hero_title",
             "type": "text",
@@ -31,14 +31,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "iOS SWIFT",
-            "placeholder": "iOS SWIFT",
+            "default_value": "Apple IT",
+            "placeholder": "Apple IT",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5983610104d31",
+            "key": "field_5984ab769cd8e",
             "label": "Hero Subtitle",
             "name": "hero_subtitle",
             "type": "text",
@@ -50,14 +50,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Naučite da programirate za najnapredniju mobilnu platformu na svetu.",
-            "placeholder": "Naučite da programirate za najnapredniju mobilnu platformu na svetu.",
+            "default_value": "Zvanični Apple Certified Support Professional (ACSP) sertifikati za IT profesionalce.",
+            "placeholder": "Zvanični Apple Certified Support Professional (ACSP) sertifikati za IT profesionalce.",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5983610104d4f",
+            "key": "field_5984ab769cd99",
             "label": "Button 1 Label",
             "name": "hero_button_1_label",
             "type": "text",
@@ -76,7 +76,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5983610104d64",
+            "key": "field_5984ab769cda4",
             "label": "Button 1 Link",
             "name": "hero_button_1_link",
             "type": "page_link",
@@ -95,7 +95,7 @@
             "multiple": 0
         },
         {
-            "key": "field_5983610104d71",
+            "key": "field_5984ab769cdaf",
             "label": "Button 2 Label",
             "name": "hero_button_2_label",
             "type": "text",
@@ -114,7 +114,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5983610104d7f",
+            "key": "field_5984ab769cdb9",
             "label": "Button 2 Link",
             "name": "hero_button_2_link",
             "type": "page_link",
@@ -133,7 +133,7 @@
             "multiple": 0
         },
         {
-            "key": "field_5983610104d8e",
+            "key": "field_5984ab769cdc4",
             "label": "First Section",
             "name": "",
             "type": "tab",
@@ -149,7 +149,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5983610104d9b",
+            "key": "field_5984ab769cdcf",
             "label": "First Section Title",
             "name": "first_section_title",
             "type": "text",
@@ -161,14 +161,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Kreirajte svoju aplikaciju uz SWIFT!",
-            "placeholder": "Kreirajte svoju aplikaciju uz SWIFT!",
+            "default_value": "Administrirajte Apple mrežne sisteme i ponudite novi nivo profesionalne podrške.",
+            "placeholder": "Administrirajte Apple mrežne sisteme i ponudite novi nivo profesionalne podrške.",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5983610104da7",
+            "key": "field_5984ab769cdda",
             "label": "First Section Body",
             "name": "first_section_body",
             "type": "textarea",
@@ -180,14 +180,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Savladajte SWIFT programski jezik I od prvog časa započnite rad na sostvenim aplikacijama uz podršku mentora.\r\n\r\nNakon kursa bićete sposobni da samostalno razvijate aplikacije i postavite ih  na App Store na korišćenje.",
+            "default_value": "Ukoliko ste IT profesionalac koji želi da uključi Mac u Windows mrežu računara, nudite podršku za OS X u poslovnom ili edukacijskom okruženju, održavate OS X sisteme u organizaciji ili kompleksne multiplatformske sisteme – ovaj kurs je za Vas!\r\n\r\nPostanite ekspert za Apple podršku uz svetski priznati Apple OS X sertfikat.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
         },
         {
-            "key": "field_5983610104db4",
+            "key": "field_5984ab769cde5",
             "label": "Large Image",
             "name": "large_image",
             "type": "image",
@@ -211,7 +211,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5983610104dc0",
+            "key": "field_5984ab769cdf0",
             "label": "Small Image",
             "name": "small_image",
             "type": "image",
@@ -235,7 +235,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_59836179cb5a2",
+            "key": "field_5984ab769cdfa",
             "label": "Program PDF",
             "name": "first_program_pdf",
             "type": "taxonomy",
@@ -257,7 +257,7 @@
             "multiple": 0
         },
         {
-            "key": "field_5983610104dcc",
+            "key": "field_5984ab769ce05",
             "label": "Second Section",
             "name": "",
             "type": "tab",
@@ -273,7 +273,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5983610104dd9",
+            "key": "field_5984ab769ce11",
             "label": "Second Section Title",
             "name": "second_section_title",
             "type": "text",
@@ -285,14 +285,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Zašto iOS programiranje?",
-            "placeholder": "Zašto iOS programiranje?",
+            "default_value": "Zašto Apple IT kurs?",
+            "placeholder": "Zašto Apple IT kurs?",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5983610104de5",
+            "key": "field_5984ab769ce1b",
             "label": "Second Section Body",
             "name": "second_section_body",
             "type": "textarea",
@@ -304,14 +304,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Po najnovijim istraživanjima, iOS programeri su najtraženiji kadar u Srbiji. Razvoj aplikacija za iOS uređaje je izuzetno dobro plaćena i tražena pozicija kod nas i u svetu.\r\n\r\nRazvijanje apliakcija možete raditi samostalno ili u okviru programerskog tima, a Vaša zarada zavisi isključivo od Vaše spremnosti da učite i radite.",
+            "default_value": "Krtkim intenzivnim kursevima na brz i efikasan način uz metodologiju koja podrazumeva praktičan rad savladaćete rešavanje problema u okviru Mac OS X sistema i kako da integrišete Mac računare u već postojeću Windows mrežu.\r\n\r\nNaučićete osnove rada Unix operativnog sistema, kako da napravite i održavate svoj server i mrežu oko njega.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
         },
         {
-            "key": "field_5984a150b081d",
+            "key": "field_5984ab769ce26",
             "label": "Benefits",
             "name": "benefits",
             "type": "repeater",
@@ -330,7 +330,7 @@
             "button_label": "Add Benefit",
             "sub_fields": [
                 {
-                    "key": "field_5984a193b081e",
+                    "key": "field_5984ab76ad017",
                     "label": "Icon",
                     "name": "icon",
                     "type": "image",
@@ -354,7 +354,7 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_5984a1c2b081f",
+                    "key": "field_5984ab76ad027",
                     "label": "First Line",
                     "name": "first_line",
                     "type": "text",
@@ -373,7 +373,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5984a1deb0820",
+                    "key": "field_5984ab76ad036",
                     "label": "Additional Text",
                     "name": "additional_text",
                     "type": "text",
@@ -394,7 +394,7 @@
             ]
         },
         {
-            "key": "field_5983610104df1",
+            "key": "field_5984ab769ce31",
             "label": "Third Section",
             "name": "",
             "type": "tab",
@@ -410,7 +410,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5983610104dfe",
+            "key": "field_5984ab769ce3c",
             "label": "Third Section Title",
             "name": "third_section_title",
             "type": "text",
@@ -422,14 +422,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Ostvarite popust na Apple uređaje",
-            "placeholder": "Ostvarite popust na Apple uređaje",
+            "default_value": "Kako izgledaju Apple IT kursevi?",
+            "placeholder": "Kako izgledaju Apple IT kursevi?",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_5983610104e0a",
+            "key": "field_5984ab769ce47",
             "label": "Third Section Body",
             "name": "third_section_body",
             "type": "textarea",
@@ -441,14 +441,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Svim polaznicima omogućene su povlašćene cene na Apple proizvode zahvljujući našem partnerstvu sa Macola Apple Solution Expert.",
+            "default_value": "Kursevi su u potpunosti prilagođeni polaznicima, bilo da su u pitanju nastavnici, agenti podrške, IT specijalisti, mrežni administratori, tehničari ili administratori servera.\r\n\r\nU ponudi je tri nivoa kursa, koji možete odabrati u skladu sa potreba u sklopu Vašeg profesionalnog okruženja.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
         },
         {
-            "key": "field_5983610104e17",
+            "key": "field_5984ab769ce51",
             "label": "Third Image",
             "name": "third_image",
             "type": "image",
@@ -536,7 +536,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-swift.php"
+                "value": "page-appleit.php"
             }
         ]
     ],
@@ -563,5 +563,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1501868379
+    "modified": 1501868426
 }
