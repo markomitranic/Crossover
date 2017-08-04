@@ -161,8 +161,8 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Otplaćujte kurseve u ratama",
-            "placeholder": "Otplaćujte kurseve u ratama",
+            "default_value": "Kreirajte svoju aplikaciju uz SWIFT!",
+            "placeholder": "Kreirajte svoju aplikaciju uz SWIFT!",
             "prepend": "",
             "append": "",
             "maxlength": ""
@@ -180,7 +180,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<strong>48 mesečnih rata<\/strong>\r\n\r\nKurseve je moguće plaćati na do 48 mesečnih rata (do 12 rata karticama Banca Intesa), nezavisno od ukupne cene ili kombinacije kurseva.\r\n\r\nOstvareni popusti avansnim plaćanjem u celosti se ne mogu kombinovati sa plaćanjem na rate.",
+            "default_value": "Savladajte SWIFT programski jezik I od prvog časa započnite rad na sostvenim aplikacijama uz podršku mentora.\r\n\r\nNakon kursa bićete sposobni da samostalno razvijate aplikacije i postavite ih  na App Store na korišćenje.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
@@ -253,7 +253,7 @@
             "add_term": 1,
             "save_terms": 0,
             "load_terms": 0,
-            "return_format": "object",
+            "return_format": "id",
             "multiple": 0
         },
         {
@@ -285,8 +285,8 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Firmama povlašćene cene",
-            "placeholder": "Firmama povlašćene cene",
+            "default_value": "Zašto iOS programiranje?",
+            "placeholder": "Zašto iOS programiranje?",
             "prepend": "",
             "append": "",
             "maxlength": ""
@@ -304,11 +304,94 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Ukoliko ste deo firme koja svojim zaposlenima želi da omogući dalje savršavanje u okviru  iOS SWIFT App Development kurseva, možete otplatu regulisati jednostavno putem računa firme uz povlašćene cene pri upisu polaznika na više modula odjednom.",
+            "default_value": "Po najnovijim istraživanjima, iOS programeri su najtraženiji kadar u Srbiji. Razvoj aplikacija za iOS uređaje je izuzetno dobro plaćena i tražena pozicija kod nas i u svetu.\r\n\r\nRazvijanje apliakcija možete raditi samostalno ili u okviru programerskog tima, a Vaša zarada zavisi isključivo od Vaše spremnosti da učite i radite.",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5984a150b081d",
+            "label": "Benefits",
+            "name": "benefits",
+            "type": "repeater",
+            "instructions": "Select 6 benefits to be shown next to the post.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 6,
+            "max": 6,
+            "layout": "table",
+            "button_label": "Add Benefit",
+            "sub_fields": [
+                {
+                    "key": "field_5984a193b081e",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "miniature",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5984a1c2b081f",
+                    "label": "First Line",
+                    "name": "first_line",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "€ 1.000",
+                    "placeholder": "€ 1.000",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5984a1deb0820",
+                    "label": "Additional Text",
+                    "name": "additional_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Prosečna plata u Srbiji",
+                    "placeholder": "Prosečna plata u Srbiji",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         },
         {
             "key": "field_5983610104df1",
@@ -459,5 +542,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1501782802
+    "modified": 1501865172
 }
