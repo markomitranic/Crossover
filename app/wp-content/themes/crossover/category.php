@@ -1,95 +1,64 @@
-<?php
+<?php get_header(); ?>
 
-// This is a simple var dumped category page.
-// We have two different loop options. Query and Get.
-// If we use query, we are meddling with the WP Query loop.
-// Get posts is somewhat better, but it has less options. This returns an array of posts.
+<main id="category">
+	<section id="hero">
+		<div class="wrapper">
+			<h1>Kategorija: <br><?=get_queried_object()->name?></h1>
+			<a href="<?=get_field('hero_button_1_link', 450)?>" class="btn" title="<?=get_field('hero_button_1_label', 450)?>"><?=get_field('hero_button_1_label', 450)?></a>
+			<a href="<?=get_field('hero_button_2_link', 450)?>" class="btn" title="<?=get_field('hero_button_2_label', 450)?>"><?=get_field('hero_button_2_label', 450)?></a>
+		</div>
+	</section>
 
-// Wordpress Tags Usage: https://codex.wordpress.org/Template_Tags
+	<?php foreach (get_term_children(get_queried_object_id(), 'category') as $categoryId) :
+		$category = get_category($categoryId);
+		if ($category->category_count <= 0) { continue; } ?>
+		<section id="courses-category-list">
+			<div class="wrapper">
+				<h2><?=$category->name?> (<?=$category->category_count?>)</h2>
+				<ul>
 
+					<?php $the_query = new WP_Query([
+						'cat' => $categoryId,
+						'posts_per_page'   => -1,
+					]);
+					if ( $the_query->have_posts() ) :
+						while ( $the_query->have_posts() ) :
+							$the_query->the_post(); ?>
 
-get_header();
+							<li>
+								<a href="<?=get_the_permalink()?>"><?=get_the_title()?></a>
+								<p>Obuka: 1 Dan | 6 casova<br>CK503GRS</p>
+							</li>
 
+						<?php endwhile;
+					endif;
+					wp_reset_postdata(); ?>
 
-// Basic WP_QUERY
-	$args = array(
-		'p' => 52,
-		'posts_per_page'   => 1,
-		'offset'           => 0,
-		'orderby'          => 'date',
-		'order'            => 'DESC',
-		'post_type'        => 'otvoreni_pozivi',
-		'post_status'      => 'publish'
-	);
-	$the_query = new WP_Query( $args );
-	if ( $the_query->have_posts() ) :
-		while ( $the_query->have_posts() ) :
-		$the_query->the_post();
-		
-			$slika = get_field('hero_slika');	
-			the_permalink();
-			the_title();
+				</ul>
+			</div>
+		</section>
+	<?php endforeach; ?>
 
-		endwhile;
-	endif;
-	wp_reset_postdata();
+</main>
 
+	<footer>
+		<section id="newsletter">
+			<div class="wrapper">
+				<div class="open-day">
+					<h3>Sledeća otvorena vrata održavamo<br>22.03.2017 u 17 časova</h3>
+					<p>Ukoliko imate neko pitanje ili želite da se prijavite za kurs, upišite svoje podatke ispod, i mi ćemo Vas kontaktirati!</p>
+					<p>Otvorena vrata su namenjena upoznavanju uživo budućih polaznika sa profesorima i programom obuka i sertifikacije. </p>
+				</div>
+				<div class="newsletter">
+					<form action="">
+						<input type="text" placeholder="Ime i Prezime*">
+						<input type="text" placeholder="Adresa e-pošte*">
+						<input type="text" placeholder="Broj telefona*">
+						<input type="text" placeholder="Dodatne informacije*">
+						<button>Submit</button>
+					</form>
+				</div>
+			</div>
+		</section>
 
-
-
-
-
-// Get Posts way of getting posts
-	$args = array(
-		'posts_per_page'   => 5,
-		'offset'           => 0,
-		'category'         => '',
-		'category_name'    => '',
-		'orderby'          => 'date',
-		'order'            => 'DESC',
-		'include'          => '',
-		'exclude'          => '',
-		'meta_key'         => '',
-		'meta_value'       => '',
-		'post_type'        => 'portfolio',
-		'post_mime_type'   => '',
-		'post_parent'      => '',
-		'author'	   => '',
-		'post_status'      => 'publish',
-		'suppress_filters' => true 
-	);
-	$posts_array = get_posts( $args );
-	var_dump($posts_array);
-
-
-
-// Query Posts way
-	query_posts(['post_type'=> 'post', 'order' => 'DESC', 'posts_per_page'=> 6]);
-	while ( have_posts() ) : the_post();
-		echo the_title();
-	endwhile;
-
-
-
-
-
-// A redirection category.
-// The basic idea is that all the categories should have the same slugs as the pages... So they will just redirect to page.
-	$category = get_category( get_query_var( 'cat' ) );
-	if ($category->description) {
-		Redirect('/'.$category->description, 301);
-	} else {
-		Redirect('/'.$category->slug, 301);
-	}
-
-
-
-
-
-
-
-
-get_footer();
-
-
-?>
+<?php get_footer(); ?>

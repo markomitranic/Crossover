@@ -1,0 +1,106 @@
+main#category {
+
+  #hero {
+    background-image: url('../assets/images/hero-index.png');
+    background-position: bottom center;
+
+    @include media(1024px) {
+      background-position: bottom left;
+    }
+    @include media(480px) {
+      background-position: left -160px top;
+    }
+
+    .wrapper {
+      padding-top: 205px;
+      padding-bottom: 430px;
+
+      @include media(1024px) {
+        padding-top: 215px;
+        padding-bottom: 370px;
+      }
+      @include media(768px) {
+        padding-bottom: 370px;
+      }
+      @include media(480px) {
+        padding-top: 170px;
+        padding-bottom: 170px;
+      }
+
+      p.subtitle {
+        color: $black0;
+      }
+    }
+  }
+  #courses-category-list {
+    margin-bottom: 60px;
+
+    @include media(768px) {
+      margin-bottom: 40px;
+    }
+    @include media(480px) {
+      margin-bottom: 30px;
+    }
+
+    .wrapper {
+      @include wrapper;
+      h2 {
+        @include font-heading-light;
+        margin-top: 0;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+
+        li {
+          display: block;
+          background-color: $black0;
+          width: calc(33.333% - 15px);
+          height: auto;
+          border: 1px solid $black40;
+          padding: 20px 20px 90px 20px;
+          margin-bottom: 20px;
+          box-sizing: border-box;
+          position: relative;
+          box-shadow: 0 0 0 $black40;
+          transition: 0.2s all ease-out;
+
+          &:hover {
+            box-shadow: 0 0 10px $black40;
+          }
+
+          @include media(780px) {
+            width: calc(50% - 15px);
+          }
+          @include media(500px) {
+            width: calc(100% - 15px);
+          }
+
+          a {
+            color: $black80;
+            text-decoration: none;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          p {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            margin: 0;
+            padding: 0;
+
+            font-weight: 300;
+            color: $black40;
+            font-size: 16px;
+            letter-spacing: -0.5px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+}

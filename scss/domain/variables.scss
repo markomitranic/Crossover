@@ -85,6 +85,23 @@ $green: #417505;
   }
 }
 
+@mixin font-heading-light {
+  color: $black100;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 45px;
+  letter-spacing: -1px;
+  text-shadow: 0 0 4px rgba(0,0,0,0.5);
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  @include media(480px) {
+    font-size: 28px;
+    letter-spacing: 0.14px;
+    line-height: 35px;
+  }
+}
+
 @mixin font-section-heading {
   color: $black100;
   font-size: 36px;
