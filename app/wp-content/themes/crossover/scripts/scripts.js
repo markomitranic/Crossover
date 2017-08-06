@@ -1,6 +1,18 @@
 'use strict';
 
 (function () {
+    var $timetable = $('#class-schedule');
+    var $scheduleButton = $timetable.find('.heading');
+    var $scheduleBody = $timetable.find('.timetable');
+
+    $scheduleButton.on('click', function () {
+        $timetable.toggleClass('active');
+        $scheduleBody.slideToggle();
+    });
+})(jQuery);
+'use strict';
+
+(function () {
     var $menuButton = $('#mobile-menu-button');
     var $menu = $('#header').find('nav');
 

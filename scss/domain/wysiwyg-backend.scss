@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700&subset=latin-ext');
+@import 'variables';
+@import "general";
+
+body.wp-autoresize {
+  background-color: $black0;
+  padding: 20px 40px!important;
+}
+
+// The rest is basically the same as wysiwyg.scss and should be updated by copying
+@import "wysiwyg";
+@include wysiwyg;

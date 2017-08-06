@@ -1,4 +1,9 @@
-const scssInput = ['scss/style.scss'],
+const scssInput = [
+        'scss/style.scss'
+    ],
+    editorInput = [
+        'scss/domain/wysiwyg-backend.scss'
+    ],
     jsInput = [
         'scripts/domain/*.js'
     ],
@@ -9,7 +14,7 @@ const scssInput = ['scss/style.scss'],
         'scripts/vendor/TweenLite.min.js'
     ],
     scssOutput = 'app/wp-content/themes/crossover/css',
-    jsOutput = 'app/wp-content/themes/crossover/scripts';
+    jsOutput = 'app/wp-content/themes/crossover/scripts/';
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
@@ -23,6 +28,16 @@ const uglify = require('gulp-uglify');
 gulp.task('sass', function() {
     return gulp
         .src(scssInput)
+        .pipe(sourcemaps.init())
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(autoprefixer())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(scssOutput))
+});
+
+gulp.task('editorSass', function() {
+    return gulp
+        .src(editorInput)
         .pipe(sourcemaps.init())
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(autoprefixer())
@@ -50,8 +65,8 @@ gulp.task('vendorScripts', function() {
         .pipe(gulp.dest(jsOutput));
 });
 
-gulp.task('watch', ['sass', 'domainScripts', 'vendorScripts'], function (){
-    gulp.watch('scss/**/*.scss', ['sass']);
+gulp.task('watch', ['sass', 'editorSass', 'domainScripts', 'vendorScripts'], function (){
+    gulp.watch('scss/**/*.scss', ['sass', 'editorSass']);
     gulp.watch('scripts/domain/**/*.js', ['domainScripts']);
     gulp.watch('scripts/vendor/**/*.js', ['vendorScripts']);
 });

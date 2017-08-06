@@ -72,7 +72,6 @@
         }
     }
 
-
     /**
      * Need to use permanent redirection? Easy peasy.
      */
@@ -92,29 +91,6 @@
         return $output;
     }
 
-    /**
-     * Disable galleries support
-     */
-    add_action( 'admin_head_media_upload_gallery_form', 'mfields_remove_gallery_setting_div' );
-    if( !function_exists( 'mfields_remove_gallery_setting_div' ) ) {
-        function mfields_remove_gallery_setting_div() {
-            print '
-                <style type="text/css">
-             #gallery-settings *{
-                   display:none;
-               }
-            </style>';
-        }
-    }
-
-    /**
-     * WP_Fill website advises us to disable <p> tags on images.
-     */
-     add_filter('the_content', 'filter_ptags_on_images');
-    function filter_ptags_on_images($content){
-        return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-    }
-
     remove_action('wp_head', 'rsd_link');
     remove_action('wp_head', 'wlwmanifest_link');
     remove_action('wp_head', 'wp_generator');
@@ -131,3 +107,5 @@
         $text = substr($text, 0, $length);
         return $text;
     }
+
+	add_editor_style( 'css/wysiwyg-backend.css' );

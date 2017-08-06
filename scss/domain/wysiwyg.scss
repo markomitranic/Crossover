@@ -1,0 +1,125 @@
+@mixin wysiwyg {
+
+  h1, h2, h3, h4, h5, h6 {
+    @include font-section-heading;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  p {
+    @include font-section-content;
+    font-size: 18px;
+    line-height: 30px;
+    color: $black60;
+    font-weight: 300;
+  }
+  a {
+    color: $black60;
+    transition: 0.2s color ease-in-out;
+    &:hover {
+      color: $black100;
+    }
+  }
+  code, pre {
+    padding: 2px 7px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: $black80;
+    color: $black0;
+  }
+  blockquote {
+    @include font-section-content-bold;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 33px;
+    color: $black80;
+    border-left: 3px solid $black80;
+    padding: 5px 0 5px 20px;
+    margin-left: 0;
+    margin-right: 40px;
+  }
+  hr {
+    display: block;
+    height: 0;
+    width: 100%;
+    margin-top: 52px;
+    margin-bottom: 42px;
+    border: 0;
+    text-align: center;
+
+    &::before {
+      content: '...';
+      display: block;
+      position: relative;
+      top: -30px;
+      color: $black80;
+      font-size: 28px;
+      letter-spacing: 20px;
+    }
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+    &.aligncenter {
+      margin: 0 auto;
+      display: block;
+    }
+    &.alignright {
+      margin: 5px 0 5px 20px;
+      display: inline;
+      float: right;
+    }
+    &.alignleft {
+      margin: 5px 20px 5px 0;
+      display: inline;
+      float: left;
+    }
+  }
+  div.wp-caption {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+    &.aligncenter {
+      margin: 0 auto;
+      display: block;
+    }
+    &.alignright {
+      margin: 5px 0 5px 20px;
+      display: inline;
+      float: right;
+    }
+    &.alignleft {
+      margin: 5px 20px 5px 0;
+      display: inline;
+      float: left;
+    }
+
+    p.wp-caption-text {
+      font-size: 12px;
+      margin-top: 2px;
+      text-align: center;
+      line-height: 14px;
+    }
+  }
+  ul {
+    @include font-section-content;
+    font-size: 18px;
+    line-height: 33px;
+    color: $black60;
+    font-weight: 300;
+    padding: 0 0 0 20px;
+  }
+  ol {
+    @include font-section-content;
+    font-size: 18px;
+    line-height: 33px;
+    color: $black60;
+    font-weight: 300;
+    padding: 0 0 0 20px;
+  }
+}
+

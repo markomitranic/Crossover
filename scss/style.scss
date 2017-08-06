@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700&subset=latin-ext');
-
 @import "vendor/slick/slick";
 @import "vendor/slick/slick-theme";
 
 @import 'domain/variables';
+@import 'domain/wysiwyg';
 @import 'domain/general';
 
 @import 'domain/blades/hero';
@@ -26,3 +26,4 @@
 @import 'domain/layout/ibm';
 @import 'domain/layout/index';
 @import 'domain/layout/category';
+@import 'domain/layout/post';

@@ -24,12 +24,10 @@
 					if ( $the_query->have_posts() ) :
 						while ( $the_query->have_posts() ) :
 							$the_query->the_post(); ?>
-
 							<li>
 								<a href="<?=get_the_permalink()?>"><?=get_the_title()?></a>
-								<p>Obuka: 1 Dan | 6 casova<br>CK503GRS</p>
+								<p><?=get_field('course_type')?></p>
 							</li>
-
 						<?php endwhile;
 					endif;
 					wp_reset_postdata(); ?>
