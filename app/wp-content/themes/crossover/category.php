@@ -1,5 +1,25 @@
 <?php get_header(); ?>
 
+
+
+<?php
+
+$term = get_queried_object();
+
+$children = get_terms( $term->taxonomy, array(
+	'parent'    => $term->term_id,
+	'hide_empty' => false
+) );
+
+if ($children) :
+	$categories = get_term_children(get_queried_object_id(), 'category');
+else :
+	$categories = [$term->term_id];
+endif;
+
+?>
+
+
 <main id="category">
 	<section id="hero">
 		<div class="wrapper">
@@ -9,7 +29,7 @@
 		</div>
 	</section>
 
-	<?php foreach (get_term_children(get_queried_object_id(), 'category') as $categoryId) :
+	<?php foreach ($categories as $categoryId) :
 		$category = get_category($categoryId);
 		if ($category->category_count <= 0) { continue; } ?>
 		<section id="courses-category-list">
