@@ -1,16 +1,28 @@
-<?php
+<?php get_header(); ?>
 
-// 404 Error Page
-// We need to say "Sorry you're wrong" to our users, but we need to do it in a gracious manner. So we need header and footer to be seen, and we need some content in the middle. This content can be suggestions, or an animation, or anything you wish.
-// Creating an error page: https://codex.wordpress.org/Creating_an_Error_404_Page
+<main id="post">
 
+	<section id="hero">
+		<div class="wrapper">
+			<h1>Greška 404</h1>
+			<p class="subtitle">Na žalost stranica koju ste tražili nije pronađena. U nastavku vam nudimo neke dalje mogućnosti za pretragu.</p>
+			<a href="<?=get_field('hero_button_1_link', 450)?>" class="btn" title="<?=get_field('hero_button_1_label', 450)?>"><?=get_field('hero_button_1_label', 450)?></a>
+			<a href="<?=get_field('hero_button_2_link', 450)?>" class="btn" title="<?=get_field('hero_button_2_label', 450)?>"><?=get_field('hero_button_2_label', 450)?></a>
+		</div>
+	</section>
 
-get_header();
+	<div id="course-description">
+		<div class="wrapper">
+			<div class="wrapper-inner">
+				<div class="404">
+					<img style="margin:0 auto; display: block;" src="<?= get_template_directory_uri() ?>/assets/404.gif" alt="TV static 404 error not found">
+				</div>
+			</div>
+		</div>
+	</div>
 
+</main>
 
-echo '404 Error. Sorry, the page does not exist. :(';
-
-get_footer();
-
-
-?>
+<footer>
+	<?php get_template_part('footer-newsletter'); ?>
+	<?php get_footer(); ?>
