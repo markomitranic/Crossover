@@ -213,3 +213,32 @@
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
 })();
+'use strict';
+
+(function () {
+
+    var endpoint = 'http://crossover.rs/api-technology-picker/';
+    var $parentSection = $('#technology-picker');
+    var $buttons = $parentSection.find('.choices li');
+    var $resultList = $parentSection.find('.timetable .table-content');
+    var $itemTemplate = $resultList.find('li').clone();
+
+    $.post(endpoint, { category: $buttons[0].dataset.category }, replaceList, 'json');
+
+    $buttons.on('click', function (e) {
+        var category = e.delegateTarget.dataset.category;
+        $.post(endpoint, { category: category }, replaceList, 'json');
+    });
+
+    function replaceList(data) {
+        $resultList.empty();
+
+        data.forEach(function (item, key) {
+            var $clone = $itemTemplate.clone();
+            $clone.find('.title').text(data[key].name).attr('href', data[key].link);
+            $clone.find('.date').text(data[key].date);
+
+            $resultList.append($clone);
+        });
+    }
+})(jQuery);

@@ -1,8 +1,6 @@
-<?php get_header(); ?>
-
-
-
 <?php
+
+get_header();
 
 $term = get_queried_object();
 
@@ -11,12 +9,11 @@ $children = get_terms( $term->taxonomy, array(
 	'hide_empty' => false
 ) );
 
-if ($children) :
-	$categories = get_term_children(get_queried_object_id(), 'category');
-else :
-	$categories = [$term->term_id];
-endif;
-
+if ($children) {
+	$categories = get_term_children( get_queried_object_id(), 'category' );
+} else {
+	$categories = [ $term->term_id ];
+}
 ?>
 
 

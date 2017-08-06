@@ -64,7 +64,7 @@ the_post();
             <aside id="related-articles">
                 <div class="wrapper">
                     <div class="inner-wrapper">
-                        <h2>Svi kursevi u kategoriji: macOS and OS C Training</h2>
+                        <h2><?=$category->name?></h2>
                         <ul>
                             <?php while ( $the_query->have_posts() ) :
                                 $the_query->the_post(); ?>

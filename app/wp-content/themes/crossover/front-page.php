@@ -57,7 +57,7 @@ get_header();
             <p class="subtitle"><?= get_field('picker_section_subtitle') ?></p>
             <div class="picker-flex">
                 <ul class="choices">
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/swift-logo-dark.svg');"></div>
                         <p class="technology-title">SWIFT</p>
                     </li>
@@ -75,7 +75,7 @@ get_header();
                     </li>
                     <li>
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/lenovo-logo-dark.svg');"></div>
-                        <p class="technology-title">LenovoT</p>
+                        <p class="technology-title">Lenovo</p>
                     </li>
                     <li>
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/cisco-logo-dark.svg');"></div>
@@ -98,18 +98,11 @@ get_header();
                     <div class="table-header">
                         <p>Naziv</p>
                         <p>Datum</p>
-                        <p>Stanje</p>
                     </div>
                     <ul class="table-content">
                         <li>
-                            <p><a href="#">A0 Uvod u SWIFT programski jezik</a></p>
-                            <p>22.05.2017</p>
-                            <p>Popunjen</p>
-                        </li>
-                        <li>
-                            <p><a href="#">A0 Uvod u SWIFT programski jezik</a></p>
-                            <p>22.05.2017</p>
-                            <p>Popunjen</p>
+                            <p><a href="#" class="title">A0 Uvod u SWIFT programski jezik</a></p>
+                            <p class="date">22.05.2017</p>
                         </li>
                     </ul>
                 </div>
