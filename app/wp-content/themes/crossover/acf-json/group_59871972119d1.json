@@ -1,0 +1,129 @@
+{
+    "key": "group_59871972119d1",
+    "title": "Template Options",
+    "fields": [
+        {
+            "key": "field_59871b7e58e7c",
+            "label": "Open day",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59871a53c317b",
+            "label": "Open Day Heading",
+            "name": "open_day_heading",
+            "type": "text",
+            "instructions": "Please enter a heading call for open day. You should include the exact date and time in the heading.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Sledeća otvorena vrata održavamo <br>23.03.2017 u 17 časova",
+            "placeholder": "Sledeća otvorena vrata održavamo <br>23.03.2017 u 17 časova",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59871addc317c",
+            "label": "Open Day Body",
+            "name": "open_day_body",
+            "type": "textarea",
+            "instructions": "Please enter additional explanations and information for the call to open day body. The exact venue description and purpose of the event might go here.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ukoliko imate neko pitanje ili želite da se prijavite za kurs, upišite svoje podatke ispod, i mi ćemo Vas kontaktirati!\r\n\r\nOtvorena vrata su namenjena upoznavanju uživo budućih polaznika sa profesorima i programom obuka i sertifikacije.",
+            "placeholder": "Ukoliko imate neko pitanje ili želite da se prijavite za kurs...",
+            "maxlength": "",
+            "rows": 6,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_598719e7c317a",
+            "label": "Contact Information",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59871b8858e7d",
+            "label": "Footer Contact",
+            "name": "footer_contact",
+            "type": "textarea",
+            "instructions": "Please enter the full contact and address details and their links.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "mail: <a href=\"mailto:info@crossover.rs\">info@crossover.rs<\/a>\r\ntel: <a href=\"tel:00381113038710\">+381 11 30 38 710<\/a>\r\n<a href=\"#\">Andrićev Venac 12\r\n11000 Beograd\r\n(zgrada zadužbine Univerziteta u Beogradu)<\/a>",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 8,
+            "new_lines": "br"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "template-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1502027499
+}

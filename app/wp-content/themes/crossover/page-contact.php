@@ -53,5 +53,4 @@ the_post();
 </main>
 
 <footer>
-
 <?php get_footer(); ?>

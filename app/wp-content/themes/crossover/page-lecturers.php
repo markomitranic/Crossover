@@ -55,23 +55,5 @@ the_post();
 </main>
 
 <footer>
-    <section id="newsletter">
-        <div class="wrapper">
-            <div class="open-day">
-                <h3>Sledeća otvorena vrata održavamo<br>22.03.2017 u 17 časova</h3>
-                <p>Ukoliko imate neko pitanje ili želite da se prijavite za kurs, upišite svoje podatke ispod, i mi ćemo Vas kontaktirati!</p>
-                <p>Otvorena vrata su namenjena upoznavanju uživo budućih polaznika sa profesorima i programom obuka i sertifikacije. </p>
-            </div>
-            <div class="newsletter">
-                <form action="">
-                    <input type="text" placeholder="Ime i Prezime*">
-                    <input type="text" placeholder="Adresa e-pošte*">
-                    <input type="text" placeholder="Broj telefona*">
-                    <input type="text" placeholder="Dodatne informacije*">
-                    <button>Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
+<?php get_template_part('footer-newsletter'); ?>
 <?php get_footer(); ?>

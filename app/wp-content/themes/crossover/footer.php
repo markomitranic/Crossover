@@ -2,11 +2,7 @@
     <div class="wrapper">
         <div class="contact">
             <h3>Kako do nas?</h3>
-            <p>mail: <a href="#">info@crossover.rs</a>
-                <br>tel: <a href="#">+381 11 30 38 710</a>
-                <br><a href="#">Andrićev Venac 12
-                    <br>11000 Beograd
-                    <br>(zgrada zadužbine Univerziteta u Beogradu)</a></p>
+            <p><?=get_field('footer_contact', 'option')?></p>
         </div>
         <div class="social">
             <h3>Budite u toku sa novostima i aktuelnim kursevima prijavom na newsletter:</h3>

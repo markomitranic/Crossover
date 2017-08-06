@@ -153,5 +153,4 @@ get_header();
 </main>
 
 <footer>
-
 <?php get_footer(); ?>
