@@ -1,7 +1,7 @@
 main#index {
 
   #hero {
-    background-image: url('../assets/images/hero-index.png');
+    background-image: url('../assets/images/hero-index.jpg');
     background-position: bottom center;
 
     @include media(1024px) {
