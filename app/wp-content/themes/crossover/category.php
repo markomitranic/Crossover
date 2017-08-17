@@ -26,6 +26,31 @@ if ($children) {
 		</div>
 	</section>
 
+    <?php if ($children) : ?>
+        <section id="courses-category-list">
+            <div class="wrapper">
+                <ul>
+
+				    <?php $the_query = new WP_Query([
+					    'category__in' => [$term->term_id],
+					    'posts_per_page'   => -1,
+				    ]);
+				    if ( $the_query->have_posts() ) :
+					    while ( $the_query->have_posts() ) :
+						    $the_query->the_post(); ?>
+                            <li>
+                                <a href="<?=get_the_permalink()?>"><?=get_the_title()?></a>
+                                <p><?=get_field('course_type')?></p>
+                            </li>
+					    <?php endwhile;
+				    endif;
+				    wp_reset_postdata(); ?>
+
+                </ul>
+            </div>
+        </section>
+    <?php endif; ?>
+
 	<?php foreach ($categories as $categoryId) :
 		$category = get_category($categoryId);
 		if ($category->category_count <= 0) { continue; } ?>

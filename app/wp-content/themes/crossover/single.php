@@ -27,7 +27,7 @@ the_post();
                         <?php foreach (get_field('schedule') as $timeSlot) : ?>
                             <?php $startDate = DateTime::createFromFormat('d/m/Y H:i e', $timeSlot['start_date'] . ' 18:00 Europe/Belgrade'); ?>
                             <li>
-                                <p><?=date('d. F Y', $startDate->getTimestamp())?></p>
+                                <p><?=($startDate) ? date('d. F Y', $startDate->getTimestamp()) : 'Po zahtevu';?></p>
                                 <p><?=($timeSlot['price']) ? $timeSlot['price'] : 'Pozovite'?></p>
                             </li>
                         <?php endforeach; ?>

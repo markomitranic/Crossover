@@ -61,35 +61,35 @@ get_header();
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/swift-logo-dark.svg');"></div>
                         <p class="technology-title">SWIFT</p>
                     </li>
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/apple-logo-dark.svg');"></div>
                         <p class="technology-title">Apple IT</p>
                     </li>
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/ibm-logo-dark.svg');"></div>
                         <p class="technology-title">IBM</p>
                     </li>
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/microsoft-logo-dark.svg');"></div>
                         <p class="technology-title">Microsoft</p>
-                    </li>
-                    <li>
+                    </li data-category="app-development-training">
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/lenovo-logo-dark.svg');"></div>
                         <p class="technology-title">Lenovo</p>
                     </li>
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/cisco-logo-dark.svg');"></div>
                         <p class="technology-title">Cisco</p>
                     </li>
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/oracle-logo-dark.svg');"></div>
                         <p class="technology-title">Oracle</p>
                     </li>
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/logic-logo-dark.svg');"></div>
                         <p class="technology-title">Logic Pro</p>
                     </li>
-                    <li>
+                    <li data-category="app-development-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/finalcut-logo-dark.svg');"></div>
                         <p class="technology-title">Final Cut Pro</p>
                     </li>
