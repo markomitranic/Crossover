@@ -217,7 +217,7 @@
 
 (function () {
 
-    var endpoint = 'http://crossover.rs/api-technology-picker/';
+    var endpoint = 'http://crossover.rs/new/app/api-technology-picker/';
     var $parentSection = $('#technology-picker');
     var $buttons = $parentSection.find('.choices li');
     var $resultList = $parentSection.find('.timetable .table-content');

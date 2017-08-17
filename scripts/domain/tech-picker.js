@@ -1,6 +1,6 @@
 (function() {
 
-    const endpoint = 'http://crossover.rs/api-technology-picker/';
+    const endpoint = 'http://crossover.rs/new/app/api-technology-picker/';
     const $parentSection = $('#technology-picker');
     const $buttons = $parentSection.find('.choices li');
     const $resultList = $parentSection.find('.timetable .table-content');
