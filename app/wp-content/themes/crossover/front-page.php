@@ -81,7 +81,7 @@ get_header();
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/cisco-logo-dark.svg');"></div>
                         <p class="technology-title">Cisco</p>
                     </li>
-                    <li data-category="app-development-training">
+                    <li data-category="database">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/oracle-logo-dark.svg');"></div>
                         <p class="technology-title">Oracle</p>
                     </li>
