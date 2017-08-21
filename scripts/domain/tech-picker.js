@@ -4,7 +4,11 @@
     const $parentSection = $('#technology-picker');
     const $buttons = $parentSection.find('.choices li');
     const $resultList = $parentSection.find('.timetable .table-content');
-    const $itemTemplate = $resultList.find('li').clone();
+    const $itemError = $resultList.find('li.error').clone();
+    const $itemTemplate = $resultList.find('li.template').clone();
+
+    $resultList.empty();
+    $resultList.append($itemTemplate);
 
     $.post(endpoint, {category: $buttons[0].dataset.category}, replaceList, 'json');
 
@@ -15,6 +19,11 @@
 
     function replaceList(data) {
         $resultList.empty();
+
+        if (data.length <= 0) {
+            $resultList.append($itemError);
+            return;
+        }
 
         data.forEach((item, key) => {
             const $clone = $itemTemplate.clone();

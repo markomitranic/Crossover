@@ -40,8 +40,8 @@ function getTimeslotsFromCourse ($courseName, $permalink, $schedule) {
 		$formattedTimeslot = [
 			'name'      => $courseName,
 			'link'      => $permalink,
-			'timestamp' => $startDate->getTimestamp(),
-			'date'      => date('d. F Y', $startDate->getTimestamp()),
+			'timestamp' => ($startDate) ? $startDate->getTimestamp() : null,
+			'date'      => ($startDate) ? date('d. F Y', $startDate->getTimestamp()) : 'Po zahtevu',
 		];
 
 		array_push($timeslots, $formattedTimeslot);

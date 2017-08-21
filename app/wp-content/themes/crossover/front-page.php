@@ -61,23 +61,23 @@ get_header();
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/swift-logo-dark.svg');"></div>
                         <p class="technology-title">SWIFT</p>
                     </li>
-                    <li data-category="app-development-training">
+                    <li data-category="macos-and-os-x-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/apple-logo-dark.svg');"></div>
                         <p class="technology-title">Apple IT</p>
                     </li>
-                    <li data-category="app-development-training">
+                    <li data-category="ibm">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/ibm-logo-dark.svg');"></div>
                         <p class="technology-title">IBM</p>
                     </li>
-                    <li data-category="app-development-training">
+                    <li data-category="microsoft-software">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/microsoft-logo-dark.svg');"></div>
                         <p class="technology-title">Microsoft</p>
-                    </li data-category="app-development-training">
-                    <li data-category="app-development-training">
+                    </li>
+                    <li data-category="lenovo">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/lenovo-logo-dark.svg');"></div>
                         <p class="technology-title">Lenovo</p>
                     </li>
-                    <li data-category="app-development-training">
+                    <li data-category="cisco">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/cisco-logo-dark.svg');"></div>
                         <p class="technology-title">Cisco</p>
                     </li>
@@ -85,11 +85,11 @@ get_header();
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/oracle-logo-dark.svg');"></div>
                         <p class="technology-title">Oracle</p>
                     </li>
-                    <li data-category="app-development-training">
+                    <li data-category="pro-applications-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/logic-logo-dark.svg');"></div>
                         <p class="technology-title">Logic Pro</p>
                     </li>
-                    <li data-category="app-development-training">
+                    <li data-category="pro-applications-training">
                         <div class="technology-logo" style="background-image: url('<?= get_template_directory_uri() ?>/assets/finalcut-logo-dark.svg');"></div>
                         <p class="technology-title">Final Cut Pro</p>
                     </li>
@@ -100,9 +100,13 @@ get_header();
                         <p>Datum</p>
                     </div>
                     <ul class="table-content">
-                        <li>
-                            <p><a href="#" class="title">A0 Uvod u SWIFT programski jezik</a></p>
-                            <p class="date">22.05.2017</p>
+                        <li class="error">
+                            <p>Nema rezultata za traženu temu...</p>
+                            <p class="date"></p>
+                        </li>
+                        <li class="template">
+                            <p><a href="#" class="title">Učitavanje termina u toku...</a></p>
+                            <p class="date">22.05.1991</p>
                         </li>
                     </ul>
                 </div>
