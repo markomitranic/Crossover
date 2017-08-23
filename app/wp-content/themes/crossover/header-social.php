@@ -10,7 +10,12 @@
     if (is_front_page()) {
         $type = 'website';
     } else if (is_single()) {
-        $description = excerpt(get_post($pageId)->post_content, 256);
+        if (null !== get_field('og_description')) {
+	        $description = get_field('og_description');
+        } else {
+	        $description = excerpt(get_post($pageId)->post_content, 256);
+        }
+
     }
 
     if (null === $image) {
