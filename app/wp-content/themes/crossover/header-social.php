@@ -4,7 +4,7 @@
     $type = 'article';
     $url = get_permalink();
     $title = format_page_title(get_the_title());
-    $description = get_field('page_description');
+    $description = (null !== get_field('og_description')) ? get_field('og_description') : get_field('hero_subtitle');
     $image = get_field('og_hero_image')['sizes']['hero'];
 
     if (is_front_page()) {
