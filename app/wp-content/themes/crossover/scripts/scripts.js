@@ -216,38 +216,42 @@
 'use strict';
 
 (function () {
+    $(document).ready(function () {
 
-    var endpoint = 'http://crossover.rs/new/app/api-technology-picker/';
-    var $parentSection = $('#technology-picker');
-    var $buttons = $parentSection.find('.choices li');
-    var $resultList = $parentSection.find('.timetable .table-content');
-    var $itemError = $resultList.find('li.error').clone();
-    var $itemTemplate = $resultList.find('li.template').clone();
+        var endpoint = 'http://crossover.rs/api-technology-picker/';
+        var $parentSection = $('#technology-picker');
+        var $buttons = $parentSection.find('.choices li');
+        var $resultList = $parentSection.find('.timetable .table-content');
+        var $itemError = $resultList.find('li.error').clone();
+        var $itemTemplate = $resultList.find('li.template').clone();
 
-    $resultList.empty();
-    $resultList.append($itemTemplate);
-
-    $.post(endpoint, { category: $buttons[0].dataset.category }, replaceList, 'json');
-
-    $buttons.on('click', function (e) {
-        var category = e.delegateTarget.dataset.category;
-        $.post(endpoint, { category: category }, replaceList, 'json');
-    });
-
-    function replaceList(data) {
         $resultList.empty();
+        $resultList.append($itemTemplate);
 
-        if (data.length <= 0) {
-            $resultList.append($itemError);
-            return;
+        if ($resultList.length) {
+            $.post(endpoint, { category: $buttons[0].dataset.category }, replaceList, 'json');
         }
 
-        data.forEach(function (item, key) {
-            var $clone = $itemTemplate.clone();
-            $clone.find('.title').text(data[key].name).attr('href', data[key].link);
-            $clone.find('.date').text(data[key].date);
-
-            $resultList.append($clone);
+        $buttons.on('click', function (e) {
+            var category = e.delegateTarget.dataset.category;
+            $.post(endpoint, { category: category }, replaceList, 'json');
         });
-    }
+
+        function replaceList(data) {
+            $resultList.empty();
+
+            if (data.length <= 0) {
+                $resultList.append($itemError);
+                return;
+            }
+
+            data.forEach(function (item, key) {
+                var $clone = $itemTemplate.clone();
+                $clone.find('.title').text(data[key].name).attr('href', data[key].link);
+                $clone.find('.date').text(data[key].date);
+
+                $resultList.append($clone);
+            });
+        }
+    });
 })(jQuery);
