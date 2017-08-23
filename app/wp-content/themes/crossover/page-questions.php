@@ -11,10 +11,10 @@ the_post();
 <main id="questions">
     <section id="hero">
         <div class="wrapper">
-            <h1>Najčešća Pitanja</h1>
-            <p class="subtitle">Svakog petka održavamo otvorena vrata, kada se možete uživo upoznati sa našim programom i profesorima.</p>
-            <a href="#" class="btn">Izbor Kurseva</a>
-            <a href="#" class="btn">Plaćanje</a>
+            <h1><?=get_field('hero_title')?></h1>
+            <p class="subtitle"><?=get_field('hero_subtitle')?></p>
+            <a href="<?=get_field('hero_button_1_link')?>" class="btn" title="<?=get_field('hero_button_1_label')?>"><?=get_field('hero_button_1_label')?></a>
+            <a href="<?=get_field('hero_button_2_link')?>" class="btn" title="<?=get_field('hero_button_2_label')?>"><?=get_field('hero_button_2_label')?></a>
         </div>
     </section>
 
