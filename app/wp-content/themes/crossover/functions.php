@@ -87,6 +87,8 @@
     function format_page_title($title) {
         $output = $title;
         $output .= ($title == '') ? '' : ' ~ ';
+        $output .= get_bloginfo('title');
+	    $output .= ' ~ ';
         $output .= get_bloginfo('description');
         return $output;
     }
