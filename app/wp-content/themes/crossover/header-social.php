@@ -37,5 +37,5 @@
 <meta name="twitter:creator" content="@BFPE_BFPI">
 <meta name="twitter:title" content="<?=$title?>">
 <meta name="twitter:image:alt" content="<?=$title?>">
-<?=(null !== $description) ? '<meta name="twitter:description" content="'.$description'.">' : '';?>
+<?=(null !== $description) ? '<meta name="twitter:description" content="'.$description.'">' : '';?>
 <?=(null !== $description) ? '<meta name="twitter:image" content="'.$image.'">' : '';?>
