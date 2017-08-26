@@ -6,7 +6,7 @@
 			<?=get_field('open_day_body', 'option')?>
         </div>
         <div class="newsletter">
-			<?= do_shortcode('[contact-form-7 id="802" title="Footer Contact Form"]') ?>
+			<?= do_shortcode('[contact-form-7 id="790" title="Contact Form"]') ?>
         </div>
     </div>
 </section>
