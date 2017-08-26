@@ -1,3 +1,16 @@
+
+<section id="newsletter">
+    <div class="wrapper">
+        <div class="open-day">
+            <h3><?=get_field('open_day_heading', 'option')?></h3>
+			<?=get_field('open_day_body', 'option')?>
+        </div>
+        <div class="newsletter">
+			<?= do_shortcode('[contact-form-7 id="802" title="Footer Contact Form"]') ?>
+        </div>
+    </div>
+</section>
+
 <section id="last-block">
     <div class="wrapper">
         <div class="contact">
@@ -12,12 +25,6 @@
                         'container' => false,
                         'items_wrap' => '%3$s'
                 ]); ?>
-                <li class="newsletter">
-                    <form action="POST">
-                        <input type="text" placeholder="Vaš E-mail">
-                        <button>Submit</button>
-                    </form>
-                </li>
             </ul>
         </div>
     </div>

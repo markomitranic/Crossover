@@ -65,87 +65,92 @@ footer {
             flex-direction: column;
             flex-wrap: wrap;
           }
-          
-          input {
-            width: calc(50% - 15px - 50px);
-            margin: 0 15px 15px 0;
-            height: 50px;
-            padding: 0 20px;
-            background: transparent;
-            border: 1px solid $black40;
-            border-radius: 2px;
-            text-align: left;
-            font-size: 14px;
-            color: $black0;
-            font-family: Montserrat, sans-serif;
-            font-weight: 500;
-            line-height: 50px;
 
-            &:focus {
-              border-color: $black0;
-            }
-            &:nth-child(3) {
-              margin: 0 15px 0 0;
+          p {
+            width: 100%;
 
-              @include media(1125px) {
-                margin: 0 15px 15px 0;
+            input {
+              width: calc(50% - 15px - 50px);
+              margin: 0 15px 15px 0;
+              height: 50px;
+              padding: 0 20px;
+              background: transparent;
+              border: 1px solid $black40;
+              border-radius: 2px;
+              text-align: left;
+              font-size: 14px;
+              color: $black0;
+              font-family: Montserrat, sans-serif;
+              font-weight: 500;
+              line-height: 50px;
+
+              &:focus {
+                border-color: $black0;
               }
-              @include media(315px) {
-                margin: 0 0 15px 0;
-              }
-            }
-            &:nth-child(4) {
-              margin: 0 15px 0 0;
+              &:nth-child(3) {
+                margin: 0 15px 0 0;
 
+                @include media(1125px) {
+                  margin: 0 15px 15px 0;
+                }
+                @include media(315px) {
+                  margin: 0 0 15px 0;
+                }
+              }
+              &:nth-child(4) {
+                margin: 0 15px 0 0;
+
+                @include media(1125px) {
+                  margin: 0 15px 15px 0;
+                }
+                @include media(1024px) {
+                  margin: 0 15px 0 0;
+                }
+                @include media(315px) {
+                  margin: 0 0 15px 0;
+                }
+              }
               @include media(1125px) {
                 margin: 0 15px 15px 0;
               }
               @include media(1024px) {
-                margin: 0 15px 0 0;
-              }
-              @include media(315px) {
                 margin: 0 0 15px 0;
+                width: calc(100% - 15px);
+                flex: none;
+                display: block;
+                box-sizing: border-box;
               }
             }
-            @include media(1125px) {
-              margin: 0 15px 15px 0;
-            }
-            @include media(1024px) {
-              margin: 0 0 15px 0;
-              width: calc(100% - 15px);
-              flex: none;
-              display: block;
-              box-sizing: border-box;
-            }
-          }
-          button {
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 50px;
-            background: transparent;
-            border: 1px solid $black40;
-            border-radius: 2px;
-            color: transparent;
-            transition: 0.2s border-color ease-out;
-            background-image: url('../assets/arrow-up-light.svg');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 25px;
+            input[type=submit] {
+              position: absolute;
+              right: 0;
+              top: 15px;
+              bottom: 15px;
+              width: 50px;
+              height: auto;
+              background: transparent;
+              border: 1px solid $black40;
+              border-radius: 2px;
+              color: transparent;
+              transition: 0.2s border-color ease-out;
+              background-image: url('../assets/arrow-up-light.svg');
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: 25px;
 
-            @include media(315px) {
-              position: static;
-              display: block;
-              width: 100%;
-              flex: none;
-              box-sizing: border-box;
-              height: 50px;
-            }
+              @include media(315px) {
+                position: static;
+                display: block;
+                width: 100%;
+                flex: none;
+                box-sizing: border-box;
+                height: 50px;
+              }
 
-            &:hover {
-              border-color: $black0;
-              cursor: pointer;
+              &:hover {
+                border-color: $black0;
+                cursor: pointer;
+              }
             }
           }
         }
@@ -299,53 +304,6 @@ footer {
 
               @include media(520px) {
                 margin: 0;
-              }
-            }
-            &.newsletter {
-              height: auto;
-              width: auto;
-
-              @include media(520px) {
-                margin-top: 40px;
-                margin-right: 0;
-                display: block;
-              }
-
-              input {
-                height: 25px;
-                width: 253px;
-                border: 1px solid $black0;
-                border-radius: 2px;
-                background-color: $black20;
-                color: $black60;
-                font-family: Montserrat, sans-serif;
-                font-size: 13px;
-                font-weight: 300;
-                line-height: 16px;
-                padding: 5px 10px;
-                box-sizing: border-box;
-
-                @include media(300px) {
-                  width: calc(100% - 30px);
-                }
-              }
-              button {
-                height: 25px;
-                width: 25px;
-                border: 0;
-                padding:0;
-                background-color: transparent;
-                color: transparent;
-                margin: 0 0 0 -30px;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 17px;
-                background-image: url('../assets/arrow-up-dark.svg');
-
-                &:hover {
-                  cursor: pointer;
-                }
-
               }
             }
             a {

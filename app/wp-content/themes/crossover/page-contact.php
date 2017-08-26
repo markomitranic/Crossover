@@ -24,13 +24,7 @@ the_post();
                 <div class="form-panel">
                     <h2><?=get_field('first_section_title')?></h2>
 	                <?=get_field('first_form_description')?>
-                    <form action="">
-                        <input type="text" placeholder="Ime i Prezime*">
-                        <input type="text" placeholder="Broj telefona*">
-                        <input type="text" placeholder="Adresa e-pošte*">
-                        <input type="text" placeholder="Tekst poruke">
-                        <button class="btn fill arrow-right">Pošalji!</button>
-                    </form>
+	                <?=do_shortcode('[contact-form-7 id="802" title="Footer Contact Form"]')?>
                 </div>
             </div>
         </div>

@@ -82,5 +82,4 @@ if ($children) {
 </main>
 
 <footer>
-<?php get_template_part('footer-newsletter'); ?>
 <?php get_footer(); ?>

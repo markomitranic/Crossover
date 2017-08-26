@@ -67,42 +67,49 @@ main#contact {
           form {
             display: block;
 
-            input {
-              display: block;
+            p {
               width: 100%;
-              box-sizing: border-box;
-              margin: 15px 0;
-              height: 50px;
-              padding: 0 20px;
-              background: rgba($black0, 0.7);
-              border: 1px solid $black40;
-              border-radius: 2px;
-              text-align: left;
-              font-size: 14px;
-              color: $black100;
-              font-family: Montserrat, sans-serif;
-              font-weight: 500;
-              line-height: 50px;
-              transition: 0.1s border-color ease-out;
+              margin: 0;
 
-              &:focus {
-                border-color: $black0;
-              }
-              &:hover {
-                border-color: $black100;
-              }
-            }
-            button {
-              width: 100%;
-              border-radius: 2px;
-              border-width: 1px;
-              border-color: $black80;
-              background-color: $black80;
-              text-transform: none;
-              text-align: left;
+              input {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin: 15px 0;
+                height: 50px;
+                padding: 0 20px;
+                background: rgba($black0, 0.7);
+                border: 1px solid $black40;
+                border-radius: 2px;
+                text-align: left;
+                font-size: 14px;
+                color: $black100;
+                font-family: Montserrat, sans-serif;
+                font-weight: 500;
+                line-height: 50px;
+                transition: 0.1s border-color ease-out;
 
-              &:hover {
-                background-color: rgba($black0, 0.7);
+                &:focus {
+                  border-color: $black0;
+                }
+                &:hover {
+                  border-color: $black100;
+                }
+              }
+              input[type=submit] {
+                width: 100%;
+                border-radius: 2px;
+                border-width: 1px;
+                border-color: $black80;
+                background-color: $black80;
+                text-transform: none;
+                text-align: left;
+                color: $black0;
+
+                &:hover {
+                  color: $black80;
+                  background-color: rgba($black0, 0.7);
+                }
               }
             }
           }
