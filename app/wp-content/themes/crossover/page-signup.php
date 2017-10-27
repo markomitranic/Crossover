@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Contact Page Template
+Template Name: Sign Up Page Template
 */
 
 get_header();
@@ -8,7 +8,7 @@ the_post();
 
 ?>
 
-<main id="contact">
+<main id="signup">
     <section id="hero">
         <div class="wrapper">
             <h1><?=get_field('hero_title')?></h1>
@@ -26,20 +26,6 @@ the_post();
                     <h2><?=get_field('first_section_title')?></h2>
 	                <?=get_field('first_form_description')?>
 	                <?=do_shortcode('[contact-form-7 id="790" title="Contact Form"]')?>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact-map">
-        <div class="wrapper">
-            <div class="background" style="background-image: url('<?=get_field('second_background_image')['sizes']['hero']?>');">
-                <div class="address-panel">
-                    <h2><?=get_field('second_section_title')?></h2>
-	                <?=get_field('second_description')?>
-                    <p><?=get_field('second_address')?></p>
-                    <p><?=get_field('second_contact_points')?></p>
-                    <a href="<?=get_field('google_maps_link')?>" class="btn fill arrow-left" target="_blank">Prikaži na mapi</a>
                 </div>
             </div>
         </div>

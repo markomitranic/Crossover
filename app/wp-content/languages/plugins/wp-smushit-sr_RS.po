@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Smush Image Compression and Optimization - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-09-14 04:43:43+0000\n"
+"PO-Revision-Date: 2017-10-11 05:32:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,148 +11,362 @@ msgstr ""
 "Language: sr_RS\n"
 "Project-Id-Version: Plugins - Smush Image Compression and Optimization - Stable (latest release)\n"
 
-#: lib/class-wp-smush-ui.php:241 lib/class-wp-smush-ui.php:285
+#: lib/class-wp-smush.php:710
+msgid "Skipped due to a timeout error, You can increase the request timeout to make sure Smush has enough time to process larger files. `define('WP_SMUSH_API_TIMEOUT', 150);`."
+msgstr "Прескочено услед истека времена. Можете повећати период истека времена како би били сигурни да Смаш има довољно времена да процесуира велике датотеке. `define('WP_SMUSH_API_TIMEOUT', 150);`."
+
+#: lib/class-wp-smush-ui.php:1264
+msgid "Note: For this process to happen automatically you need automatic smushing enabled."
+msgstr "Напомена: Како би се овај процес десио аутоматски потребно је да имате аутоматско смашовање укључено."
+
+#: lib/class-wp-smush-ui.php:1261
+msgid "Note: Any PNGs with transparency will be ignored. Smush will only convert PNGs if it results in a smaller file size. The resulting file will have a new filename and extension (JPEG), and any hard-coded URLs on your site that contain the original PNG filename will need to be updated."
+msgstr "Напомена: Било који PNG са транспарентношћу ће бити игнорисан. Смаш ће конвертовати PNG само уколико се као коначан резултат добије мања величина датотеке. Конвертована датотека ће имати друго име, екстензију (JPEG) и сви \"хард\" кодирани URL-ови који садрже оригинално PNG  име датотеке се морају ажурирати."
+
+#: lib/class-wp-smush-ui.php:1258
+msgid "Note: This data, called EXIF, adds to the size of the image. While this information might be important to photographers, it’s unnecessary for most users and safe to remove."
+msgstr "Напомена: Ови подаци, звани EXIF, повећавају величину датотеке слике. Док ова информација може бити веома корисна за фотографе, за већину корисника нема употребну вредност и можете је уклонити."
+
+#: lib/class-wp-smush-ui.php:1149
+msgid "Every time you upload an image to your site, WordPress generates a resized version of that image for every default and/or custom image size that your theme has registered. This means there are multiple versions of your images in your media library.%sChoose the images size/s below that you would like optimized:%s"
+msgstr "Сваки пут када отпремите слику на свој сајт, Вордпресс генерише верзију са промењеном величином за сваку предефинисану или прилагођену величину регистровану у оквиру теме. Ово значи да постоји више верзија истих слика у вашој библиотеци.%sИзаберите величину слике/а које желите да се оптимизују:%s"
+
+#: lib/class-wp-smush-ui.php:1102
+msgid "Smush will automatically check for any images that need re-smushing."
+msgstr "Смаш ће аутоматски проверити да ли постоје слике које је потребно поново смашовати."
+
+#: lib/class-wp-smush-ui.php:1053
+msgid "Smush Pro gives you all these extra settings and absolutely no limits on smushing your images! Did we mention Smush Pro also gives you up to 2x better compression too? – %sTry it all free with a WPMU DEV membership today!%s"
+msgstr "Смаш про вам омогућава додатна подешавања и нема лимит за смашовање ваших слика! Да ли смо споменули да вам Смаш Про омогућава да добијете до 2 пута бољу компресију?– %sПробајте све ово данас, бесплатно, у оквиру ваше WPMU DEV чланарине!%s"
+
+#: lib/class-wp-smush-ui.php:977
+msgid "Thanks for upgrading Smush!"
+msgstr "Хвала што сте надоградили Смаш!"
+
+#: lib/class-wp-smush-ui.php:975 lib/class-wp-smush-ui.php:979
+msgid "Try Smush Pro Free"
+msgstr "Пробајте Смаш Про Бесплатно"
+
+#: lib/class-wp-smush-ui.php:974
+msgid "And hey, if you do, you can join WPMU DEV for a free 30 day trial and get access to even more features!"
+msgstr "И хеј, ако желите, можете се придружити WPMU DEV-у бесплатно на 30 дана и добити приступ додатним карактеристикама!"
+
+#: lib/class-wp-smush-ui.php:837
+msgid "Stop current bulk smush process."
+msgstr "Стопирај тренутно смашовање"
+
+#: lib/class-wp-smush-ui.php:824
+msgid "Working.."
+msgstr "Радим..."
+
+#: lib/class-wp-smush-ui.php:764
+msgid "DISMISS"
+msgstr "ОДБАЦИТИ"
+
+#: lib/class-wp-smush-ui.php:760
+msgid "Enable %sResize Original Images%s to scale big images down to a reasonable size and save a ton of space."
+msgstr "Омогућите %sПромену величине оригиналних слика%s како би смањили велике слике на разумну величину и сачубали гомилу места."
+
+#: lib/class-wp-smush-ui.php:757
+msgid "Make sure your images are the right size for your theme. %sLearn more%s."
+msgstr "Потврдите/будите сигурни да величина ваших слика одговара вашој теми %sСазнајте више%s."
+
+#: lib/class-wp-smush-ui.php:755
+msgid "Enable %sSuper-smush%s for advanced lossy compression to optimise images further with almost no visible drop in quality."
+msgstr "Омогући %sСупер смашовање%s за још бољу компресију слика са скоро невидљивим губитком квалитета."
+
+#: lib/class-wp-smush-ui.php:753
+msgid "Upgrade to Smush Pro for advanced lossy compression. %sTry pro free%s."
+msgstr "Пређи на Смаш Про како би користио напредну компресију %sПробај бесплатно%s."
+
+#: lib/class-wp-smush-ui.php:750
+msgid "Still having trouble with PageSpeed tests? Give these a go…"
+msgstr "Још имате проблема са тесирањем Брзине Странице? Пробајте ово..."
+
+#: lib/class-wp-smush-ui.php:538
+msgid "Save a ton of space by not storing over-sized images on your server."
+msgstr "Сачувајте гомилу места тако што нећете чувати превелике слике на вашем серверу."
+
+#: lib/class-wp-smush-ui.php:394
+msgid "By default, Smush only compresses your cropped image sizes, not your original full-size images."
+msgstr "Предефинисано, Смаш компресује само исечке слика, не и ваше оригиналне слике у пуној величини."
+
+#: lib/class-wp-smush-ui.php:283
+msgid "PNG to JPEG savings"
+msgstr "Уштеда из PNG ка JPEG"
+
+#: lib/class-wp-smush-ui.php:274
+msgid "No resize savings available"
+msgstr "Није могуће уштедети променом величине"
+
+#: lib/class-wp-smush-ui.php:268 lib/class-wp-smush-ui.php:271
+msgid "Save storage space by resizing your full sized uploads down to a maximum size. %sEnable image resizing%s"
+msgstr "Сачувајте место на диску променом величине ваших отремљених слика на максималну величину. %sОмогући промену величине слика%s"
+
+#: lib/class-wp-smush-ui.php:260
+msgid "Resize savings"
+msgstr "Уштеда променом величине"
+
+#: lib/class-wp-smush-ui.php:241 lib/class-wp-smush-ui.php:244
+msgid "Compress images up to 2x more than regular smush with almost no visible drop in quality. %sEnable Super-smush%s"
+msgstr "Компресујте слике до 2 пута више од регуларног Смаша са скоро невидљивим губитком квалитета слике. %sОмогући супер смашовање%s"
+
+#: lib/class-wp-smush-ui.php:234
+msgid "Super-smushed savings"
+msgstr "Уштеда Супер смашовањем"
+
+#: lib/class-wp-smush-ui.php:218
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:480
+msgid "Total savings"
+msgstr "Укупна уштеда"
+
+#: lib/class-wp-smush-ui.php:210
+msgid "Images resized"
+msgstr "Промењена величина слика"
+
+#: lib/class-wp-smush-ui.php:203
+msgid "Attachments smushed"
+msgstr "Смашовани прилози"
+
+#: lib/class-wp-smush-ui.php:194
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:474
+msgid "Images smushed"
+msgstr "Смашоване слике"
+
+#: lib/class-wp-smush-ui.php:123
+msgid "Get Started"
+msgstr "Почни"
+
+#: lib/class-wp-smush-ui.php:73
+msgid "Welcome to Smush - Winner of Torque Plugin Madness 2017! Let's quickly set up the basics for you, then you can fine tweak each setting as you go - our recommendations are on by default."
+msgstr "Добро дошли у Смаш - Победника Torque Madness додатка 2017! Хајде да на брзину наместимо основе за вас а ви после можете у ходу да детаљно подесите остало - наша подешавања су укључена предефинисано."
+
+#: lib/class-wp-smush-s3.php:181
+msgid "We can see you have WP S3 Offload installed with the <strong>Remove Files From Server</strong> option activated. If you want to optimize your S3 images you'll need to <a href='%s'><strong>upgrade to Smush Pro</strong></a>"
+msgstr "Видимо да имате  постављен WP S3 Offload са укљученим <strong>Уклони датотеке са сервера</strong>. Уколико желите да оптимизујете ваше S3 слике морате <a href='%s'><strong>унапредити на Смаш Про</strong></a>"
+
+#: lib/class-wp-smush-s3.php:178
+msgid "We can see you have WP S3 Offload installed with the <strong>Remove Files From Server</strong> option activated. If you want to optimize your S3 images you'll need to enable the <a href='%s'><strong>Amazon S3 Support</strong></a> feature in Smush's settings."
+msgstr "Видимо да имате постављен WP S3 Offload са укљученим <strong>Уклони Датотеке са Сервера</strong>. Уколико желите да оптимизујете ваше S3 слике морате омогућити <a href='%s'><strong>Amazon S3 Подршку</strong></a> у Смаш подешавањима."
+
+#: lib/class-wp-smush-s3.php:124
+msgid "Amazon S3 support is active."
+msgstr "Amazon S3 подршка је активна."
+
+#: lib/class-wp-smush-s3.php:62
+msgid "Storing your image on S3 buckets using %sWP Offload S3%s? Smush can detect and smush those assets for you, including when you\\re removing files from your host server."
+msgstr "Чувате ваше слике на S3 buckets користећи %sWP Offload S3%s? Смаш може детектовати таква средства за вас, укључујући и моменте када уклоните датотеке са вашег сервера."
+
+#: lib/class-wp-smush-s3.php:61
+msgid "Amazon S3"
+msgstr "Amazon S3"
+
+#: lib/class-wp-smush-s3.php:60
+msgid "Enable Amazon S3 support"
+msgstr "Омогући Amazon S3 подршку"
+
+#: lib/class-wp-smush-nextgen.php:72
+msgid "NextGen Gallery"
+msgstr "NextGen Галерија"
+
+#: lib/class-wp-smush-dir.php:101
+msgid "Choose directory"
+msgstr "Одабрати сладиште"
+
+#: lib/class-wp-smush-dir.php:100
+msgid "Smush images that aren't located in your uploads folder."
+msgstr "Смашујте слике које се не налазе у фасцикли за отпремање."
+
+#: lib/class-wp-smush-dir.php:88
+msgid "Directory-smush savings"
+msgstr "Уштеда смаш-складишта"
+
+#: lib/class-wp-smush-admin.php:1404
+msgid "We haven’t found any images in your media library yet so there’s no smushing to be done! Once you upload images, reload this page and start playing!"
+msgstr "Нисмо успели да пронађемо слике у библиотеци па није могуће урадити смашовање! Након што отпремите слике, освежите ову страницу и почните да се играте!"
+
+#: lib/class-wp-smush-admin.php:717
+msgid "Skipped due to a timeout error, You can increase the request timeout to make sure Smush has enough time to process larger files. `define('WP_SMUSH_API_TIMEOUT', 150);`"
+msgstr "Прескочено услед истека времена. Можете повећати временски период како би омогућили Смашу да обради велике датотеке. `define('WP_SMUSH_API_TIMEOUT', 150);`"
+
+#: lib/class-wp-smush-admin.php:441 lib/class-wp-smush-ui.php:72
+msgid "QUICK SETUP"
+msgstr "БРЗО ПОДЕШАВАЊЕ"
+
+#: lib/class-wp-smush-admin.php:262
+msgid "When you compress a PNG file, Smush will check if converting the file to JPEG will further reduce its size."
+msgstr "Приликом компресовања PNG датотеке, Смаш ће проверити да ли се конверзијом у JPEG може добити додатна уштеда."
+
+#: lib/class-wp-smush-admin.php:261
+msgid "PNG to JPEG conversion"
+msgstr "Конверзија из PNG у JPEG"
+
+#: lib/class-wp-smush-admin.php:260
+msgid "Auto-convert PNGs to JPEGs (lossy)"
+msgstr "Ауто-конвертуј PNG у JPEG"
+
+#: lib/class-wp-smush-admin.php:257
+msgid "Save your original full-size images separately so you can restore them at any point. Note: Keeping a copy of your original files can significantly increase the size of your uploads folder by nearly twice as much."
+msgstr "Сачувајте ваше оригиналне слике пуне величине посебно како би их могли повратити у било ком моменту. Напомена: Чување копија оригиналних слика може драстично повећати величину фасцикле за отпремање и то скоро дупло."
+
+#: lib/class-wp-smush-admin.php:255
+msgid "Make a copy of my full size images"
+msgstr "Направи копију мојих оригиналних слика пуне величине."
+
+#: lib/class-wp-smush-admin.php:252
+msgid "Set a maximum height and width for all images uploaded to your site so that any unnecessarily large images are automatically resized before they are added to the media gallery. This setting does not apply to images smushed using Directory Smush feature."
+msgstr "Подесите максималну висину и ширину свих слика отремљених на ваш сајт како би се слике са непотребном величином смањиле пре додавања у библиотеку. Ова подешавања се не односе на слике смашоване користећи опцију Смашуј складиште."
+
+#: lib/class-wp-smush-admin.php:250
+msgid "Resize my full size images"
+msgstr "Промени величину мојих оригиналних слика"
+
+#: lib/class-wp-smush-admin.php:246
+msgid "EXIF data"
+msgstr "EXIF подаци"
+
+#: lib/class-wp-smush-admin.php:242
+msgid "Every time you upload an image to your site, WordPress generates a resized version of that image for every image size that your theme has registered. This means there are multiple versions of your images in your media library. By default, Smush only compresses these generated image. Activate this setting to also smush your original images. Note: Activating this setting doesn’t usually improve page speed."
+msgstr "Сваки пут када отпремите слику на свој сајт, Вордпресс генерише верзију са промењеном величином за сваку величину регистровану у оквиру теме. Ово значи да постоји више верзија истих слика у вашој библиотеци. Предефинисано Смаш компресује само ове генерисане слике. Активирајте ова подешавања како би смашовали и оригиналне слике. Напомена: Активација ових подешавања обично не утиче на брзину странице."
+
+#: lib/class-wp-smush-admin.php:241 lib/class-wp-smush-admin.php:251
+#: lib/class-wp-smush-admin.php:256
+msgid "Full size images"
+msgstr "Слике пуне величине"
+
+#: lib/class-wp-smush-admin.php:236
+msgid "Super-smush"
+msgstr "Супер смашовање"
+
+#: lib/class-wp-smush-admin.php:232
+msgid "When you upload images to your site, Smush will automatically optimize them for you."
+msgstr "Када отпремите слике на ваш сајт, Смаш ће их аутоматски оптимизовати за вас."
+
+#: lib/class-wp-smush-admin.php:231
+msgid "Automatic Smush"
+msgstr "Аутоматско Смашовање"
+
+#: lib/class-wp-smush-admin.php:227
+msgid "Choose whether you want to use network settings for all sub-sites or whether sub-site admins can control Smush’s settings."
+msgstr "Изаберите да ли желите да користите мрежна подешавања на свим под сајтовима или желите да администратори под сајтова могу да контролишу Смаш подешавања."
+
+#: lib/class-wp-smush-admin.php:226
+msgid "Multisite Control"
+msgstr "Контрола Мултисајта"
+
+#: lib/class-wp-smush-admin.php:225
+msgid "Use network settings for all the sub-sites."
+msgstr "Користи мрежна подешавања на свим под сајтовима."
+
+#: lib/class-wp-smush-ui.php:314 lib/class-wp-smush-ui.php:366
 msgid "Join WPMU DEV to try Smush Pro for free."
 msgstr "Придружите се WPMU DEV како би пробали Smush Pro бесплатно."
 
-#: lib/class-wp-smush-ui.php:241 lib/class-wp-smush-ui.php:285
+#: lib/class-wp-smush-ui.php:314 lib/class-wp-smush-ui.php:366
 msgid "%sPRO FEATURE%s"
 msgstr "%sPRO КАРАКТЕРИСТИКЕ%s"
 
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:564
-msgid "IMAGES SUPER-SMUSHED"
-msgstr "СЛИКЕ СУ СУПЕР СМАШОВАНЕ"
-
-#: lib/class-wp-smush-ui.php:729
+#: lib/class-wp-smush-ui.php:833
 msgid "%s%d%s of your media attachments have been smushed."
 msgstr "%s%d%s прилога ваше библиотеке је смашовано."
 
-#: lib/class-wp-smush-ui.php:493
+#: lib/class-wp-smush-ui.php:1196
 msgid "Currently, your largest image size is set at %s%dpx wide x %dpx high%s."
 msgstr "Тренутно је највећа величина слика подешена на %s%dpx ширине x %dpx висине%s"
 
-#: lib/class-wp-smush-ui.php:490
+#: lib/class-wp-smush-ui.php:1193
 msgid "Max height"
 msgstr "Максимална висина"
 
-#: lib/class-wp-smush-ui.php:487
+#: lib/class-wp-smush-ui.php:1190
 msgid "Max width"
 msgstr "Максимална ширина"
 
-#: lib/class-wp-smush-ui.php:201
-msgid "%sNO RESIZE SAVINGS AVAILABLE%s"
-msgstr "%sНЕМА ДОСТУПНЕ УШТЕДЕ ПРОМЕНЕ ВЕЛИЧИНЕ %s"
+#: lib/class-wp-smush-s3.php:120
+msgid "It seems you haven't finished setting up WP S3 Offload yet. %sConfigure%s it now to enable Amazon S3 support."
+msgstr "Изгледа да нисте завршили подешавање WP S3 Offload-а, %sПодесите%s га сада како би омогућили Amazon S3 подршку."
 
-#: lib/class-wp-smush-ui.php:195 lib/class-wp-smush-ui.php:198
-msgid "%sENABLE IMAGE RESIZING%s"
-msgstr "%sОМОГУЋИ ПРОМЕНУ ВЕЛИЧИНЕ СЛИКЕ%s"
-
-#: lib/class-wp-smush-ui.php:176 lib/class-wp-smush-ui.php:179
-msgid "%sENABLE SUPER-SMUSH%s"
-msgstr "%sОМОГУЋИ СУПЕР-СМАШОВАЊЕ%s"
-
-#: lib/class-wp-smush-ui.php:146
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:542
-msgid "IMAGES SMUSHED"
-msgstr "СЛИКЕ СМАШОВАНЕ"
-
-#: lib/class-wp-smush-s3.php:108
-msgid "It seems you haven't finished setting up WP S3 Offload yet, %sConfigure%s it now to enable Amazon S3 support."
-msgstr "Изгледа да нисте завршили подешавање WP S3 офлода , %sПодесите%s га сада да би омогућили Амаѕон С3 помоћ."
-
-#: lib/class-wp-smush-s3.php:101
+#: lib/class-wp-smush-s3.php:113
 msgid "We are having trouble interacting with WP S3 Offload, make sure the plugin is activated. Or you can %sreport a bug%s."
 msgstr "Имамо проблема у интеракцији са WP S3 офлодом, проверите да ли је додатак активан. Или можете %sпријавити баг%s."
 
-#: lib/class-wp-smush-s3.php:57
-msgid "Optimize your images stored on Amazon S3. This feature uses the %sWP Offload S3%s plugin and is needed if the option %sRemove Files From Server%s is enabled. Images will be smushed as per your current settings."
-msgstr "Оптимизујте слике архивиране на Амазон С3. Ова карактеристика користи %sWP Офлод С3%s додатак и потребна је уколико је опција %sУклони Фајлове Са Сервера%s укључена. Слике ће бити смашоване у складу са тренутним подешавањима."
-
-#: lib/class-wp-smush-s3.php:56
-msgid "Amazon S3 support"
-msgstr "Амазон С3 подршка"
-
-#: lib/class-wp-smush-dir.php:269
+#: lib/class-wp-smush-dir.php:264
 msgid "All images for the selected directory are smushed and up to date. Awesome!"
 msgstr "Све слике из одабраног директоријума су смашоване и ажурне. Феноменално!"
 
-#: lib/class-wp-smush-dir.php:104
-msgid "SMUSH DIRECTORY"
-msgstr "СМАШ ДИРЕКТОРИЈУМ"
-
-#: lib/class-wp-smush-dir.php:1235
+#: lib/class-wp-smush-dir.php:1254
 msgid "We were unable to retrieve the image list from last scan, please continue with a latest scan"
 msgstr "Нисмо били у могућности да повратимо листу слика из последњег скенирања, молимо вас наставите са скенирањем"
 
-#: lib/class-wp-smush-dir.php:1114
+#: lib/class-wp-smush-dir.php:1133
 msgid "Image couldn't be optimized"
 msgstr "Није могуће оптимизовати слику"
 
-#: lib/class-wp-smush-dir.php:1101
+#: lib/class-wp-smush-dir.php:1120
 msgid "Could not find image id in last scanned images"
 msgstr "Није могуће пронаћи id слике из последње скенираних слика"
 
-#: lib/class-wp-smush-dir.php:1067
+#: lib/class-wp-smush-dir.php:1086
 msgid "Incorrect image id"
 msgstr "Погрешан id слике"
 
-#: lib/class-wp-smush-dir.php:945
+#: lib/class-wp-smush-dir.php:964
 msgid "Waiting.."
 msgstr "Молимо вас сачекајте.."
 
-#: lib/class-wp-smush-dir.php:916
+#: lib/class-wp-smush-dir.php:931
 msgid "%d images"
 msgstr "%d слика"
 
-#: lib/class-wp-smush-dir.php:606
+#: lib/class-wp-smush-dir.php:610
 msgid "We could not find any images in the selected directory."
 msgstr "Нисмо успели да пронађемо слике у одабраном директоријуму."
 
-#: lib/class-wp-smush-dir.php:472
+#: lib/class-wp-smush-dir.php:471
 msgid "Exclude directory from Smush List"
 msgstr "Изостави директоријум из Смаш Листе"
 
-#: lib/class-wp-smush-dir.php:309
+#: lib/class-wp-smush-dir.php:304
 msgid "ADD DIRECTORY"
 msgstr "ДОДАЈ ДИРЕКТОРИЈУМ"
 
-#: lib/class-wp-smush-dir.php:306
+#: lib/class-wp-smush-dir.php:301
 msgid "Smush will also include any images in sub folders of your selected folder."
 msgstr "Смаш ће такође узети у обзир и све слике у под фасциклама изабране фасцикле."
 
-#: lib/class-wp-smush-dir.php:302
+#: lib/class-wp-smush-dir.php:297
 msgid "Choose the folder you wish to smush."
 msgstr "Одаберите фасциклу коју желите да смашујете."
 
-#: lib/class-wp-smush-dir.php:299
+#: lib/class-wp-smush-dir.php:294
 msgid "Directory list"
 msgstr "Листа директоријума"
 
-#: lib/class-wp-smush-dir.php:290
+#: lib/class-wp-smush-dir.php:285
 msgid "CHOOSE DIRECTORY"
 msgstr "ИЗАБЕРИТЕ ДИРЕКТОРИЈУМ"
 
-#: lib/class-wp-smush-dir.php:281
+#: lib/class-wp-smush-dir.php:276
 msgid "Click to stop the directory smushing process."
 msgstr "Кликните да би зауставили смашовање директоријума."
 
-#: lib/class-wp-smush-dir.php:275
+#: lib/class-wp-smush-dir.php:270
 msgid " %sUpgrade to pro%s to bulk smush all your directory images with one click. Free users can smush 50 images with each click."
 msgstr " %sНадогради на про%s како би масовно смашовали слике из свих директоријума са једним кликом. Корисници који користе бесплатну верзију могу да смашују 50 слика са једним кликом."
 
-#: lib/class-wp-smush-dir.php:272
+#: lib/class-wp-smush-dir.php:267
 msgid "%s/%s image(s) were successfully smushed, however %s image(s) could not be smushed due to an error."
 msgstr "%s/%s слика/е су успешно смашоване, али %s слика/е нису могле бити смашоване услед грешке."
 
-#: lib/class-wp-smush-dir.php:256
+#: lib/class-wp-smush-dir.php:251
 msgid "In addition to smushing your media uploads, you may want to also smush images living outside your uploads directory. Simply add any directories you wish to smush and bulk smush away!"
 msgstr "Поред тога што можете да смашујете садржајте библиотеке, можда ћете желети да смашујете слике које су изван ваше библиотеке. Једноставно додајте било који директоријум и масовно смашујте!"
 
-#: lib/class-wp-smush-dir.php:251
+#: lib/class-wp-smush-dir.php:246
 msgid "DIRECTORY SMUSH"
 msgstr "СМАШОВАЊЕ ДИРЕКТОРИЈУМА"
 
-#: lib/class-wp-smush-dir.php:219
+#: lib/class-wp-smush-dir.php:215
 msgid "RESUME LAST SCAN"
 msgstr "НАСТАВИ ПОСЛЕДЊЕ СКЕНИРАЊЕ"
 
@@ -160,51 +374,47 @@ msgstr "НАСТАВИ ПОСЛЕДЊЕ СКЕНИРАЊЕ"
 msgid "Updating Stats"
 msgstr "Ажурирање статуса"
 
-#: lib/class-wp-smush-dir.php:88
-msgid "DIRECTORY SMUSH SAVINGS"
-msgstr "УШТЕДА СМАШ ДИРЕКТОРИЈУМА"
-
-#: lib/class-wp-smush-admin.php:2124
+#: lib/class-wp-smush-admin.php:1999
 msgid "Welcome to the newest version of WP Smush! In this update we've added the ability to bulk smush images in directories outside your uploads folder."
 msgstr "Добродошли на најновију верзију Смаша! У овом ажурирању смо додали могућност масовног смашованја слика у директоријумима изван фолдера библиотеке."
 
-#: lib/class-wp-smush-admin.php:408
+#: lib/class-wp-smush-admin.php:438
 msgid "Ajax Error"
 msgstr "Ајах грешка"
 
-#: lib/class-wp-smush-admin.php:406
+#: lib/class-wp-smush-admin.php:436
 msgid "images could not be smushed."
 msgstr "није могуће смашовати слике."
 
-#: lib/class-wp-smush-admin.php:405
+#: lib/class-wp-smush-admin.php:435
 msgid "image could not be smushed."
 msgstr "није могуће смашовати слику."
 
-#: lib/class-wp-smush-admin.php:403
+#: lib/class-wp-smush-admin.php:433
 msgid "Missing file path."
 msgstr "Недостаје путања фајла."
 
-#: lib/class-wp-smush.php:1391
+#: lib/class-wp-smush.php:1402
 msgid "When you upload an image to WordPress it automatically creates %s thumbnail sizes that are commonly used in your pages. WordPress also stores the original full-size image, but because these are not usually embedded on your site we don’t Smush them. Pro users can override this."
 msgstr "Када отпремите нову слику на WordPress он аутоматски креира %s thumbnail величине које су често коришћене на вашим страницама. WordPress такође чува све оригиналне слике, али пошто се оне обично не користе на вашем сајту ми их не Смашујемо. Pro корисници могу да промене ова подешавања."
 
-#: lib/class-wp-smush.php:1394
+#: lib/class-wp-smush.php:1405
 msgid "Image couldn't be smushed as it exceeded the 1Mb size limit, Pro users can smush images with size upto 32Mb."
 msgstr "Слику није могуће смашовати пошто је прешла лимит од 1Mb. Pro корисници могу да смашују слике до 32Mb."
 
-#: lib/class-wp-smush.php:1666
+#: lib/class-wp-smush.php:1678
 msgid "Restore original image."
 msgstr "Повратити оригиналну слику"
 
-#: lib/class-wp-smush.php:1666
+#: lib/class-wp-smush.php:1678
 msgid "Restore image"
 msgstr "Повратити слику"
 
-#: lib/class-wp-smush.php:1714
+#: lib/class-wp-smush.php:1726
 msgid "Smush image including original file."
 msgstr "Смашујте слику укључујући и оригинални фајл."
 
-#: lib/class-wp-smush.php:1714
+#: lib/class-wp-smush.php:1726
 msgid "Resmush image"
 msgstr "Поново смашуј слику"
 
@@ -212,23 +422,23 @@ msgstr "Поново смашуј слику"
 msgid "Bulk WP Smush"
 msgstr "Масовно WP Смашовање"
 
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:439
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:391
 msgid "We haven’t found any images in your %sgallery%s yet, so there’s no smushing to be done! Once you upload images, reload this page and start playing!"
 msgstr "Нисмо пронашли нити једну слику у вашој %sбиблиотеци%s до сада, тако да нема потребе да се ради смашовање. Након што архивирате слике, освежите ову страну и почните поново!"
 
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:476
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:425
 msgid "Enable Super-smush in the %sSettings%s area to get even more savings with almost no noticeable quality loss."
 msgstr "Омогућите Супер-смашовање у вашим %sПодешавањима%s како би добили још више уштеде са скоро неприметним губитком квалитета."
 
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:491
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:440
 msgid "Smush individual images via your %sManage Galleries%s section"
 msgstr "Смашујте појединачне слике са вашим %sУправљање Библиотекама%s одељком"
 
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:491
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:440
 msgid "Manage Galleries"
 msgstr "Управљање Библиотекама"
 
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:572
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:504
 msgid "%sDISABLED%s"
 msgstr "%sОНЕМОГУЋЕНО%s"
 
@@ -244,27 +454,27 @@ msgstr "Смањено за %s ( %01.1f%% )"
 msgid "WP Smush Free was deactivated. You have WP Smush Pro active!"
 msgstr "WP Smush Free је деактивиран. Сада имате WP Smush Pro активан!"
 
-#: lib/class-wp-smush-ui.php:917
+#: lib/class-wp-smush-ui.php:1028
 msgid "Did you know WP Smush Pro delivers up to 2x better compression, allows you to smush your originals and removes any bulk smushing limits? – %sTry it absolutely FREE%s"
 msgstr "Да ли сте знали да WP Smush Pro омогућава до 2x бољу компресију, омогућава вам да смашујете оригинале и уклања све рестрикције масовног смашовања? – %sПробајте потпуно БЕСПЛАТНО%s"
 
-#: lib/class-wp-smush-ui.php:917
+#: lib/class-wp-smush-ui.php:1028 lib/class-wp-smush-ui.php:1053
 msgid "Try WP Smush Pro for FREE"
 msgstr "Пробајте WP Smush Pro БЕСПЛАТНО"
 
-#: lib/class-wp-smush-ui.php:940
+#: lib/class-wp-smush-ui.php:1076
 msgid "Validating.."
 msgstr "Потврђивање.."
 
-#: lib/class-wp-smush-ui.php:942
-msgid "It looks like Smush couldn’t verify your WPMU DEV membership so Pro features like Super-Smush may not work correctly. If you think this is an error, run a %sre-check%s or get in touch with our %ssupport team%s."
-msgstr "Изгледа да Smush није могао да верификује WPMU DEV чланарину па Про могућности као Супер-Смаш можда неће добро радити. Уколико мислите да је ово грешка покрените %sново-проверавање%s или контактирајте нашу %sкорисничку подршку%s."
+#: lib/class-wp-smush-ui.php:1078
+msgid "It looks like Smush couldn’t verify your WPMU DEV membership so Pro features have been disabled for now. If you think this is an error, run a %sre-check%s or get in touch with our %ssupport team%s."
+msgstr "Изгледа да Smush није могао да верификује WPMU DEV чланарину па су Про могућности онемогућене за сада. Уколико мислите да је ово грешка покрените %sново-проверавање%s или контактирајте нашу %sкорисничку подршку%s."
 
-#: lib/class-wp-smush-ui.php:964
+#: lib/class-wp-smush-ui.php:1100
 msgid "UPDATE SETTINGS"
 msgstr "АЖУРИРАЈ ПОДЕШАВАЊА"
 
-#: lib/class-wp-smush-ui.php:994
+#: lib/class-wp-smush-ui.php:1128
 msgid "Smush settings were updated, performing a quick scan to check if any of the images need to be Smushed again."
 msgstr "Смаш подешавања су ажурирана, вршим брзо скенирање како бих проверио да ли нека од слика треба поново да се Смашује."
 
@@ -276,355 +486,275 @@ msgstr "Прескочено (%s), слика није пронађена. Пр�
 msgid "Skipped (%s), size limit exceeded. Attachment: %s"
 msgstr "Прескочено (%s), премашена величина лимита. Прилог: %s"
 
-#: lib/class-wp-smush.php:991
+#: lib/class-wp-smush.php:1002
 msgid "by %s %s"
 msgstr "од/са %s %s"
 
-#: lib/class-wp-smush.php:1033
+#: lib/class-wp-smush.php:1044
 msgid "Detailed stats for all the image sizes"
 msgstr "Детаљни извештај за све величине слика"
 
-#: lib/class-wp-smush.php:997
+#: lib/class-wp-smush.php:1008
 msgid "<br /> Image Size: %s"
 msgstr "<br /> Величина Слике: %s"
 
-#: lib/class-wp-smush-backup.php:155 lib/class-wp-smush-nextgen.php:526
+#: lib/class-wp-smush-backup.php:155 lib/class-wp-smush-nextgen.php:532
 msgid "Image not restored, Nonce verification failed."
 msgstr "Слика није обновљена. Верификација није успела."
 
-#: lib/class-wp-smush-backup.php:282 lib/class-wp-smush-nextgen.php:601
+#: lib/class-wp-smush-backup.php:282 lib/class-wp-smush-nextgen.php:607
 msgid "Unable to restore image"
 msgstr "Није могуће обновити слику"
 
-#: lib/class-wp-smush-nextgen.php:373
+#: lib/class-wp-smush-nextgen.php:379
 msgid "We couldn't find the metadata for the image, possibly the image has been deleted."
 msgstr "Нисмо у могућности да пронађемо мета податке за слику, могуће је да је слика обрисана."
 
-#: lib/class-wp-smush-nextgen.php:612
+#: lib/class-wp-smush-nextgen.php:618
 msgid "We couldn't process the image, fields empty."
 msgstr "Нисмо у могућности да процесуирамо слику, поља су празна."
 
-#: lib/class-wp-smush-nextgen.php:636
+#: lib/class-wp-smush-nextgen.php:642
 msgid "Unable to smush image, %s"
 msgstr "Није могуће смашовати слику, %s"
 
-#: lib/class-wp-smush-share.php:24
+#: lib/class-wp-smush-share.php:25
 msgid "%s, you've smushed %s%d%s images and saved %s%s%s in total. Help your friends save bandwidth easily, and help me in my quest to Smush the internet!"
 msgstr "%s, смашовали сте %s%d%s слика и сачували %s%s%s укупно. Помозите вашим пријатељима да уштеде проток ка сајту и учествујте у задатку Смашовања интернета!"
 
-#: lib/class-wp-smush-share.php:25
+#: lib/class-wp-smush-share.php:26
 msgid "I saved %s%s%s on my site with WP Smush ( %s ) - wanna make your website light and faster?"
 msgstr "Уштедео/ла сам %s%s%s на мом сајту са WP Smush ( %s ) - да ли желите да и ваш сајт буде брз?"
 
-#: lib/class-wp-smush-share.php:33
+#: lib/class-wp-smush-share.php:34
 msgid "TWEET"
 msgstr "TWEET"
 
-#: lib/class-wp-smush-share.php:37
+#: lib/class-wp-smush-share.php:38
 msgid "SHARE"
 msgstr "ПОДЕЛИ"
 
-#: lib/class-wp-smush-share.php:41
+#: lib/class-wp-smush-share.php:42
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: lib/class-wp-smush-ui.php:46
+#: lib/class-wp-smush-ui.php:56
 msgid "Dismiss Welcome notice"
 msgstr "Склони поруку добродошлице"
 
-#: lib/class-wp-smush-ui.php:62
-msgid "WELCOME"
-msgstr "ДОБРО ДОШЛИ"
-
-#: lib/class-wp-smush-ui.php:70
-msgid "OH YEAH, IT'S COMPRESSION TIME!"
-msgstr "ОХ ДА, ВРЕМЕ ЈЕ ЗА КОМПРЕСИЈУ!"
-
-#: lib/class-wp-smush-ui.php:71
-msgid "You've just installed %3$s, the most popular image compression plugin for WordPress! %1$sChoose your desired settings%2$s and get smushing!"
-msgstr "Управо сте инсталирали %3$s, најпопуларнији додатак за компресију слике за WordPress! %1$sОдаберите жељена подешавања%2$s и почните са смашовањем!"
-
-#: lib/class-wp-smush-ui.php:85
+#: lib/class-wp-smush-ui.php:138
 msgid "Smush individual images via your %sMedia Library%s"
 msgstr "Смашуј појединачне слике путем %sБиблиотеке%s"
 
-#: lib/class-wp-smush-ui.php:85
+#: lib/class-wp-smush-ui.php:138
 msgid "Media Library"
 msgstr "Библиотека"
 
-#: lib/class-wp-smush-dir.php:279 lib/class-wp-smush-ui.php:90
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:496
+#: lib/class-wp-smush-dir.php:274 lib/class-wp-smush-ui.php:143
+#: lib/class-wp-smush-ui.php:770
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:404
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:445
 msgid "BULK SMUSH"
 msgstr "МАСОВНО СМАШУЈ"
 
-#: lib/class-wp-smush-ui.php:104
+#: lib/class-wp-smush-ui.php:157
 msgid "SETTINGS"
 msgstr "ПОДЕШАВАЊА"
 
-#: lib/class-wp-smush-ui.php:117
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:513
+#: lib/class-wp-smush-ui.php:172
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:462
 msgid "Lets you check if any images can be further optimized. Useful after changing settings."
 msgstr "Хајде да проверимо да ли нека од слика може додатно да се оптимизује. Корисно након промене подешавања."
 
-#: lib/class-wp-smush-ui.php:117
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:513
+#: lib/class-wp-smush-ui.php:172
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:462
 msgid "RE-CHECK IMAGES"
 msgstr "ПОНОВО ПРОВЕРИ СЛИКЕ"
 
-#: lib/class-wp-smush-ui.php:118
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:514
+#: lib/class-wp-smush-ui.php:173
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:463
 msgid "STATS"
 msgstr "СТАТИСТИКА"
 
-#: lib/class-wp-smush-ui.php:121
+#: lib/class-wp-smush-ui.php:184
 msgid "You've smushed %d images in total"
 msgstr "Смашовали сте %d слика укупно"
 
-#: lib/class-wp-smush-ui.php:152
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:548
-msgid "TOTAL SAVINGS"
-msgstr "УКУПНА УШТЕДА"
-
-#: lib/class-wp-smush-ui.php:168
-msgid "ATTACHMENTS SUPER-SMUSHED"
-msgstr "ПРИЛОЗИ СУПЕР-СМАШОВАНИ"
-
-#: lib/class-wp-smush-ui.php:187
-msgid "RESIZE SAVINGS"
-msgstr "УШТЕДА ПРОМЕНОМ ВЕЛИЧИНЕ"
-
-#: lib/class-wp-smush-ui.php:210
-msgid "PNG TO JPEG SAVINGS"
-msgstr "УШТЕДА СА PNG НА JPEG"
-
-#: lib/class-wp-smush-ui.php:245
+#: lib/class-wp-smush-ui.php:318
 msgid "BASED ON AVERAGE SAVINGS IF YOU UPGRADE TO PRO"
 msgstr "ЗАСНОВАНО НА ПРОСЕЧНОЈ УШТЕДИ УКОЛИКО УНАПРЕДИТЕ НА ПРО ВЕРЗИЈУ"
 
-#: lib/class-wp-smush-ui.php:245
+#: lib/class-wp-smush-ui.php:318
 msgid "PRO SAVINGS ESTIMATE"
 msgstr "ПРОЦЕНА УШТЕДЕ СА ПРО ВЕРЗИЈОМ"
 
-#: lib/class-wp-smush-ui.php:287
+#: lib/class-wp-smush-ui.php:368
 msgid "ADVANCED SETTINGS"
 msgstr "НАПРЕДНА ПОДЕШАВАЊА"
 
-#: lib/class-wp-smush-ui.php:437
-msgid "The following image sizes will be optimized by WP Smush:"
-msgstr "Следеће величине слика ће бити оптимизоване од стране WP Smush:"
-
-#: lib/class-wp-smush-ui.php:494
+#: lib/class-wp-smush-ui.php:1197
 msgid "Just to let you know, the width you've entered is less than your largest image and may result in pixelation."
 msgstr "Само да вас обавестимо, ширина коју сте поставили је мања од највеће слике и то може довести до пикселације слике."
 
-#: lib/class-wp-smush-ui.php:495
+#: lib/class-wp-smush-ui.php:1198
 msgid "Just to let you know, the height you’ve entered is less than your largest image and may result in pixelation."
 msgstr "Само да вас обавестимо, висина коју сте ставили је мања од ваше највеће слике и то може довести до пикселације слике."
 
-#: lib/class-wp-smush-ui.php:623
+#: lib/class-wp-smush-ui.php:698
 msgid "BOOST YOUR PERFORMANCE - HUMMINGBIRD"
 msgstr "ПОЈАЧАЈТЕ ВАШЕ ПЕРФОРМАНСЕ  - HUMMINGBIRD"
 
-#: lib/class-wp-smush-ui.php:650
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:437
+#: lib/class-wp-smush-ui.php:736
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:389
 msgid "No attachments found - Upload some images"
 msgstr "Прилог није пронађен - Отпремите неке слике"
 
-#: lib/class-wp-smush-ui.php:652
+#: lib/class-wp-smush-ui.php:738
 msgid "We haven’t found any images in your %smedia library%s yet so there’s no smushing to be done! Once you upload images, reload this page and start playing!"
 msgstr "Нисмо пронашли нити једну слику у вашој %sбиблиотеци%s до сада, тако да нема потребе да се ради смашовање. Након што архивирате слике, освежите ову страну и почните поново!"
 
-#: lib/class-wp-smush-ui.php:655
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:442
+#: lib/class-wp-smush-ui.php:741
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:394
 msgid "UPLOAD IMAGES"
 msgstr "ОТПРЕМИ СЛИКЕ"
 
-#: lib/class-wp-smush-ui.php:660
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:447
+#: lib/class-wp-smush-ui.php:746
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:399
 msgid "All images are smushed and up to date. Awesome!"
 msgstr "Све слике су смашоване и ажурне. Страва!"
 
-#: lib/class-wp-smush-ui.php:665
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:452
-msgid "BULK SMUSH NOW"
-msgstr "МАСОВНО СМАШУЈ САДА"
-
-#: lib/class-wp-smush-ui.php:684
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:460
+#: lib/class-wp-smush-ui.php:787
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:410
 msgid "%s, you have %s%s%d%s attachment%s that needs smushing!"
 msgid_plural "%s, you have %s%s%d%s attachments%s that need smushing!"
 msgstr[0] "%s, имате %s%s%d%s прилог%s који/е је потребно смашовати!"
 msgstr[1] "%s, имате %s%s%d%s прилога%s које је потребно смашовати!"
 msgstr[2] "%s, имате %s%s%d%s прилога%s које је потребно смашовати!"
 
-#: lib/class-wp-smush-ui.php:686
+#: lib/class-wp-smush-ui.php:789
 msgid " %sUpgrade to Pro%s to bulk smush all your images with one click."
 msgstr " %sНадоградите на Про%s како би масовно смашовали све ваше слике са једним кликом."
 
-#: lib/class-wp-smush-ui.php:687
+#: lib/class-wp-smush-ui.php:790
 msgid " Free users can smush 50 images with each click."
 msgstr "Корисници који користе бесплатну верзију могу да смашују 50 слика са сваким кликом."
 
-#: lib/class-wp-smush-ui.php:696
-msgid "Enable Super-smush in the Settings area to get even more savings with almost no noticeable quality loss."
-msgstr "Омогућите Супер-смаш у Подешавањима како би добили још више уштеде са скоро неприметним губитком квалитета."
+#: lib/class-wp-smush-ui.php:800
+msgid "Tip: Enable Super-smush in the Settings area to get even more savings with almost no noticeable quality loss."
+msgstr "Савет: Омогућите Супер-смаш у Подешавањима како би добили још више уштеде са скоро неприметним губитком квалитета."
 
-#: lib/class-wp-smush-ui.php:719
+#: lib/class-wp-smush-ui.php:822
 msgid "%sBulk smush is currently running.%s You need to keep this page open for the process to complete."
 msgstr "%sМасовно смашовање је тренутно у току.%s Како би се процес завршио морате оставити ову страницу отворену."
 
-#: lib/class-wp-smush-dir.php:282 lib/class-wp-smush-ui.php:734
+#: lib/class-wp-smush-dir.php:277 lib/class-wp-smush-ui.php:837
 msgid "CANCEL"
 msgstr "Поништи"
 
-#: lib/class-wp-smush-ui.php:770
+#: lib/class-wp-smush-ui.php:874
 msgid "%s, you have %s%s%d%s attachment%s that needs re-compressing!"
 msgid_plural "%s, you have %s%s%d%s attachments%s that need re-compressing!"
 msgstr[0] "%s, имате %s%s%d%s прилог%s који/е је потребно поново компресовати!"
 msgstr[1] "%s, имате %s%s%d%s прилога%s које је потребно поново компресовати!"
 msgstr[2] "%s, имате %s%s%d%s прилога%s које је потребно поново компресовати!"
 
-#: lib/class-wp-smush-ui.php:791
+#: lib/class-wp-smush-ui.php:895
 msgid "Your settings have been updated!"
 msgstr "Ваша подешавања су ажурирана!"
 
-#: lib/class-wp-smush-ui.php:771
+#: lib/class-wp-smush-admin.php:441 lib/class-wp-smush-ui.php:875
 msgid "Skip"
 msgstr "Прескочи"
 
-#: lib/class-wp-smush-ui.php:825
+#: lib/class-wp-smush-ui.php:930
 msgid "Automatic smushing is %senabled%s. Newly uploaded images will be automagically compressed."
 msgstr "Аутоматско смашовање је %sомогућено%s. Нове слике ће се аутомагично компресовати."
 
-#: lib/class-wp-smush-ui.php:825
+#: lib/class-wp-smush-ui.php:930
 msgid "Automatic smushing is %sdisabled%s. Newly uploaded images will need to be manually smushed."
 msgstr "Аутоматско смашовање је %sонемогућено%s. Нове слике ће морати ручно да се смашују."
 
-#: lib/class-wp-smush-ui.php:863
+#: lib/class-wp-smush-ui.php:973
 msgid "Thanks for installing Smush. We hope you like it!"
 msgstr "Хвала вам што сте инсталирали Smush. Надамо се да ће вам се свидети!"
 
-#: lib/class-wp-smush-ui.php:865 lib/class-wp-smush-ui.php:869
-msgid "Try Smush Pro for Free"
-msgstr "Пробајте Smush Pro бесплатно"
-
-#: lib/class-wp-smush-ui.php:864
-msgid "And hey, if you do, you can now try out Smush Pro for double the smushy goodness (benchmarked), entirely for free!"
-msgstr "И хеј, уколико се одлучите, можете пробати Smush Pro који има дупли боговски смашинес (benchmarked), потпуно пресплатно!"
-
-#: lib/class-wp-smush-ui.php:867
-msgid "Thanks for updating Smush. Did you know that you can now try the Smush Pro for FREE?!"
-msgstr "Хвала што сте ажурирали Smush. Да ли сте знали да моћете да пробате Smush Pro БЕСПЛАТНО?!"
-
-#: lib/class-wp-smush-ui.php:868
-msgid "Yep, Super Smush your images for double the savings, save originals and batch Smush thousands of images all at once.... no charge!"
-msgstr "Тако је, Супер Смашујте ваше слике за дуплу уштеду, сачувајте оригинале и масовно смашујте хиљаде слика у исто време...без накнаде!"
-
-#: lib/class-wp-smush-admin.php:230
-msgid "WordPress crops and resizes every image you upload for embedding on your site. By default, Smush only compresses these cropped and resized images, not your original full-size images. To save space on your server, activate this setting to smush your original images, too. Note: This doesn’t usually improve page speed."
-msgstr "WordPress кропује и мења величину сваке слике коју отпремите за постављање на ваш сајт. Предефинисано Smush само компресује ове слике, не и ваше оригинале слике. Како би сачували место на вашем серверу, активирајте подешавања за смашовање и оригиналних слика. Напомена: Ово обично не утиче на брзину странице сајта."
-
-#: lib/class-wp-smush-admin.php:233
-msgid "Make a copy of my original images"
-msgstr "Направи копију мојих оригиналних слика"
-
-#: lib/class-wp-smush-admin.php:234
-msgid "Save your original full-size images so you can restore them at any point. Note: Activating this setting will significantly increase the size of your uploads folder by nearly twice as much."
-msgstr "Снимите ваше оригиналне слике како би их могли обновити у било ком тренутку. Напомена: Активирање овог подешавања ће значајно (за скоро дупло) повећати фасиклу за отпремање."
-
-#: lib/class-wp-smush-admin.php:237
-msgid "Convert PNG to JPEG (lossy)"
-msgstr "Конвертујте PNG у JPEG (lossy)"
-
-#: lib/class-wp-smush-admin.php:238
-msgid "When you compress a PNG file, Smush will check if converting the file to JPEG will further reduce its size. %s Note: PNGs with transparency will be ignored and Smush will only convert the file format if it results in a smaller file size. This will change the file’s name and extension, and any hard-coded URLs will need to be updated.%s"
-msgstr "Када компресујете PNG фајл, Smush ће проверити да ли ће конвертовање фајла у JPEG додатно смањити његову величину. %s Напомена: PNGs који су транспарентни ће бити игнорисани а Smush ће конвертовати формат фајла само уколико се као резултат добије мања величина фајла. Ово ће променити име фајла и његову екстензију а сви ручно постављени URL ће захтевати ажурирање.%s"
-
-#: lib/class-wp-smush-nextgen.php:66
+#: lib/class-wp-smush-nextgen.php:71
 msgid "Enable NextGen Gallery integration"
 msgstr "Омогући интеграцију са NextGen Библиотеком"
 
-#: lib/class-wp-smush-admin.php:397
+#: lib/class-wp-smush-admin.php:427
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:162
 msgid "All images are fully optimized."
 msgstr "Све слике су потпуно оптимизоване."
 
-#: lib/class-wp-smush-nextgen.php:67
+#: lib/class-wp-smush-nextgen.php:73
 msgid "Allow smushing images directly through NextGen Gallery settings."
 msgstr "Дозволи смашовање слика директно кроз подешавања NextGen библиотеке."
 
-#: lib/class-wp-smush-admin.php:399
+#: lib/class-wp-smush-admin.php:429
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:164
 msgid "Smushing image.."
 msgstr "Смашујем слике.."
 
-#: lib/class-wp-smush-admin.php:398
+#: lib/class-wp-smush-admin.php:428
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:163
 msgid "Restoring image.."
 msgstr "Обнављам слику.."
 
-#: lib/class-wp-smush-admin.php:400
+#: lib/class-wp-smush-admin.php:430
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:165
 msgid "Checking images.."
 msgstr "Проверавам слике.."
 
-#: lib/class-wp-smush-admin.php:401
+#: lib/class-wp-smush-admin.php:431
 msgid "We successfully verified your membership, all the Pro features should work completely. "
 msgstr "Успешно смо потврдили вашу чланарину, све Про могућности би требало у потпуности да функционишу."
 
-#: lib/class-wp-smush-admin.php:402
+#: lib/class-wp-smush-admin.php:432
 msgid "Your membership couldn't be verified."
 msgstr "Вашу чланарину није могуће потврдити."
 
-#: lib/class-wp-smush-admin.php:691
-msgid "Smush request timed out, You can try setting a higher value for `WP_SMUSH_API_TIMEOUT`."
-msgstr "Smush захтев је истекао, можете покушати да поставите већу вредност за `WP_SMUSH_API_TIMEOUT`."
-
-#: lib/class-wp-smush-dir.php:1158 lib/class-wp-smush-dir.php:1291
+#: lib/class-wp-smush-dir.php:1177 lib/class-wp-smush-dir.php:1310
 msgid "You've smushed %d images in total."
 msgstr "%d сте укупно смашовали."
 
-#: lib/class-wp-smush-admin.php:761
+#: lib/class-wp-smush-admin.php:787
 msgid "Attachment Skipped - Check `wp_smush_image` filter."
 msgstr "Прескочен прилог - Проверите `wp_smush_image` филтер."
 
-#: lib/class-wp-smush-admin.php:1476
+#: lib/class-wp-smush-admin.php:1355
 msgid "Image not smushed, fields empty."
 msgstr "Слика није смашована, празна поља."
 
-#: lib/class-wp-smush-admin.php:1483 lib/class-wp-smush-nextgen.php:619
+#: lib/class-wp-smush-admin.php:1362 lib/class-wp-smush-nextgen.php:625
 msgid "Image couldn't be smushed as the nonce verification failed, try reloading the page."
 msgstr "Слика није смашована јер верификација није успела, покушајте да освежите страну."
 
-#: lib/class-wp-smush-admin.php:1500
+#: lib/class-wp-smush-admin.php:1379
 msgid "Unable to smush image"
 msgstr "Није могуће смашовати слику"
 
-#: lib/class-wp-smush-admin.php:1525
-msgid "We haven’t found any images in your media library yet so there’s no smushing to be done!"
-msgstr "Нисмо пронашли нити једну слику у вашој библиотеци па није могуће урадити смашовање."
-
-#: lib/class-wp-smush-admin.php:1541
+#: lib/class-wp-smush-admin.php:1419
 msgid "Yay! All images are optimized as per your current settings."
 msgstr "Јупи! Све слике су оптимизоване на основу тренутних подешавања."
 
-#: lib/class-wp-smush-admin.php:1745 lib/class-wp-smush-ui.php:798
+#: lib/class-wp-smush-admin.php:1622 lib/class-wp-smush-ui.php:902
 msgid "You have images that need smushing. %sBulk smush now!%s"
 msgstr "Имате слике које је потребно смашовати. %sМасовно смашуј сада!%s"
 
-#: lib/class-wp-smush-admin.php:2122
+#: lib/class-wp-smush-admin.php:1997
 msgid "Review your setting now."
 msgstr "Проверите ваша подешавања сада."
 
-#: lib/class-wp-smush-admin.php:2127
+#: lib/class-wp-smush-admin.php:2002
 msgid " And as a multisite user, you can manage %sSmush settings%s globally across all sites!"
 msgstr "Уколико користите мултисите можете да управљате %sСмаш подешавањима%s глобално на свим сајтовима!"
 
-#: lib/class-wp-smush-admin.php:2130
+#: lib/class-wp-smush-admin.php:2005
 msgid " %sFind out more here >>%s"
 msgstr " %sСазнајте више овде >>%s"
 
-#: lib/class-wp-smush-backup.php:148 lib/class-wp-smush-nextgen.php:519
+#: lib/class-wp-smush-backup.php:148 lib/class-wp-smush-nextgen.php:525
 msgid "Error in processing restore action, Fields empty."
 msgstr "Грешка приликом процесуирања акције обнављања, празна поља."
 
@@ -639,7 +769,7 @@ msgstr "Ништа није пронађено"
 #: assets/shared-ui/plugin-ui.php:301
 #: extras/dash-notice/wpmudev-dash-notification.php:248
 #: extras/dash-notice/wpmudev-dash-notification.php:289
-#: lib/class-wp-smush-ui.php:890
+#: lib/class-wp-smush-ui.php:1000
 msgid "Dismiss"
 msgstr "Одбацити"
 
@@ -724,49 +854,29 @@ msgstr "Прикажи све промене"
 msgid "Version %s"
 msgstr "Верзија %s"
 
-#: lib/class-wp-smush-admin.php:209
-msgid "Enable Network wide settings"
-msgstr "Омогући подешавања на целој мрежи"
-
-#: lib/class-wp-smush-admin.php:210
-msgid "If disabled sub sites can override the individual Smush settings."
-msgstr "Уколико је онемогућено, под сајтови могу да прегазе појединачна Смаш подешавања."
-
-#: lib/class-wp-smush-admin.php:213
+#: lib/class-wp-smush-admin.php:230
 msgid "Automatically smush my images on upload"
 msgstr "Аутоматски смашуј моје слике приликом отпремљивања"
 
-#: lib/class-wp-smush-admin.php:214
-msgid "When you upload images to the media library, we’ll automatically optimize them."
-msgstr "Након што отпремите слике у вашу библиотеку, ми ћемо их аутоматски оптимизовати."
+#: lib/class-wp-smush-admin.php:245
+msgid "Preserve my image EXIF data"
+msgstr "Сачувај моје EXIF податке"
 
-#: lib/class-wp-smush-admin.php:217
-msgid "Preserve image EXIF data"
-msgstr "Сачувај EXIF податке слика"
-
-#: lib/class-wp-smush-admin.php:218
+#: lib/class-wp-smush-admin.php:247
 msgid "EXIF data stores camera settings, focal length, date, time and location information in image files. EXIF data makes image files larger but if you are a photographer you may want to preserve this information."
 msgstr "EXIF подаци чувају подешавања камере, даљину фокуса, датум, време и локацију на фајловима слика. EXIF подаци чине слике већима, али уколико сте фотограф можда желите да сачувате ове информације."
 
-#: lib/class-wp-smush-admin.php:221
-msgid "Resize original images"
-msgstr "Промените величину оригиналних слика"
-
-#: lib/class-wp-smush-admin.php:222
-msgid "Save a ton of space by not storing over-sized images on your server. Set image maximum width and height and large images will be automatically scaled before being added to the media library."
-msgstr "Сачувајте тону места тако што нећете чувати превелике слике на вашем серверу. Подесите максималну дужину и висину на коју ће се велике слике аутоматски подесити пре додавања у вашу библиотеку."
-
-#: lib/class-wp-smush-admin.php:225
+#: lib/class-wp-smush-admin.php:235
 msgid "Super-smush my images"
 msgstr "Супер-смашуј моје слике"
 
-#: lib/class-wp-smush-admin.php:226
+#: lib/class-wp-smush-admin.php:237
 msgid "Compress images up to 2x more than regular smush with almost no visible drop in quality."
 msgstr "Компресујте слике до 2x више него обичан смаш, са скоро невидљивим губитком квалитета."
 
-#: lib/class-wp-smush-admin.php:229
-msgid "Include my original full-size images"
-msgstr "Обухвати и моје оригинале слике"
+#: lib/class-wp-smush-admin.php:240
+msgid "Smush my original full-size images"
+msgstr "Смашуј моје оригинале слике пуне величине"
 
 #. Author URI of the plugin/theme
 msgid "http://premium.wpmudev.org/"
@@ -788,63 +898,63 @@ msgstr "http://wordpress.org/extend/plugins/wp-smushit/"
 msgid "Get Fast"
 msgstr "Буди Брз"
 
-#: lib/class-wp-smush.php:1419
-#: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:433
+#: lib/class-wp-smush.php:1430
+#: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:440
 msgid "Savings"
 msgstr "Уштеде"
 
-#: lib/class-wp-smush.php:1418
-#: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:432
+#: lib/class-wp-smush.php:1429
+#: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:439
 msgid "Image size"
 msgstr "Величина слике/а"
 
-#: lib/class-wp-smush.php:1396
+#: lib/class-wp-smush.php:1407
 msgid " Skipped"
 msgstr "Прескочено"
 
-#: lib/class-wp-smush-admin.php:1304 lib/class-wp-smush.php:1083
+#: lib/class-wp-smush-admin.php:1171 lib/class-wp-smush.php:1094
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:269
 msgid "Smush Now!"
 msgstr "Смашуј Сада!"
 
-#: lib/class-wp-smush.php:1077
+#: lib/class-wp-smush.php:1088
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:263
 msgid "Not processed"
 msgstr "Није процесуирано"
 
-#: lib/class-wp-smush.php:1033
+#: lib/class-wp-smush.php:1044
 #: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:236
 msgid "Smush stats"
 msgstr "Смаш статистика"
 
-#: lib/class-wp-smush.php:987
+#: lib/class-wp-smush.php:998
 msgid "Reduced "
 msgstr "Смањено"
 
-#: lib/class-wp-smush.php:987
+#: lib/class-wp-smush.php:998
 msgid "%d images reduced "
 msgstr "%d слика смањено "
 
-#: lib/class-wp-smush-admin.php:407 lib/class-wp-smush.php:974
-#: lib/class-wp-smush.php:978
+#: lib/class-wp-smush-admin.php:437 lib/class-wp-smush.php:985
+#: lib/class-wp-smush.php:989
 #: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:193
 #: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:196
 msgid "Already Optimized"
 msgstr "Већ Оптимизовано"
 
-#: lib/class-wp-smush.php:751
+#: lib/class-wp-smush.php:757
 msgid "Image couldn't be smushed"
 msgstr "Слику није могуће смашовати"
 
-#: lib/class-wp-smush.php:731
+#: lib/class-wp-smush.php:737
 msgid "Smush data corrupted, try again."
 msgstr "Смаш подаци су корумпирани, покушајте поново."
 
-#: lib/class-wp-smush.php:714
+#: lib/class-wp-smush.php:720
 msgid "Error posting to API: %s %s"
 msgstr "Грешка прилико рада са API: %s %s"
 
-#: lib/class-wp-smush.php:708
+#: lib/class-wp-smush.php:713
 msgid "Error posting to API: %s"
 msgstr "Грешка приликом рада са API: %s"
 
@@ -868,62 +978,58 @@ msgstr "Путања фајла је празна"
 msgid "Activate WPMU DEV Dashboard"
 msgstr "Активирај WPMU DEV Dashboard"
 
-#: lib/class-wp-smush-admin.php:947
+#: lib/class-wp-smush-admin.php:975
 msgid "<strong>%d of %d images</strong> were sent for smushing:"
 msgstr "<strong>%d од %d слика</strong> су послате на смашовање:"
 
-#: lib/class-wp-smush-admin.php:749 lib/class-wp-smush-nextgen.php:436
+#: lib/class-wp-smush-admin.php:775 lib/class-wp-smush-nextgen.php:442
 msgid "No attachment ID was provided."
 msgstr "ID прилога није пронађен."
 
-#: lib/class-wp-smush-admin.php:745 lib/class-wp-smush-nextgen.php:432
+#: lib/class-wp-smush-admin.php:771 lib/class-wp-smush-nextgen.php:438
 msgid "You don't have permission to work with uploaded files."
 msgstr "Нема дозволу да радите са отпремљеним фајловима."
 
-#: lib/class-wp-smush-admin.php:1325
+#: lib/class-wp-smush-admin.php:1192
 msgid "Settings"
 msgstr "Подешавања"
 
-#: lib/class-wp-smush-admin.php:2123 lib/class-wp-smush-dir.php:249
-#: lib/class-wp-smush-dir.php:275 lib/class-wp-smush-ui.php:686
-#: lib/class-wp-smush-ui.php:823
+#: lib/class-wp-smush-admin.php:1998 lib/class-wp-smush-dir.php:270
+#: lib/class-wp-smush-ui.php:789 lib/class-wp-smush-ui.php:928
 msgid "WP Smush Pro"
 msgstr "WP Smush Pro"
 
-#: lib/class-wp-smush-admin.php:396
+#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:496
+msgid "Super-smushed images"
+msgstr "Супер-смашоване слике"
+
+#: lib/class-wp-smush-admin.php:426
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:161
 msgid "{{errors}} image(s) were skipped due to an error."
 msgstr "{{errors}} слика/е су прекосчене услед грешке."
 
-#: lib/class-wp-smush-admin.php:395
+#: lib/class-wp-smush-admin.php:425
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:160
 msgid "Smush Now"
 msgstr "Смашуј Сада"
 
-#: lib/class-wp-smush-admin.php:394 lib/class-wp-smush.php:1058
+#: lib/class-wp-smush-admin.php:424 lib/class-wp-smush.php:1069
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:159
-#: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:275
+#: lib/nextgen-integration/class-wp-smush-nextgen-stats.php:274
 msgid "Super-Smush"
 msgstr "Супер-Смашуј"
 
-#: lib/class-wp-smush-admin.php:409 lib/class-wp-smush-admin.php:410
-#: lib/class-wp-smush-admin.php:1270
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:354
+#: lib/class-wp-smush-admin.php:439 lib/class-wp-smush-admin.php:440
 msgid "All Done!"
 msgstr "Готово!"
 
-#: lib/class-wp-smush-admin.php:1298 lib/class-wp-smush.php:1064
+#: lib/class-wp-smush-admin.php:1165 lib/class-wp-smush.php:1075
 msgid "Smushing in progress.."
 msgstr "Смашовање у току.."
 
-#: lib/class-wp-smush-admin.php:1263 lib/class-wp-smush-admin.php:1276
-#: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:350
-msgid "Bulk Smush Now"
-msgstr "Масовно Смашуј Сада"
-
-#. #-#-#-#-#  wp-smushit-code.pot (WP Smush 2.7.4.1)  #-#-#-#-#
+#. #-#-#-#-#  wp-smushit-code.pot (WP Smush 2.7.6)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: lib/class-wp-smush-admin.php:266 lib/class-wp-smush-ui.php:823
+#: lib/class-wp-smush-admin.php:292 lib/class-wp-smush-ui.php:928
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:71
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:90
 #: lib/nextgen-integration/class-wp-smush-nextgen-admin.php:92
@@ -947,7 +1053,7 @@ msgid "No thanks"
 msgstr "Не хвала"
 
 #: assets/shared-ui/plugin-ui.php:272 extras/free-dashboard/module.php:395
-#: extras/free-dashboard/module.php:434 lib/class-wp-smush-ui.php:890
+#: extras/free-dashboard/module.php:434 lib/class-wp-smush-ui.php:1000
 msgid "Saving"
 msgstr "Чувам"
 

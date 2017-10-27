@@ -26,6 +26,12 @@ main#questions {
         padding-top: 170px;
         padding-bottom: 170px;
       }
+
+      #red-button {
+        @include media(768px) {
+          bottom: -30px;
+        }
+      }
     }
   }
   #questions {

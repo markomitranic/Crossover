@@ -1,7 +1,7 @@
-main#contact {
+main#signup {
 
   #hero {
-    background-image: url('../assets/images/hero-contact.jpg');
+    background-image: url('../assets/images/hero-sign-up.jpg');
     background-position: bottom center;
 
     @include media(1024px) {
@@ -148,55 +148,6 @@ main#contact {
                 }
               }
             }
-          }
-        }
-      }
-    }
-  }
-  #contact-map {
-    margin-top: 20px;
-    margin-bottom: 60px;
-
-    .wrapper {
-      @include wrapper;
-
-      .background {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-
-        .address-panel {
-          background-color: rgba($black0, 0.7);
-          width: 480px;
-          max-width: 100%;
-          padding: 20px 30px;
-          box-sizing: border-box;
-
-          @include media(480px) {
-            padding: 20px;
-          }
-
-          h2 {
-            @include font-section-heading;
-            margin-top: 0;
-          }
-          p {
-            @include font-section-content;
-            width: 370px;
-            max-width: 100%;
-
-            a {
-              color: $black60;
-              text-decoration: none;
-              transition: 0.1s color ease-out;
-
-              &:hover {
-                color: $black100;
-              }
-            }
-          }
-          .btn {
-            display: block;
           }
         }
       }

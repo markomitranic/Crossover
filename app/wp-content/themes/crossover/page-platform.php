@@ -15,6 +15,7 @@ the_post();
             <p class="subtitle"><?=get_field('hero_subtitle')?></p>
             <a href="<?=get_field('hero_button_1_link')?>" class="btn" title="<?=get_field('hero_button_1_label')?>"><?=get_field('hero_button_1_label')?></a>
             <a href="<?=get_field('hero_button_2_link')?>" class="btn" title="<?=get_field('hero_button_2_label')?>"><?=get_field('hero_button_2_label')?></a>
+            <a href="/prijavi-se" id="red-button">Prijavi Se!</a>
         </div>
     </section>
 
