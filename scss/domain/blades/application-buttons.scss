@@ -1,0 +1,102 @@
+.application-button-round {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 180px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #f74d4d;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f74d4d), color-stop(100%, #f86569));
+  background-image: -moz-gradient(linear, left top, left bottom, color-stop(0%,#f74d4d), color-stop(100%, #f86569));
+  box-shadow: 0 10px #e24f4f;
+
+  &:active {
+    box-shadow: 0 0 #e24f4f;
+    transform:      translate(0, 10px);
+    transition: 0.1s all ease-out;
+  }
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: #fdfdfd;
+
+    p {
+      &:nth-child(1) {
+        padding: 40px 20px 0 20px;
+        margin: 0 auto;
+        font-size: 14px;
+      }
+      &:nth-child(2) {
+        padding: 0;
+        margin: 15px auto;
+        font-size: 18px;
+        font-weight: 800;
+        animation: bounce-application-button-text 1s infinite;
+        animation-direction: alternate;
+
+        @keyframes bounce-application-button-text {
+          0%   { transform: scale(0.9); color: #ffbaba; }
+          100% { transform: scale(1); color: white; }
+        }
+      }
+      &:nth-child(3) {
+        font-size: 26px;
+      }
+    }
+  }
+}
+.application-next-groups {
+  display: block;
+  background-color: orange;
+  padding: 10px 15px;
+  max-width: 370px;
+
+  p {
+    color: white;
+    margin: 0;
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -1.1px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      text-align: center;
+      //border-bottom: 1px solid gray;
+      padding: 10px 0;
+      font-size: 12px;
+      background-color: #e2e2e2;
+      margin: 10px;
+
+      a {
+        text-decoration: none;
+        color: #888888;
+        transition: color 0.2s ease-out;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  & > a {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid white;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}

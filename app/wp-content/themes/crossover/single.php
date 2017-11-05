@@ -27,11 +27,19 @@ the_post();
                 <ul class="table-content">
                     <?php if (get_field('schedule')) : ?>
                         <?php foreach (get_field('schedule') as $timeSlot) : ?>
-                            <?php $liClass = ($timeSlot === reset(get_field('schedule'))) ? 'next' : ''; ?>
+                            <?php $liClass = ($timeSlot === reset(get_field('schedule'))) ? 'next' : '' ; ?>
                             <?php $startDate = DateTime::createFromFormat('d/m/Y H:i e', $timeSlot['start_date'] . ' 18:00 Europe/Belgrade'); ?>
                             <li class="<?=$liClass?>">
-                                <p><?=($startDate) ? date('d. F Y', $startDate->getTimestamp()) : 'Po zahtevu';?></p>
-                                <p><?=($timeSlot['price']) ? $timeSlot['price'] : 'Pozovite'?></p>
+                                <p>
+                                    <a href="http://crossover.rs/prijavi-se/">
+                                        <?=($startDate) ? date('d. F Y', $startDate->getTimestamp()) : 'Po zahtevu';?>
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="http://crossover.rs/prijavi-se/">
+                                        <?=($timeSlot['price']) ? $timeSlot['price'] : 'Pozovite'?>
+                                    </a>
+                                </p>
                             </li>
                         <?php endforeach; ?>
                     <?php else : ?>
@@ -52,12 +60,27 @@ the_post();
 				<div class="wysiwyg">
 					<?=the_content()?>
 				</div>
+                <div class="application-button-round">
+					<?php
+					if (get_field('schedule') && !empty(get_field('schedule'))) {
+						$nextDate = DateTime::createFromFormat('d/m/Y H:i e', get_field('schedule')[0]['start_date'] . ' 18:00 Europe/Belgrade');
+						$nextDate = date('d.m.Y', $nextDate->getTimestamp());
+					} else {
+						$nextDate = 'Po zahtevu';
+					}
+					?>
+                    <a href="http://crossover.rs/prijavi-se/">
+                        <p>Sledeća grupa polaznika: <?=$nextDate?></p>
+                        <p>Prijavi se odmah!</p>
+                        <p>&#9757;</p>
+                    </a>
+                </div>
 			</div>
 		</div>
 	</div>
 
 	<?php
-    foreach (get_categories() as $category) :
+    foreach (get_the_category() as $category) :
         $the_query = new WP_Query([
             'cat'               => $category->term_id,
             'posts_per_page'    => -1,

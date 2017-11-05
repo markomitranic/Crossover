@@ -111,3 +111,35 @@
     }
 
 	add_editor_style( 'css/wysiwyg-backend.css' );
+
+
+    function nextGroupsForCategories($categoryIdsArray)
+    {
+	    $postsInCategory = get_posts([
+		    'category__in' => $categoryIdsArray,
+		    'posts_per_page'   => -1,
+	    ]);
+	    $output = [];
+
+	    foreach ($postsInCategory as $post) {
+		    $courseSchedule = get_field('schedule', $post->ID);
+
+		    if ($courseSchedule && !empty($courseSchedule)) {
+			    $course = [
+				    'nextDate' => DateTime::createFromFormat('d/m/Y H:i e', $courseSchedule[0]['start_date'] . ' 18:00 Europe/Belgrade'),
+				    'title' => $post->post_title,
+				    'permalink' => get_permalink($post->ID)
+			    ];
+			    array_push($output, $course);
+		    }
+	    }
+
+	    if (!empty($output)) {
+		    usort($output, "nextGroupsForCategories_sort_by_date");
+	    }
+
+	    return $output;
+    }
+	function nextGroupsForCategories_sort_by_date ($a, $b) {
+		return ($a['nextDate'] > $b['nextDate']);
+	}

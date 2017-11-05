@@ -66,6 +66,18 @@ the_post();
             <h2><?=get_field('third_section_title')?></h2>
 	        <?=get_field('third_section_body')?>
             <a href="<?=get_category_link(get_field('first_program_pdf'))?>" class="big-button-with-icon pdf">Detaljan program kursa</a>
+            <div class="application-next-groups">
+                <?php $nextGroups = nextGroupsForCategories([get_field('first_program_pdf')]); ?>
+                <p>Polasci sledećih grupa:</p>
+                <ul>
+                    <?php foreach ($nextGroups as $group) : ?>
+                        <li>
+                            <a href="<?=$group['permalink']?>"><?=$group['title']?><br><?=date('d.m.Y', $group['nextDate']->getTimestamp())?></a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+                <a href="#">Prijavi se odmah!</a>
+            </div>
         </div>
     </section>
 
