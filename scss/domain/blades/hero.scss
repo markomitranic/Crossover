@@ -19,6 +19,12 @@
       padding-top: 170px;
     }
 
+    .aatc-hero-logo {
+      display: block;
+      width: 200px;
+      max-width: 80%;
+      margin: 0px 0 40px 0;
+    }
     h1 {
       @include font-hero-heading;
       width: 700px;

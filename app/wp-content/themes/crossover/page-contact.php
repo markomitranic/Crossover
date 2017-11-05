@@ -11,6 +11,7 @@ the_post();
 <main id="contact">
     <section id="hero">
         <div class="wrapper">
+            <img class="aatc-hero-logo" src="<?= get_template_directory_uri() ?>/assets/aatc-logo-white.svg" alt="Apple Authorized Training Provider Logo White">
             <h1><?=get_field('hero_title')?></h1>
             <p class="subtitle"><?=get_field('hero_subtitle')?></p>
             <a href="<?=get_field('hero_button_1_link')?>" class="btn" title="<?=get_field('hero_button_1_label')?>"><?=get_field('hero_button_1_label')?></a>
