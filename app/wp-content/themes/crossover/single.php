@@ -18,7 +18,7 @@ the_post();
 
     <section id="class-schedule">
         <div class="wrapper">
-            <div class="heading unselectable">Pregledajte Spisak Termina</div>
+            <div class="heading unselectable">Spisak Polaska Narednih Grupa</div>
             <div class="timetable">
                 <div class="table-header">
                     <p>Datum početka</p>
@@ -27,8 +27,9 @@ the_post();
                 <ul class="table-content">
                     <?php if (get_field('schedule')) : ?>
                         <?php foreach (get_field('schedule') as $timeSlot) : ?>
+                            <?php $liClass = ($timeSlot === reset(get_field('schedule'))) ? 'next' : ''; ?>
                             <?php $startDate = DateTime::createFromFormat('d/m/Y H:i e', $timeSlot['start_date'] . ' 18:00 Europe/Belgrade'); ?>
-                            <li>
+                            <li class="<?=$liClass?>">
                                 <p><?=($startDate) ? date('d. F Y', $startDate->getTimestamp()) : 'Po zahtevu';?></p>
                                 <p><?=($timeSlot['price']) ? $timeSlot['price'] : 'Pozovite'?></p>
                             </li>

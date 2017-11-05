@@ -90,7 +90,7 @@ main#post {
         }
       }
       .timetable {
-        display: none;
+        display: block;
         width: 100%;
         max-width: 100%;
 
@@ -140,7 +140,19 @@ main#post {
             align-items: center;
             padding: 10px 15px;
             box-sizing: border-box;
+            transition: transform 0.2s ease-in-out;
 
+            &.next {
+              animation: bounce-next 1s infinite;
+              animation-direction: alternate;
+              p {
+                font-weight: 800;
+              }
+            }
+            @keyframes bounce-next {
+              0%   { transform: scale(0.9); background-color: #ff6161; }
+              100% { transform: scale(1); background-color: #ffbaba; }
+            }
             &:hover {
               background: $black20;
               cursor: pointer;
