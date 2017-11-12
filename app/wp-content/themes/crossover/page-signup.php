@@ -3,7 +3,7 @@
 Template Name: Sign Up Page Template
 */
 
-wp_header();
+wp_head();
 the_post();
 
 ?>
