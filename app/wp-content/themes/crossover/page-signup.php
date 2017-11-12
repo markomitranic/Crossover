@@ -3,7 +3,7 @@
 Template Name: Sign Up Page Template
 */
 
-get_header();
+wp_header();
 the_post();
 
 ?>
@@ -35,4 +35,4 @@ the_post();
 </main>
 
 <footer>
-<?php get_footer(); ?>
+<?php wp_footer(); ?>
