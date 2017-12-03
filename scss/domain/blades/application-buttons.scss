@@ -46,6 +46,53 @@
     }
   }
 }
+
+.application-button-round-small {
+  display: block;
+  width: 300px;
+  text-align: center;
+  margin: 0 0 25px 0;
+
+  a {
+    display: inline-block;
+    margin: 0;
+    min-width: 200px;
+    min-height: 50px;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #f74d4d;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f74d4d), color-stop(100%, #f86569));
+    background-image: -moz-gradient(linear, left top, left bottom, color-stop(0%,#f74d4d), color-stop(100%, #f86569));
+    box-shadow: 0 10px #e24f4f;
+    text-align: center;
+    text-decoration: none;
+    color: #fdfdfd;
+
+    &:active {
+      box-shadow: 0 0 #e24f4f;
+      transform:      translate(0, 10px);
+      transition: 0.1s all ease-out;
+    }
+
+    p {
+      width: auto;
+      margin: 0;
+      padding: 15px 25px;
+      font-size: 18px;
+      font-weight: 800;
+      text-align: center;
+      color: #fdfdfd;
+      animation: bounce-application-button-text 1s infinite;
+      animation-direction: alternate;
+
+      @keyframes bounce-application-button-text {
+        0%   { transform: scale(0.9); color: #ffbaba; }
+        100% { transform: scale(1); color: white; }
+      }
+    }
+  }
+}
+
 .application-next-groups {
   display: block;
   background-color: orange;

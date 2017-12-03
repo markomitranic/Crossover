@@ -27,7 +27,8 @@ the_post();
                 <ul class="table-content">
                     <?php if (get_field('schedule')) : ?>
                         <?php foreach (get_field('schedule') as $timeSlot) : ?>
-                            <?php $liClass = ($timeSlot === reset(get_field('schedule'))) ? 'next' : '' ; ?>
+                            <?php $schedule = get_field('schedule'); ?>
+                            <?php $liClass = ($timeSlot === reset($schedule)) ? 'next' : '' ; ?>
                             <?php $startDate = DateTime::createFromFormat('d/m/Y H:i e', $timeSlot['start_date'] . ' 18:00 Europe/Belgrade'); ?>
                             <li class="<?=$liClass?>">
                                 <p>
