@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-15 15:01:28+0000\n"
+"PO-Revision-Date: 2018-02-05 20:36:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,11 +36,21 @@ msgstr "."
 msgid "number_format_decimal_point"
 msgstr ","
 
-#: wp-includes/class-wp-customize-manager.php:4135
+#. translators: %s: User who is customizing the changeset in customizer.
+#: wp-includes/class-wp-customize-manager.php:3970
+msgid "%s is already customizing this changeset. Do you want to take over?"
+msgstr "%s већ прилагођава овај скуп промена. Да ли желите да преузмете?"
+
+#. translators: %s: User who is customizing the changeset in customizer.
+#: wp-includes/class-wp-customize-manager.php:3968
+msgid "%s is already customizing this changeset. Please wait until they are done to try customizing. Your latest changes have been autosaved."
+msgstr "%s већ прилагођава овај скуп промена. Молимо вас да сачекате да заврши да бисте покушали са прилагођавањем. Ваше последње промене су аутоматски сачуване."
+
+#: wp-includes/class-wp-customize-manager.php:4172
 msgid "Update anyway, even though it might break your site?"
 msgstr "Свеједно да се ажурира, иако може да поломи ваше веб место?"
 
-#: wp-includes/wp-db.php:1290
+#: wp-includes/wp-db.php:1283
 msgid "The query only expected one placeholder, but an array of multiple placeholders was sent."
 msgstr "Упит је очекивао само један држач места али је послат низ са више држача места."
 
@@ -75,7 +85,7 @@ msgctxt "tags"
 msgid "Most Used"
 msgstr "Најкоришћеније"
 
-#: wp-includes/class-wp-customize-nav-menus.php:950
+#: wp-includes/class-wp-customize-nav-menus.php:966
 msgid "Click &#8220;Next&#8221; to start adding links to your new menu."
 msgstr "Притисните &#132;Следеће&#147; да бисте почели са додавањем веза свом новом изборнику."
 
@@ -84,7 +94,7 @@ msgstr "Притисните &#132;Следеће&#147; да бисте поче
 msgid "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
 msgstr "Жао нам је, не можемо да учитамо видео запис на наведеном URL-у. Молимо вас да проверите да ли је URL за подржану датотеку видео записа (%s) или ток (Јутјуб или Вимео)."
 
-#: wp-includes/class-wp-customize-manager.php:4588
+#: wp-includes/class-wp-customize-manager.php:4627
 #: wp-includes/script-loader.php:554
 msgctxt "customizer changeset action/button label"
 msgid "Schedule"
@@ -120,20 +130,20 @@ msgid "%s has taken over and is currently customizing."
 msgstr "%s је преузео и тренутно прилагођава."
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4105
+#: wp-includes/class-wp-customize-manager.php:3977
 msgid "%s is already customizing this site. Do you want to take over?"
 msgstr "%s већ прилагођава ово веб место. Да ли желите да преузмете?"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4110
+#: wp-includes/class-wp-customize-manager.php:3975
 msgid "%s is already customizing this site. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "%s већ прилагођава ово веб место. Молимо вас да сачекате да заврши да бисте покушали са прилагођавањем. Ваше последње промене су аутоматски сачуване."
 
-#: wp-includes/class-wp-customize-manager.php:2451
+#: wp-includes/class-wp-customize-manager.php:2456
 msgid "Changeset is being edited by other user."
 msgstr "Скуп промена уређује други корисник."
 
-#: wp-includes/class-wp-customize-manager.php:4117
+#: wp-includes/class-wp-customize-manager.php:4154
 msgid "Go back"
 msgstr "Иди назад"
 
@@ -141,19 +151,19 @@ msgstr "Иди назад"
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "Изгледа да је нешто пошло по злу. Сачекајте пар секунди а затим покушајте поново."
 
-#: wp-includes/class-wp-customize-manager.php:3203
+#: wp-includes/class-wp-customize-manager.php:3221
 msgid "No changeset found to take over"
 msgstr "Нема нађених скупова промена за преузимање"
 
-#: wp-includes/class-wp-customize-manager.php:3194
+#: wp-includes/class-wp-customize-manager.php:3212
 msgid "Security check failed."
 msgstr "Безбедоносна провера није успела."
 
-#: wp-includes/class-wp-customize-manager.php:3210
+#: wp-includes/class-wp-customize-manager.php:3228
 msgid "Sorry, you are not allowed to take over."
 msgstr "Жао нам је, није вам дозвољено да преузмете."
 
-#: wp-includes/class-wp-customize-manager.php:4121
+#: wp-includes/class-wp-customize-manager.php:4158
 msgid "Take over"
 msgstr "Преузми"
 
@@ -178,23 +188,23 @@ msgctxt "menu locations"
 msgid "Where do you want this menu to appear?"
 msgstr "Где желите да се овај изборник појави?"
 
-#: wp-includes/class-wp-customize-nav-menus.php:964
+#: wp-includes/class-wp-customize-nav-menus.php:980
 msgid "You&#8217;ll create a menu, assign it a location, and add menu items like links to pages and categories. If your theme has multiple menu areas, you might need to create more than one."
 msgstr "Направићете изборник, доделити му место и додати ставке изборника као везе ка странама и категоријама. Уколико ваша тема има више простора за изборнике, можда ћете морати да направите више од једног."
 
-#: wp-includes/class-wp-customize-nav-menus.php:961
+#: wp-includes/class-wp-customize-nav-menus.php:977
 msgid "It doesn&#8217;t look like your site has any menus yet. Want to build one? Click the button to start."
 msgstr "Изгледа да ваше веб место још увек нема изборнике. Да ли желите да направите један. Притисните дугме за почетак."
 
-#: wp-includes/class-wp-customize-manager.php:4787
+#: wp-includes/class-wp-customize-manager.php:4827
 msgid "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here."
 msgstr "Тражите тему? Можете претражити или прегледати WordPress.org складиште тема, поставити и предпрегледати теме, а затим их укључити баш овде."
 
-#: wp-includes/class-wp-customize-manager.php:4788
+#: wp-includes/class-wp-customize-manager.php:4828
 msgid "While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options."
 msgstr "Док предпрегледате нову тему, можете наставити да кројите ствари као што су виџети и изборници и истражујете посебне могућности теме."
 
-#: wp-includes/class-wp-customize-nav-menus.php:588
+#: wp-includes/class-wp-customize-nav-menus.php:604
 msgctxt "menu locations"
 msgid "View All Locations"
 msgstr "Види места"
@@ -203,11 +213,11 @@ msgstr "Види места"
 msgid "Something went wrong. Your change may not have been saved. Please try again. There is also a chance that you may need to manually fix and upload the file over FTP."
 msgstr "Догдило се нешто погрешно. Ваша промена можда није сачувана. Молимо вас да покушате поново. Такође постоји могућност да морате да ручно поправите и отпремите датотеку преко FTP-а."
 
-#: wp-includes/class-wp-customize-manager.php:5242
+#: wp-includes/class-wp-customize-manager.php:5282
 msgid "Screen reader users: when in forms mode, you may need to press the escape key twice."
 msgstr "Корисници читача екрана: када сте у режиму образаца, можда ћете два пута морати да притиснете дугме за излазак."
 
-#: wp-includes/class-wp-customize-nav-menus.php:588
+#: wp-includes/class-wp-customize-nav-menus.php:604
 msgctxt "menu locations"
 msgid "View Location"
 msgstr "Види место"
@@ -220,7 +230,7 @@ msgstr "Скочи напред секунди: %1"
 msgid "No themes found. Try a different search."
 msgstr "Нема пронађених тема. Пробајте другу претрагу."
 
-#: wp-includes/class-wp-customize-nav-menus.php:576
+#: wp-includes/class-wp-customize-nav-menus.php:592
 msgid "Your theme can display menus in one location. Select which menu you would like to use."
 msgstr "Ваша тема може да прикаже изборнике на једном месту. Изаберите који изборник желите да користите."
 
@@ -236,11 +246,11 @@ msgid "Site Name: %s"
 msgstr "Име веб места: %s"
 
 #. translators: 1: number of placeholders, 2: number of arguments passed
-#: wp-includes/wp-db.php:1301
+#: wp-includes/wp-db.php:1294
 msgid "The query does not contain the correct number of placeholders (%1$d) for the number of arguments passed (%2$d)."
 msgstr "Упит не садржи исправан број држача места (%1$d) за број достављених аргумената (%2$d)."
 
-#: wp-includes/wp-db.php:1253
+#: wp-includes/wp-db.php:1246
 msgid "Unsupported value type (%s)."
 msgstr "Неподржана врста вредности (%s)."
 
@@ -709,7 +719,7 @@ msgstr "oEmbed одговори"
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/ms-functions.php:2682
+#: wp-includes/ms-functions.php:2689
 msgid ""
 "Hi,\n"
 "\n"
@@ -739,7 +749,7 @@ msgstr ""
 
 #. translators: Network admin email change notification email subject. %s:
 #. Network title
-#: wp-includes/ms-functions.php:2697
+#: wp-includes/ms-functions.php:2704
 msgid "[%s] Notice of Network Admin Email Change"
 msgstr "[%s] Напомена промене мрежне адресе управљачке е-поште"
 
@@ -787,7 +797,7 @@ msgstr "[%s] Нова мрежна адреса управљачке е-пошт
 
 #. translators: Do not translate OLD_EMAIL, NEW_EMAIL, SITENAME, SITEURL: those
 #. are placeholders.
-#: wp-includes/functions.php:5756
+#: wp-includes/functions.php:5764
 msgid ""
 "Hi,\n"
 "\n"
@@ -821,7 +831,7 @@ msgstr "Корисник не може бити додан овом веб ме�
 
 #. translators: Site admin email change notification email subject. %s: Site
 #. title
-#: wp-includes/functions.php:5771
+#: wp-includes/functions.php:5779
 msgid "[%s] Notice of Admin Email Change"
 msgstr "[%s] Напомена промене адресе управљачке е-поште"
 
@@ -843,13 +853,9 @@ msgstr "Филтрирај теме (%s)"
 msgid "Install &amp; Preview"
 msgstr "Постави и предпрегледај"
 
-#: wp-includes/functions.php:5699
+#: wp-includes/functions.php:5700
 msgid "Only UUID V4 is supported at this time."
 msgstr "Тренутно је подржан само UUID V4."
-
-#: wp-includes/deprecated.php:3927 wp-includes/deprecated.php:3944
-msgid "The Press This plugin is required."
-msgstr "Press This додатак је неопходан."
 
 #: wp-includes/customize/class-wp-customize-themes-section.php:113
 msgid "Back to theme sources"
@@ -859,13 +865,18 @@ msgstr "Назад на изворе тема"
 msgid "Search WordPress.org themes"
 msgstr "претражите WordPress.org теме"
 
+#: wp-includes/deprecated.php:3927 wp-includes/deprecated.php:3944
+msgid "The Press This plugin is required."
+msgstr "Додатак Објави ово је неопходан."
+
 #: wp-includes/customize/class-wp-customize-nav-menu-item-setting.php:713
 msgid "Invalid URL."
 msgstr "Неисправан URL."
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:39
-msgid "Time to add some links! Click &#8220;Add menu items&#8221; to start putting pages, categories, and custom links in your menu. Add as many things as you&#8217;d like."
-msgstr "Време је да додате неке везе! Притисните &#132;Додај ставке&#147; да бисте почели стављање страна, категорија и прилагођених веза свом изборнику. Додајте колико год желите ствари."
+#. translators: %s: "Add Items" button text
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:44
+msgid "Time to add some links! Click &#8220;%s&#8221; to start putting pages, categories, and custom links in your menu. Add as many things as you&#8217;d like."
+msgstr "Време је да додате неке везе! Притисните &#132%s&#147; да бисте почели стављање страна, категорија и прилагођених веза свом изборнику. Додајте колико год желите ствари."
 
 #: wp-includes/customize/class-wp-customize-media-control.php:249
 msgid "Choose image"
@@ -908,7 +919,7 @@ msgstr "Притисните &#132;Додај нову слику&#147; да б�
 msgid "%1$s-%2$s"
 msgstr "%1$s-%2$s"
 
-#: wp-includes/class-wp-customize-nav-menus.php:968
+#: wp-includes/class-wp-customize-nav-menus.php:984
 msgid "Create New Menu"
 msgstr "Направи нови изборник"
 
@@ -937,7 +948,7 @@ msgctxt "Name for the Visual editor tab"
 msgid "Visual"
 msgstr "Видљиво"
 
-#: wp-includes/class-wp-customize-nav-menus.php:693
+#: wp-includes/class-wp-customize-nav-menus.php:709
 msgid "New Menu"
 msgstr "Нови изборник"
 
@@ -959,7 +970,7 @@ msgid "The theme defines itself as its parent theme. Please check the %s header.
 msgstr "Тема одређује себе као своју родитељску тему. Молимо вас да проверите заглавље %s."
 
 #. translators: URL to the widgets panel of the customizer
-#: wp-includes/class-wp-customize-nav-menus.php:584
+#: wp-includes/class-wp-customize-nav-menus.php:600
 msgid "If your theme has widget areas, you can also add menus there. Visit the <a href=\"%s\">Widgets panel</a> and add a &#8220;Navigation Menu widget&#8221; to display a menu in a sidebar or footer."
 msgstr "Уколико ваша тема има просторе за виџете, тамо такође можете додати изборнике. Посетите <a href=\"%s\">таблу виџета</a> и додајте &#132;виџет Изборник кретања&#147; да бисте приказали изборник у бочној траци или подножју."
 
@@ -977,19 +988,19 @@ msgstr "Временска зона је %1$s (%2$s), тренутно %3$s."
 msgid "Timezone is %s."
 msgstr "Временска зона је %s."
 
-#: wp-includes/class-wp-customize-manager.php:5228
+#: wp-includes/class-wp-customize-manager.php:5268
 msgid "Add your own CSS code here to customize the appearance and layout of your site."
 msgstr "Овде додајте свој CSS код да бисте прилагодили изглед и распоред свог веб места."
 
-#: wp-includes/class-wp-customize-manager.php:5278
+#: wp-includes/class-wp-customize-manager.php:5318
 msgid "CSS code"
 msgstr "CSS код"
 
-#: wp-includes/class-wp-customize-manager.php:5182
+#: wp-includes/class-wp-customize-manager.php:5222
 msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
 msgstr "Можете одабрати шта је приказано на почетној страници свог  веб места. То могу бити чланци у обрнутом хронолошком редоследу (класични блог) или учвршћена/непокретна страна. Да бисте поставили непокретну почетну страницу, прво морате да направите две стране. Једна ће постати почетна страница а друга ће бити где се ваши чланци приказују."
 
-#: wp-includes/class-wp-customize-manager.php:5193
+#: wp-includes/class-wp-customize-manager.php:5233
 msgid "Your homepage displays"
 msgstr "Ваша почетна страница приказује"
 
@@ -998,60 +1009,60 @@ msgid "Screen reader users: when in forms mode, you may need to press the Esc ke
 msgstr "Корисници читача екрана: када сте у режиму образаца, можда ћете морати да притиснете Esc дугме два пута."
 
 #. translators: %s: number of menu locations
-#: wp-includes/class-wp-customize-nav-menus.php:403
+#: wp-includes/class-wp-customize-nav-menus.php:419
 msgid "Your theme can display menus in %s location."
 msgid_plural "Your theme can display menus in %s locations."
 msgstr[0] "Ваша тема може да прикаже изборнике на %s месту."
 msgstr[1] "Ваша тема може да прикаже изборнике на %s местa."
 msgstr[2] "Ваша тема може да прикаже изборнике на %s местa."
 
-#: wp-includes/class-wp-customize-nav-menus.php:400
+#: wp-includes/class-wp-customize-nav-menus.php:416
 msgid "Your theme can display menus in one location."
 msgstr "Ваша тема може да прикаже изборнике на једном месту."
 
-#: wp-includes/class-wp-customize-nav-menus.php:420
+#: wp-includes/class-wp-customize-nav-menus.php:436
 msgid "If your theme has multiple menus, giving them clear names will help you manage them."
 msgstr "Уколико ваша тема има више изборника, давање јасних имена ће вам помоћи у њиховом управљању."
 
-#: wp-includes/class-wp-customize-manager.php:5240
+#: wp-includes/class-wp-customize-manager.php:5280
 #: wp-includes/widgets/class-wp-widget-custom-html.php:311
 msgid "In the editing area, the Tab key enters a tab character."
 msgstr "У простору за уређивање, дугме Tab уноси tab знак."
 
-#: wp-includes/class-wp-customize-manager.php:5241
+#: wp-includes/class-wp-customize-manager.php:5281
 #: wp-includes/widgets/class-wp-widget-custom-html.php:312
 msgid "To move away from this area, press the Esc key followed by the Tab key."
 msgstr "Да бисте се померили са овог простора, притисните думге Esc па Tab."
 
-#: wp-includes/class-wp-customize-manager.php:5238
+#: wp-includes/class-wp-customize-manager.php:5278
 #: wp-includes/widgets/class-wp-widget-custom-html.php:309
 msgid "When using a keyboard to navigate:"
 msgstr "Када користите тастатуру за кретање:"
 
 #. translators: 1: link to user profile, 2: additional link attributes, 3:
 #. accessibility text
-#: wp-includes/class-wp-customize-manager.php:5249
+#: wp-includes/class-wp-customize-manager.php:5289
 #: wp-includes/widgets/class-wp-widget-custom-html.php:299
 msgid "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text mode."
 msgstr "Поље за уређивање аутоматски истиче синтаксу кода. Ово можете онемогућити на свом <a href=\"%1$s\" %2$s>корисничком профилу %3$s</a> да бисте радили у текстуалном режиму."
 
-#: wp-includes/class-wp-customize-manager.php:5180
+#: wp-includes/class-wp-customize-manager.php:5220
 msgid "Homepage Settings"
 msgstr "Подешавања почетне странице"
 
-#: wp-includes/class-wp-customize-manager.php:3020
+#: wp-includes/class-wp-customize-manager.php:3027
 msgid "Changes have already been trashed."
 msgstr "Измене су већ на отпаду."
 
-#: wp-includes/class-wp-customize-manager.php:3035
+#: wp-includes/class-wp-customize-manager.php:3042
 msgid "Changes trashed successfully."
 msgstr "Измене су успешно бачене на отпад."
 
-#: wp-includes/class-wp-customize-manager.php:4165
+#: wp-includes/class-wp-customize-manager.php:4202
 msgid "Copied"
 msgstr "Умножено"
 
-#: wp-includes/class-wp-customize-manager.php:4795
+#: wp-includes/class-wp-customize-manager.php:4835
 msgid "Installed themes"
 msgstr "Постављене теме"
 
@@ -1059,12 +1070,12 @@ msgstr "Постављене теме"
 msgid "Publish Settings"
 msgstr "Подешавања објављивања"
 
-#: wp-includes/class-wp-customize-manager.php:2997
+#: wp-includes/class-wp-customize-manager.php:3004
 msgid "There was an authentication problem. Please reload and try again."
 msgstr "Догодио се проблем, молимо вас исправите образац испод и покушате поново."
 
 #. translators: %s: number of invalid settings
-#: wp-includes/class-wp-customize-manager.php:2702
+#: wp-includes/class-wp-customize-manager.php:2707
 #: wp-includes/script-loader.php:593 wp-includes/script-loader.php:595
 msgid "Unable to save due to %s invalid setting."
 msgid_plural "Unable to save due to %s invalid settings."
@@ -1072,42 +1083,42 @@ msgstr[0] "Снимање није могуће због %s неправилно
 msgstr[1] "Снимање није могуће због %s неправилна подешавања."
 msgstr[2] "Снимање није могуће због %s неправилних подешавања."
 
-#: wp-includes/class-wp-customize-manager.php:3014
-#: wp-includes/class-wp-customize-manager.php:3030
+#: wp-includes/class-wp-customize-manager.php:3021
+#: wp-includes/class-wp-customize-manager.php:3037
 msgid "Unable to trash changes."
 msgstr "Није могуће бацити измене на отпад."
 
-#: wp-includes/class-wp-customize-manager.php:4804
+#: wp-includes/class-wp-customize-manager.php:4844
 msgid "WordPress.org themes"
 msgstr "WordPress.org теме"
 
-#: wp-includes/class-wp-customize-manager.php:3005
+#: wp-includes/class-wp-customize-manager.php:3012
 msgid "No changes saved yet, so there is nothing to trash."
 msgstr "Још увек нема сачуваних промена тако да нема ништа за пребацивање на отпад."
 
-#: wp-includes/class-wp-customize-manager.php:4159
+#: wp-includes/class-wp-customize-manager.php:4196
 msgid "Preview Link"
 msgstr "Веза предпрегледа"
 
-#: wp-includes/class-wp-customize-manager.php:4156
+#: wp-includes/class-wp-customize-manager.php:4193
 msgid "See how changes would look live on your website, and share the preview with people who can't access the Customizer."
 msgstr "Видите како би промене изгледале уживо на вашем веб месту и поделите предпреглед са људима који не могу да приступе прилагођивачу."
 
-#: wp-includes/class-wp-customize-manager.php:4154
+#: wp-includes/class-wp-customize-manager.php:4191
 msgid "Share Preview Link"
 msgstr "Дељење веза предпрегледа"
 
-#: wp-includes/class-wp-customize-manager.php:4872
+#: wp-includes/class-wp-customize-manager.php:4912
 msgid "Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. Upload one here!"
 msgstr "Иконице веб места су оно што видите у језичцима прегледача веба, тракама забележака и у Вордпресовим преносивим апликацијама. Овде отпремите једну!"
 
 #. translators: %s: site icon size in pixels
-#: wp-includes/class-wp-customize-manager.php:4874
+#: wp-includes/class-wp-customize-manager.php:4914
 msgid "Site Icons should be square and at least %s pixels."
 msgstr "Иконице веб места би требало да буду квадрати и са најмање %s пиксела."
 
-#: wp-includes/class-wp-customize-manager.php:2588
-#: wp-includes/class-wp-customize-manager.php:2603
+#: wp-includes/class-wp-customize-manager.php:2593
+#: wp-includes/class-wp-customize-manager.php:2608
 #: wp-includes/script-loader.php:558
 msgid "You must supply a future date to schedule."
 msgstr "Морате навести датум у будућности да бисте заказали."
@@ -1120,27 +1131,27 @@ msgstr "Уређивање корисника"
 msgid "View User"
 msgstr "Види корисника"
 
-#: wp-includes/class-wp-customize-manager.php:2565
+#: wp-includes/class-wp-customize-manager.php:2570
 msgid "The previous set of changes has already been published. Please try saving your current set of changes again."
 msgstr "Претходни скуп промена је већ објављен. Молимо вас да поново покушате са чувањем тренутног скупа промена."
 
-#: wp-includes/widgets/class-wp-widget-text.php:460
+#: wp-includes/widgets/class-wp-widget-text.php:481
 msgid "This widget may have contained code that may work better in the &#8220;Custom HTML&#8221; widget. If you haven&#8217;t yet, how about trying that widget instead?"
 msgstr "Овај виџет можда је садржао код који би боље радио у виџету &#132;Прилагођени HTML&#147;. Уколико још нисте, шта мислите о испробавању тог виџета?"
 
-#: wp-includes/widgets/class-wp-widget-text.php:513
+#: wp-includes/widgets/class-wp-widget-text.php:534
 msgid "Hey there, looks like you just pasted HTML into the &#8220;Visual&#8221; tab of the Text widget. You may want to paste your code into the &#8220;Text&#8221; tab instead. Alternately, try out the new &#8220;Custom HTML&#8221; widget!"
 msgstr "Изгледа да сте управо налепили HTML у језичак &#132;Видљиво&#147; текстуалног виџета. Можда желите да налепите свој код у језичак &#132;Текст&#147; уместо тога. На крају, можете и да пробате нови виџет &#132;Прилагођени HTML&#147;."
 
-#: wp-includes/widgets/class-wp-widget-text.php:512
+#: wp-includes/widgets/class-wp-widget-text.php:533
 msgid "Did you just paste HTML?"
 msgstr "Да ли сте налепили HTML?"
 
-#: wp-includes/widgets/class-wp-widget-text.php:497
+#: wp-includes/widgets/class-wp-widget-text.php:518
 msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by scanning the list of available widgets on this screen. Check it out to add some custom code to your site!"
 msgstr "Да ли знате да постоји виџет &#132;Прилагођени HTML&#147;? Можете га пронаћи претрагом списка доступних виџета на овом екрану. Пробајте га да бисте додали прилагођени код свом веб месту!"
 
-#: wp-includes/widgets/class-wp-widget-text.php:495
+#: wp-includes/widgets/class-wp-widget-text.php:516
 msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by pressing the &#8220;<a class=\"add-widget\" href=\"#\">Add a Widget</a>&#8221; button and searching for &#8220;HTML&#8221;. Check it out to add some custom code to your site!"
 msgstr "Да ли знате да постоји виџет &#132;Прилагођени HTML&#147;? Можете га пронаћи притиском на дугме &#132;<a class=\"add-widget\" href=\"#\">Додај виџет</a>&#147; и тражећи &#132;HTML&#147;. Пробајте га да бисте додали прилагођени код свом веб месту!"
 
@@ -1148,11 +1159,11 @@ msgstr "Да ли знате да постоји виџет &#132;Прилаго
 msgid "Arbitrary text."
 msgstr "Произвољни текст."
 
-#: wp-includes/widgets/class-wp-widget-text.php:493
+#: wp-includes/widgets/class-wp-widget-text.php:514
 msgid "New Custom HTML Widget"
 msgstr "Нови Прилагођени HTML виџет"
 
-#: wp-includes/widgets/class-wp-widget-text.php:458
+#: wp-includes/widgets/class-wp-widget-text.php:479
 msgid "This widget may contain code that may work better in the &#8220;Custom HTML&#8221; widget. How about trying that widget instead?"
 msgstr "Овај виџет може да садржи код који би боље радио у виџету &#132;Прилагођени HTML&#147;. Шта мислите да пробате тај виџет?"
 
@@ -1937,7 +1948,7 @@ msgctxt "New user notification email subject"
 msgid "[%1$s] Activate %2$s"
 msgstr "[%1$s] Активирај %2$s"
 
-#: wp-includes/widgets.php:1395 wp-includes/widgets.php:1504
+#: wp-includes/widgets.php:1398 wp-includes/widgets.php:1507
 msgid "RSS Error:"
 msgstr "RSS грешка:"
 
@@ -2297,7 +2308,7 @@ msgstr "Прикажи контроле"
 msgid "Document Preview"
 msgstr "Преглед документа"
 
-#: wp-includes/class-wp-customize-manager.php:4963
+#: wp-includes/class-wp-customize-manager.php:5003
 msgid "Header Media"
 msgstr "Садржај загљавља"
 
@@ -2331,7 +2342,7 @@ msgstr "Натпис прилога, као што постоји у бази п
 msgid "HTML caption for the attachment, transformed for display."
 msgstr "HTML натпис прилога, претворен за приказ."
 
-#: wp-includes/class-wp-customize-manager.php:5625
+#: wp-includes/class-wp-customize-manager.php:5665
 msgid "Please enter a valid YouTube URL."
 msgstr "Молимо вас да унесете ваљан Јутјубов URL."
 
@@ -2343,7 +2354,7 @@ msgstr "Скупи главни изборник"
 msgid "Expand Main menu"
 msgstr "Прошири главни изборник"
 
-#: wp-includes/class-wp-customize-manager.php:5048
+#: wp-includes/class-wp-customize-manager.php:5088
 msgid "Or, enter a YouTube URL:"
 msgstr "Или, унесите Јутјубов URL:"
 
@@ -2402,11 +2413,11 @@ msgstr "Ограничите скуп резултата на чланке са 
 msgid "Comment is required."
 msgstr "Коментар је неопходан."
 
-#: wp-includes/class-wp-customize-nav-menus.php:792
+#: wp-includes/class-wp-customize-nav-menus.php:808
 msgid "Empty title"
 msgstr "Празно наслов"
 
-#: wp-includes/class-wp-customize-nav-menus.php:795
+#: wp-includes/class-wp-customize-nav-menus.php:811
 msgid "Status is forbidden"
 msgstr "Стање је забрањено"
 
@@ -2414,7 +2425,7 @@ msgstr "Стање је забрањено"
 msgid "We already have a ping from that URL for this post."
 msgstr "Већ имамо пинг са тог URL-а за овај чланак."
 
-#: wp-includes/class-wp-customize-manager.php:5208
+#: wp-includes/class-wp-customize-manager.php:5248
 msgid "Homepage"
 msgstr "Почетна страница"
 
@@ -3418,7 +3429,7 @@ msgid "Sorry, your term could not be created."
 msgstr "Жао нам је, ваш члан не може бити направљен."
 
 #. translators: %1$s is the post type name and %2$s is the error message.
-#: wp-includes/class-wp-customize-nav-menus.php:886
+#: wp-includes/class-wp-customize-nav-menus.php:902
 msgid "%1$s could not be created: %2$s"
 msgstr "Није могуће да се направи %1$s: %2$s"
 
@@ -3432,127 +3443,127 @@ msgstr "Нема пронађених виџета."
 msgid "Number of widgets found: %d"
 msgstr "Број пронађених виџета: %d"
 
-#: wp-includes/class-wp-customize-nav-menus.php:881
+#: wp-includes/class-wp-customize-nav-menus.php:897
 msgid "Post"
 msgstr "Чланак"
 
 #. translators: 1: .mp4, 2: .mov
-#: wp-includes/class-wp-customize-manager.php:5601
+#: wp-includes/class-wp-customize-manager.php:5641
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
 msgstr "Само %1$s и %2$s датотеке могу да се користе за видео записе заглавља. Молимо вас да претворите своју датотеку видео записа и покушате поново или да отпремите свој видео запис на Јутјуб и повежете га са могућношћу испод."
 
-#: wp-includes/class-wp-customize-manager.php:5595
+#: wp-includes/class-wp-customize-manager.php:5635
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 msgstr "Ова датотека видео записа је превелика да би се користила као видео запис заглавља. Покушајте са краћим видео записом или прилагодите подешавања компресије и поново отпремите датотеку која је мања од 8MB. Или, отпремите свој видео запис на Јутјуб и повежите га са могућношћу испод."
 
-#: wp-includes/class-wp-customize-manager.php:5555
+#: wp-includes/class-wp-customize-manager.php:5595
 msgid "Unrecognized background setting."
 msgstr "Непрепознато подешавање позадине."
 
-#: wp-includes/class-wp-customize-manager.php:5265
+#: wp-includes/class-wp-customize-manager.php:5305
 msgid "Additional CSS"
 msgstr "Додатни CSS"
 
-#: wp-includes/class-wp-customize-manager.php:5534
+#: wp-includes/class-wp-customize-manager.php:5574
 msgid "Invalid value for background attachment."
 msgstr "Неисправна вредност за прилог у позадини."
 
-#: wp-includes/class-wp-customize-manager.php:5530
+#: wp-includes/class-wp-customize-manager.php:5570
 msgid "Invalid value for background repeat."
 msgstr "Неисправна вредност за понављање у позадини."
 
-#: wp-includes/class-wp-customize-manager.php:5538
+#: wp-includes/class-wp-customize-manager.php:5578
 msgid "Invalid value for background position X."
 msgstr "Неисправна вредност за место позадине X."
 
-#: wp-includes/class-wp-customize-manager.php:5542
+#: wp-includes/class-wp-customize-manager.php:5582
 msgid "Invalid value for background position Y."
 msgstr "Неисправна вредност за место позадине Y."
 
-#: wp-includes/class-wp-customize-manager.php:5546
-#: wp-includes/class-wp-customize-manager.php:5550
+#: wp-includes/class-wp-customize-manager.php:5586
+#: wp-includes/class-wp-customize-manager.php:5590
 msgid "Invalid value for background size."
 msgstr "Неисправна вредност за величину позадине."
 
-#: wp-includes/class-wp-customize-manager.php:5232
+#: wp-includes/class-wp-customize-manager.php:5272
 msgid "Learn more about CSS"
 msgstr "Сазнајте више о CSS-у"
 
 #. translators: accessibility text
-#: wp-includes/class-wp-customize-manager.php:4162
-#: wp-includes/class-wp-customize-manager.php:5234
-#: wp-includes/class-wp-customize-manager.php:5254
+#: wp-includes/class-wp-customize-manager.php:4199
+#: wp-includes/class-wp-customize-manager.php:5274
+#: wp-includes/class-wp-customize-manager.php:5294
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:56
 #: wp-includes/widgets/class-wp-widget-custom-html.php:304
 msgid "(opens in a new window)"
 msgstr "(отвара се у новом прозору)"
 
-#: wp-includes/class-wp-customize-manager.php:5098
+#: wp-includes/class-wp-customize-manager.php:5138
 msgctxt "Custom Preset"
 msgid "Custom"
 msgstr "Прилагођено"
 
-#: wp-includes/class-wp-customize-manager.php:5096
-#: wp-includes/class-wp-customize-manager.php:5135
+#: wp-includes/class-wp-customize-manager.php:5136
+#: wp-includes/class-wp-customize-manager.php:5175
 msgid "Fit to Screen"
 msgstr "Да стане на екран"
 
-#: wp-includes/class-wp-customize-manager.php:5115
+#: wp-includes/class-wp-customize-manager.php:5155
 #: wp-includes/customize/class-wp-customize-background-position-control.php:66
 msgid "Image Position"
 msgstr "Место слике"
 
-#: wp-includes/class-wp-customize-manager.php:5130
+#: wp-includes/class-wp-customize-manager.php:5170
 msgid "Image Size"
 msgstr "Величина слике"
 
-#: wp-includes/class-wp-customize-manager.php:5134
+#: wp-includes/class-wp-customize-manager.php:5174
 msgid "Original"
 msgstr "Изворна"
 
-#: wp-includes/class-wp-customize-manager.php:5147
+#: wp-includes/class-wp-customize-manager.php:5187
 msgid "Repeat Background Image"
 msgstr "Понови слику у позадини"
 
-#: wp-includes/class-wp-customize-manager.php:5097
+#: wp-includes/class-wp-customize-manager.php:5137
 msgctxt "Repeat Image"
 msgid "Repeat"
 msgstr "Понављање"
 
-#: wp-includes/class-wp-customize-manager.php:5159
+#: wp-includes/class-wp-customize-manager.php:5199
 msgid "Scroll with Page"
 msgstr "Креће се са страницом"
 
-#: wp-includes/class-wp-customize-manager.php:5090
+#: wp-includes/class-wp-customize-manager.php:5130
 msgctxt "Background Preset"
 msgid "Preset"
 msgstr "Унапред одређено"
 
-#: wp-includes/class-wp-customize-manager.php:5094
+#: wp-includes/class-wp-customize-manager.php:5134
 msgctxt "Default Preset"
 msgid "Default"
 msgstr "Подразумевано"
 
-#: wp-includes/class-wp-customize-manager.php:5038
+#: wp-includes/class-wp-customize-manager.php:5078
 msgid "Header Video"
 msgstr "Видео запис заглавља"
 
 #. translators: 1: .mp4, 2: header height in pixels
-#: wp-includes/class-wp-customize-manager.php:4985
+#: wp-includes/class-wp-customize-manager.php:5025
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
 msgstr "Отпремите свој видео запис у %1$s облику и за најбоље резултате смањите његову величину датотеке. Ваша тема препоручује висину од %2$s пиксела."
 
 #. translators: 1: .mp4, 2: header width in pixels
-#: wp-includes/class-wp-customize-manager.php:4978
+#: wp-includes/class-wp-customize-manager.php:5018
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
 msgstr "Отпремите свој видео запис у %1$s облику и за најбоље резултате смањите његову величину датотеке. Ваша тема препоручује ширину од %2$s пиксела."
 
-#: wp-includes/class-wp-customize-manager.php:4964
+#: wp-includes/class-wp-customize-manager.php:5004
 msgid "If you add a video, the image will be used as a fallback while the video loads."
 msgstr "Уколико додате видео запис, слика ће се користити као основа док се видео снимак учитава."
 
 #. translators: 1: .mp4, 2: header size in pixels
-#: wp-includes/class-wp-customize-manager.php:4971
+#: wp-includes/class-wp-customize-manager.php:5011
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 msgstr "Отпремите свој видео запис у %1$s облику и за најбоље резултате смањите његову величину датотеке. Ваша тема препоручује величину од %2$s пиксела."
 
@@ -3563,32 +3574,32 @@ msgstr "Отпремите свој видео запис у %1$s облику �
 msgid "Search themes&hellip;"
 msgstr "Претрага тема&hellip;"
 
-#: wp-includes/class-wp-customize-manager.php:2267
+#: wp-includes/class-wp-customize-manager.php:2272
 msgid "Setting does not exist or is unrecognized."
 msgstr "Подешавање не постоји или није препознато."
 
-#: wp-includes/class-wp-customize-manager.php:2272
+#: wp-includes/class-wp-customize-manager.php:2277
 msgid "Unauthorized to modify setting due to capability."
 msgstr "Без овлашћења за измену подешавања због могућности."
 
 #. translators: %d: number of theme search results, which cannot currently
 #. consider singular vs. plural forms
-#: wp-includes/class-wp-customize-manager.php:4666
+#: wp-includes/class-wp-customize-manager.php:4706
 msgid "%d themes found"
 msgstr "Пронађено тема: %d"
 
-#: wp-includes/class-wp-customize-manager.php:4664
+#: wp-includes/class-wp-customize-manager.php:4704
 msgid "Are you sure you want to delete this theme?"
 msgstr "Да ли сигурно желите да обришете ову тему?"
 
 #. translators: %d: number of themes being displayed, which cannot currently
 #. consider singular vs. plural forms
-#: wp-includes/class-wp-customize-manager.php:4668
+#: wp-includes/class-wp-customize-manager.php:4708
 msgid "Displaying %d themes"
 msgstr "Приказује се тема: %d"
 
 #. translators: %s: theme name
-#: wp-includes/class-wp-customize-manager.php:4670
+#: wp-includes/class-wp-customize-manager.php:4710
 msgid "Showing details for theme: %s"
 msgstr "Приказују се детаљи теме: %s"
 
@@ -3618,15 +3629,15 @@ msgstr "Непостојећи UUID скупа промена."
 msgid "PHP's XML extension is not available. Please contact your hosting provider to enable PHP's XML extension."
 msgstr "PHP-ово XML проширење није доступно. Молимо вас да контактирате свог достављача домаћинства да би омогућио PHP-ово XML проширење."
 
-#: wp-includes/class-wp-customize-manager.php:2060
+#: wp-includes/class-wp-customize-manager.php:2065
 msgid "This form is not live-previewable."
 msgstr "Овај образац не може да се прегледа уживо."
 
-#: wp-includes/class-wp-customize-manager.php:2059
+#: wp-includes/class-wp-customize-manager.php:2064
 msgid "This link is not live-previewable."
 msgstr "Ово веза не може да се прегледа уживо."
 
-#: wp-includes/class-wp-customize-manager.php:1844
+#: wp-includes/class-wp-customize-manager.php:1849
 msgid "Unauthorized. You may remove the customize_messenger_channel param to preview as frontend."
 msgstr "Неовлашћено. Можете уклонити параметар customize_messenger_channel да бисте прегледали као предњу страну."
 
@@ -3886,7 +3897,7 @@ msgstr "Уреди изборника"
 msgid "Network Activate"
 msgstr "Укључи за мрежу"
 
-#: wp-includes/wp-db.php:1856 wp-includes/wp-db.php:1862
+#: wp-includes/wp-db.php:1849 wp-includes/wp-db.php:1855
 msgid "Unable to retrieve the error message from MySQL"
 msgstr "Није могуће извући поруку грешке из MySQL-а"
 
@@ -3978,7 +3989,7 @@ msgstr "Жао нам је, није вам дозвољено да додате
 msgid "Sorry, you are not allowed to list users."
 msgstr "Жао нам је, није вам дозвољено да прегледате кориснике."
 
-#: wp-includes/class-wp-customize-manager.php:2295
+#: wp-includes/class-wp-customize-manager.php:2300
 #: wp-includes/class-wp-customize-setting.php:579
 #: wp-includes/script-loader.php:606
 msgid "Invalid value."
@@ -4056,7 +4067,7 @@ msgstr "Непроменљива %1$s <strong>је застарела</strong>. 
 
 #. translators: 1: panel id, 2: link to 'customize_loaded_components' filter
 #. reference
-#: wp-includes/class-wp-customize-manager.php:3737
+#: wp-includes/class-wp-customize-manager.php:3760
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "Ручно уклањање %1$s ће изазвати PHP упозорења. Користите филтер %2$s уместо тога."
 
@@ -4156,21 +4167,21 @@ msgctxt "post status"
 msgid "Scheduled"
 msgstr "Заказано"
 
-#: wp-includes/class-wp-customize-manager.php:4904
+#: wp-includes/class-wp-customize-manager.php:4944
 msgid "Choose logo"
 msgstr "Изаберите логотип"
 
-#: wp-includes/functions.php:5312
+#: wp-includes/functions.php:5313
 msgid "Close dialog"
 msgstr "Затвори дијалог"
 
-#: wp-includes/class-wp-customize-manager.php:4902
+#: wp-includes/class-wp-customize-manager.php:4942
 msgid "No logo selected"
 msgstr "Нема одабраног логотипа"
 
 #. translators: 1: PHP class name, 2: PHP parent class name, 3: version number,
 #. 4: __construct() method
-#: wp-includes/functions.php:3900
+#: wp-includes/functions.php:3901
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "Позвана метода конструктора за %1$s у %2$s је <strong>застарела</strong> почев од издања %3$s! Уместо тога користите %4$s."
 
@@ -4179,7 +4190,7 @@ msgstr "Позвана метода конструктора за %1$s у %2$s �
 msgid "%s is forbidden"
 msgstr "%s је забрањен"
 
-#: wp-includes/class-wp-customize-manager.php:4899
+#: wp-includes/class-wp-customize-manager.php:4939
 msgid "Change logo"
 msgstr "Промени логотип"
 
@@ -4187,8 +4198,8 @@ msgstr "Промени логотип"
 msgid "Partial render must echo the content or return the content string (or array), but not both."
 msgstr "Делимично прављење мора да одјекне садржај или да врати ниску садржаја (или низ) али не оба."
 
-#: wp-includes/class-wp-customize-manager.php:4898
-#: wp-includes/class-wp-customize-manager.php:4903
+#: wp-includes/class-wp-customize-manager.php:4938
+#: wp-includes/class-wp-customize-manager.php:4943
 msgid "Select logo"
 msgstr "Изабери логотип"
 
@@ -4228,7 +4239,7 @@ msgstr "Отпад"
 msgid "Invalid object type"
 msgstr "Неисправна врста објекта"
 
-#: wp-includes/class-wp-customize-manager.php:4890
+#: wp-includes/class-wp-customize-manager.php:4930
 msgid "Logo"
 msgstr "Логотип"
 
@@ -4245,8 +4256,8 @@ msgstr "Шаблон недостаје. Самосталне теме мора�
 msgid "https://codex.wordpress.org/Child_Themes"
 msgstr "https://codex.wordpress.org/Child_Themes"
 
-#: wp-includes/class-wp-customize-manager.php:4856
-#: wp-includes/class-wp-customize-manager.php:4934
+#: wp-includes/class-wp-customize-manager.php:4896
+#: wp-includes/class-wp-customize-manager.php:4974
 msgid "Display Site Title and Tagline"
 msgstr "Прикажи наслов и поднаслов веб места"
 
@@ -4254,19 +4265,19 @@ msgstr "Прикажи наслов и поднаслов веб места"
 msgid "Comment Submission Failure"
 msgstr "Неуспех у подношењу коментара"
 
-#: wp-includes/class-wp-customize-manager.php:4750
+#: wp-includes/class-wp-customize-manager.php:4790
 msgid "Enter desktop preview mode"
 msgstr "Уђи у режим прегледа стоног рачунара"
 
-#: wp-includes/class-wp-customize-manager.php:4757
+#: wp-includes/class-wp-customize-manager.php:4797
 msgid "Enter mobile preview mode"
 msgstr "Уђи у режим прегледа преносивог уређаја"
 
-#: wp-includes/class-wp-customize-manager.php:4754
+#: wp-includes/class-wp-customize-manager.php:4794
 msgid "Enter tablet preview mode"
 msgstr "Уђи у режим прегледа таблета"
 
-#: wp-includes/class-wp-customize-manager.php:2058
+#: wp-includes/class-wp-customize-manager.php:2063
 #: wp-includes/customize/class-wp-customize-selective-refresh.php:192
 msgid "Shift-click to edit this element."
 msgstr "Притисните Shift и лево дугме на мишу за уређивање овог елемента."
@@ -4286,7 +4297,7 @@ msgid "(Current: %s)"
 msgstr "(Тренутно: %s)"
 
 #. translators: %s:      menu location
-#: wp-includes/class-wp-customize-nav-menus.php:416
+#: wp-includes/class-wp-customize-nav-menus.php:432
 msgctxt "menu"
 msgid "(Currently set to: %s)"
 msgstr "(Тренутно подешено на: %s)"
@@ -4301,11 +4312,11 @@ msgid "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 msgstr "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 
 #. translators: %s: Codex URL
-#: wp-includes/functions.php:4142
+#: wp-includes/functions.php:4143
 msgid "Please see <a href=\"%s\">Debugging in WordPress</a> for more information."
 msgstr "Молимо вас да погледате <a href=\"%s\">отклањање грешака у Вордпресу</a> за више података."
 
-#: wp-includes/functions.php:4143
+#: wp-includes/functions.php:4144
 msgid "https://codex.wordpress.org/Debugging_in_WordPress"
 msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 
@@ -4514,66 +4525,66 @@ msgstr "Језик веб места:"
 msgid "Author:"
 msgstr "Аутор:"
 
-#: wp-includes/wp-db.php:1595
+#: wp-includes/wp-db.php:1588
 msgid "Are you sure that you have typed the correct hostname?"
 msgstr "Да ли сте сигурно укуцали правилно име домаћина?"
 
-#: wp-includes/wp-db.php:1744
+#: wp-includes/wp-db.php:1737
 msgid "Error reconnecting to the database"
 msgstr "Грешка приликом поновног повезивања са базом података"
 
-#: wp-includes/wp-db.php:1754
+#: wp-includes/wp-db.php:1747
 msgid "Are you sure that the database server is not under particularly heavy load?"
 msgstr "Да ли сте сигурни да сервер базе података није под изразито јаким оптерећењем?"
 
-#: wp-includes/wp-db.php:1596 wp-includes/wp-db.php:1753
+#: wp-includes/wp-db.php:1589 wp-includes/wp-db.php:1746
 msgid "Are you sure that the database server is running?"
 msgstr "Да ли сте сигурни да сервер базе података ради?"
 
 #. translators: %s: support forums URL
-#: wp-includes/wp-db.php:1601 wp-includes/wp-db.php:1759
+#: wp-includes/wp-db.php:1594 wp-includes/wp-db.php:1752
 msgid "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "Уколико нисте сигурни шта ови изрази значе вероватно би требало да контактирате свог домаћина. Уколико вам је и даље потребна помоћ, посетите <a href=\"%s\">Вордпресове форуме подршке</a>."
 
 #. translators: %s: database host
-#: wp-includes/wp-db.php:1748
+#: wp-includes/wp-db.php:1741
 msgid "This means that we lost contact with the database server at %s. This could mean your host&#8217;s database server is down."
 msgstr "Ово значи да смо изгубили контакт са сервер базе података на %s. Ово може да значи да је сервер базе података вашег домаћина недоступан."
 
-#: wp-includes/wp-db.php:1594
+#: wp-includes/wp-db.php:1587
 msgid "Are you sure you have the correct username and password?"
 msgstr "Да ли сигурно имате исправно корисничко име и лозинку?"
 
 #. translators: 1: wp-config.php. 2: database host
-#: wp-includes/wp-db.php:1588
+#: wp-includes/wp-db.php:1581
 msgid "This either means that the username and password information in your %1$s file is incorrect or we can&#8217;t contact the database server at %2$s. This could mean your host&#8217;s database server is down."
 msgstr "То значи или да су подаци о корисничком имену и лозинци у вашој датотеци %1$s нетачни или да не можемо да контактирамо сервер базе података на %2$s. Ово може да значи да је сервер базе података вашег домаћина недоступан."
 
 #. translators: %s: support forums URL
-#: wp-includes/wp-db.php:1068
+#: wp-includes/wp-db.php:1061
 msgid "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"%s\">WordPress Support Forums</a>."
 msgstr "Уколико не знате како да подесите базу података требало би да <strong>контактирате свог домаћина</strong>. Уколико све не успе можете пронаћи помоћ на <a href=\"%s\">Вордпресовим форумима подршке</a>."
 
-#: wp-includes/wp-db.php:1049
+#: wp-includes/wp-db.php:1042
 msgid "Are you sure it exists?"
 msgstr "Да ли сте сигурни да постоји?"
 
 #. translators: 1: database user, 2: database name
-#: wp-includes/wp-db.php:1053
+#: wp-includes/wp-db.php:1046
 msgid "Does the user %1$s have permission to use the %2$s database?"
 msgstr "Да ли корисник %1$s има дозволу да користи базу података %2$s?"
 
 #. translators: %s: database name
-#: wp-includes/wp-db.php:1060
+#: wp-includes/wp-db.php:1053
 msgid "On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could that be the problem?"
 msgstr "На неким системима име ваше базе података је са префиксом са вашим корисничким именом тако да ће бити као <code>username_%1$s</code>. Може ли то бити проблем?"
 
 #. translators: %s: database name
-#: wp-includes/wp-db.php:1044
+#: wp-includes/wp-db.php:1037
 msgid "We were able to connect to the database server (which means your username and password is okay) but not able to select the %s database."
 msgstr "Успели смо да се повежемо са сервером базе података (што значи да је ваше корисничко име и лозинка у реду) али није могуће изабрати базу података %s."
 
-#: wp-includes/wp-db.php:1040
+#: wp-includes/wp-db.php:1033
 msgid "Can&#8217;t select database"
 msgstr "Није могуће изабрати базу података"
 
@@ -4923,7 +4934,7 @@ msgid "Press return or enter to open this section"
 msgstr "Притисните enter да бисте отворили овај одељак"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:4335
+#: wp-includes/class-wp-customize-manager.php:4372
 msgid "Live Preview: %s"
 msgstr "Преглед уживо: %s"
 
@@ -4948,7 +4959,7 @@ msgstr "Врста уноса %1$s није регистрована тако д
 msgid "Sorry, you are not allowed to edit theme options on this site."
 msgstr "Жао нам је, није вам дозвољено да уређујете могућности теме на овом веб месту."
 
-#: wp-includes/class-wp-customize-nav-menus.php:1005
+#: wp-includes/class-wp-customize-nav-menus.php:1021
 #: wp-includes/class-wp-customize-widgets.php:811
 msgid "Clear Results"
 msgstr "Испразни резултате"
@@ -4958,7 +4969,7 @@ msgid "The following formatting shortcuts are replaced when pressing Enter. Pres
 msgstr "Следеће пречице обликовања су замењене када је притиснуто Enter. Притисните Escape или дугме Врати за враћање."
 
 #. translators: %s: Title of a section with menu items
-#: wp-includes/class-wp-customize-nav-menus.php:1054
+#: wp-includes/class-wp-customize-nav-menus.php:1070
 msgid "Toggle section: %s"
 msgstr "Прикажи/сакриј одељак: %s"
 
@@ -4975,7 +4986,7 @@ msgstr "words"
 msgid "Your new password has not been saved."
 msgstr "Ваша лозинка није сачувана."
 
-#: wp-includes/class-wp-customize-nav-menus.php:1088
+#: wp-includes/class-wp-customize-nav-menus.php:1104
 msgid "Toggle section: Custom Links"
 msgstr "Прикажи/сакриј: Прилагођене везе"
 
@@ -4997,7 +5008,7 @@ msgstr "Сакриј лозинку"
 msgid "Show password"
 msgstr "Прикажи лозинку"
 
-#: wp-includes/class-wp-customize-nav-menus.php:419
+#: wp-includes/class-wp-customize-nav-menus.php:435
 msgid "Menu Name"
 msgstr "Име изборника"
 
@@ -5019,7 +5030,7 @@ msgstr "Прегледај као иконицу прегледача веба"
 msgid "Preview as an app icon"
 msgstr "Прегледај као иконицу апликације"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1050
+#: wp-includes/class-wp-customize-nav-menus.php:1066
 msgid "No items"
 msgstr "Нема ставки"
 
@@ -5071,16 +5082,16 @@ msgstr "Сакриј слику"
 msgid "Hide header image"
 msgstr "Сакриј слику у заглављу"
 
-#: wp-includes/class-wp-customize-manager.php:4870
+#: wp-includes/class-wp-customize-manager.php:4910
 msgid "Site Icon"
 msgstr "Иконица веб места"
 
-#: wp-includes/class-wp-customize-manager.php:4821
+#: wp-includes/class-wp-customize-manager.php:4861
 msgid "Site Identity"
 msgstr "Идентитет веб места"
 
 #. translators: 1: Title of a menu item, 2: Type of a menu item
-#: wp-includes/class-wp-customize-nav-menus.php:919
+#: wp-includes/class-wp-customize-nav-menus.php:935
 msgid "Add to menu: %1$s (%2$s)"
 msgstr "Додај у изборник: %1$s (%2$s)"
 
@@ -5088,7 +5099,7 @@ msgstr "Додај у изборник: %1$s (%2$s)"
 msgid "When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo."
 msgstr "Када започињете нови пасус са једним од ових шаблона обликовања праћених размаком, обликовање ће аутоматски бити примењено. Притисните Backspace или Escape за враћање."
 
-#: wp-includes/wp-db.php:1386 wp-includes/wp-db.php:1403
+#: wp-includes/wp-db.php:1379 wp-includes/wp-db.php:1396
 msgid "WordPress database error:"
 msgstr "Грешка Вордпресове базе података:"
 
@@ -5126,23 +5137,23 @@ msgstr "Обликовано унапред"
 msgid "The %s directory of the develop repository must be used for RTL."
 msgstr "Директоријум %s развојног складишта мора се користи за са десна на лево."
 
-#: wp-includes/class-wp-customize-nav-menus.php:438
+#: wp-includes/class-wp-customize-nav-menus.php:454
 #: wp-includes/class-wp-customize-widgets.php:761
 msgid "Reorder mode enabled"
 msgstr "Режим промене редоследа је омогућен"
 
-#: wp-includes/class-wp-customize-nav-menus.php:439
+#: wp-includes/class-wp-customize-nav-menus.php:455
 #: wp-includes/class-wp-customize-widgets.php:762
 msgid "Reorder mode closed"
 msgstr "Режим промене редоследа је затворен"
 
-#: wp-includes/class-wp-customize-nav-menus.php:412
+#: wp-includes/class-wp-customize-nav-menus.php:428
 #: wp-includes/customize/class-wp-customize-nav-menu-setting.php:430
 msgctxt "Missing menu name."
 msgid "(unnamed)"
 msgstr "(неименован)"
 
-#: wp-includes/class-wp-customize-nav-menus.php:441
+#: wp-includes/class-wp-customize-nav-menus.php:457
 msgid "Close reorder mode"
 msgstr "Затвори режим промене редоследа"
 
@@ -5152,29 +5163,29 @@ msgid "%1$s (%2$d)"
 msgstr "%1$s (%2$d)"
 
 #. translators: 1: PHP class name, 2: version number, 3: __construct() method
-#: wp-includes/functions.php:3904
+#: wp-includes/functions.php:3905
 msgid "The called constructor method for %1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "Позвана метода конструктора за %1$s је <strong>застарела</strong> почев од издања %2$s! Уместо тога користите %3$s."
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:41
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:50
 msgid "Add or remove menu items"
 msgstr "Додај или уклони ставке изборника"
 
-#: wp-includes/class-wp-customize-nav-menus.php:562
+#: wp-includes/class-wp-customize-nav-menus.php:578
 msgid "Menus can be displayed in locations defined by your theme."
 msgstr "Изборници могу бити приказани на местима одређеним од стране ваше теме."
 
-#: wp-includes/class-wp-customize-nav-menus.php:440
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:44
+#: wp-includes/class-wp-customize-nav-menus.php:456
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:53
 msgid "Reorder menu items"
 msgstr "Промени редослед ставки изборника"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:49
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:58
 msgid "When in reorder mode, additional controls to reorder menu items will be available in the items list above."
 msgstr "Када је у режиму промене редоследа, додатне контроле ставки изборника које мењају редослед биће доступне у списку ставки изнад."
 
 #. translators: URL to the widgets panel of the customizer
-#: wp-includes/class-wp-customize-nav-menus.php:560
+#: wp-includes/class-wp-customize-nav-menus.php:576
 msgid "Menus can be displayed in locations defined by your theme or in <a href=\"%s\">widget areas</a> by adding a &#8220;Navigation Menu&#8221; widget."
 msgstr "Изборници могу бити приказани на местима одређеним од стране ваше теме или у <a href=\"%s\">виџетизованим просторима</a> додајући виџет &#0132;Прилагођени изборник&#0147;."
 
@@ -5362,8 +5373,8 @@ msgid "Cmd + letter:"
 msgstr "Cmd + слово:"
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:258
-#: wp-includes/widgets/class-wp-widget-text.php:464
-#: wp-includes/widgets/class-wp-widget-text.php:525
+#: wp-includes/widgets/class-wp-widget-text.php:485
+#: wp-includes/widgets/class-wp-widget-text.php:546
 msgid "Content:"
 msgstr "Садржај:"
 
@@ -5396,60 +5407,60 @@ msgstr "Прилагођавање"
 msgid "Menu Options"
 msgstr "Могућности изборника"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1104
+#: wp-includes/class-wp-customize-nav-menus.php:1120
 msgid "Add to Menu"
 msgstr "Додај у изборник"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1086
+#: wp-includes/class-wp-customize-nav-menus.php:1102
 msgid "Custom Links"
 msgstr "Прилагођене везе"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1001
+#: wp-includes/class-wp-customize-nav-menus.php:1017
 #: wp-includes/class-wp-customize-widgets.php:812
 #: wp-includes/customize/class-wp-customize-themes-section.php:119
 #: wp-includes/customize/class-wp-customize-themes-section.php:134
 msgid "The search results will be updated as you type."
 msgstr "Резултати претраге ће бити ажурирани како куцате."
 
-#: wp-includes/class-wp-customize-nav-menus.php:1000
+#: wp-includes/class-wp-customize-nav-menus.php:1016
 msgid "Search menu items&hellip;"
 msgstr "Претражи ставке изборника&hellip;"
 
-#: wp-includes/class-wp-customize-nav-menus.php:934
+#: wp-includes/class-wp-customize-nav-menus.php:950
 msgid "Move one level up"
 msgstr "Помери ниво изнад"
 
-#: wp-includes/class-wp-customize-nav-menus.php:935
+#: wp-includes/class-wp-customize-nav-menus.php:951
 msgid "Move one level down"
 msgstr "Помери ниво испод"
 
 #. translators: &#9656; is the unicode right-pointing triangle, and %s is the
 #. section title in the Customizer
-#: wp-includes/class-wp-customize-nav-menus.php:430
-#: wp-includes/class-wp-customize-nav-menus.php:991
+#: wp-includes/class-wp-customize-nav-menus.php:446
+#: wp-includes/class-wp-customize-nav-menus.php:1007
 #: wp-includes/class-wp-customize-section.php:230
 #: wp-includes/class-wp-customize-widgets.php:802
 msgid "Customizing &#9656; %s"
 msgstr "Прилагођавање &#9656; %s"
 
-#: wp-includes/class-wp-customize-nav-menus.php:994
+#: wp-includes/class-wp-customize-nav-menus.php:1010
 msgid "Add Menu Items"
 msgstr "Додај ставке изборника"
 
-#: wp-includes/class-wp-customize-nav-menus.php:417
+#: wp-includes/class-wp-customize-nav-menus.php:433
 msgid "Menu Locations"
 msgstr "Места изборника"
 
-#: wp-includes/class-wp-customize-nav-menus.php:999
+#: wp-includes/class-wp-customize-nav-menus.php:1015
 msgid "Search Menu Items"
 msgstr "Претражи ставке изборника"
 
-#: wp-includes/class-wp-customize-nav-menus.php:557
+#: wp-includes/class-wp-customize-nav-menus.php:573
 msgid "This panel is used for managing navigation menus for content you have already published on your site. You can create menus and add items for existing content such as pages, posts, categories, tags, formats, or custom links."
 msgstr "Ова табла се користи за управљање изборницима кретања за садржај који је већ објављен на вашем веб месту. Можете направити изборнике и додати ставке за постојећи садржај као што су стране, чланци, категорије, ознаке, облици или прилагођене везе."
 
 #. translators: %s: number of menu locations
-#: wp-includes/class-wp-customize-nav-menus.php:579
+#: wp-includes/class-wp-customize-nav-menus.php:595
 msgid "Your theme can display menus in %s location. Select which menu you would like to use."
 msgid_plural "Your theme can display menus in %s locations. Select which menu appears in each location."
 msgstr[0] "Ваша тема може да прикаже изборнике на %s месту. Изаберите који изборник желите да користите."
@@ -5457,102 +5468,103 @@ msgstr[1] "Ваша тема може да прикаже изборнике н�
 msgstr[2] "Ваша тема може да прикаже изборнике на %s места. Изаберите који изборник желите да користите."
 
 #. translators: 1: item name, 2: item position, 3: parent item name
-#: wp-includes/class-wp-customize-nav-menus.php:472
+#: wp-includes/class-wp-customize-nav-menus.php:488
 msgid "%1$s. Sub item number %2$d under %3$s."
 msgstr "%1$s. Број подставке %2$d испод %3$s."
 
 #. translators: 1: item name, 2: item position, 3: total number of items
-#: wp-includes/class-wp-customize-nav-menus.php:470
+#: wp-includes/class-wp-customize-nav-menus.php:486
 msgid "%1$s. Menu item %2$d of %3$d."
 msgstr "%1$s. Ставка изборника %2$d oд %3$d."
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:468
+#: wp-includes/class-wp-customize-nav-menus.php:484
 msgid "Out from under %s"
 msgstr "Од испод %s"
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:466
+#: wp-includes/class-wp-customize-nav-menus.php:482
 msgid "Under %s"
 msgstr "Испод %s"
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:464
+#: wp-includes/class-wp-customize-nav-menus.php:480
 msgid "Move out from under %s"
 msgstr "Помери од испод %s"
 
 #. translators: %s: previous item name
-#: wp-includes/class-wp-customize-nav-menus.php:462
+#: wp-includes/class-wp-customize-nav-menus.php:478
 msgid "Move under %s"
 msgstr "Помери испод %s"
 
-#: wp-includes/class-wp-customize-nav-menus.php:460
+#: wp-includes/class-wp-customize-nav-menus.php:476
 msgid "Move to the top"
 msgstr "Помери на врх"
 
-#: wp-includes/class-wp-customize-nav-menus.php:459
+#: wp-includes/class-wp-customize-nav-menus.php:475
 msgid "Move down one"
 msgstr "Помери надоле за једно место"
 
-#: wp-includes/class-wp-customize-nav-menus.php:458
+#: wp-includes/class-wp-customize-nav-menus.php:474
 msgid "Move up one"
 msgstr "Помери нагоре за једно место"
 
-#: wp-includes/class-wp-customize-nav-menus.php:437
+#: wp-includes/class-wp-customize-nav-menus.php:453
 msgid "Loading more results... please wait."
 msgstr "Учитавање још резултата... Молимо вас да сачекате."
 
-#: wp-includes/class-wp-customize-nav-menus.php:435
+#: wp-includes/class-wp-customize-nav-menus.php:451
 msgid "Number of items found: %d"
 msgstr "Број пронађених ставки: %d"
 
-#: wp-includes/class-wp-customize-nav-menus.php:436
+#: wp-includes/class-wp-customize-nav-menus.php:452
 msgid "Additional items found: %d"
 msgstr "Додатне пронађене ставке: %d"
 
 #. translators: %s: title of menu item in draft status
-#: wp-includes/class-wp-customize-nav-menus.php:434
+#: wp-includes/class-wp-customize-nav-menus.php:450
 msgid "%s (Pending)"
 msgstr "%s (чека)"
 
 #. translators: %s: title of menu item which is invalid
-#: wp-includes/class-wp-customize-nav-menus.php:432
+#: wp-includes/class-wp-customize-nav-menus.php:448
 msgid "%s (Invalid)"
 msgstr "%s (неисправно)"
 
-#: wp-includes/class-wp-customize-nav-menus.php:424
+#: wp-includes/class-wp-customize-nav-menus.php:440
 msgid "Menu deleted"
 msgstr "Изборник је обрисан"
 
-#: wp-includes/class-wp-customize-nav-menus.php:423
+#: wp-includes/class-wp-customize-nav-menus.php:439
 msgid "Menu created"
 msgstr "Изборник је направљен"
 
-#: wp-includes/class-wp-customize-nav-menus.php:421
+#: wp-includes/class-wp-customize-nav-menus.php:437
 msgid "Menu item added"
 msgstr "Ставка изборника је додата"
 
-#: wp-includes/class-wp-customize-nav-menus.php:422
+#: wp-includes/class-wp-customize-nav-menus.php:438
 msgid "Menu item deleted"
 msgstr "Ставка изборника је обрисана"
 
-#: wp-includes/class-wp-customize-nav-menus.php:428
+#: wp-includes/class-wp-customize-nav-menus.php:444
 msgid "Menu item is now a sub-item"
 msgstr "Ставка изборника је сада подставка"
 
-#: wp-includes/class-wp-customize-nav-menus.php:426
+#: wp-includes/class-wp-customize-nav-menus.php:442
 msgid "Menu item moved down"
 msgstr "Ставка изборника је померена надоле"
 
-#: wp-includes/class-wp-customize-nav-menus.php:427
+#: wp-includes/class-wp-customize-nav-menus.php:443
 msgid "Menu item moved out of submenu"
 msgstr "Ставка изборника је померена из подизборника"
 
-#: wp-includes/class-wp-customize-nav-menus.php:425
+#: wp-includes/class-wp-customize-nav-menus.php:441
 msgid "Menu item moved up"
 msgstr "Ставка изборника је померена нагоре"
 
 #: wp-includes/class-wp-customize-nav-menus.php:153
+#: wp-includes/class-wp-customize-nav-menus.php:375
 msgctxt "nav menu home label"
 msgid "Home"
 msgstr "Почетак"
@@ -5597,15 +5609,15 @@ msgstr "Натпис за кретање"
 msgid "Automatically add new top-level pages to this menu"
 msgstr "Аутоматски додај нове стране највишег нивоа овом изборнику"
 
-#: wp-includes/class-wp-customize-nav-menus.php:417
+#: wp-includes/class-wp-customize-nav-menus.php:433
 msgid "Menu Location"
 msgstr "Место изборника"
 
-#: wp-includes/class-wp-customize-nav-menus.php:944
+#: wp-includes/class-wp-customize-nav-menus.php:960
 msgid "Delete Menu"
 msgstr "Обриши изборник"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:42
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:38
 msgid "Add Items"
 msgstr "Додај ставке"
 
@@ -5742,7 +5754,8 @@ msgid "<strong>Could not find site %1$s.</strong> Searched for table %2$s in dat
 msgstr "<strong>Није могуће пронаћи веб место %1$s.</strong> Претрага за табелу %2$s у бази података %3$s. Да ли је то тачно?"
 
 #: wp-includes/class-wp-customize-nav-menus.php:155
-#: wp-includes/class-wp-customize-nav-menus.php:413
+#: wp-includes/class-wp-customize-nav-menus.php:382
+#: wp-includes/class-wp-customize-nav-menus.php:429
 #: wp-includes/customize/class-wp-customize-nav-menu-item-setting.php:322
 #: wp-includes/nav-menu.php:821
 msgid "Custom Link"
@@ -5867,7 +5880,7 @@ msgstr[2] "%1$s коментара<span class=\"screen-reader-text\"> на %2$s<
 msgid "No Comments<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Нема коментара<span class=\"screen-reader-text\"> на %s</span>"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1099
+#: wp-includes/class-wp-customize-nav-menus.php:1115
 #: wp-includes/class-wp-editor.php:1704 wp-includes/media-template.php:820
 msgid "Link Text"
 msgstr "Текст везе"
@@ -5938,7 +5951,7 @@ msgstr "Морате доделити низ врста."
 
 #. translators: %s: database access abstraction class, usually wpdb or a class
 #. extending wpdb
-#: wp-includes/wp-db.php:1117
+#: wp-includes/wp-db.php:1110
 msgid "%s must set a database connection for use with escaping."
 msgstr "%s мора да подеси везу ка бази података без промене."
 
@@ -6255,7 +6268,7 @@ msgstr "Одустани од одабира"
 msgid "Delete Selected"
 msgstr "Обриши одабрано"
 
-#: wp-includes/class-wp-customize-nav-menus.php:411
+#: wp-includes/class-wp-customize-nav-menus.php:427
 #: wp-includes/script-loader.php:888
 msgctxt "missing menu item navigation label"
 msgid "(no label)"
@@ -6397,8 +6410,8 @@ msgstr "Прилагођавате %s"
 msgid "Widgets are independent sections of content that can be placed into widgetized areas provided by your theme (commonly called sidebars)."
 msgstr "Виџети су независни одељци садржаја коју могу бити стављени у просторима за виџете које омогућује ваша тема (често названи и бочне траке)."
 
-#: wp-includes/update.php:154 wp-includes/update.php:346
-#: wp-includes/update.php:524
+#: wp-includes/update.php:154 wp-includes/update.php:356
+#: wp-includes/update.php:538
 msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
 msgstr "(Вордпрес није могао да успостави безбедну везу са WordPress.org. Молимо вас да контактирате свог управника сервера.)"
 
@@ -6969,7 +6982,7 @@ msgstr "Додај у списак видео записа"
 msgid "Add to Video Playlist"
 msgstr "Додај у списак видео записа"
 
-#: wp-includes/class-wp-customize-nav-menus.php:985
+#: wp-includes/class-wp-customize-nav-menus.php:1001
 #: wp-includes/class-wp-customize-panel.php:359
 #: wp-includes/class-wp-customize-section.php:350
 #: wp-includes/class-wp-customize-widgets.php:797
@@ -6991,7 +7004,7 @@ msgstr "Прескочи опсецање"
 msgid "Crop your image"
 msgstr "Исеци своју слику"
 
-#: wp-includes/wp-db.php:1237
+#: wp-includes/wp-db.php:1230
 msgid "The query argument of %s must have a placeholder."
 msgstr "Аргумент упита %s мора имати држач места."
 
@@ -7055,12 +7068,12 @@ msgstr "Предложено"
 msgid "Add a Widget"
 msgstr "Додај виџет"
 
-#: wp-includes/class-wp-customize-nav-menus.php:933
+#: wp-includes/class-wp-customize-nav-menus.php:949
 #: wp-includes/class-wp-customize-widgets.php:684
 msgid "Move down"
 msgstr "Помери надоле"
 
-#: wp-includes/class-wp-customize-nav-menus.php:932
+#: wp-includes/class-wp-customize-nav-menus.php:948
 #: wp-includes/class-wp-customize-widgets.php:685
 msgid "Move up"
 msgstr "Помери нагоре"
@@ -7262,7 +7275,7 @@ msgstr "Разликуј мала и велика слова"
 msgid "Paste your embed code below:"
 msgstr "Испод унесите свој код угнежђивања:"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:45
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:54
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:60
 msgid "Reorder"
 msgstr "Промени редослед"
@@ -7276,9 +7289,9 @@ msgid "New window"
 msgstr "Нови прозор"
 
 #: wp-includes/admin-bar.php:164 wp-includes/update.php:153
-#: wp-includes/update.php:345 wp-includes/update.php:523
-#: wp-includes/wp-db.php:1069 wp-includes/wp-db.php:1602
-#: wp-includes/wp-db.php:1760 wp-login.php:882
+#: wp-includes/update.php:355 wp-includes/update.php:537
+#: wp-includes/wp-db.php:1062 wp-includes/wp-db.php:1595
+#: wp-includes/wp-db.php:1753 wp-login.php:882
 msgid "https://wordpress.org/support/"
 msgstr "https://sr.wordpress.org/support/"
 
@@ -7286,22 +7299,22 @@ msgstr "https://sr.wordpress.org/support/"
 msgid "Finnish"
 msgstr "Фински"
 
-#: wp-includes/general-template.php:3910
+#: wp-includes/general-template.php:3912
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "Излазак сунца"
 
-#: wp-includes/general-template.php:3916
+#: wp-includes/general-template.php:3918
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "Ектоплазма"
 
-#: wp-includes/general-template.php:3922
+#: wp-includes/general-template.php:3924
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "Океан"
 
-#: wp-includes/general-template.php:3928
+#: wp-includes/general-template.php:3930
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "Кафа"
@@ -7358,12 +7371,12 @@ msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#: wp-includes/general-template.php:3892
+#: wp-includes/general-template.php:3894
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "Светла"
 
-#: wp-includes/general-template.php:3904
+#: wp-includes/general-template.php:3906
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "Поноћ"
@@ -7380,14 +7393,14 @@ msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "cyrillic"
 
-#: wp-includes/general-template.php:3881
+#: wp-includes/general-template.php:3883
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "Подразумевана"
 
 #. translators: %s: support forums URL
-#: wp-includes/update.php:152 wp-includes/update.php:344
-#: wp-includes/update.php:522
+#: wp-includes/update.php:152 wp-includes/update.php:354
+#: wp-includes/update.php:536
 msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support forums</a>."
 msgstr "Догодила се неочекивана грешка. Можда нешто није у реду са WordPress.org или са поставком овог сервера. Уколико наставите да имате проблеме, молимо вас да покушате са <a href=\"%s\">форумима подршке</a>."
 
@@ -7395,7 +7408,7 @@ msgstr "Догодила се неочекивана грешка. Можда н
 msgid "Menu"
 msgstr "Изборник"
 
-#: wp-includes/update.php:629
+#: wp-includes/update.php:643
 msgid "Translation Updates"
 msgstr "Ажурирања превода"
 
@@ -7576,7 +7589,7 @@ msgstr "%2$s %1$s %3$s у %4$s:%5$s"
 msgid "The site you were looking for, %s, does not exist, but you can create it now!"
 msgstr "Веб место које сте тражили, %s, не постоји, али га сада можете направити!"
 
-#: wp-includes/functions.php:5329
+#: wp-includes/functions.php:5330
 msgid "The login page will open in a new window. After logging in you can close it and return to this page."
 msgstr "Страница за пријављивање ће се отворити у новом прозору. Након пријављивања можете је затворити и вратити се на ову страницу."
 
@@ -7601,7 +7614,7 @@ msgctxt "submit button"
 msgid "Search"
 msgstr "Претражи"
 
-#: wp-includes/functions.php:5327 wp-includes/script-loader.php:568
+#: wp-includes/functions.php:5328 wp-includes/script-loader.php:568
 msgid "Session expired"
 msgstr "Сеанса је истекла"
 
@@ -8065,11 +8078,11 @@ msgstr "Текст"
 msgid "Skip to toolbar"
 msgstr "Скочи на траку са алаткама"
 
-#: wp-includes/class-wp-customize-manager.php:4941
+#: wp-includes/class-wp-customize-manager.php:4981
 msgid "Header Text Color"
 msgstr "Боја текста заглавља"
 
-#: wp-includes/class-wp-customize-manager.php:4918
+#: wp-includes/class-wp-customize-manager.php:4958
 msgid "Colors"
 msgstr "Боје"
 
@@ -8103,7 +8116,7 @@ msgstr "Жао нам је, не можете да залепите приват
 msgid "Sorry, you are not allowed to publish this page."
 msgstr "Жао нам је, није вам дозвољено да објавите ову страну."
 
-#: wp-includes/class-wp-customize-manager.php:4991
+#: wp-includes/class-wp-customize-manager.php:5031
 #: wp-includes/customize/class-wp-customize-header-image-control.php:31
 msgid "Header Image"
 msgstr "Слика у заглављу"
@@ -8148,15 +8161,15 @@ msgstr[0] "Име веб места мора да садржи најмање %s
 msgstr[1] "Име веб места мора да садржи најмање %s знака."
 msgstr[2] "Име веб места мора да садржи најмање %s знака."
 
-#: wp-includes/class-wp-customize-manager.php:5198
+#: wp-includes/class-wp-customize-manager.php:5238
 msgid "A static page"
 msgstr "Статична страница"
 
-#: wp-includes/class-wp-customize-manager.php:4956
+#: wp-includes/class-wp-customize-manager.php:4996
 msgid "Background Color"
 msgstr "Боја позадине"
 
-#: wp-includes/class-wp-customize-manager.php:5065
+#: wp-includes/class-wp-customize-manager.php:5105
 #: wp-includes/customize/class-wp-customize-background-image-control.php:30
 msgid "Background Image"
 msgstr "Слика у позадини"
@@ -8173,7 +8186,7 @@ msgstr "Уклони слику"
 msgid "Sorry, you are not allowed to edit this comment."
 msgstr "Жао нам је, није вам дозвољено да уређујете овај коментар."
 
-#: wp-includes/class-wp-customize-manager.php:5220
+#: wp-includes/class-wp-customize-manager.php:5260
 msgid "Posts page"
 msgstr "Страница чланака"
 
@@ -8181,7 +8194,7 @@ msgstr "Страница чланака"
 msgid "Allowed Files"
 msgstr "Дозвољене датотеке"
 
-#: wp-includes/class-wp-customize-manager.php:4900
+#: wp-includes/class-wp-customize-manager.php:4940
 #: wp-includes/class-wp-customize-widgets.php:753
 #: wp-includes/class-wp-editor.php:1258
 #: wp-includes/customize/class-wp-customize-media-control.php:226
@@ -8301,21 +8314,21 @@ msgid "The \"%s\" theme is not a valid parent theme."
 msgstr "Тема \"%s\" није исправна родитељска тема."
 
 #: wp-includes/class-wp-customize-control.php:586
-#: wp-includes/class-wp-customize-nav-menus.php:594
+#: wp-includes/class-wp-customize-nav-menus.php:610
 #: wp-includes/widgets/class-wp-nav-menu-widget.php:143
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; Изаберите &mdash;"
 
-#: wp-includes/class-wp-customize-manager.php:4843
+#: wp-includes/class-wp-customize-manager.php:4883
 msgid "Tagline"
 msgstr "Поднаслов"
 
-#: wp-includes/class-wp-customize-manager.php:5197
+#: wp-includes/class-wp-customize-manager.php:5237
 msgid "Your latest posts"
 msgstr "Ваши скорашњи чланци"
 
 #. translators: %s: document title from the preview
-#: wp-includes/class-wp-customize-manager.php:4332
+#: wp-includes/class-wp-customize-manager.php:4369
 msgid "Customize: %s"
 msgstr "Прилагоди: %s"
 
@@ -8486,7 +8499,7 @@ msgstr "Направи датотеку подешавања"
 msgid "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file."
 msgstr "Можете направити датотеку %s преко веб сучеља, али ово не ради на свим поставкама сервера. Најсигурнији начин је да ручно направите датотеку."
 
-#: wp-includes/class-wp-customize-manager.php:5231
+#: wp-includes/class-wp-customize-manager.php:5271
 msgid "https://codex.wordpress.org/CSS"
 msgstr "https://codex.wordpress.org/CSS"
 
@@ -8605,16 +8618,16 @@ msgstr "Документација"
 msgid "Support Forums"
 msgstr "Форуми подршке"
 
-#: wp-includes/formatting.php:3361 wp-includes/general-template.php:3800
+#: wp-includes/formatting.php:3361 wp-includes/general-template.php:3802
 msgid "&hellip;"
 msgstr "&hellip;"
 
-#: wp-includes/functions.php:3773
+#: wp-includes/functions.php:3774
 msgid "Database Error"
 msgstr "Грешка базе података"
 
-#: wp-includes/functions.php:3777 wp-includes/ms-load.php:455
-#: wp-includes/wp-db.php:1584
+#: wp-includes/functions.php:3778 wp-includes/ms-load.php:455
+#: wp-includes/wp-db.php:1577
 msgid "Error establishing a database connection"
 msgstr "Грешка у успостављању везе са базом података"
 
@@ -8667,7 +8680,7 @@ msgstr "Ова датотекa није слика. Молимо вас поку
 msgid "This is larger than the maximum size. Please try another."
 msgstr "Ово је веће од највеће дозвољене величине за отпремање. Молимо вас покушајте неку другу."
 
-#: wp-includes/general-template.php:3898
+#: wp-includes/general-template.php:3900
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Плава"
@@ -8792,13 +8805,13 @@ msgid "The user is already active."
 msgstr "Корисник је већ активан."
 
 #. translators: %s: version number
-#: wp-includes/functions.php:4139
+#: wp-includes/functions.php:4140
 msgid "(This message was added in version %s.)"
 msgstr "(Ова порука је додата у издању %s.)"
 
 #. translators: Developer debugging message. 1: PHP function name, 2:
 #. Explanatory message, 3: Version information message
-#: wp-includes/functions.php:4146
+#: wp-includes/functions.php:4147
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s је позван <strong>неправилно</strong>. %2$s %3$s"
 
@@ -9453,12 +9466,12 @@ msgid "This is the short link."
 msgstr "Ово је кратка веза."
 
 #. translators: 1: Number of updates available to WordPress
-#: wp-includes/update.php:618
+#: wp-includes/update.php:632
 msgid "%d WordPress Update"
 msgstr "%d Вордпресово ажурирање"
 
 #. translators: 1: Number of updates available to plugins
-#: wp-includes/update.php:622
+#: wp-includes/update.php:636
 msgid "%d Plugin Update"
 msgid_plural "%d Plugin Updates"
 msgstr[0] "Ажурирање %d додатка"
@@ -9466,7 +9479,7 @@ msgstr[1] "Ажурирање %d додатка"
 msgstr[2] "Ажурирање %d додатака"
 
 #. translators: 1: Number of updates available to themes
-#: wp-includes/update.php:626
+#: wp-includes/update.php:640
 msgid "%d Theme Update"
 msgid_plural "%d Theme Updates"
 msgstr[0] "Ажурирање %d теме"
@@ -9591,7 +9604,7 @@ msgid "Select Menu:"
 msgstr "Изабери изборник:"
 
 #: wp-includes/admin-bar.php:836
-#: wp-includes/class-wp-customize-nav-menus.php:565
+#: wp-includes/class-wp-customize-nav-menus.php:581
 #: wp-includes/customize/class-wp-customize-nav-menus-panel.php:98
 msgid "Menus"
 msgstr "Изборници"
@@ -9677,7 +9690,7 @@ msgstr "Или не постоје чланци или се нешто деси�
 msgid "Sorry, no such post."
 msgstr "Жао нам је, нема таквог чланка."
 
-#: wp-includes/class-wp-customize-nav-menus.php:789
+#: wp-includes/class-wp-customize-nav-menus.php:805
 #: wp-includes/class-wp-xmlrpc-server.php:1377
 #: wp-includes/class-wp-xmlrpc-server.php:1861
 #: wp-includes/class-wp-xmlrpc-server.php:3381
@@ -9732,12 +9745,12 @@ msgstr "Циљани URL не постоји."
 
 #. translators: 1: Database error message, 2: SQL query, 3: Name of the calling
 #. function
-#: wp-includes/wp-db.php:1370
+#: wp-includes/wp-db.php:1363
 msgid "WordPress database error %1$s for query %2$s made by %3$s"
 msgstr "Грешка Вордпрес базе %1$s за упит %2$s направљен од %3$s"
 
 #. translators: 1: Database error message, 2: SQL query
-#: wp-includes/wp-db.php:1373
+#: wp-includes/wp-db.php:1366
 msgid "WordPress database error %1$s for query %2$s"
 msgstr "Грешка Вордпрес базе %1$s за упит %2$s"
 
@@ -9941,31 +9954,31 @@ msgctxt "widgets"
 msgid "%1$s on %2$s"
 msgstr "%1$s на %2$s"
 
-#: wp-includes/widgets.php:1426
+#: wp-includes/widgets.php:1429
 msgid "Untitled"
 msgstr "Без наслова"
 
-#: wp-includes/widgets.php:1510
+#: wp-includes/widgets.php:1513
 msgid "Enter the RSS feed URL here:"
 msgstr "Унесите URL RSS довода овде:"
 
-#: wp-includes/widgets.php:1513
+#: wp-includes/widgets.php:1516
 msgid "Give the feed a title (optional):"
 msgstr "Дајте доводу наслов (необавезно):"
 
-#: wp-includes/widgets.php:1516
+#: wp-includes/widgets.php:1519
 msgid "How many items would you like to display?"
 msgstr "Колико ставки желите да прикажете?"
 
-#: wp-includes/widgets.php:1526
+#: wp-includes/widgets.php:1529
 msgid "Display item content?"
 msgstr "Прикажи садржај ставке?"
 
-#: wp-includes/widgets.php:1529
+#: wp-includes/widgets.php:1532
 msgid "Display item author if available?"
 msgstr "Прикажи аутора ставке уколико је доступно?"
 
-#: wp-includes/widgets.php:1532
+#: wp-includes/widgets.php:1535
 msgid "Display item date?"
 msgstr "Прикажи датум ставке?"
 
@@ -10049,28 +10062,28 @@ msgid "Could not write file %s"
 msgstr "Нисам могао да упишем датотеку %s"
 
 #. translators: %s: site name
-#: wp-includes/functions.php:2595
+#: wp-includes/functions.php:2596
 msgid "You are attempting to log out of %s"
 msgstr "Покушавате да се одјавите са %s"
 
-#: wp-includes/functions.php:2616
+#: wp-includes/functions.php:2617
 msgid "WordPress Failure Notice"
 msgstr "Вордпрес обавештење о грешци"
 
 #. translators: %s: logout URL
-#: wp-includes/functions.php:2602
+#: wp-includes/functions.php:2603
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
 msgstr "Да ли заиста желите да се <a href='%s'>одјавите</a>?"
 
-#: wp-includes/functions.php:2611 wp-includes/ms-functions.php:2047
+#: wp-includes/functions.php:2612 wp-includes/ms-functions.php:2047
 msgid "Please try again."
 msgstr "Молимо вас покушајте поново."
 
-#: wp-includes/functions.php:2736
+#: wp-includes/functions.php:2737
 msgid "&laquo; Back"
 msgstr "&laquo; Назад"
 
-#: wp-includes/functions.php:2748 wp-load.php:92
+#: wp-includes/functions.php:2749 wp-load.php:92
 msgid "WordPress &rsaquo; Error"
 msgstr "Вордпрес &rsaquo; Грешка"
 
@@ -10079,28 +10092,28 @@ msgstr "Вордпрес &rsaquo; Грешка"
 #. translators: 1: PHP file name, 2: version number, 3: alternative file name
 #. translators: 1: WordPress hook name, 2: version number, 3: alternative hook
 #. name
-#: wp-includes/functions.php:3838 wp-includes/functions.php:3966
-#: wp-includes/functions.php:4089
+#: wp-includes/functions.php:3839 wp-includes/functions.php:3967
+#: wp-includes/functions.php:4090
 msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 msgstr "%1$s је <strong>застарело</strong> почев од издања %2$s! Уместо тога користите %3$s."
 
 #. translators: 1: PHP function name, 2: version number
 #. translators: 1: PHP file name, 2: version number
 #. translators: 1: WordPress hook name, 2: version number
-#: wp-includes/functions.php:3841 wp-includes/functions.php:3969
-#: wp-includes/functions.php:4092
+#: wp-includes/functions.php:3842 wp-includes/functions.php:3970
+#: wp-includes/functions.php:4093
 msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s је <strong>застарело</strong> почев од издања %2$s и тренутно не постоји алтернатива."
 
-#: wp-includes/functions.php:4669
+#: wp-includes/functions.php:4670
 msgid "Select a city"
 msgstr "Изаберите град"
 
-#: wp-includes/functions.php:4714 wp-includes/functions.php:4718
+#: wp-includes/functions.php:4715 wp-includes/functions.php:4719
 msgid "UTC"
 msgstr "UTC"
 
-#: wp-includes/functions.php:4722
+#: wp-includes/functions.php:4723
 msgid "Manual Offsets"
 msgstr "Ручна одступања"
 
@@ -10183,11 +10196,11 @@ msgstr "%1$s %2$s довод за корисника %3$s"
 msgid "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed"
 msgstr "%1$s %2$s довод резултата претраге за &#132;%3$s&#147;"
 
-#: wp-includes/general-template.php:3714
+#: wp-includes/general-template.php:3716
 msgid "&laquo; Previous"
 msgstr "&laquo; Претходно"
 
-#: wp-includes/general-template.php:3715
+#: wp-includes/general-template.php:3717
 msgid "Next &raquo;"
 msgstr "Следеће &raquo;"
 
@@ -10477,7 +10490,7 @@ msgstr "Прецртано"
 msgid "Cut"
 msgstr "Исеци"
 
-#: wp-includes/class-wp-customize-manager.php:4165
+#: wp-includes/class-wp-customize-manager.php:4202
 #: wp-includes/class-wp-editor.php:1045
 msgid "Copy"
 msgstr "Умножи"
@@ -10726,7 +10739,7 @@ msgstr "Yahoo IM"
 msgid "Jabber / Google Talk"
 msgstr "Jabber / Google Talk"
 
-#: wp-includes/rss.php:917 wp-includes/widgets.php:1410
+#: wp-includes/rss.php:917 wp-includes/widgets.php:1413
 msgid "An error has occurred, which probably means the feed is down. Try again later."
 msgstr "Десила се грешка што вероватно значи да довод није доступан. Покушајте поново касније."
 
@@ -10878,7 +10891,7 @@ msgstr "<strong>Грешка</strong>: Поље за корисничко име
 msgid "<strong>ERROR</strong>: The password field is empty."
 msgstr "<strong>Грешка</strong>: Поље за лозинку је празно."
 
-#: wp-includes/functions.php:5328 wp-includes/user.php:285
+#: wp-includes/functions.php:5329 wp-includes/user.php:285
 msgid "Please log in again."
 msgstr "Молимо вас пријавите се поново."
 
@@ -10977,7 +10990,7 @@ msgstr "Одустани од одговора"
 msgid "Post Comment"
 msgstr "Предај коментар"
 
-#: wp-includes/widgets/class-wp-widget-text.php:468
+#: wp-includes/widgets/class-wp-widget-text.php:489
 msgid "Automatically add paragraphs"
 msgstr "Аутоматски додај пасусе"
 
@@ -11065,7 +11078,7 @@ msgstr "<strong>ГРЕШКА</strong>: Ваш налог је означен к�
 
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number
-#: wp-includes/wp-db.php:3318
+#: wp-includes/wp-db.php:3311
 msgid "<strong>ERROR</strong>: WordPress %1$s requires MySQL %2$s or higher"
 msgstr "<strong>ГРЕШКА</strong>: Вордпрес %1$s захтева MySQL %2$s или новији"
 
@@ -11090,7 +11103,7 @@ msgstr "Добијте сопствени %s налог за неколико с
 msgid "Just a username, please."
 msgstr "Само корисничко име, молим."
 
-#: wp-includes/class-wp-customize-nav-menus.php:951
+#: wp-includes/class-wp-customize-nav-menus.php:967
 #: wp-includes/script-loader.php:1129 wp-signup.php:562
 msgid "Next"
 msgstr "Следеће"
@@ -11126,12 +11139,12 @@ msgstr "Регистрација корисника је искључена."
 
 #. translators: 1: PHP function name, 2: version number, 3: optional message
 #. regarding the change
-#: wp-includes/functions.php:4030
+#: wp-includes/functions.php:4031
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s! %3$s"
 msgstr "%1$s је позван са предметом који је <strong>застарео</strong> почев од издања %2$s! %3$s"
 
 #. translators: 1: PHP function name, 2: version number
-#: wp-includes/functions.php:4033
+#: wp-includes/functions.php:4034
 msgid "%1$s was called with an argument that is <strong>deprecated</strong> since version %2$s with no alternative available."
 msgstr "%1$s је позван са предметом који је <strong>застарео</strong> почев од издања %2$s без доступне алтернативе."
 
@@ -11144,14 +11157,6 @@ msgstr "Предмет је промењен у низ да би се покла
 msgid "Approve it: %s"
 msgstr "Прихвати: %s"
 
-#. translators: Comment moderation. 1: Number of comments awaiting approval
-#: wp-includes/pluggable.php:1679
-msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
-msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
-msgstr[0] "Тренутно %s коментар чека на прихватање. Молимо вас да посетите таблу за преглед:"
-msgstr[1] "Тренутно %s коментара чекају на прихватање. Молимо вас да посетите таблу за преглед:"
-msgstr[2] "Тренутно %s коментара чека на прихватање. Молимо вас да посетите таблу за преглед:"
-
 #. translators: Comment moderation notification email subject. 1: Site name, 2:
 #. Post title
 #: wp-includes/pluggable.php:1684
@@ -11161,6 +11166,14 @@ msgstr "[%1$s] Молимо прегледајте: \"%2$s\""
 #: wp-includes/comment.php:241
 msgid "Unapproved"
 msgstr "Неприхваћен"
+
+#. translators: Comment moderation. 1: Number of comments awaiting approval
+#: wp-includes/pluggable.php:1679
+msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
+msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
+msgstr[0] "Тренутно %s коментар чека на прихватање. Молимо вас да посетите таблу за преглед:"
+msgstr[1] "Тренутно %s коментара чекају на прихватање. Молимо вас да посетите таблу за преглед:"
+msgstr[2] "Тренутно %s коментара чека на прихватање. Молимо вас да посетите таблу за преглед:"
 
 #: wp-includes/deprecated.php:64
 msgid "new WordPress Loop"
@@ -11236,8 +11249,8 @@ msgstr "Доле лево"
 msgid "Bottom Right"
 msgstr "Доле лево"
 
-#: wp-includes/class-wp-customize-manager.php:5095
-#: wp-includes/class-wp-customize-manager.php:5136
+#: wp-includes/class-wp-customize-manager.php:5135
+#: wp-includes/class-wp-customize-manager.php:5176
 msgid "Fill Screen"
 msgstr "Попуњавање екрана"
 
@@ -11421,7 +11434,7 @@ msgstr "Облик времена"
 msgid "Height"
 msgstr "Висина"
 
-#: wp-includes/class-wp-customize-manager.php:4901
+#: wp-includes/class-wp-customize-manager.php:4941
 #: wp-includes/customize/class-wp-customize-color-control.php:51
 #: wp-includes/customize/class-wp-customize-media-control.php:225
 #: wp-includes/customize/class-wp-customize-media-control.php:235
@@ -11430,6 +11443,14 @@ msgstr "Висина"
 #: wp-includes/script-loader.php:853
 msgid "Default"
 msgstr "Подразумевано"
+
+#: wp-includes/taxonomy.php:517
+msgid "Separate tags with commas"
+msgstr "Одвојите више ознака запетама"
+
+#: wp-includes/comment-template.php:2203
+msgid "Website"
+msgstr "Веб место"
 
 #: wp-includes/widgets/class-wp-nav-menu-widget.php:137
 #: wp-includes/widgets/class-wp-widget-archives.php:160
@@ -11443,25 +11464,17 @@ msgstr "Подразумевано"
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:135
 #: wp-includes/widgets/class-wp-widget-search.php:70
 #: wp-includes/widgets/class-wp-widget-tag-cloud.php:126
-#: wp-includes/widgets/class-wp-widget-text.php:453
-#: wp-includes/widgets/class-wp-widget-text.php:486
+#: wp-includes/widgets/class-wp-widget-text.php:474
+#: wp-includes/widgets/class-wp-widget-text.php:507
 msgid "Title:"
 msgstr "Наслов:"
-
-#: wp-includes/taxonomy.php:517
-msgid "Separate tags with commas"
-msgstr "Одвојите више ознака запетама"
-
-#: wp-includes/comment-template.php:2203
-msgid "Website"
-msgstr "Веб место"
 
 #: wp-login.php:699
 msgid "Strength indicator"
 msgstr "Показивач јачине"
 
 #: wp-includes/admin-bar.php:830 wp-includes/class-wp-customize-widgets.php:412
-#: wp-includes/functions.php:3714
+#: wp-includes/functions.php:3715
 msgid "Widgets"
 msgstr "Виџети"
 
@@ -11591,7 +11604,7 @@ msgstr "Први чланак"
 msgid "Sites"
 msgstr "Веб места"
 
-#: wp-includes/class-wp-customize-manager.php:4832
+#: wp-includes/class-wp-customize-manager.php:4872
 #: wp-includes/class-wp-xmlrpc-server.php:540
 msgid "Site Title"
 msgstr "Наслов веб места"
@@ -11643,7 +11656,7 @@ msgstr "Светла"
 msgid "Purple"
 msgstr "Љубичаста"
 
-#: wp-includes/category-template.php:1139
+#: wp-includes/category-template.php:1131
 msgid "Tags: "
 msgstr "Ознаке: "
 
@@ -11686,7 +11699,7 @@ msgstr "Опис"
 msgid "Author"
 msgstr "Аутор"
 
-#: wp-includes/class-wp-customize-nav-menus.php:1095
+#: wp-includes/class-wp-customize-nav-menus.php:1111
 #: wp-includes/class-wp-editor.php:1136 wp-includes/class-wp-editor.php:1700
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:86
 #: wp-includes/media-template.php:376 wp-includes/media-template.php:557
@@ -11722,7 +11735,7 @@ msgstr "Врати"
 msgid "Comments"
 msgstr "Коментари"
 
-#: wp-includes/class-wp-customize-manager.php:4578
+#: wp-includes/class-wp-customize-manager.php:4617
 #: wp-includes/script-loader.php:549 wp-includes/script-loader.php:689
 msgid "Publish"
 msgstr "Објави"
@@ -11782,7 +11795,7 @@ msgstr "Додај нови"
 msgid "Users"
 msgstr "Корисници"
 
-#: wp-includes/customize/class-wp-customize-nav-menu-control.php:46
+#: wp-includes/customize/class-wp-customize-nav-menu-control.php:55
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:61
 #: wp-includes/script-loader.php:879
 msgid "Done"
@@ -11796,7 +11809,7 @@ msgstr "Анонимни"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/class-wp-customize-manager.php:4119
+#: wp-includes/class-wp-customize-manager.php:4156
 #: wp-includes/class-wp-editor.php:1119 wp-includes/media-template.php:1247
 msgid "Preview"
 msgstr "Преглед"
@@ -11820,7 +11833,7 @@ msgstr "Одустани"
 msgid "Content"
 msgstr "Садржај"
 
-#: wp-includes/class-wp-customize-manager.php:4583
+#: wp-includes/class-wp-customize-manager.php:4622
 #: wp-includes/script-loader.php:551 wp-includes/script-loader.php:693
 msgid "Save Draft"
 msgstr "Сачувај нацрт"
@@ -11981,7 +11994,7 @@ msgid "Add or remove tags"
 msgstr "Додај или уклони ознаке"
 
 #: wp-includes/class-wp-customize-control.php:634
-#: wp-includes/class-wp-customize-nav-menus.php:1065
+#: wp-includes/class-wp-customize-nav-menus.php:1081
 msgid "Add"
 msgstr "Додај"
 
@@ -12014,7 +12027,7 @@ msgstr "Везе"
 msgid "Uncategorized"
 msgstr "Некатегоризовано"
 
-#: wp-includes/class-wp-customize-manager.php:5261
+#: wp-includes/class-wp-customize-manager.php:5301
 #: wp-includes/class-wp-editor.php:1053 wp-includes/class-wp-editor.php:1695
 #: wp-includes/script-loader.php:277 wp-includes/script-loader.php:371
 #: wp-includes/script-loader.php:562 wp-includes/script-loader.php:1125
@@ -12051,7 +12064,7 @@ msgstr "Уреди чланак"
 msgid "Number of comments to show:"
 msgstr "Број коментара за приказ:"
 
-#: wp-includes/deprecated.php:3130 wp-includes/functions.php:2606
+#: wp-includes/deprecated.php:3130 wp-includes/functions.php:2607
 msgid "Are you sure you want to do this?"
 msgstr "Да ли сигурно желите да урадите ово?"
 
@@ -12069,10 +12082,10 @@ msgstr "Пуна величина"
 msgid "Revisions"
 msgstr "Ревизије"
 
-#: wp-includes/class-wp-customize-manager.php:4090
+#: wp-includes/class-wp-customize-manager.php:4129
 #: wp-includes/script-loader.php:146 wp-includes/script-loader.php:307
-#: wp-includes/widgets/class-wp-widget-text.php:500
-#: wp-includes/widgets/class-wp-widget-text.php:515
+#: wp-includes/widgets/class-wp-widget-text.php:521
+#: wp-includes/widgets/class-wp-widget-text.php:536
 msgid "Dismiss"
 msgstr "Одбаци"
 
