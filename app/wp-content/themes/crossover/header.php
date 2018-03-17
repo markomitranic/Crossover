@@ -7,6 +7,14 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="HandheldFriendly" content="true">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115643718-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-115643718-1');
+	</script>
     <?php wp_head(); ?>
     <?php get_template_part('header-social'); ?>
 </head>
