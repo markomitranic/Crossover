@@ -8,6 +8,8 @@ the_post();
 
 ?>
 
+<?php get_template_part('_Partials/news-popup'); ?>
+
 <main id="applepro">
     <section id="hero">
         <div class="wrapper">

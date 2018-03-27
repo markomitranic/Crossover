@@ -8,6 +8,8 @@ the_post();
 
 ?>
 
+<?php get_template_part('_Partials/news-popup'); ?>
+
 <main id="signup">
 
     <section id="contact-form">

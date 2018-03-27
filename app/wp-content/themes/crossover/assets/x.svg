@@ -1,0 +1,23 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>x</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-348 283)">
+<g id="x" filter="url(#filter0_d)">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(352 -279)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="348" y="-283" width="24" height="24" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" fill-rule="evenodd" d="M 6.91307 7.98607L 0.208069 1.28107C 0.0720387 1.13752 -0.00259035 0.946542 6.8693e-05 0.748795C 0.00272773 0.551048 0.0824649 0.362147 0.222306 0.222306C 0.362147 0.0824649 0.551048 0.00272773 0.748795 6.8693e-05C 0.946542 -0.00259035 1.13752 0.0720387 1.28107 0.208069L 7.98607 6.91307L 14.6911 0.208069C 14.8346 0.0720387 15.0256 -0.00259035 15.2233 6.8693e-05C 15.4211 0.00272773 15.61 0.0824649 15.7498 0.222306C 15.8897 0.362147 15.9694 0.551048 15.9721 0.748795C 15.9747 0.946542 15.9001 1.13752 15.7641 1.28107L 9.05907 7.98607L 15.7641 14.6911C 15.9001 14.8346 15.9747 15.0256 15.9721 15.2233C 15.9694 15.4211 15.8897 15.61 15.7498 15.7498C 15.61 15.8897 15.4211 15.9694 15.2233 15.9721C 15.0256 15.9747 14.8346 15.9001 14.6911 15.7641L 7.98607 9.05907L 1.28107 15.7641C 1.13752 15.9001 0.946542 15.9747 0.748795 15.9721C 0.551048 15.9694 0.362147 15.8897 0.222306 15.7498C 0.0824649 15.61 0.00272773 15.4211 6.8693e-05 15.2233C -0.00259035 15.0256 0.0720387 14.8346 0.208069 14.6911L 6.91307 7.98607Z"/>
+</defs>
+</svg>

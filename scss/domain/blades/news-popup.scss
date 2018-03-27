@@ -1,0 +1,291 @@
+aside#news-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 150;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  #wrapper {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    max-height: 90vh;
+    overflow: scroll;
+    box-sizing: border-box;
+    background-color: $black20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+
+    @include media(768px) {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      transform: none;
+      max-width: initial;
+      max-height: initial;
+      height: auto;
+      width: auto;
+    }
+
+    #exit-button {
+      display: block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-image: url("../assets/x.svg");
+      background-size: contain;
+      cursor: pointer;
+      background-color: $black40;
+      border-radius: 50%;
+      border: 3px solid $black40;
+      transition: background-color 0.2s ease-out, border 0.2s ease-out;
+
+      &:hover {
+        background-color: $black60;
+        border-color: $black60;
+      }
+    }
+
+    & > p {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 40px 0 0;
+      margin: 0;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .slide-wrapper {
+      margin-top: 20px;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+
+      @include media(768px) {
+        flex-direction: column;
+      }
+
+      .left {
+        flex: 1;
+        margin-right: 10px;
+
+        @include media(768px) {
+          flex: none;
+          margin: 0 0 10px 0;
+        }
+
+        .slide-big {
+          position: relative;
+          border-radius: 4px;
+          min-height: 300px;
+          padding: 15px 10px;
+          box-sizing: border-box;
+          overflow: hidden;
+          background-color: $black40;
+          background-image: url(http://crossover.rs/wp-content/themes/crossover/assets/images/hero-arkit.jpg);
+          background-size: cover;
+          color: $black0;
+          background-position: center center;
+
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black100, 0.3);
+            transition: background-color 0.2s ease-out;
+          }
+          &:hover::after {
+            background-color: rgba($black100, 0.7);
+          }
+
+          .content {
+            z-index: 2;
+            position: relative;
+            
+            .description {
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: bold;
+              padding: 0;
+              margin: 0;
+              text-shadow: 0 0 4px rgba($black100, 0.4);
+            }
+            h1 {
+              padding: 0;
+              margin: 10px 0 0 0;
+              font-size: 18px;
+              font-weight: 400;
+              text-shadow: 0 0 4px rgba($black100, 0.4);
+            }
+          }
+          .button {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 2;
+            color: $black0;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            background-color: $orange;
+            padding: 15px 25px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease-out;
+            text-align: center;
+
+            &:hover {
+              background-color: darken($orange, 10);
+            }
+          }
+        }
+      }
+      .right {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        @include media(768px) {
+          width: 100%;
+        }
+
+        .slide-small {
+          flex: 1;
+          position: relative;
+          border-radius: 4px;
+          overflow: hidden;
+          background-color: $black40;
+          background-image: url(http://crossover.rs/wp-content/themes/crossover/assets/images/hero-arkit.jpg);
+          background-size: cover;
+          color: $black0;
+          background-position: center center;
+
+          &:nth-child(1) {
+            margin-bottom: 5px;
+          }
+          &:nth-child(2) {
+            margin-top: 5px;
+          }
+
+          .card-link {
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            min-height: 100%;
+            background-color: rgba($black100, 0.3);
+            transition: background-color 0.2s ease-out;
+            color: $black0;
+            text-decoration: none;
+
+            @include media(768px) {
+              min-height: 145px;
+            }
+
+            &:hover {
+              background-color: rgba($black100, 0.7);
+            }
+
+            .description {
+              text-transform: uppercase;
+              font-size: 12px;
+              font-weight: bold;
+              padding: 0;
+              margin: 0;
+              text-shadow: 0 0 4px rgba($black100, 0.4);
+            }
+            h1 {
+              padding: 0;
+              margin: 5px 0 0 0;
+              font-size: 18px;
+              font-weight: 400;
+              text-shadow: 0 0 4px rgba($black100, 0.4);
+            }
+          }
+        }
+      }
+    }
+    .cta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      min-height: 72px;
+      margin-top: 10px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: $black80;
+      color: $black0;
+      padding: 10px;
+
+      @include media(768px) {
+        flex-direction: column;
+      }
+
+      .call-to-action-text {
+        flex: 1;
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-shadow: 0 0 4px rgba($black100, 0.4);
+
+        @include media(768px) {
+          margin-bottom: 10px;
+        }
+      }
+      .button {
+        width: 170px;
+        color: $black0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: $green-light;
+        padding: 15px 25px;
+        border-radius: 4px;
+        text-align: center;
+        transition: background-color 0.2s ease-out;
+
+        &:hover {
+          background-color: darken($green-light, 10);
+        }
+      }
+    }
+  }
+  #curtain {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(26,25,21,0.7);
+    z-index: -1;
+  }
+}

@@ -9,6 +9,7 @@ const scssInput = [
     ],
     vendorInput = [
         'scripts/vendor/jquery-3.2.1.min.js',
+        'scripts/vendor/ag-cookie.js',
         'scripts/vendor/EasePack.min.js',
         'scripts/vendor/rAF.js',
         'scripts/vendor/TweenLite.min.js',

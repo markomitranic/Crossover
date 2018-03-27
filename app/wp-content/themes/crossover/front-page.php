@@ -3,6 +3,8 @@
 get_header();
 ?>
 
+<?php get_template_part('_Partials/news-popup'); ?>
+
 <main id="homepage">
     <section id="hero">
         <canvas id="homepage-canvas"></canvas>

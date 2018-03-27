@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.9.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-02-05 20:36:31+0000\n"
+"PO-Revision-Date: 2018-03-25 20:12:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,6 +35,22 @@ msgstr "."
 #: wp-includes/class-wp-locale.php:220
 msgid "number_format_decimal_point"
 msgstr ","
+
+#: wp-includes/class-wp-customize-manager.php:450
+#: wp-includes/class-wp-xmlrpc-server.php:3689 wp-includes/functions.php:2617
+#: wp-includes/script-loader.php:133 wp-includes/script-loader.php:565
+#: wp-includes/script-loader.php:645 wp-includes/script-loader.php:839
+msgid "Something went wrong."
+msgstr "Нешто је кренуло по злу."
+
+#: wp-includes/functions.php:2607
+msgid "The link you followed has expired."
+msgstr "Веза коју сте пратили је истекла."
+
+#: wp-includes/class-wp-customize-manager.php:515
+#: wp-includes/script-loader.php:566
+msgid "You need a higher level of permission."
+msgstr "Потребан вам је виши ниво дозволе."
 
 #. translators: %s: User who is customizing the changeset in customizer.
 #: wp-includes/class-wp-customize-manager.php:3970
@@ -70,7 +86,7 @@ msgid "%1$s is not a valid property of Object."
 msgstr "%1$s није ваљана особина објекта."
 
 #. translators: %s: URL to Add Themes admin screen
-#: wp-includes/script-loader.php:601
+#: wp-includes/script-loader.php:602
 msgid "You won&#8217;t be able to install new themes from here yet since your install requires SFTP credentials. For now, please <a href=\"%s\">add themes in the admin</a>."
 msgstr "Још увек нећете моћи да постављате нове теме овде јер ваша поставка захтева SFTP приступне податке. За сада, молимо вас да <a href=\"%s\">додате теме у управљачком делу</a>."
 
@@ -100,7 +116,7 @@ msgctxt "customizer changeset action/button label"
 msgid "Schedule"
 msgstr "Закажи"
 
-#: wp-includes/script-loader.php:690
+#: wp-includes/script-loader.php:691
 msgctxt "post action/button label"
 msgid "Schedule"
 msgstr "Закажи"
@@ -125,7 +141,7 @@ msgstr "Додајте изборник кретрања својој бочно
 
 #. translators: %s: Display name of the user who has taken over the changeset
 #. in customizer.
-#: wp-includes/script-loader.php:578
+#: wp-includes/script-loader.php:579
 msgid "%s has taken over and is currently customizing."
 msgstr "%s је преузео и тренутно прилагођава."
 
@@ -147,7 +163,7 @@ msgstr "Скуп промена уређује други корисник."
 msgid "Go back"
 msgstr "Иди назад"
 
-#: wp-includes/script-loader.php:572
+#: wp-includes/script-loader.php:573
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "Изгледа да је нешто пошло по злу. Сачекајте пар секунди а затим покушајте поново."
 
@@ -340,32 +356,32 @@ msgstr "&larr; Назад на категорије"
 msgid "&larr; Back to Link Categories"
 msgstr "&larr; Назад на категорије веза"
 
-#: wp-includes/script-loader.php:856
+#: wp-includes/script-loader.php:857
 msgid "Color value"
 msgstr "Вредност боје"
 
-#: wp-includes/script-loader.php:852
+#: wp-includes/script-loader.php:853
 msgid "Clear color"
 msgstr "Очисти боју"
 
-#: wp-includes/script-loader.php:798
+#: wp-includes/script-loader.php:799
 msgid "Installation Failed!"
 msgstr "Постављање није успело!"
 
-#: wp-includes/script-loader.php:590
+#: wp-includes/script-loader.php:591
 msgid "Homepage and posts page must be different."
 msgstr "Почетна страница и страница чланака морају бити различите."
 
-#: wp-includes/script-loader.php:597
+#: wp-includes/script-loader.php:598
 msgid "Schedule your customization changes to publish (\"go live\") at a future date."
 msgstr "Закажите своје промене прилагођавања да се објаве у будућности."
 
-#: wp-includes/script-loader.php:598
+#: wp-includes/script-loader.php:599
 msgid "Sorry, you can&#8217;t preview new themes when you have changes scheduled or saved as a draft. Please publish your changes, or wait until they publish to preview new themes."
 msgstr "Жао нам је, не можете да предпрегледате нове теме док имате заказане промене или сачуване као нацрт. Молимо вас да објавите своје промене или сачекате док су оне објављене да бисте предпрегледали нове теме."
 
 #. translators: %d: error count
-#: wp-includes/script-loader.php:586 wp-includes/script-loader.php:588
+#: wp-includes/script-loader.php:587 wp-includes/script-loader.php:589
 #: wp-includes/widgets/class-wp-widget-custom-html.php:217
 #: wp-includes/widgets/class-wp-widget-custom-html.php:219
 msgid "There is %d error which must be fixed before you can save."
@@ -475,7 +491,7 @@ msgid "Thai"
 msgstr "Тајландски"
 
 #. translators: %s: URL to the Customizer to load the autosaved version
-#: wp-includes/script-loader.php:580
+#: wp-includes/script-loader.php:581
 msgid "There is a more recent autosave of your changes than the one you are previewing. <a href=\"%s\">Restore the autosave</a>"
 msgstr "Постоји аутоматски снимљено издање ваших измена које је новије него издање предпрегледате. <a href=\"%s\">Поврати аутоматски снимљено издање</a>"
 
@@ -503,11 +519,11 @@ msgstr "Велшки"
 msgid "Yiddish"
 msgstr "Јидиш"
 
-#: wp-includes/script-loader.php:576
+#: wp-includes/script-loader.php:577
 msgid "Are you sure you&#8217;d like to discard your unpublished changes?"
 msgstr "Да ли сигурно желите да одбаците своје необјављене промене?"
 
-#: wp-includes/script-loader.php:573
+#: wp-includes/script-loader.php:574
 msgid "Downloading your new theme&hellip;"
 msgstr "Преузимање ваше теме&hellip;"
 
@@ -515,11 +531,11 @@ msgstr "Преузимање ваше теме&hellip;"
 msgid "Please save your changes in order to share the preview."
 msgstr "Молимо вас да сачувате своје промене да бисте поделили предпреглед."
 
-#: wp-includes/script-loader.php:575
+#: wp-includes/script-loader.php:576
 msgid "Reverting unpublished changes&hellip;"
 msgstr "Враћање необјављених промена&hellip;"
 
-#: wp-includes/script-loader.php:574
+#: wp-includes/script-loader.php:575
 msgid "Setting up your live preview. This may take a bit."
 msgstr "Постављање вашег живог предпрегледа. Ово може потрајати."
 
@@ -996,13 +1012,13 @@ msgstr "Овде додајте свој CSS код да бисте прилаг
 msgid "CSS code"
 msgstr "CSS код"
 
-#: wp-includes/class-wp-customize-manager.php:5222
-msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
-msgstr "Можете одабрати шта је приказано на почетној страници свог  веб места. То могу бити чланци у обрнутом хронолошком редоследу (класични блог) или учвршћена/непокретна страна. Да бисте поставили непокретну почетну страницу, прво морате да направите две стране. Једна ће постати почетна страница а друга ће бити где се ваши чланци приказују."
-
 #: wp-includes/class-wp-customize-manager.php:5233
 msgid "Your homepage displays"
 msgstr "Ваша почетна страница приказује"
+
+#: wp-includes/class-wp-customize-manager.php:5222
+msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
+msgstr "Можете одабрати шта је приказано на почетној страници свог  веб места. То могу бити чланци у обрнутом хронолошком редоследу (класични блог) или учвршћена/непокретна страна. Да бисте поставили непокретну почетну страницу, прво морате да направите две стране. Једна ће постати почетна страница а друга ће бити где се ваши чланци приказују."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:313
 msgid "Screen reader users: when in forms mode, you may need to press the Esc key twice."
@@ -1066,7 +1082,7 @@ msgstr "Умножено"
 msgid "Installed themes"
 msgstr "Постављене теме"
 
-#: wp-includes/script-loader.php:604
+#: wp-includes/script-loader.php:605
 msgid "Publish Settings"
 msgstr "Подешавања објављивања"
 
@@ -1076,7 +1092,7 @@ msgstr "Догодио се проблем, молимо вас исправит
 
 #. translators: %s: number of invalid settings
 #: wp-includes/class-wp-customize-manager.php:2707
-#: wp-includes/script-loader.php:593 wp-includes/script-loader.php:595
+#: wp-includes/script-loader.php:594 wp-includes/script-loader.php:596
 msgid "Unable to save due to %s invalid setting."
 msgid_plural "Unable to save due to %s invalid settings."
 msgstr[0] "Снимање није могуће због %s неправилног подешавања."
@@ -1214,20 +1230,20 @@ msgstr "Додај звучни запис"
 msgid "(no author)"
 msgstr "(нема аутора)"
 
-#: wp-includes/script-loader.php:1179
+#: wp-includes/script-loader.php:1180
 msgid "An error occurred. Please try again."
 msgstr "Десила се грешка. Покушајте поново."
 
-#: wp-includes/script-loader.php:1180
+#: wp-includes/script-loader.php:1181
 msgid "Attend an upcoming event near you."
 msgstr "Присуствујте предстојећем догађају близу вас."
 
 #. translators: %s: the name of a city
-#: wp-includes/script-loader.php:1201
+#: wp-includes/script-loader.php:1202
 msgid "City updated. Listing events near %s."
 msgstr "Град је ажуриран. Излиставају се догађаји близу града: %s."
 
-#: wp-includes/script-loader.php:1178
+#: wp-includes/script-loader.php:1179
 msgid "Enter your closest city to find nearby events."
 msgstr "Унесите најближи град за проналазак догађаја у близини."
 
@@ -1238,7 +1254,7 @@ msgstr "Унесите најближи град за проналазак до�
 #. locale that would be recognizable to most users. Use only the city name
 #. itself, without any region or country. Use the endonym (native locale name)
 #. instead of the English name if possible.
-#: wp-includes/script-loader.php:1197
+#: wp-includes/script-loader.php:1198
 msgid "We couldn&#8217;t locate %s. Please try another nearby city. For example: Kansas City; Springfield; Portland."
 msgstr "Не можемо да пронађемо %s. Молимо вас да пробате са другим градом у близини. На пример: Vršac, Novi Sad, Banja Luka."
 
@@ -1388,56 +1404,56 @@ msgid "We can&#8217;t find that image. Check your <a href=\"%s\">media library</
 msgstr "Не можемо да пронађемо ту слику. Проверите своју <a href=\"%s\">библиотеку садржаја</a> и будите сигурни да није обрисана."
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:784
+#: wp-includes/script-loader.php:785
 msgctxt "plugin"
 msgid "%s update failed"
 msgstr "Ажурирање за %s није успело"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:782
+#: wp-includes/script-loader.php:783
 msgctxt "plugin"
 msgid "%s updated!"
 msgstr "%s је ажуриран!"
 
-#: wp-includes/script-loader.php:826
+#: wp-includes/script-loader.php:827
 msgctxt "plugin"
 msgid "Deleted!"
 msgstr "Обрисан!"
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:794
+#: wp-includes/script-loader.php:795
 msgctxt "plugin"
 msgid "Install %s now"
 msgstr "Постави %s сада"
 
-#: wp-includes/script-loader.php:796
+#: wp-includes/script-loader.php:797
 msgctxt "plugin"
 msgid "Installed!"
 msgstr "Постављен!"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:775
+#: wp-includes/script-loader.php:776
 msgctxt "plugin"
 msgid "Update %s now"
 msgstr "Ажурирај %s сада"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:780
+#: wp-includes/script-loader.php:781
 msgctxt "plugin"
 msgid "Updating %s..."
 msgstr "Ажурирање %s..."
 
-#: wp-includes/script-loader.php:827
+#: wp-includes/script-loader.php:828
 msgctxt "theme"
 msgid "Deleted!"
 msgstr "Обрисана!"
 
-#: wp-includes/script-loader.php:797
+#: wp-includes/script-loader.php:798
 msgctxt "theme"
 msgid "Installed!"
 msgstr "Постављена!"
 
-#: wp-includes/script-loader.php:771
+#: wp-includes/script-loader.php:772
 msgctxt "theme"
 msgid "Updated!"
 msgstr "Ажурирана!"
@@ -1551,7 +1567,7 @@ msgstr "Број захтеване странице је већи од број
 msgid "You need to define an include parameter to order by include."
 msgstr "Морате да одредите појам за обухватање да бисте поређали по обухваћању."
 
-#: wp-includes/script-loader.php:770
+#: wp-includes/script-loader.php:771
 msgctxt "plugin"
 msgid "Updated!"
 msgstr "Ажуриран!"
@@ -1966,7 +1982,7 @@ msgid "Invalid comment content."
 msgstr "Неисправан садржај коментара."
 
 #: wp-includes/post.php:3207 wp-includes/rest-api.php:1151
-#: wp-includes/script-loader.php:605
+#: wp-includes/script-loader.php:606
 msgid "Invalid date."
 msgstr "Неисправан датум."
 
@@ -2160,7 +2176,7 @@ msgstr "Ово може да буде добро место за ваше или
 msgid "Reassign the deleted user's posts and links to this user ID."
 msgstr "Додели чланке и везе обрисаног корисника овом корисничком ID-ју."
 
-#: wp-includes/script-loader.php:581
+#: wp-includes/script-loader.php:582
 msgid "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video headers."
 msgstr "Ова тема не подржава видео записе заглавља на овој страници. Крећите се ка насловној страници или другој страници која подржава видео записе заглавља."
 
@@ -2294,12 +2310,12 @@ msgstr "Лозинка не може да садржи знак \"\\\"."
 msgid "Username contains invalid characters."
 msgstr "Корисничко име садржи неисправне знакове."
 
-#: wp-includes/script-loader.php:569
+#: wp-includes/script-loader.php:570
 msgctxt "label for hide controls button without length constraints"
 msgid "Hide Controls"
 msgstr "Сакриј контроле"
 
-#: wp-includes/script-loader.php:570
+#: wp-includes/script-loader.php:571
 msgctxt "label for hide controls button without length constraints"
 msgid "Show Controls"
 msgstr "Прикажи контроле"
@@ -2437,19 +2453,19 @@ msgstr "Стварно ми треба ID да би ово радило."
 msgid "Sorry, trackbacks are closed for this item."
 msgstr "Жао нам је, повратне везе за ову ставку су затворене."
 
-#: wp-includes/script-loader.php:672
+#: wp-includes/script-loader.php:673
 msgid "Remove term:"
 msgstr "Уклони члана:"
 
-#: wp-includes/script-loader.php:674
+#: wp-includes/script-loader.php:675
 msgid "Term added."
 msgstr "Члан је додат."
 
-#: wp-includes/script-loader.php:675
+#: wp-includes/script-loader.php:676
 msgid "Term removed."
 msgstr "Члан је уклоњен."
 
-#: wp-includes/script-loader.php:673
+#: wp-includes/script-loader.php:674
 msgid "Term selected."
 msgstr "Члан је изабран."
 
@@ -3649,7 +3665,7 @@ msgstr "Уреди изабрани изборник"
 msgid "Warning: the link has been inserted but may have errors. Please test it."
 msgstr "Упозорење: веза је уметнута али можда има грешке. Молимо вас да је испробате."
 
-#: wp-includes/script-loader.php:766
+#: wp-includes/script-loader.php:767
 msgid "Search Results"
 msgstr "Резултати претраге"
 
@@ -3706,73 +3722,73 @@ msgid "Inexistent terms."
 msgstr "Непостојећи чланови."
 
 #. translators: %s: Activation URL
-#: wp-includes/script-loader.php:816
+#: wp-includes/script-loader.php:817
 msgid "Importer installed successfully. <a href=\"%s\">Run importer</a>"
 msgstr "Увозник је успешно постављен. <a href=\"%s\">Покрените увозника</a>"
 
 #. translators: %s: Importer name
-#: wp-includes/script-loader.php:837
+#: wp-includes/script-loader.php:838
 msgid "Run %s"
 msgstr "Покрени %s"
 
-#: wp-includes/script-loader.php:835
+#: wp-includes/script-loader.php:836
 msgid "Run Importer"
 msgstr "Покрени увозника"
 
-#: wp-includes/script-loader.php:834
+#: wp-includes/script-loader.php:835
 msgctxt "theme"
 msgid "Activate %s"
 msgstr "Укључи %s"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:810
+#: wp-includes/script-loader.php:811
 msgctxt "plugin"
 msgid "%s installation failed"
 msgstr "Постављање додатка %s није успело"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:806
+#: wp-includes/script-loader.php:807
 msgctxt "plugin"
 msgid "%s installed!"
 msgstr "Додатак %s је постављен!"
 
-#: wp-includes/script-loader.php:832
+#: wp-includes/script-loader.php:833
 msgctxt "plugin"
 msgid "Activate %s"
 msgstr "Укључи %s"
 
 #. translators: %s: Plugin name and version
-#: wp-includes/script-loader.php:802
+#: wp-includes/script-loader.php:803
 msgctxt "plugin"
 msgid "Installing %s..."
 msgstr "Постављање %s..."
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:832
+#: wp-includes/script-loader.php:833
 msgctxt "plugin"
 msgid "Network Activate %s"
 msgstr "Укључи за мрежу %s"
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:812
+#: wp-includes/script-loader.php:813
 msgctxt "theme"
 msgid "%s installation failed"
 msgstr "Постављање теме %s није успело"
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:808
+#: wp-includes/script-loader.php:809
 msgctxt "theme"
 msgid "%s installed!"
 msgstr "Тема %s је постављена!"
 
 #. translators: %s: Theme name and version
-#: wp-includes/script-loader.php:804
+#: wp-includes/script-loader.php:805
 msgctxt "theme"
 msgid "Installing %s..."
 msgstr "Постављање %s..."
 
 #. translators: %s: Theme name
-#: wp-includes/script-loader.php:834
+#: wp-includes/script-loader.php:835
 msgctxt "theme"
 msgid "Network Activate %s"
 msgstr "Укључи за мрежу %s"
@@ -3781,7 +3797,7 @@ msgstr "Укључи за мрежу %s"
 msgid "Sorry, you are not allowed to access user data on this site."
 msgstr "Жао нам је, није вам дозвољен приступ корисничким подацима на овом веб месту."
 
-#: wp-includes/script-loader.php:841
+#: wp-includes/script-loader.php:842
 msgid "Number of plugins found: %d"
 msgstr "Број пронађених додатака: %d"
 
@@ -3836,7 +3852,7 @@ msgid "Tan"
 msgstr "Мрка"
 
 #. translators: %s: Error string for a failed installation
-#: wp-includes/script-loader.php:800
+#: wp-includes/script-loader.php:801
 msgid "Installation failed: %s"
 msgstr "Постављање није успело: %s"
 
@@ -3856,7 +3872,7 @@ msgstr "Жао нам је, није вам дозвољено да избриш
 msgid "Sorry, you are not allowed to edit this page."
 msgstr "Жао нам је, није вам дозвољено да уређујете ову страну."
 
-#: wp-includes/script-loader.php:1126
+#: wp-includes/script-loader.php:1127
 msgid "Today"
 msgstr "Данас"
 
@@ -3867,24 +3883,24 @@ msgid "&larr; Back to %s"
 msgstr "&larr; Назад на %s"
 
 #. translators: %s: Plugin name
-#: wp-includes/script-loader.php:820
+#: wp-includes/script-loader.php:821
 msgid "Are you sure you want to delete %s and its data?"
 msgstr "Да ли сигурно желите да обришете %s и његове податке?"
 
-#: wp-includes/script-loader.php:821
+#: wp-includes/script-loader.php:822
 msgid "Are you sure you want to delete the selected plugins and their data?"
 msgstr "Да ли сигурно желите да обришете изабране додатке и њихове податке?"
 
-#: wp-includes/script-loader.php:822
+#: wp-includes/script-loader.php:823
 msgid "Caution: These themes may be active on other sites in the network. Are you sure you want to proceed?"
 msgstr "Опрез: ове теме су можда укључене на другим веб местима у мрежи. Да ли сигурно желите да наставите?"
 
-#: wp-includes/script-loader.php:823
+#: wp-includes/script-loader.php:824
 msgid "Deleting..."
 msgstr "Брисање..."
 
 #. translators: %s: Error string for a failed deletion
-#: wp-includes/script-loader.php:825
+#: wp-includes/script-loader.php:826
 msgid "Deletion failed: %s"
 msgstr "Брисање није успело: %s"
 
@@ -3893,7 +3909,7 @@ msgstr "Брисање није успело: %s"
 msgid "Edit Menu"
 msgstr "Уреди изборника"
 
-#: wp-includes/script-loader.php:829
+#: wp-includes/script-loader.php:830
 msgid "Network Activate"
 msgstr "Укључи за мрежу"
 
@@ -3902,7 +3918,7 @@ msgid "Unable to retrieve the error message from MySQL"
 msgstr "Није могуће извући поруку грешке из MySQL-а"
 
 #. translators: %s: Theme name
-#: wp-includes/script-loader.php:818
+#: wp-includes/script-loader.php:819
 msgid "Are you sure you want to delete %s?"
 msgstr "Да ли сигурно желите да обришете %s?"
 
@@ -3916,7 +3932,7 @@ msgstr "Лозинка је промењена за корисника: %s"
 msgid "[%s] Password Changed"
 msgstr "[%s] Лозинка је промењена"
 
-#: wp-includes/script-loader.php:654
+#: wp-includes/script-loader.php:655
 msgid ""
 "Are you sure you want to do this?\n"
 "The comment changes you made will be lost."
@@ -3924,17 +3940,17 @@ msgstr ""
 "Да ли сте сигурни да желите да урадите ово?\n"
 "Измене које сте направили на коментару биће изгубљене."
 
-#: wp-includes/script-loader.php:768
+#: wp-includes/script-loader.php:769
 msgid "Please select at least one item to perform this action on."
 msgstr "Молимо вас да изаберете једну или више ставки на којој ће ова радња бити изведена."
 
 #. translators: %s: Search string
-#: wp-includes/script-loader.php:765
+#: wp-includes/script-loader.php:766
 msgid "Search results for &#8220;%s&#8221;"
 msgstr "Резултати претраге за &#132;%s&#147;"
 
 #: wp-includes/rest-api/class-wp-rest-server.php:911
-#: wp-includes/script-loader.php:132 wp-includes/script-loader.php:643
+#: wp-includes/script-loader.php:132 wp-includes/script-loader.php:644
 msgid "Sorry, you are not allowed to do that."
 msgstr "Жао нам је, није вам дозвољено да урадите то."
 
@@ -3942,11 +3958,11 @@ msgstr "Жао нам је, није вам дозвољено да урадит
 msgid "Sorry, you are not allowed to preview drafts."
 msgstr "Жао нам је, није вам дозвољено да предпрегледате нацрте."
 
-#: wp-includes/script-loader.php:773
+#: wp-includes/script-loader.php:774
 msgid "Update Now"
 msgstr "Ажурирај сада"
 
-#: wp-includes/script-loader.php:767
+#: wp-includes/script-loader.php:768
 msgid "You do not appear to have any plugins available at this time."
 msgstr "Изгледа да немате ниједан доступан додатак тренутно."
 
@@ -3991,12 +4007,12 @@ msgstr "Жао нам је, није вам дозвољено да прегле
 
 #: wp-includes/class-wp-customize-manager.php:2300
 #: wp-includes/class-wp-customize-setting.php:579
-#: wp-includes/script-loader.php:606
+#: wp-includes/script-loader.php:607
 msgid "Invalid value."
 msgstr "Неисправна вредност."
 
 #: wp-includes/class-wp-customize-manager.php:516
-#: wp-includes/script-loader.php:566
+#: wp-includes/script-loader.php:567
 msgid "Sorry, you are not allowed to customize this site."
 msgstr "Жао нам је, није вам дозвољено да прилагођавате ово веб место."
 
@@ -4025,7 +4041,7 @@ msgstr "Веза је изабрана."
 msgid "%s is required to strip image meta."
 msgstr "%s је неопходан за уклањање мета слика."
 
-#: wp-includes/script-loader.php:756
+#: wp-includes/script-loader.php:757
 msgid "Plugin details"
 msgstr "Детаљи додатка"
 
@@ -4050,12 +4066,12 @@ msgstr "1 резултат је пронађен. Користите дугма�
 
 #. translators: 1: edit user link, 2: accessibility text, 3: user name, 4:
 #. logout URL
-#: wp-includes/comment-template.php:2229
+#: wp-includes/comment-template.php:2228
 msgid "<a href=\"%1$s\" aria-label=\"%2$s\">Logged in as %3$s</a>. <a href=\"%4$s\">Log out?</a>"
 msgstr "<a href=\"%1$s\" aria-label=\"%2$s\">Пријављен као %3$s</a>. <a href=\"%4$s\">Одјављивање?</a>"
 
 #. translators: %s: user name
-#: wp-includes/comment-template.php:2232
+#: wp-includes/comment-template.php:2231
 msgid "Logged in as %s. Edit your profile."
 msgstr "Пријављен као %s. Уредите свој профил."
 
@@ -4102,11 +4118,11 @@ msgstr "%1$s (%2$s)"
 msgid "Unregistering a built-in taxonomy is not allowed."
 msgstr "Уклањање уграђене таксономије није дозвољено."
 
-#: wp-includes/script-loader.php:571
+#: wp-includes/script-loader.php:572
 msgid "(Untitled)"
 msgstr "(Без наслова)"
 
-#: wp-includes/script-loader.php:664
+#: wp-includes/script-loader.php:665
 msgid "Drag boxes here"
 msgstr "Повуците кутијице овде"
 
@@ -4325,7 +4341,7 @@ msgstr "https://codex.wordpress.org/Debugging_in_WordPress"
 msgid "<strong>ERROR</strong>: %1$s in %2$s can only contain numbers, letters, and underscores."
 msgstr "<strong>ГРЕШКА</strong>: %1$s у %2$s може садржати само бројеве, слова и доње цртице."
 
-#: wp-includes/script-loader.php:744 wp-includes/script-loader.php:750
+#: wp-includes/script-loader.php:745 wp-includes/script-loader.php:751
 msgid "Changes saved."
 msgstr "Промене су сачуване."
 
@@ -4635,7 +4651,7 @@ msgstr "%1$s (од %2$s; %3$s)"
 msgid "%1$s (since %2$s; no alternative available)"
 msgstr "%1$s (од %2$s; замена није доступна)"
 
-#: wp-includes/script-loader.php:702
+#: wp-includes/script-loader.php:703
 msgid "Permalink saved"
 msgstr "Стална веза је сачувана"
 
@@ -4977,7 +4993,7 @@ msgstr "Прикажи/сакриј одељак: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/formatting.php:3372 wp-includes/script-loader.php:1088
+#: wp-includes/formatting.php:3372 wp-includes/script-loader.php:1089
 msgctxt "Word count type. Do not translate!"
 msgid "words"
 msgstr "words"
@@ -5297,11 +5313,11 @@ msgid "List item"
 msgstr "Ставка листе"
 
 #. translators: %s: Error string for a failed update
-#: wp-includes/script-loader.php:778
+#: wp-includes/script-loader.php:779
 msgid "Update Failed: %s"
 msgstr "Ажурирање није успело: %s"
 
-#: wp-includes/script-loader.php:653
+#: wp-includes/script-loader.php:654
 msgid ""
 "Are you sure you want to edit this comment?\n"
 "The changes you made will be lost."
@@ -5648,20 +5664,20 @@ msgstr "https://codex.wordpress.org/"
 msgid "No %1$s was set in the arguments array for the \"%2$s\" sidebar. Defaulting to \"%3$s\". Manually set the %1$s to \"%3$s\" to silence this notice and keep existing sidebar content."
 msgstr "%1$s није подешен у низу аргумената за бочну траку \"%2$s\". Подразумева се да је \"%3$s\". Ручно подесите %1$s на \"%3$s\" да бисте ућуткали ову напомену и сачували постојећи садржај бочне траке."
 
-#: wp-includes/script-loader.php:839
+#: wp-includes/script-loader.php:840
 msgid "Connection lost or the server is busy. Please try again later."
 msgstr "Изгубљена је веза или је сервер заузет. Покушајте касније поново."
 
-#: wp-includes/script-loader.php:791
+#: wp-includes/script-loader.php:792
 msgid "Updates may not complete if you navigate away from this page."
 msgstr "Ажурирања се можда неће завршити ако напустите ову страницу."
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:790
+#: wp-includes/script-loader.php:791
 msgid "Update canceled."
 msgstr "Одустало се од ажурирања."
 
-#: wp-includes/script-loader.php:776
+#: wp-includes/script-loader.php:777
 msgid "Update Failed!"
 msgstr "Ажурирање није успело!"
 
@@ -5700,36 +5716,36 @@ msgid "Taxonomy names must be between 1 and 32 characters in length."
 msgstr "Имена таксономија морају бити дуги између 1 и 32 знака."
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:788
+#: wp-includes/script-loader.php:789
 msgid "Update completed successfully."
 msgstr "Ажурорање је успешно завршено."
 
 #. translators: Accessibility text
-#: wp-includes/script-loader.php:786
+#: wp-includes/script-loader.php:787
 msgid "Updating... please wait."
 msgstr "Ажурирање... Молимо вас да сачекате."
 
-#: wp-includes/script-loader.php:769
+#: wp-includes/script-loader.php:770
 msgid "Updating..."
 msgstr "Ажурирање..."
 
-#: wp-includes/script-loader.php:567
+#: wp-includes/script-loader.php:568
 msgid "Site Preview"
 msgstr "Предпреглед веб места"
 
-#: wp-includes/script-loader.php:792
+#: wp-includes/script-loader.php:793
 msgid "Install Now"
 msgstr "Постави сада"
 
-#: wp-includes/script-loader.php:814
+#: wp-includes/script-loader.php:815
 msgid "Installation completed successfully."
 msgstr "Постављање је успешно завршено."
 
-#: wp-includes/script-loader.php:795
+#: wp-includes/script-loader.php:796
 msgid "Installing..."
 msgstr "Постављање..."
 
-#: wp-includes/script-loader.php:813
+#: wp-includes/script-loader.php:814
 msgid "Installing... please wait."
 msgstr "Постављање... Молимо вас да сачекате."
 
@@ -5886,7 +5902,7 @@ msgid "Link Text"
 msgstr "Текст везе"
 
 #: wp-includes/customize/class-wp-customize-theme-control.php:118
-#: wp-includes/script-loader.php:828
+#: wp-includes/script-loader.php:829
 msgid "Live Preview"
 msgstr "Предпреглед"
 
@@ -5982,7 +5998,7 @@ msgstr "Новији чланци"
 msgid "Posts navigation"
 msgstr "Кретање чланака"
 
-#: wp-includes/script-loader.php:1130
+#: wp-includes/script-loader.php:1131
 msgid "Previous"
 msgstr "Претходно"
 
@@ -6269,7 +6285,7 @@ msgid "Delete Selected"
 msgstr "Обриши одабрано"
 
 #: wp-includes/class-wp-customize-nav-menus.php:427
-#: wp-includes/script-loader.php:888
+#: wp-includes/script-loader.php:889
 msgctxt "missing menu item navigation label"
 msgid "(no label)"
 msgstr "(без натписа)"
@@ -6392,7 +6408,7 @@ msgstr "Ово веб место више није доступно."
 msgid "Search or use up and down arrow keys to select an item."
 msgstr "Претражите или користите дугмад за горе и доле да бисте одабрали ставку."
 
-#: wp-includes/script-loader.php:842
+#: wp-includes/script-loader.php:843
 msgid "No plugins found. Try a different search."
 msgstr "Нема пронађених додатака. Пробајте са другом претрагом."
 
@@ -6410,8 +6426,8 @@ msgstr "Прилагођавате %s"
 msgid "Widgets are independent sections of content that can be placed into widgetized areas provided by your theme (commonly called sidebars)."
 msgstr "Виџети су независни одељци садржаја коју могу бити стављени у просторима за виџете које омогућује ваша тема (често названи и бочне траке)."
 
-#: wp-includes/update.php:154 wp-includes/update.php:356
-#: wp-includes/update.php:538
+#: wp-includes/update.php:154 wp-includes/update.php:346
+#: wp-includes/update.php:528
 msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
 msgstr "(Вордпрес није могао да успостави безбедну везу са WordPress.org. Молимо вас да контактирате свог управника сервера.)"
 
@@ -7083,7 +7099,7 @@ msgid "Select an area to move this widget into:"
 msgstr "Одаберите простор где да померите овај виџет:"
 
 #: wp-includes/class-wp-customize-widgets.php:755
-#: wp-includes/script-loader.php:840 wp-includes/script-loader.php:866
+#: wp-includes/script-loader.php:841 wp-includes/script-loader.php:867
 msgid "An error has occurred. Please reload the page and try again."
 msgstr "Десила се грешка. Молимо вас да поново учитате ову страницу и покушате поново."
 
@@ -7289,7 +7305,7 @@ msgid "New window"
 msgstr "Нови прозор"
 
 #: wp-includes/admin-bar.php:164 wp-includes/update.php:153
-#: wp-includes/update.php:355 wp-includes/update.php:537
+#: wp-includes/update.php:345 wp-includes/update.php:527
 #: wp-includes/wp-db.php:1062 wp-includes/wp-db.php:1595
 #: wp-includes/wp-db.php:1753 wp-login.php:882
 msgid "https://wordpress.org/support/"
@@ -7366,7 +7382,7 @@ msgstr "Списак страна вашег веб места."
 #. translators: If there are characters in your language that are not supported
 #. by Open Sans, translate this to 'off'. Do not translate into your own
 #. language.
-#: wp-includes/script-loader.php:935
+#: wp-includes/script-loader.php:936
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "on"
@@ -7388,7 +7404,7 @@ msgstr "Користите запете уместо %s за одвајање и
 #. translators: To add an additional Open Sans character subset specific to
 #. your language, translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not
 #. translate into your own language.
-#: wp-includes/script-loader.php:941
+#: wp-includes/script-loader.php:942
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "cyrillic"
@@ -7399,8 +7415,8 @@ msgid "Default"
 msgstr "Подразумевана"
 
 #. translators: %s: support forums URL
-#: wp-includes/update.php:152 wp-includes/update.php:354
-#: wp-includes/update.php:536
+#: wp-includes/update.php:152 wp-includes/update.php:344
+#: wp-includes/update.php:526
 msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support forums</a>."
 msgstr "Догодила се неочекивана грешка. Можда нешто није у реду са WordPress.org или са поставком овог сервера. Уколико наставите да имате проблеме, молимо вас да покушате са <a href=\"%s\">форумима подршке</a>."
 
@@ -7408,7 +7424,7 @@ msgstr "Догодила се неочекивана грешка. Можда н
 msgid "Menu"
 msgstr "Изборник"
 
-#: wp-includes/update.php:643
+#: wp-includes/update.php:633
 msgid "Translation Updates"
 msgstr "Ажурирања превода"
 
@@ -7580,7 +7596,7 @@ msgid "Your session has expired. You can log in again from this page or go to th
 msgstr "Ваша сеанса је истекла. Можете се поново пријавити са ове странице или отићи на страницу за пријављивање."
 
 #. translators: 1: month, 2: day, 3: year, 4: hour, 5: minute
-#: wp-includes/script-loader.php:686 wp-includes/script-loader.php:714
+#: wp-includes/script-loader.php:687 wp-includes/script-loader.php:715
 msgid "%1$s %2$s, %3$s @ %4$s:%5$s"
 msgstr "%2$s %1$s %3$s у %4$s:%5$s"
 
@@ -7614,7 +7630,7 @@ msgctxt "submit button"
 msgid "Search"
 msgstr "Претражи"
 
-#: wp-includes/functions.php:5328 wp-includes/script-loader.php:568
+#: wp-includes/functions.php:5328 wp-includes/script-loader.php:569
 msgid "Session expired"
 msgstr "Сеанса је истекла"
 
@@ -7984,7 +8000,7 @@ msgstr "Окретање слике није успело."
 msgid "Add to gallery"
 msgstr "Додај у галерију"
 
-#: wp-includes/media-template.php:601 wp-includes/script-loader.php:851
+#: wp-includes/media-template.php:601 wp-includes/script-loader.php:852
 msgid "Clear"
 msgstr "Очисти"
 
@@ -8002,7 +8018,7 @@ msgstr "%1$s %2$s"
 msgid "Insert into post"
 msgstr "Уметни у чланак"
 
-#: wp-includes/script-loader.php:855
+#: wp-includes/script-loader.php:856
 msgid "Select Color"
 msgstr "Изабери боју"
 
@@ -8086,7 +8102,7 @@ msgstr "Боја текста заглавља"
 msgid "Colors"
 msgstr "Боје"
 
-#: wp-includes/script-loader.php:560 wp-includes/script-loader.php:722
+#: wp-includes/script-loader.php:560 wp-includes/script-loader.php:723
 msgid "Saved"
 msgstr "Сачувано"
 
@@ -8190,7 +8206,7 @@ msgstr "Жао нам је, није вам дозвољено да уређуј
 msgid "Posts page"
 msgstr "Страница чланака"
 
-#: wp-includes/script-loader.php:583
+#: wp-includes/script-loader.php:584
 msgid "Allowed Files"
 msgstr "Дозвољене датотеке"
 
@@ -8368,8 +8384,8 @@ msgstr "Жао нам је, није вам дозвољено да уређуј
 msgid "Edit Site"
 msgstr "Уреди веб место"
 
-#: wp-includes/post.php:3952 wp-includes/script-loader.php:671
-#: wp-includes/script-loader.php:743
+#: wp-includes/post.php:3952 wp-includes/script-loader.php:672
+#: wp-includes/script-loader.php:744
 msgctxt "tag delimiter"
 msgid ","
 msgstr ","
@@ -8598,7 +8614,7 @@ msgstr "<strong>ГРЕШКА</strong>: молимо вас попуните по
 msgid "<strong>ERROR</strong>: please type a comment."
 msgstr "<strong>ГРЕШКА</strong>: молимо вас да унесете коментар."
 
-#: wp-includes/script-loader.php:871
+#: wp-includes/script-loader.php:872
 msgid "Could not load the preview image. Please reload the page and try again."
 msgstr "Није могуће учитати претпреглед слике. Молимо вас да поново учитате страницу и покушате поново."
 
@@ -8721,7 +8737,7 @@ msgstr "Ваш налог је сада активиран. <a href=\"%1$s\">В�
 msgid "Your account is now activated. <a href=\"%1$s\">Log in</a> or go back to the <a href=\"%2$s\">homepage</a>."
 msgstr "Ваш налог је сада активиран. <a href=\"%1$s\">Пријавите се</a> или идите назад на <a href=\"%2$s\">почетну страницу</a>."
 
-#: wp-includes/script-loader.php:651
+#: wp-includes/script-loader.php:652
 msgid "Approve and Reply"
 msgstr "Одобри и одговори"
 
@@ -8907,7 +8923,7 @@ msgstr "Нема нађених чланака на отпаду."
 msgid "No pages found in Trash."
 msgstr "Нема нађених страна на отпаду."
 
-#: wp-includes/script-loader.php:830
+#: wp-includes/script-loader.php:831
 msgid "Network Enable"
 msgstr "Омогући за мрежу"
 
@@ -9207,7 +9223,7 @@ msgstr "<strong>Супротстављене вредности за непро�
 msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
 msgstr "<strong>ГРЕШКА</strong>: Корисничко име није ваљано зато што користи недозвољене знаке. Молимо вас унесите ваљано корисничко име."
 
-#: wp-includes/comment-template.php:2207
+#: wp-includes/comment-template.php:2206
 msgid "Required fields are marked %s"
 msgstr "Неопходна поља су означена %s"
 
@@ -9369,7 +9385,7 @@ msgstr "Догодила се грешка приликом вашег дода�
 msgid "This file is too big. Files must be less than %d KB in size."
 msgstr "Ова датотека је превелика. Датотеке морају бити мање од %d KB."
 
-#: wp-includes/comment-template.php:2236
+#: wp-includes/comment-template.php:2235
 msgid "Your email address will not be published."
 msgstr "Ваша адреса е-поште неће бити објављена."
 
@@ -9412,11 +9428,11 @@ msgstr "Морате се прво <a href=\"%s\">пријавити</a> и он
 msgid "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
 msgstr "Добро дошли назад, %s. Попуњавајући образац испод, можете <strong>додати друго веб место на свом налогу</strong>. Не постоји ограничење у броју веб места које можете да имате, тако да стварајте садржај од срца, али пишите одговорно!"
 
-#: wp-includes/script-loader.php:757
+#: wp-includes/script-loader.php:758
 msgid "Are you sure you want to install this plugin?"
 msgstr "Да ли сигурно желите да поставите овај додатак?"
 
-#: wp-includes/script-loader.php:876
+#: wp-includes/script-loader.php:877
 msgid "Use as featured image"
 msgstr "Користи као издвојену слику"
 
@@ -9453,7 +9469,7 @@ msgstr "Везе за %s"
 msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
 msgstr "Још увек нема направљених изборника. <a href=\"%s\">Направите неке</a>."
 
-#: wp-includes/script-loader.php:886
+#: wp-includes/script-loader.php:887
 msgid ""
 "You are about to permanently delete this menu. \n"
 " 'Cancel' to stop, 'OK' to delete."
@@ -9466,12 +9482,12 @@ msgid "This is the short link."
 msgstr "Ово је кратка веза."
 
 #. translators: 1: Number of updates available to WordPress
-#: wp-includes/update.php:632
+#: wp-includes/update.php:622
 msgid "%d WordPress Update"
 msgstr "%d Вордпресово ажурирање"
 
 #. translators: 1: Number of updates available to plugins
-#: wp-includes/update.php:636
+#: wp-includes/update.php:626
 msgid "%d Plugin Update"
 msgid_plural "%d Plugin Updates"
 msgstr[0] "Ажурирање %d додатка"
@@ -9479,7 +9495,7 @@ msgstr[1] "Ажурирање %d додатка"
 msgstr[2] "Ажурирање %d додатака"
 
 #. translators: 1: Number of updates available to themes
-#: wp-includes/update.php:640
+#: wp-includes/update.php:630
 msgid "%d Theme Update"
 msgid_plural "%d Theme Updates"
 msgstr[0] "Ажурирање %d теме"
@@ -10066,10 +10082,6 @@ msgstr "Нисам могао да упишем датотеку %s"
 msgid "You are attempting to log out of %s"
 msgstr "Покушавате да се одјавите са %s"
 
-#: wp-includes/functions.php:2617
-msgid "WordPress Failure Notice"
-msgstr "Вордпрес обавештење о грешци"
-
 #. translators: %s: logout URL
 #: wp-includes/functions.php:2603
 msgid "Do you really want to <a href=\"%s\">log out</a>?"
@@ -10424,8 +10436,8 @@ msgid "Row"
 msgstr "Ред"
 
 #: wp-includes/class-wp-editor.php:1238 wp-includes/script-loader.php:477
-#: wp-includes/script-loader.php:559 wp-includes/script-loader.php:700
-#: wp-includes/script-loader.php:723 wp-includes/script-loader.php:887
+#: wp-includes/script-loader.php:559 wp-includes/script-loader.php:701
+#: wp-includes/script-loader.php:724 wp-includes/script-loader.php:888
 #: wp-includes/theme.php:2961
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr "Измене које сте направили биће изгубљене ако напустите ову страницу."
@@ -10763,12 +10775,6 @@ msgstr "Унеси URL слике"
 msgid "Enter a description of the image"
 msgstr "Унеси опис слике"
 
-#: wp-includes/class-wp-xmlrpc-server.php:3689
-#: wp-includes/script-loader.php:133 wp-includes/script-loader.php:644
-#: wp-includes/script-loader.php:838
-msgid "An unidentified error has occurred."
-msgstr "Непрепозната грешка се догодила."
-
 #: wp-includes/script-loader.php:273
 msgid "Next &gt;"
 msgstr "Следеће &gt;"
@@ -10835,47 +10841,47 @@ msgctxt "password strength"
 msgid "Medium"
 msgstr "Средње"
 
-#: wp-includes/script-loader.php:682
+#: wp-includes/script-loader.php:683
 msgid "Publish on:"
 msgstr "Објави у"
 
-#: wp-includes/script-loader.php:683
+#: wp-includes/script-loader.php:684
 msgid "Schedule for:"
 msgstr "Закажи за:"
 
-#: wp-includes/script-loader.php:684
+#: wp-includes/script-loader.php:685
 msgid "Published on:"
 msgstr "Објављено у:"
 
-#: wp-includes/script-loader.php:687
+#: wp-includes/script-loader.php:688
 msgid "Show more comments"
 msgstr "Прикажи још коментара"
 
-#: wp-includes/script-loader.php:688
+#: wp-includes/script-loader.php:689
 msgid "No more comments found."
 msgstr "Нема више пронађених коментара."
 
-#: wp-includes/script-loader.php:697
+#: wp-includes/script-loader.php:698
 msgid "Password Protected"
 msgstr "Заштићено лозинком"
 
-#: wp-includes/script-loader.php:740 wp-includes/script-loader.php:749
+#: wp-includes/script-loader.php:741 wp-includes/script-loader.php:750
 msgid "Error while saving the changes."
 msgstr "Грешка приликом чувања измена."
 
-#: wp-includes/script-loader.php:741
+#: wp-includes/script-loader.php:742
 msgid "Remove From Bulk Edit"
 msgstr "Уклони из масовне измене"
 
-#: wp-includes/script-loader.php:877
+#: wp-includes/script-loader.php:878
 msgid "Saving..."
 msgstr "Снимање..."
 
-#: wp-includes/script-loader.php:878
+#: wp-includes/script-loader.php:879
 msgid "Could not set that as the thumbnail image. Try a different attachment."
 msgstr "Није могуће то поставити као умањену слику. Покушајте други прилог."
 
-#: wp-includes/script-loader.php:701
+#: wp-includes/script-loader.php:702
 msgid "Saving Draft&#8230;"
 msgstr "Снимам нацрт&#8230;"
 
@@ -10982,11 +10988,11 @@ msgstr "Аутор је %s"
 msgid "Oops: %s"
 msgstr "Упс: %s"
 
-#: wp-includes/comment-template.php:2250
+#: wp-includes/comment-template.php:2249
 msgid "Cancel reply"
 msgstr "Одустани од одговора"
 
-#: wp-includes/comment-template.php:2251
+#: wp-includes/comment-template.php:2250
 msgid "Post Comment"
 msgstr "Предај коментар"
 
@@ -11104,7 +11110,7 @@ msgid "Just a username, please."
 msgstr "Само корисничко име, молим."
 
 #: wp-includes/class-wp-customize-nav-menus.php:967
-#: wp-includes/script-loader.php:1129 wp-signup.php:562
+#: wp-includes/script-loader.php:1130 wp-signup.php:562
 msgid "Next"
 msgstr "Следеће"
 
@@ -11157,6 +11163,14 @@ msgstr "Предмет је промењен у низ да би се покла
 msgid "Approve it: %s"
 msgstr "Прихвати: %s"
 
+#. translators: Comment moderation. 1: Number of comments awaiting approval
+#: wp-includes/pluggable.php:1679
+msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
+msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
+msgstr[0] "Тренутно %s коментар чека на прихватање. Молимо вас да посетите таблу за преглед:"
+msgstr[1] "Тренутно %s коментара чекају на прихватање. Молимо вас да посетите таблу за преглед:"
+msgstr[2] "Тренутно %s коментара чека на прихватање. Молимо вас да посетите таблу за преглед:"
+
 #. translators: Comment moderation notification email subject. 1: Site name, 2:
 #. Post title
 #: wp-includes/pluggable.php:1684
@@ -11166,14 +11180,6 @@ msgstr "[%1$s] Молимо прегледајте: \"%2$s\""
 #: wp-includes/comment.php:241
 msgid "Unapproved"
 msgstr "Неприхваћен"
-
-#. translators: Comment moderation. 1: Number of comments awaiting approval
-#: wp-includes/pluggable.php:1679
-msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
-msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
-msgstr[0] "Тренутно %s коментар чека на прихватање. Молимо вас да посетите таблу за преглед:"
-msgstr[1] "Тренутно %s коментара чекају на прихватање. Молимо вас да посетите таблу за преглед:"
-msgstr[2] "Тренутно %s коментара чека на прихватање. Молимо вас да посетите таблу за преглед:"
 
 #: wp-includes/deprecated.php:64
 msgid "new WordPress Loop"
@@ -11286,7 +11292,7 @@ msgstr "Језик"
 msgid "Pingback excerpt: "
 msgstr "Исечак пинга: "
 
-#: wp-includes/script-loader.php:712
+#: wp-includes/script-loader.php:713
 msgid "Submitted on:"
 msgstr "Предат у:"
 
@@ -11334,7 +11340,7 @@ msgstr "Уреди категорију"
 
 #: wp-includes/class-wp-customize-nav-menus.php:276
 #: wp-includes/script-loader.php:242 wp-includes/script-loader.php:527
-#: wp-includes/script-loader.php:885
+#: wp-includes/script-loader.php:886
 msgid "No results found."
 msgstr "Нема резултата."
 
@@ -11440,7 +11446,7 @@ msgstr "Висина"
 #: wp-includes/customize/class-wp-customize-media-control.php:235
 #: wp-includes/customize/class-wp-customize-media-control.php:245
 #: wp-includes/customize/class-wp-customize-media-control.php:255
-#: wp-includes/script-loader.php:853
+#: wp-includes/script-loader.php:854
 msgid "Default"
 msgstr "Подразумевано"
 
@@ -11448,7 +11454,7 @@ msgstr "Подразумевано"
 msgid "Separate tags with commas"
 msgstr "Одвојите више ознака запетама"
 
-#: wp-includes/comment-template.php:2203
+#: wp-includes/comment-template.php:2202
 msgid "Website"
 msgstr "Веб место"
 
@@ -11518,7 +11524,7 @@ msgid "Edit This"
 msgstr "Уреди ово"
 
 #. translators: %s: login URL
-#: wp-includes/comment-template.php:2223
+#: wp-includes/comment-template.php:2222
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Жао нам  је, да би поставили коментар, морате <a href=\"%s\">бити пријављени</a>."
 
@@ -11572,11 +11578,11 @@ msgstr "Пријавите се да бисте оставили комента�
 msgid "Click here to cancel reply."
 msgstr "Притисните овде да бисте одустали од одговора."
 
-#: wp-includes/comment-template.php:1873 wp-includes/comment-template.php:2244
+#: wp-includes/comment-template.php:1873 wp-includes/comment-template.php:2243
 msgid "Leave a Reply"
 msgstr "Оставите одговор"
 
-#: wp-includes/comment-template.php:1874 wp-includes/comment-template.php:2245
+#: wp-includes/comment-template.php:1874 wp-includes/comment-template.php:2244
 msgid "Leave a Reply to %s"
 msgstr "Оставите одговор на %s"
 
@@ -11613,7 +11619,7 @@ msgstr "Наслов веб места"
 msgid "My Sites"
 msgstr "Моја веб места"
 
-#: wp-includes/comment-template.php:2201 wp-login.php:809
+#: wp-includes/comment-template.php:2200 wp-login.php:809
 msgid "Email"
 msgstr "Е-пошта"
 
@@ -11640,11 +11646,11 @@ msgid "Add New"
 msgstr "Додај нову"
 
 #. translators: %s: comments count
-#: wp-includes/script-loader.php:657
+#: wp-includes/script-loader.php:658
 msgid "Comments (%s)"
 msgstr "Коментари (%s)"
 
-#: wp-includes/script-loader.php:755
+#: wp-includes/script-loader.php:756
 msgid "Plugin:"
 msgstr "Додатак:"
 
@@ -11660,7 +11666,7 @@ msgstr "Љубичаста"
 msgid "Tags: "
 msgstr "Ознаке: "
 
-#: wp-includes/script-loader.php:854
+#: wp-includes/script-loader.php:855
 msgid "Select default color"
 msgstr "Изабери подразумевану боју"
 
@@ -11708,7 +11714,7 @@ msgstr "Аутор"
 msgid "URL"
 msgstr "URL"
 
-#: wp-includes/comment-template.php:1082 wp-includes/comment-template.php:2219
+#: wp-includes/comment-template.php:1082 wp-includes/comment-template.php:2218
 msgctxt "noun"
 msgid "Comment"
 msgstr "Коментар"
@@ -11731,12 +11737,12 @@ msgstr "Ажурирај категорију"
 msgid "Undo"
 msgstr "Врати"
 
-#: wp-includes/script-loader.php:655
+#: wp-includes/script-loader.php:656
 msgid "Comments"
 msgstr "Коментари"
 
 #: wp-includes/class-wp-customize-manager.php:4617
-#: wp-includes/script-loader.php:549 wp-includes/script-loader.php:689
+#: wp-includes/script-loader.php:549 wp-includes/script-loader.php:690
 msgid "Publish"
 msgstr "Објави"
 
@@ -11756,7 +11762,7 @@ msgstr "Уреди категорију веза"
 msgid "Add Link"
 msgstr "Додај везу"
 
-#: wp-includes/class-wp-editor.php:1121 wp-includes/script-loader.php:721
+#: wp-includes/class-wp-editor.php:1121 wp-includes/script-loader.php:722
 msgid "Save"
 msgstr "Сачувај"
 
@@ -11768,7 +11774,7 @@ msgstr "Одредиште"
 msgid "Advanced"
 msgstr "Напредно"
 
-#: wp-includes/comment-template.php:2199
+#: wp-includes/comment-template.php:2198
 msgid "Name"
 msgstr "Име"
 
@@ -11797,7 +11803,7 @@ msgstr "Корисници"
 
 #: wp-includes/customize/class-wp-customize-nav-menu-control.php:55
 #: wp-includes/customize/class-wp-widget-area-customize-control.php:61
-#: wp-includes/script-loader.php:879
+#: wp-includes/script-loader.php:880
 msgid "Done"
 msgstr "Обављено"
 
@@ -11825,7 +11831,7 @@ msgstr "Додаци"
 
 #: wp-includes/class-wp-editor.php:1052 wp-includes/class-wp-editor.php:1741
 #: wp-includes/media.php:3498 wp-includes/script-loader.php:510
-#: wp-includes/script-loader.php:561 wp-includes/script-loader.php:681
+#: wp-includes/script-loader.php:561 wp-includes/script-loader.php:682
 msgid "Cancel"
 msgstr "Одустани"
 
@@ -11834,11 +11840,11 @@ msgid "Content"
 msgstr "Садржај"
 
 #: wp-includes/class-wp-customize-manager.php:4622
-#: wp-includes/script-loader.php:551 wp-includes/script-loader.php:693
+#: wp-includes/script-loader.php:551 wp-includes/script-loader.php:694
 msgid "Save Draft"
 msgstr "Сачувај нацрт"
 
-#: wp-includes/comment-template.php:1597 wp-includes/script-loader.php:652
+#: wp-includes/comment-template.php:1597 wp-includes/script-loader.php:653
 msgid "Reply"
 msgstr "Одговори"
 
@@ -11959,33 +11965,33 @@ msgstr "Садржај"
 msgid "Image URL"
 msgstr "URL слике"
 
-#: wp-includes/script-loader.php:692
+#: wp-includes/script-loader.php:693
 msgid "Save as Pending"
 msgstr "Сачувај као „На чекању“"
 
-#: wp-includes/script-loader.php:698
+#: wp-includes/script-loader.php:699
 msgid "Privately Published"
 msgstr "Приватно објављен"
 
-#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:680
+#: wp-includes/class-wp-editor.php:1051 wp-includes/script-loader.php:681
 msgid "OK"
 msgstr "У реду"
 
 #: wp-includes/post.php:705 wp-includes/post.php:725
-#: wp-includes/script-loader.php:694
+#: wp-includes/script-loader.php:695
 msgid "Private"
 msgstr "Приватно"
 
-#: wp-includes/script-loader.php:696
+#: wp-includes/script-loader.php:697
 msgid "Public, Sticky"
 msgstr "Јаван, лепљив"
 
-#: wp-includes/script-loader.php:695
+#: wp-includes/script-loader.php:696
 msgid "Public"
 msgstr "Јавно"
 
 #: wp-includes/media.php:3499 wp-includes/script-loader.php:524
-#: wp-includes/script-loader.php:691 wp-includes/script-loader.php:772
+#: wp-includes/script-loader.php:692 wp-includes/script-loader.php:773
 msgid "Update"
 msgstr "Ажурирај"
 
@@ -12030,7 +12036,7 @@ msgstr "Некатегоризовано"
 #: wp-includes/class-wp-customize-manager.php:5301
 #: wp-includes/class-wp-editor.php:1053 wp-includes/class-wp-editor.php:1695
 #: wp-includes/script-loader.php:277 wp-includes/script-loader.php:371
-#: wp-includes/script-loader.php:562 wp-includes/script-loader.php:1125
+#: wp-includes/script-loader.php:562 wp-includes/script-loader.php:1126
 msgid "Close"
 msgstr "Затвори"
 
@@ -12051,7 +12057,7 @@ msgid "New Post"
 msgstr "Нови чланак"
 
 #: wp-includes/media.php:3143 wp-includes/script-loader.php:526
-#: wp-includes/script-loader.php:742
+#: wp-includes/script-loader.php:743
 #: wp-includes/widgets/class-wp-widget-recent-posts.php:91
 msgid "(no title)"
 msgstr "(нема наслова)"
@@ -12064,7 +12070,7 @@ msgstr "Уреди чланак"
 msgid "Number of comments to show:"
 msgstr "Број коментара за приказ:"
 
-#: wp-includes/deprecated.php:3130 wp-includes/functions.php:2607
+#: wp-includes/deprecated.php:3130
 msgid "Are you sure you want to do this?"
 msgstr "Да ли сигурно желите да урадите ово?"
 
@@ -12101,19 +12107,13 @@ msgstr "Е-пошта: %s"
 msgid "Search Results for &#8220;%s&#8221;"
 msgstr "Резултати претраге за &#132;%s&#147;"
 
-#: wp-includes/class-wp-customize-manager.php:450
-#: wp-includes/class-wp-customize-manager.php:515
-#: wp-includes/script-loader.php:565
-msgid "Cheatin&#8217; uh?"
-msgstr "Вараш, а?"
-
 #: wp-includes/class-wp-editor.php:1079 wp-includes/media-template.php:382
 #: wp-includes/media-template.php:563 wp-includes/revision.php:34
 msgid "Title"
 msgstr "Наслов"
 
 #: wp-includes/post.php:706 wp-includes/post.php:726
-#: wp-includes/script-loader.php:550 wp-includes/script-loader.php:699
+#: wp-includes/script-loader.php:550 wp-includes/script-loader.php:700
 msgid "Published"
 msgstr "Објављено"
 
@@ -12138,8 +12138,8 @@ msgstr "Посети веб место"
 msgid "Log Out"
 msgstr "Одјава"
 
-#: wp-activate.php:85 wp-includes/script-loader.php:829
-#: wp-includes/script-loader.php:830
+#: wp-activate.php:85 wp-includes/script-loader.php:830
+#: wp-includes/script-loader.php:831
 msgid "Activate"
 msgstr "Укључи"
 

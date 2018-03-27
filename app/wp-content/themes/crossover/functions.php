@@ -49,6 +49,15 @@
             'position'    =>  false,
             'icon_url'    =>  false
         ));
+        acf_add_options_page(array(
+            'page_title'  =>  'News Popup',
+            'menu_title'  =>  'News Popup',
+            'menu_slug'   =>  'news-popup',
+            'capability'  =>  'edit_posts',
+            'parent_slug' =>  'themes.php',
+            'position'    =>  false,
+            'icon_url'    =>  false
+        ));
     }
     add_action('acf/init', 'my_acf_init');
     function my_acf_init() {

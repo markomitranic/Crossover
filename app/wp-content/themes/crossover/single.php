@@ -4,6 +4,8 @@ get_header();
 the_post();
 ?>
 
+<?php get_template_part('_Partials/news-popup'); ?>
+
 <main id="post">
 
 	<section id="hero">
