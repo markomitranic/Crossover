@@ -116,7 +116,7 @@ get_header();
         </div>
     </section>
 
-    <section id="testimonials" style="background-image: linear-gradient( rgba(26, 25, 21, 0.8), rgba(26, 25, 21, 0.8) ), url('http://crossover.rs/wp-content/uploads/2017/08/nasa-space-station.jpg');">
+    <section id="testimonials" style="background-image: linear-gradient( rgba(26, 25, 21, 0.8), rgba(26, 25, 21, 0.8) ), url('https://crossover.rs/wp-content/uploads/2017/08/nasa-space-station.jpg');">
         <div class="wrapper">
             <div class="description">
                 <h2><?= get_field('testimonials_section_title') ?></h2>

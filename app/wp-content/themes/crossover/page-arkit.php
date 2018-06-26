@@ -28,7 +28,7 @@ the_post();
                 <h2><?=get_field('first_section_title')?></h2>
 	            <?=get_field('first_section_body')?>
                 <div class="application-button-round-small">
-                    <a href="http://crossover.rs/prijavi-se/" target="_blank">
+                    <a href="https://crossover.rs/prijavi-se/" target="_blank">
                         <p>Prijavi se odmah! &#9757;</p>
                     </a>
                 </div>
@@ -91,7 +91,7 @@ the_post();
     <section id="signup-bottom">
         <div class="wrapper">
             <div class="application-button-round">
-                <a href="http://crossover.rs/prijavi-se/" target="_blank">
+                <a href="https://crossover.rs/prijavi-se/" target="_blank">
                     <p>Sledeća grupa polaznika: <?=date('d.m.Y', strtotime('17.January.2018'))?></p>
                     <p>Prijavi se odmah!</p>
                     <p>&#9757;</p>

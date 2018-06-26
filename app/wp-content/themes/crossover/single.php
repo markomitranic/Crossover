@@ -34,12 +34,12 @@ the_post();
                             <?php $startDate = DateTime::createFromFormat('d/m/Y H:i e', $timeSlot['start_date'] . ' 18:00 Europe/Belgrade'); ?>
                             <li class="<?=$liClass?>">
                                 <p>
-                                    <a href="http://crossover.rs/prijavi-se/">
+                                    <a href="https://crossover.rs/prijavi-se/">
                                         <?=($startDate) ? date('d. F Y', $startDate->getTimestamp()) : 'Po zahtevu';?>
                                     </a>
                                 </p>
                                 <p>
-                                    <a href="http://crossover.rs/prijavi-se/">
+                                    <a href="https://crossover.rs/prijavi-se/">
                                         <?=($timeSlot['price']) ? $timeSlot['price'] : 'Pozovite'?>
                                     </a>
                                 </p>
@@ -72,7 +72,7 @@ the_post();
 						$nextDate = 'Po zahtevu';
 					}
 					?>
-                    <a href="http://crossover.rs/prijavi-se/">
+                    <a href="https://crossover.rs/prijavi-se/">
                         <p>Sledeća grupa polaznika: <?=$nextDate?></p>
                         <p>Prijavi se odmah!</p>
                         <p>&#9757;</p>

@@ -35,7 +35,7 @@ the_post();
         </div>
     </section>
 
-    <section id="lecturers" style="background-image: linear-gradient( rgba(26, 25, 21, 0.9), rgba(26, 25, 21, 0.9) ), url('http://crossover.rs/wp-content/uploads/2017/08/knez-mihailova.jpg');">
+    <section id="lecturers" style="background-image: linear-gradient( rgba(26, 25, 21, 0.9), rgba(26, 25, 21, 0.9) ), url('https://crossover.rs/wp-content/uploads/2017/08/knez-mihailova.jpg');">
         <div class="wrapper">
             <ul>
 
