@@ -1,0 +1,567 @@
+{
+    "key": "group_5b33cb244c143",
+    "title": "DaVinci Resolve",
+    "fields": [
+        {
+            "key": "field_5b33cb2456036",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b33cb24560bd",
+            "label": "Hero Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "A line of text that will be used as the page title shown in the hero section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Apple IT",
+            "placeholder": "Apple IT",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b33cb245610c",
+            "label": "Hero Subtitle",
+            "name": "hero_subtitle",
+            "type": "text",
+            "instructions": "A longer line of text, describing the page motto or purpose.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Zvanični Apple Certified Support Professional (ACSP) sertifikati za IT profesionalce.",
+            "placeholder": "Zvanični Apple Certified Support Professional (ACSP) sertifikati za IT profesionalce.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b33cb2456136",
+            "label": "Button 1 Label",
+            "name": "hero_button_1_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Izbor Kurseva",
+            "placeholder": "Izbor Kurseva",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b33cb2456165",
+            "label": "Button 1 Link",
+            "name": "hero_button_1_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5b33cb24561ae",
+            "label": "Button 2 Label",
+            "name": "hero_button_2_label",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Najčešća Pitanja",
+            "placeholder": "Najčešća Pitanja",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b33cb24561e5",
+            "label": "Button 2 Link",
+            "name": "hero_button_2_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [],
+            "taxonomy": [],
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5b33cb2456211",
+            "label": "First Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b33cb2456239",
+            "label": "First Section Title",
+            "name": "first_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Administrirajte Apple mrežne sisteme i ponudite novi nivo profesionalne podrške.",
+            "placeholder": "Administrirajte Apple mrežne sisteme i ponudite novi nivo profesionalne podrške.",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b33cb2456261",
+            "label": "First Section Body",
+            "name": "first_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Ukoliko ste IT profesionalac koji želi da uključi Mac u Windows mrežu računara, nudite podršku za OS X u poslovnom ili edukacijskom okruženju, održavate OS X sisteme u organizaciji ili kompleksne multiplatformske sisteme – ovaj kurs je za Vas!\r\n\r\nPostanite ekspert za Apple podršku uz svetski priznati Apple OS X sertfikat.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5b33cb2456288",
+            "label": "Large Image",
+            "name": "large_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b33cb24562ae",
+            "label": "Small Image",
+            "name": "small_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b33cb24562d5",
+            "label": "Program PDF",
+            "name": "first_program_pdf",
+            "type": "taxonomy",
+            "instructions": "Please select a category of courses to be shown.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "select",
+            "allow_null": 0,
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_5b33cb24562fc",
+            "label": "Second Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b33cb2456322",
+            "label": "Second Section Title",
+            "name": "second_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Zašto Apple IT kurs?",
+            "placeholder": "Zašto Apple IT kurs?",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b33cb2456349",
+            "label": "Second Section Body",
+            "name": "second_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Krtkim intenzivnim kursevima na brz i efikasan način uz metodologiju koja podrazumeva praktičan rad savladaćete rešavanje problema u okviru Mac OS X sistema i kako da integrišete Mac računare u već postojeću Windows mrežu.\r\n\r\nNaučićete osnove rada Unix operativnog sistema, kako da napravite i održavate svoj server i mrežu oko njega.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5b33cb245638e",
+            "label": "Benefits",
+            "name": "benefits",
+            "type": "repeater",
+            "instructions": "Select 6 benefits to be shown next to the post.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 6,
+            "max": 6,
+            "layout": "table",
+            "button_label": "Add Benefit",
+            "sub_fields": [
+                {
+                    "key": "field_5b33cb248534e",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "miniature",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5b33cb2485383",
+                    "label": "First Line",
+                    "name": "first_line",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "€ 1.000",
+                    "placeholder": "€ 1.000",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5b33cb24853ae",
+                    "label": "Additional Text",
+                    "name": "additional_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Prosečna plata u Srbiji",
+                    "placeholder": "Prosečna plata u Srbiji",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5b33cb24563d5",
+            "label": "Third Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b33cb2456403",
+            "label": "Third Section Title",
+            "name": "third_section_title",
+            "type": "text",
+            "instructions": "Enter a headline for this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Kako izgledaju Apple IT kursevi?",
+            "placeholder": "Kako izgledaju Apple IT kursevi?",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b33cb245642d",
+            "label": "Third Section Body",
+            "name": "third_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Kursevi su u potpunosti prilagođeni polaznicima, bilo da su u pitanju nastavnici, agenti podrške, IT specijalisti, mrežni administratori, tehničari ili administratori servera.\r\n\r\nU ponudi je tri nivoa kursa, koji možete odabrati u skladu sa potreba u sklopu Vašeg profesionalnog okruženja.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5b33cb245645c",
+            "label": "Third Image",
+            "name": "third_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b33cb2456483",
+            "label": "Fourth Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b33cb24564aa",
+            "label": "Fourth Image",
+            "name": "fourth_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5b33cb24564d1",
+            "label": "Fourth Section Body",
+            "name": "fourth_section_body",
+            "type": "textarea",
+            "instructions": "Enter the text body for the testimonials section.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<strong>macOS Support Essentials<\/strong>\r\nTrodnevni praktični kurs opšte primene u okviru koga imate prilike da detaljno istražite rešavanje problema na Mac OS X. \r\n\r\n<strong>Mac Integration Basics<\/strong>\r\nKurs za mrežne administratore koji žele integrisati Mac računare u već postojeću Windows ili drugu standardnu mrežu računara.\r\n\r\n<strong>macOS Server Essentials<\/strong>\r\nDvodnevni praktični kurs opšte primene u okviru koga temeljno istražujete rešavanje problema na Mac OS X Serveru.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-davinci.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1530121016
+}
