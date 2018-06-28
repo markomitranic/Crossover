@@ -1,3 +1,7 @@
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^crossover\.rs [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://crossover.rs/$1 [R,L]
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
