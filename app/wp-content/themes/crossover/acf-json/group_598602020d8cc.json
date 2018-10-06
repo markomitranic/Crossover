@@ -100,7 +100,6 @@
         "discussion",
         "comments",
         "revisions",
-        "slug",
         "author",
         "format",
         "featured_image",
@@ -109,5 +108,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1502986137
+    "modified": 1531245095
 }

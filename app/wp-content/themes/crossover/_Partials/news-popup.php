@@ -26,7 +26,7 @@
                 <article class="slide-small" style="background-image: url(<?=$item['figure']['sizes']['medium']?>)">
                     <a href="<?=$item['button_link']?>" target="_blank" title="<?=$item['button_text']?>" class="card-link">
                         <p class="description"><?=$item['description']?></p>
-                        <h1>Crossover proglašen premium Apple centrom</h1>
+                        <h1><?=$item['title']?></h1>
                     </a>
                 </article>
                 <?php endif; ?>
@@ -34,7 +34,7 @@
                 <article class="slide-small" style="background-image: url(<?=$item['figure']['sizes']['medium']?>)">
                     <a href="<?=$item['button_link']?>" target="_blank" title="<?=$item['button_text']?>" class="card-link">
                         <p class="description"><?=$item['description']?></p>
-                        <h1>Osnove iOS programiranja za AR aplikacije</h1>
+                        <h1><?=$item['title']?></h1>
                     </a>
                 </article>
                 <?php endif; ?>
