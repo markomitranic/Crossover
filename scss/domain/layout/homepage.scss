@@ -113,7 +113,7 @@ main#homepage {
             @include media(1024px) {
               margin-left: 10px;
             }
-            
+
             p.company-name {
               @include font-logo-heading;
               margin: 0;
@@ -155,6 +155,26 @@ main#homepage {
 
               img {
                 opacity: 1;
+              }
+            }
+          }
+          &.learnquest {
+            display: block;
+
+            @include media(768px) {
+              padding-right: 60px;
+            }
+            @include media(480px) {
+              padding-right: 0;
+            }
+
+            .logo {
+              width: initial;
+              height: initial;
+
+              img {
+                opacity: 1;
+                max-height: 90px;
               }
             }
           }

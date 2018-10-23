@@ -30,6 +30,12 @@ get_header();
                     </li>
                 <?php endforeach; ?>
 
+                <li class="learnquest">
+                    <div class="logo">
+                        <img src="<?= get_template_directory_uri() ?>/assets/learnquest-logo.svg" alt="Apple Authorized Training Provider Logo White">
+                    </div>
+                </li>
+
             </ul>
         </div>
     </section>
