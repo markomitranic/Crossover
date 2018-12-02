@@ -1,0 +1,117 @@
+main#event {
+
+  #hero {
+    background-image: url('../assets/images/hero-sailing.jpg');
+    background-position: bottom center;
+
+    @include media(1024px) {
+      background-position: bottom left;
+    }
+    @include media(480px) {
+      background-position: left -240px top;
+    }
+
+    .wrapper {
+      padding-top: 205px;
+      padding-bottom: 300px;
+
+      @include media(1024px) {
+        padding-top: 215px;
+        padding-bottom: 280px;
+      }
+      @include media(768px) {
+        padding-bottom: 370px;
+      }
+      @include media(480px) {
+        padding-top: 170px;
+        padding-bottom: 0px;
+      }
+
+      p.subtitle {
+        color: $black0;
+      }
+    }
+  }
+  #course-description {
+    margin-bottom: 60px;
+
+    .wrapper {
+      @include wrapper;
+      max-width: 1024px;
+
+      .wrapper-inner {
+        background-color: $black0;
+        padding: 10px 40px 40px 40px;
+        box-sizing: border-box;
+
+        @include media(500px) {
+          padding: 10px 20px 20px 20px;
+        }
+
+        h2 {
+          @include font-section-heading;
+        }
+        p.course-type {
+          @include font-section-content;
+        }
+        .wysiwyg {
+          @include wysiwyg;
+        }
+      }
+    }
+  }
+  #questions {
+    h2 {
+      @include wrapper;
+      max-width: 1024px;
+      color: #1A1915;
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 45px;
+      letter-spacing: 0.18px;
+      text-shadow: 0 0 4px rgba(0,0,0,0.5);
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    ul {
+      @include wrapper;
+      max-width: 1024px;
+      width: 100%;
+      overflow-x: scroll;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+
+      li {
+        display: block;
+        width: calc(50% - 30px);
+        height: auto;
+        margin: 15px;
+        background-color: white;
+        padding: 5px 15px;
+        box-sizing: border-box;
+
+        @include media(768px) {
+          width: 100%;
+          margin: 10px auto;
+        }
+
+        h3 {
+
+        }
+        p {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          letter-spacing: -0.5px;
+          font-size: 18px;
+          line-height: 30px;
+          color: #7D8186;
+          font-weight: 300;
+        }
+      }
+    }
+
+  }
+}

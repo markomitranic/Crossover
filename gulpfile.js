@@ -13,7 +13,8 @@ const scssInput = [
         'scripts/vendor/EasePack.min.js',
         'scripts/vendor/rAF.js',
         'scripts/vendor/TweenLite.min.js',
-        'scripts/vendor/statCounter.js'
+        'scripts/vendor/statCounter.js',
+        'scripts/vendor/slick.min.js'
     ],
     scssOutput = 'app/wp-content/themes/crossover/css',
     jsOutput = 'app/wp-content/themes/crossover/scripts/';

@@ -13,6 +13,27 @@
 'use strict';
 
 (function () {
+    var $gallery = $('main section#gallery ul');
+
+    $gallery.slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        variableWidth: true,
+        adaptiveHeight: true
+    });
+
+    $(window).resize(function () {
+        $gallery.slick('resize');
+    });
+
+    $(window).on('orientationchange', function () {
+        $gallery.slick('resize');
+    });
+})(jQuery);
+'use strict';
+
+(function () {
     var $menuButton = $('#mobile-menu-button');
     var $menu = $('#header').find('nav');
 
