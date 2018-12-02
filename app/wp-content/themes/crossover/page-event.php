@@ -32,41 +32,31 @@ the_post();
 		</div>
 	</div>
 
+    <section id="gallery">
+        <h2>Last Year's Gallery</h2>
+		<?php
+		$images = get_field('gallery');
+		if( $images ): ?>
+            <ul>
+				<?php foreach( $images as $image ): ?>
+                    <li>
+                        <img src="<?=$image['url']?>" alt="<?=$image['alt']?>" />
+                        <p><?=$image['caption']?></p>
+                    </li>
+				<?php endforeach; ?>
+            </ul>
+		<?php endif; ?>
+    </section>
+
     <section id="questions">
         <h2>Questions & Answers</h2>
         <ul>
-            <li>
-                <h3>What?</h3>
-                <p>Workshop type event. Attendees sleep and live on the boat. Work plan includes presentations according to curriculum, assignments, brain storming, discussions, ideas interchange and other learning activities.</p>
-            </li>
-            <li>
-                <h3>Where?</h3>
-                <p>This event will be arranged in area of North Sporades, on islands Skiathos, Skopelos, Alonnisos and more. Our journey starts from port of Skiathos island.</p>
-            </li>
-            <li>
-                <h3>When?</h3>
-                <p>This specific event will happen from Saturday, June 2nd. 2019 until Saturday, June 9th, 2019. Embarkation is scheduled for Saturday, afternoon.</p>
-            </li>
-            <li>
-                <h3>Where do we sleep?</h3>
-                <p>On the sailboat. It is equipped with cabins for two. This is not a five-star accommodation, it is rather, regular comfort for sailboat.</p>
-            </li>
-            <li>
-                <h3>What do we eat?</h3>
-                <p>You do not take care about the food. It will be prepared in great Greek restaurants on islands. Our battler takes care about heating food, serving and all the cleaning after meals. Wide choice of fruits and beverages will be available all the time.</p>
-            </li>
-            <li>
-                <h3>How about travel and medical insurance?</h3>
-                <p>All attendees will have medical and travel insurance on the level which is higher than basic. However, we can discuss additional insurance options with every single attendee.</p>
-            </li>
-            <li>
-                <h3>How do we travel to Skiathos?</h3>
-                <p>In June, there are few airplane lines to Skiathos. Additionally, there is a ferry line from Volos to Skiathos. Of course, we will help you to plan your trip in details and will give you more info upon request.</p>
-            </li>
-            <li>
-                <h3>What is included to the price?</h3>
-                <p>Accommodation on the sailboat for seven nights. Food and beverages. Basic insurance. Sailing for this period with all expenses covered. Battler services. Professional training. All day support from trainer. Opportunity to learn a little bit about sailing and act as sailing crew or even skipper.</p>
-            </li>
+			<?php foreach (get_field('questions_answers') as $key => $question) :?>
+                <li>
+                    <h3><?=$key+1?>. <?=$question['question']?></h3>
+                    <p><?=$question['answer']?></p>
+                </li>
+			<?php endforeach; ?>
         </ul>
     </section>
 

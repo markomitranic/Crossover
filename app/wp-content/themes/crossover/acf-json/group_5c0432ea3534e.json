@@ -1,9 +1,9 @@
 {
-    "key": "group_5c0428718e788",
-    "title": "Sailing",
+    "key": "group_5c0432ea3534e",
+    "title": "Event Page",
     "fields": [
         {
-            "key": "field_5c04287196d2d",
+            "key": "field_5c0432ea3dde0",
             "label": "Hero",
             "name": "",
             "type": "tab",
@@ -19,7 +19,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c04287196da1",
+            "key": "field_5c0432ea3de62",
             "label": "Hero Subtitle",
             "name": "hero_subtitle",
             "type": "text",
@@ -38,7 +38,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c04287196def",
+            "key": "field_5c0432ea3ded2",
             "label": "Button 1 Label",
             "name": "hero_button_1_label",
             "type": "text",
@@ -46,7 +46,7 @@
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "60",
                 "class": "",
                 "id": ""
             },
@@ -57,7 +57,26 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c04287196e75",
+            "key": "field_5c04332dccffe",
+            "label": "Hero Button 1 Link",
+            "name": "hero_button_1_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5c0432ea3df07",
             "label": "Button 2 Label",
             "name": "hero_button_2_label",
             "type": "text",
@@ -65,7 +84,7 @@
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "60",
                 "class": "",
                 "id": ""
             },
@@ -76,7 +95,26 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c042ae4ba9d4",
+            "key": "field_5c043348ccfff",
+            "label": "Hero Button 2 Link",
+            "name": "hero_button_2_link",
+            "type": "page_link",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_5c0432ea3df32",
             "label": "Gallery",
             "name": "",
             "type": "tab",
@@ -92,7 +130,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c042abd62528",
+            "key": "field_5c0432ea3df5b",
             "label": "Gallery",
             "name": "gallery",
             "type": "gallery",
@@ -117,7 +155,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_5c042ff539bef",
+            "key": "field_5c0432ea3dfa7",
             "label": "Questions and Answers",
             "name": "",
             "type": "tab",
@@ -133,7 +171,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5c04300639bf0",
+            "key": "field_5c0432ea3dfd0",
             "label": "Questions & Answers",
             "name": "questions_answers",
             "type": "repeater",
@@ -152,7 +190,7 @@
             "button_label": "Add Question",
             "sub_fields": [
                 {
-                    "key": "field_5c04301939bf1",
+                    "key": "field_5c0432ea55418",
                     "label": "Question",
                     "name": "question",
                     "type": "text",
@@ -171,7 +209,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5c04303739bf2",
+                    "key": "field_5c0432ea5544c",
                     "label": "Answer",
                     "name": "answer",
                     "type": "textarea",
@@ -192,7 +230,7 @@
             ]
         },
         {
-            "key": "field_5c043269767d8",
+            "key": "field_5c0432ea3dff9",
             "label": "Map Location",
             "name": "",
             "type": "tab",
@@ -213,7 +251,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-sailing.php"
+                "value": "page-event.php"
             }
         ]
     ],
@@ -230,5 +268,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1543779036
+    "modified": 1543779180
 }

@@ -60,6 +60,23 @@ main#event {
       }
     }
   }
+
+  #gallery {
+    h2 {
+      @include wrapper;
+      max-width: 1024px;
+      color: #1A1915;
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 45px;
+      letter-spacing: 0.18px;
+      text-shadow: 0 0 4px rgba(0,0,0,0.5);
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+  }
+
   #questions {
     h2 {
       @include wrapper;
