@@ -74,7 +74,7 @@ the_post();
                 <ul>
                     <?php foreach ($nextGroups as $group) : ?>
                         <li>
-                            <a href="<?=$group['permalink']?>"><?=$group['title']?><br><?=date('d.m.Y', $group['nextDate']->getTimestamp())?></a>
+                            <a href="<?=$group['permalink']?>"><?=$group['title']?><br><?=$group['nextDate'] ? date('d.m.Y', $group['nextDate']->getTimestamp()) : ''?></a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
