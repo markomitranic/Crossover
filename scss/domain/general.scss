@@ -165,3 +165,10 @@ body {
     background-image: url('../assets/pdf-icon.svg');
   }
 }
+
+
+body.grecaptcha-badge {
+	z-index: -1!important;
+	visibility: collapse!important;
+	opacity: 0!important;
+}
