@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-21 22:52:21+0000\n"
+"PO-Revision-Date: 2020-04-23 16:34:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,54 +19,54 @@ msgstr "Наша подразумевана тема 2015 је чиста, ус�
 msgid "Twenty Fifteen"
 msgstr "Twenty Fifteen"
 
-#: functions.php:243
+#: functions.php:245
 msgid "Light Blue"
 msgstr "Светло плава"
 
-#: functions.php:238
+#: functions.php:240
 msgid "Bright Blue"
 msgstr "Јарко плава"
 
-#: functions.php:193
+#: functions.php:195
 msgid "Light Gray"
 msgstr "Светло сива"
 
-#: functions.php:188
+#: functions.php:190
 msgid "Dark Gray"
 msgstr "Тамно сива"
 
-#: functions.php:208
+#: functions.php:210
 msgid "Dark Brown"
 msgstr "Тамно браон"
 
-#: functions.php:198
+#: functions.php:200
 msgid "White"
 msgstr "Бела"
 
-#: functions.php:218
+#: functions.php:220
 msgid "Light Pink"
 msgstr "Светло роза"
 
-#: functions.php:213
+#: functions.php:215
 msgid "Medium Pink"
 msgstr "Средње роза"
 
-#: functions.php:233
+#: functions.php:235
 msgid "Blue Gray"
 msgstr "Плаво сива"
 
-#: functions.php:223
+#: functions.php:225
 msgid "Dark Purple"
 msgstr "Тамно љубичаста"
 
-#. translators: %s: post title
+#. translators: %s: Post title.
 #: comments.php:31
 msgctxt "comments title"
 msgid "One thought on &ldquo;%s&rdquo;"
 msgstr "Једно мишљење на &#0132;%s&#0147;"
 
-#. translators: %s: post title
-#: inc/template-tags.php:130
+#. translators: %s: Post title.
+#: inc/template-tags.php:132
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Оставите коментар<span class=\"screen-reader-text\"> на %s</span>"
 
@@ -86,50 +86,51 @@ msgstr "Следећи чланак:"
 msgid "Next"
 msgstr "Следеће"
 
-#: search.php:18
+#. translators: %s: Search query.
+#: search.php:21
 msgid "Search Results for: %s"
 msgstr "Резултати претраживања за: %s"
 
-#: inc/template-tags.php:120
+#: inc/template-tags.php:122
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Пуна величина"
 
-#: inc/template-tags.php:108
+#: inc/template-tags.php:110
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Ознаке"
 
-#: inc/template-tags.php:99
+#: inc/template-tags.php:101
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Категорије"
 
-#: inc/template-tags.php:95 inc/template-tags.php:104
+#: inc/template-tags.php:97 inc/template-tags.php:106
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:89
+#: inc/template-tags.php:91
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Аутор"
 
-#: inc/template-tags.php:79
+#: inc/template-tags.php:81
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Објављено"
 
-#: inc/template-tags.php:56
+#: inc/template-tags.php:58
 msgctxt "Used before post format."
 msgid "Format"
 msgstr "Облик"
 
-#: inc/template-tags.php:49
+#: inc/template-tags.php:51
 msgid "Featured"
 msgstr "Издвојено"
 
-#: inc/template-tags.php:30
+#: inc/template-tags.php:31
 msgid "Newer Comments"
 msgstr "Новији коментари"
 
@@ -145,7 +146,7 @@ msgstr "Кретање коментара"
 msgid "Blue"
 msgstr "Плава"
 
-#: functions.php:228 inc/customizer.php:226
+#: functions.php:230 inc/customizer.php:226
 msgid "Purple"
 msgstr "Љубичаста"
 
@@ -153,7 +154,7 @@ msgstr "Љубичаста"
 msgid "Pink"
 msgstr "Роза"
 
-#: functions.php:203 inc/customizer.php:204
+#: functions.php:205 inc/customizer.php:204
 msgid "Yellow"
 msgstr "Жута"
 
@@ -181,7 +182,8 @@ msgstr "Боја текста заглавља и бочне траке"
 msgid "Base Color Scheme"
 msgstr "Основна шема боја"
 
-#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:64
+#. translators: %s: WordPress version.
+#: inc/back-compat.php:38 inc/back-compat.php:50 inc/back-compat.php:67
 msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
 msgstr "Twenty Fifteen захтева издање Вордпреса најмање 4.1. Користите издање %s. Молимо вас да ажурирате и покушате поново."
 
@@ -198,47 +200,47 @@ msgstr "Следећа слика"
 msgid "Previous Image"
 msgstr "Претходна слика"
 
-#: header.php:49
+#: header.php:50
 msgid "Menu and widgets"
 msgstr "Изборник и виџети"
 
-#: header.php:26
+#: header.php:27
 msgid "Skip to content"
 msgstr "Скочи на садржај"
 
-#: functions.php:399
+#: functions.php:402
 msgid "collapse child menu"
 msgstr "скупи изборник дете"
 
-#: functions.php:398
+#: functions.php:401
 msgid "expand child menu"
 msgstr "прошири изборник дете"
 
-#: functions.php:319
+#: functions.php:321
 msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
 msgid "no-subset"
 msgstr "cyrillic"
 
-#: functions.php:311
+#: functions.php:313
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "off"
 
-#: functions.php:303
+#: functions.php:305
 msgctxt "Noto Serif font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:295
+#: functions.php:297
 msgctxt "Noto Sans font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:268
+#: functions.php:270
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Овде додајте виџете како би се појавили у вашој бочној траци."
 
-#: functions.php:266
+#: functions.php:268
 msgid "Widget Area"
 msgstr "Простор за виџете"
 
@@ -250,37 +252,39 @@ msgstr "Изборник друштвених веза"
 msgid "Primary Menu"
 msgstr "Примарни изборник"
 
-#: footer.php:31
+#. translators: %s: WordPress
+#: footer.php:33
 msgid "Proudly powered by %s"
 msgstr "Са поносом покреће %s"
 
-#: content-none.php:31
+#: content-none.php:36
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Изгледа да не можемо да пронађемо оно што сте тражили. Можда ће претраживање помоћи."
 
-#: content-none.php:26
+#: content-none.php:31
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Жао нам је, али ништа не одговара вашем упиту. Молимо вас да покушате поново са другим кључним речима."
 
-#: content-none.php:22
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#. translators: %s: Post editor URL.
+#: content-none.php:25
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
 msgstr "Спремни сте да објавите свој први чланак? <a href=\"%1$s\">Започните овде</a>."
 
 #: content-none.php:15
 msgid "Nothing Found"
 msgstr "Ништа није пронађено"
 
-#: content-page.php:37 content.php:61 content-search.php:28
-#: content-search.php:33 image.php:74 content-link.php:60
+#: content-link.php:60 content.php:61 image.php:74 content-search.php:28
+#: content-search.php:33 content-page.php:37
 msgid "Edit"
 msgstr "Уреди"
 
-#: content-page.php:26 content.php:41 image.php:61 content-link.php:39
+#: content-link.php:39 content.php:41 image.php:61 content-page.php:26
 msgid "Pages:"
 msgstr "Стране:"
 
-#. translators: %s: Name of current post
-#: content.php:34 inc/template-tags.php:249 content-link.php:32
+#. translators: %s: Post title.
+#: content-link.php:32 content.php:34 inc/template-tags.php:252
 msgid "Continue reading %s"
 msgstr "Настави са читањем %s"
 
@@ -288,7 +292,7 @@ msgstr "Настави са читањем %s"
 msgid "Comments are closed."
 msgstr "Затворено за коментаре."
 
-#. translators: 1: number of comments, 2: post title
+#. translators: 1: Number of comments, 2: Post title.
 #: comments.php:35
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
@@ -297,7 +301,8 @@ msgstr[0] "%1$s мишљење на &#0132;%2$s&#0147;"
 msgstr[1] "%1$s мишљења на &#0132;%2$s&#0147;"
 msgstr[2] "%1$s мишљења на &#0132;%2$s&#0147;"
 
-#: author-bio.php:34
+#. translators: %s: Author display name.
+#: author-bio.php:36
 msgid "View all posts by %s"
 msgstr "Види све чланке од %s"
 
@@ -305,16 +310,16 @@ msgstr "Види све чланке од %s"
 msgid "Published by"
 msgstr "Објављено од стране"
 
-#: content-page.php:30 content.php:45 image.php:65 search.php:43 archive.php:53
-#: index.php:50 content-link.php:43
+#: content-link.php:43 index.php:50 content.php:45 archive.php:53 search.php:48
+#: image.php:65 content-page.php:30
 msgid "Page"
 msgstr "Страна"
 
-#: search.php:42 archive.php:52 index.php:49
+#: index.php:49 archive.php:52 search.php:47
 msgid "Next page"
 msgstr "Следећа страна"
 
-#: search.php:41 archive.php:51 index.php:48
+#: index.php:48 archive.php:51 search.php:46
 msgid "Previous page"
 msgstr "Претходна страна"
 
