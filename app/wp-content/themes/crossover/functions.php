@@ -1,5 +1,7 @@
 <?php
 
+    add_filter( 'automatic_updates_is_vcs_checkout', '__return_false', 1 );
+
     add_action( 'wp_enqueue_scripts', 'custom_styles' );
     add_action( 'wp_enqueue_scripts', 'custom_scripts' );
     if (!is_admin()) {
