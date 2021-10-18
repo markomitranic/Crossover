@@ -92,7 +92,7 @@ the_post();
         <div class="wrapper">
             <div class="application-button-round">
                 <a href="https://crossover.rs/prijavi-se/" target="_blank">
-                    <p>Sledeća grupa polaznika: <?=date('d.m.Y', strtotime('17.January.2018'))?></p>
+                    <p>Sledeća grupa polaznika</p>
                     <p>Prijavi se odmah!</p>
                     <p>&#9757;</p>
                 </a>
