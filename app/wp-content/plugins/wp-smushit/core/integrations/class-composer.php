@@ -81,13 +81,16 @@ class Composer extends Abstract_Integration {
 	 * @param string $name  Setting name.
 	 */
 	public function additional_notice( $name ) {
-		if ( 'js_builder' === $name && ! $this->enabled ) {
+		if ( $this->module === $name && ! $this->enabled ) {
 			?>
 			<div class="sui-toggle-content">
-				<div class="sui-notice sui-notice-sm">
-					<p>
-						<?php esc_html_e( 'To use this feature you need be using WPBakery Page Builder.', 'wp-smushit' ); ?>
-					</p>
+				<div class="sui-notice">
+					<div class="sui-notice-content">
+						<div class="sui-notice-message">
+							<i class="sui-notice-icon sui-icon-info" aria-hidden="true"></i>
+							<p><?php esc_html_e( 'To use this feature you need be using WPBakery Page Builder.', 'wp-smushit' ); ?></p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<?php
@@ -162,20 +165,21 @@ class Composer extends Abstract_Integration {
 
 		// Try to get the attachment ID.
 		$attachment_id = attachment_url_to_postid( $image_url );
-
+		
 		if ( ! wp_attachment_is_image( $attachment_id ) ) {
-			return $image_src;
+			return $vc_image;
 		}
 
 		$image = image_get_intermediate_size( $attachment_id, array( $size[1], $size[2] ) );
 
 		if ( $image ) {
-			return $image_src;
+			return $vc_image;
 		}
 
 		// Smush image. TODO: should we update the stats?
 		WP_Smush::get_instance()->core()->mod->smush->do_smushit( $vc_image );
-		return $image_src;
+
+		return $vc_image;
 	}
 
 	/**************************************
